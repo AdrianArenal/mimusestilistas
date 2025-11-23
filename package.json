@@ -18,9 +18,9 @@
     "@nuxt/image": "2.0.0",
     "@nuxt/ui": "4.1.0",
     "@nuxtjs/seo": "3.2.2",
+    "@vueuse/motion": "2.2.6",
     "@vueuse/nuxt": "13.9.0",
     "better-sqlite3": "12.4.1",
-    "motion-v": "1.7.3",
     "nuxt": "4.2.1"
   },
   "devDependencies": {
