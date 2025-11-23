@@ -58,7 +58,6 @@ export default defineContentConfig({
           }))
         }),
         testimonials: z.array(createTestimonialSchema()),
-        blog: createBaseSchema(),
         faq: createBaseSchema().extend({
           categories: z.array(
             z.object({
@@ -73,9 +72,9 @@ export default defineContentConfig({
         })
       })
     }),
-    projects: defineCollection({
+    products: defineCollection({
       type: 'data',
-      source: 'projects/*.yml',
+      source: 'products/*.yml',
       schema: z.object({
         title: z.string().nonempty(),
         description: z.string().nonempty(),
@@ -85,38 +84,13 @@ export default defineContentConfig({
         date: z.date()
       })
     }),
-    blog: defineCollection({
-      type: 'page',
-      source: 'blog/*.md',
-      schema: z.object({
-        minRead: z.number(),
-        date: z.date(),
-        image: z.string().nonempty().editor({ input: 'media' }),
-        author: createAuthorSchema()
-      })
-    }),
     pages: defineCollection({
       type: 'page',
       source: [
-        { include: 'projects.yml' },
-        { include: 'blog.yml' }
+        { include: 'products.yml' }
       ],
       schema: z.object({
         links: z.array(createButtonSchema())
-      })
-    }),
-    speaking: defineCollection({
-      type: 'page',
-      source: 'speaking.yml',
-      schema: z.object({
-        links: z.array(createButtonSchema()),
-        events: z.array(z.object({
-          category: z.enum(['Live talk', 'Podcast', 'Conference']),
-          title: z.string(),
-          date: z.date(),
-          location: z.string(),
-          url: z.string().optional()
-        }))
       })
     }),
     about: defineCollection({
@@ -126,6 +100,10 @@ export default defineContentConfig({
         content: z.object({}),
         images: z.array(createImageSchema())
       })
+    }),
+    policies: defineCollection({
+      type: 'page',
+      source: '*.md'
     })
   }
 })
