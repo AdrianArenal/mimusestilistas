@@ -95,18 +95,23 @@ useSeoMeta({
             </p>
 
             <div class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-800">
-              <span class="text-xl font-bold text-primary">
-                {{ service.price }}
-              </span>
+              <div class="flex-1">
+                <span class="text-xl font-bold text-primary block">
+                  {{ service.price }}
+                </span>
+                <p v-if="service.duration" class="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                  Duración: {{ service.duration }}
+                </p>
+              </div>
               <UButton
-                :to="`/servicios/${service.title.toLowerCase().replace(/\s+/g, '-')}`"
+                to="/contacto"
                 color="primary"
                 variant="soft"
                 size="sm"
               >
-                Ver más
+                Reservar
                 <template #trailing>
-                  <UIcon name="i-lucide-arrow-right" />
+                  <UIcon name="i-lucide-calendar" />
                 </template>
               </UButton>
             </div>

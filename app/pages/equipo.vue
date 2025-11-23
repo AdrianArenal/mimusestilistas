@@ -105,14 +105,14 @@ useSeoMeta({
               </div>
 
               <UButton
-                :to="`/equipo/${member.name?.toLowerCase().replace(/\s+/g, '-') || ''}`"
+                to="/contacto"
                 block
                 color="primary"
                 variant="soft"
               >
-                Conocer más
+                Reservar cita
                 <template #trailing>
-                  <UIcon name="i-lucide-arrow-right" />
+                  <UIcon name="i-lucide-calendar" />
                 </template>
               </UButton>
             </div>
