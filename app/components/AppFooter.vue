@@ -30,10 +30,17 @@ const menuItems: NavigationMenuItem[] = [
 <template>
   <UFooter
     class="z-10 bg-default"
-    :ui="{ left: 'text-muted text-xs' }"
+    :ui="{ 
+      left: 'text-muted text-xs',
+      container: 'py-8 lg:py-4 flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-4 lg:gap-x-3',
+      center: 'order-2 lg:order-2 flex items-center justify-center w-full lg:w-auto',
+      right: 'order-3 lg:flex-1 flex items-center justify-center lg:justify-end gap-x-1.5'
+    }"
   >
     <template #left>
-      {{ footer.credits }}
+      <div class="text-center lg:text-left order-1 lg:flex-1">
+        {{ footer.credits }}
+      </div>
     </template>
 
     <UNavigationMenu
@@ -42,17 +49,20 @@ const menuItems: NavigationMenuItem[] = [
       color="neutral"
       class="text-xs"
       :ui="{
-      link: 'text-xs text-muted hover:text-highlighted'
+        link: 'text-xs text-muted hover:text-highlighted px-2',
+        list: 'flex flex-wrap justify-center gap-x-2 gap-y-2'
       }"
     />
 
     <template #right>
       <template v-if="footer?.links">
-        <UButton
-          v-for="(link, index) of footer?.links"
-          :key="index"
-          v-bind="{ size: 'xs', color: 'neutral', variant: 'ghost', ...link }"
-        />
+        <div class="flex gap-2 shrink-0">
+          <UButton
+            v-for="(link, index) of footer?.links"
+            :key="index"
+            v-bind="{ size: 'xs', color: 'neutral', variant: 'ghost', ...link }"
+          />
+        </div>
       </template>
     </template>
   </UFooter>
