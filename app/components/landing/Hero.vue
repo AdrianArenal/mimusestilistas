@@ -17,20 +17,20 @@ defineProps<{
     }"
   >
     <template #headline>
-      <Motion
+      <span
+        v-motion
         :initial="{
           scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
+          opacity: 0
         }"
-        :animate="{
+        :enter="{
           scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
+          opacity: 1
+
         }"
         :transition="{
-          duration: 0.6,
-          delay: 0.1
+          duration: 600,
+          delay: 100
         }"
       >
         <UColorModeAvatar
@@ -39,120 +39,114 @@ defineProps<{
           :dark="global.picture?.dark!"
           :alt="global.picture?.alt!"
         />
-      </Motion>
+      </span>
     </template>
 
     <template #title>
-      <Motion
+      <span
+        v-motion
         :initial="{
           scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
+          opacity: 0
+
         }"
-        :animate="{
+        :enter="{
           scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
+          opacity: 1
+
         }"
         :transition="{
-          duration: 0.6,
-          delay: 0.1
+          duration: 600,
+          delay: 100
         }"
       >
         {{ page.title }}
-      </Motion>
+      </span>
     </template>
 
     <template #description>
-      <Motion
+      <span
+        v-motion
         :initial="{
           scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
+          opacity: 0
+
         }"
-        :animate="{
+        :enter="{
           scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
+          opacity: 1
+
         }"
         :transition="{
-          duration: 0.6,
-          delay: 0.3
+          duration: 600,
+          delay: 300
         }"
       >
         {{ page.description }}
-      </Motion>
+      </span>
     </template>
 
     <template #links>
-      <Motion
+      <div
+        v-if="page.hero.links"
+        v-motion
         :initial="{
           scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
+          opacity: 0
         }"
-        :animate="{
+        :enter="{
           scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
+          opacity: 1
         }"
         :transition="{
-          duration: 0.6,
-          delay: 0.5
+          duration: 600,
+          delay: 500
         }"
+        class="flex items-center gap-2"
       >
-        <div
-          v-if="page.hero.links"
-          class="flex items-center gap-2"
+        <UButton v-bind="page.hero.links[0]" />
+        <UButton
+          :color="global.available ? 'success' : 'error'"
+          variant="ghost"
+          class="gap-2"
+          :to="global.available ? global.meetingLink : ''"
+          :label="global.available ? 'Available for new projects' : 'Not available at the moment'"
         >
-          <UButton v-bind="page.hero.links[0]" />
-          <UButton
-            :color="global.available ? 'success' : 'error'"
-            variant="ghost"
-            class="gap-2"
-            :to="global.available ? global.meetingLink : ''"
-            :label="global.available ? 'Available for new projects' : 'Not available at the moment'"
-          >
-            <template #leading>
-              <span class="relative flex size-2">
-                <span
-                  class="absolute inline-flex size-full rounded-full opacity-75"
-                  :class="global.available ? 'bg-success animate-ping' : 'bg-error'"
-                />
-                <span
-                  class="relative inline-flex size-2 scale-90 rounded-full"
-                  :class="global.available ? 'bg-success' : 'bg-error'"
-                />
-              </span>
-            </template>
-          </UButton>
-        </div>
-      </Motion>
+          <template #leading>
+            <span class="relative flex size-2">
+              <span
+                class="absolute inline-flex size-full rounded-full opacity-75"
+                :class="global.available ? 'bg-success animate-ping' : 'bg-error'"
+              />
+              <span
+                class="relative inline-flex size-2 scale-90 rounded-full"
+                :class="global.available ? 'bg-success' : 'bg-error'"
+              />
+            </span>
+          </template>
+        </UButton>
+      </div>
 
       <div class="gap-x-4 inline-flex mt-4">
-        <Motion
+        <span
           v-for="(link, index) of footer?.links"
           :key="index"
-
+          v-motion
           :initial="{
             scale: 1.1,
-            opacity: 0,
-            filter: 'blur(20px)'
+            opacity: 0
           }"
-          :animate="{
+          :visibleOnce="{
             scale: 1,
             opacity: 1,
-            filter: 'blur(0px)'
-          }"
-          :transition="{
-            duration: 0.6,
-            delay: 0.5 + index * 0.1
+            transition: {
+              duration: 600,
+              delay: 500 + index * 100
+            }
           }"
         >
-          <UButton
-            v-bind="{ size: 'md', color: 'neutral', variant: 'ghost', ...link }"
-          />
-        </Motion>
+          <UButton v-bind="{ size: 'md', color: 'neutral', variant: 'ghost', ...link }" />
+        </span>
       </div>
     </template>
 
@@ -160,32 +154,28 @@ defineProps<{
       pause-on-hover
       class="py-2 -mx-8 sm:-mx-12 lg:-mx-16 [--duration:40s]"
     >
-      <Motion
+      <NuxtImg
         v-for="(img, index) in page.hero.images"
         :key="index"
+        v-motion
         :initial="{
           scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
+          opacity: 0
         }"
-        :animate="{
+        :enter="{
           scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
+          opacity: 1
         }"
         :transition="{
-          duration: 0.6,
-          delay: index * 0.1
+          duration: 600,
+          delay: index * 100
         }"
-      >
-        <NuxtImg
-          width="234"
-          height="234"
-          class="rounded-lg aspect-square object-cover"
-          :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'"
-          v-bind="img"
-        />
-      </Motion>
+        width="234"
+        height="234"
+        class="rounded-lg aspect-square object-cover"
+        :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'"
+        v-bind="img"
+      />
     </UMarquee>
   </UPageHero>
 </template>
