@@ -72,9 +72,9 @@ export default defineContentConfig({
         })
       })
     }),
-    products: defineCollection({
+    productos: defineCollection({
       type: 'data',
-      source: 'products/*.yml',
+      source: 'productos/*.yml',
       schema: z.object({
         title: z.string().nonempty(),
         description: z.string().nonempty(),
@@ -87,15 +87,15 @@ export default defineContentConfig({
     pages: defineCollection({
       type: 'page',
       source: [
-        { include: 'products.yml' }
+        { include: 'productos.yml' }
       ],
       schema: z.object({
         links: z.array(createButtonSchema())
       })
     }),
-    about: defineCollection({
+    sobreMi: defineCollection({
       type: 'page',
-      source: 'about.yml',
+      source: 'sobre-mi.yml',
       schema: z.object({
         content: z.object({}),
         images: z.array(createImageSchema())

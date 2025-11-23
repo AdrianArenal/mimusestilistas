@@ -5,24 +5,24 @@ const { footer } = useAppConfig()
 
 const menuItems: NavigationMenuItem[] = [
   {
-    label: 'Legal Notice',
-    to: '/legal-notice'
+    label: 'Aviso Legal',
+    to: '/aviso-legal'
   },
   {
-    label: 'Cookie Policy',
-    to: '/cookie-policy'
+    label: 'Política de Cookies',
+    to: '/politica-cookies'
   },
   {
-    label: 'Sitemap',
-    to: '/sitemap'
+    label: 'Mapa del Sitio',
+    to: '/mapa-sitio'
   },
   {
-    label: 'Privacy Policy',
-    to: '/privacy-policy'
+    label: 'Política de Privacidad',
+    to: '/politica-privacidad'
   },
   {
-    label: 'Accessibility',
-    to: '/accessibility-policy'
+    label: 'Accesibilidad',
+    to: '/politica-accesibilidad'
   }
 ]
 </script>

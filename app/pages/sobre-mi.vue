@@ -1,11 +1,11 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('about', () => {
-  return queryCollection('about').first()
+const { data: page } = await useAsyncData('sobre-mi', () => {
+  return queryCollection('sobreMi').first()
 })
 if (!page.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: 'Page not found',
+    statusMessage: 'Página no encontrada',
     fatal: true
   })
 }

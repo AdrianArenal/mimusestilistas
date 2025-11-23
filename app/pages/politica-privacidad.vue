@@ -1,9 +1,9 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('legal-notice', () =>
-  queryCollection('policies').path('/legal-notice').first()
+const { data: page } = await useAsyncData('politica-privacidad', () =>
+  queryCollection('policies').path('/politica-privacidad').first()
 )
 
-if (!page.value) throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+if (!page.value) throw createError({ statusCode: 404, statusMessage: 'Página no encontrada', fatal: true })
 
 const title = page.value?.title
 const description = page.value?.description
