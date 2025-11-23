@@ -1,0 +1,12 @@
+seo:
+  title: Servicios - Mimu's Estilistas
+  description: Descubre todos nuestros servicios profesionales de peluquería en Pola de Siero. Corte, color, tratamientos y mucho más.
+title: Nuestros Servicios
+description: Servicios profesionales adaptados a tus necesidades con productos de alta calidad
+cta:
+  primary:
+    label: Reserva tu cita
+    to: /contacto
+  secondary:
+    label: Ver productos
+    to: /productos

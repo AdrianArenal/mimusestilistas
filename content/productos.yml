@@ -1,6 +1,12 @@
-title: Diseñando Interfaces, Construyendo Experiencias.
-description: He trabajado en una variedad de productos, enfocándome en crear experiencias digitales intuitivas donde el diseño reflexivo se encuentra con código limpio. Aquí hay algunos destacados de los que estoy orgullosa, mostrando mi proceso desde el concepto hasta la ejecución.
+seo:
+  title: Productos - Mimu's Estilistas
+  description: Descubre nuestra selección de productos profesionales de peluquería. Champús, tratamientos, styling y más para cuidar tu cabello en casa
+title: Productos Profesionales
+description: Llévate a casa los mejores productos para mantener tu cabello perfecto entre visita y visita. Trabajamos con las mejores marcas del mercado.
 links:
-  - label: "Hablemos"
+  - label: "Ver servicios"
+    to: "/servicios"
     color: "neutral"
-  - label: 'Envíame un email'
+  - label: 'Reserva tu cita'
+    to: '/contacto'
+    color: 'primary'

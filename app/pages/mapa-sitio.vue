@@ -9,8 +9,10 @@
       <h2>Mapa del Sitio</h2>
       <ul>
         <li><NuxtLink to="/">Inicio</NuxtLink></li>
-        <li><NuxtLink to="/sobre-mi">Sobre Mí</NuxtLink></li>
+        <li><NuxtLink to="/servicios">Servicios</NuxtLink></li>
         <li><NuxtLink to="/productos">Productos</NuxtLink></li>
+        <li><NuxtLink to="/equipo">Equipo</NuxtLink></li>
+        <li><NuxtLink to="/contacto">Contacto</NuxtLink></li>
         <li><NuxtLink to="/aviso-legal">Aviso Legal</NuxtLink></li>
         <li><NuxtLink to="/politica-cookies">Política de Cookies</NuxtLink></li>
         <li><NuxtLink to="/politica-privacidad">Política de Privacidad</NuxtLink></li>
