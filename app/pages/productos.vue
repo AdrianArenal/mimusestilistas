@@ -1,17 +1,17 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('products-page', () => {
-  return queryCollection('pages').path('/products').first()
+const { data: page } = await useAsyncData('productos-page', () => {
+  return queryCollection('pages').path('/productos').first()
 })
 if (!page.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: 'Page not found',
+    statusMessage: 'Página no encontrada',
     fatal: true
   })
 }
 
-const { data: products } = await useAsyncData('products', () => {
-  return queryCollection('products').all()
+const { data: products } = await useAsyncData('productos', () => {
+  return queryCollection('productos').all()
 })
 
 const { global } = useAppConfig()
