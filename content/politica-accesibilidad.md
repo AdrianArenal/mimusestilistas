@@ -3,145 +3,65 @@ title: Política de Accesibilidad
 description: Nuestro compromiso con la accesibilidad web
 ---
 
-# Política de Accesibilidad
+# Política accesibilidad
 
-## Nuestro Compromiso
+MIMUS Estilístas, C.B. (NIF E-56316334) se ha comprometido a hacer accesible su sitio web, de conformidad con el Real Decreto **1112/2018**, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público.  
 
-Estamos comprometidos a garantizar que nuestro sitio web sea accesible para todos, incluidas las personas con discapacidad. Nos esforzamos por proporcionar una experiencia digital inclusiva que permita a todos los usuarios acceder a nuestro contenido y servicios.
+La presente declaración de accesibilidad se aplica al sitio web **www.peluqueriamimus.com**.  
 
-## Estándares de Accesibilidad
+## Situación de cumplimiento  
 
-Este sitio web tiene como objetivo cumplir con los estándares de [Pautas de Accesibilidad para el Contenido Web (WCAG) 2.1](https://www.w3.org/WAI/WCAG21/quickref/) Nivel AA. Estas pautas explican cómo hacer que el contenido web sea más accesible para las personas con discapacidad.
+Esta página web ha sido diseñada adaptándose a los estándares y normativas vigentes en relación con la accesibilidad y la usabilidad. No obstante, es posible que encuentre algún contenido que no se adapte al 100 % a estos estándares.  
 
-## Características de Accesibilidad
+Este sitio web es **parcialmente conforme** con el RD 1112/2018 debido a las excepciones y a la falta de conformidad en los siguientes aspectos:  
 
-Hemos implementado las siguientes características de accesibilidad en nuestro sitio web:
+## Contenido no accesible  
 
-### Navegación por Teclado
-- Toda la funcionalidad está disponible usando un teclado
-- Orden lógico de tabulación en todo el sitio web
-- Indicadores de foco visibles en elementos interactivos
-- Enlaces de salto de navegación para facilitar el acceso al contenido
+A continuación se describen los puntos que no cumplen con el RD 1112/2018:  
 
-### Compatibilidad con Lectores de Pantalla
-- Marcado HTML semántico para una estructura de contenido adecuada
-- Texto alternativo para imágenes y gráficos
-- Etiquetas y puntos de referencia ARIA cuando sea apropiado
-- Texto de enlace claro y descriptivo
+- **Falta de conformidad con el RD 1112/2018**:  
+  - Para los campos de formulario, el color gris del fondo de los elementos de formulario tiene un contraste insuficiente con el color de fondo de la página. (requisito 9.1.4.11 de UNE-EN 301549:2022)  
+  - En algunas ocasiones, al utilizar la versión de escritorio de la web, puede ser necesario el scroll horizontal para una resolución de 320px CSS o superior. (requisito 9.1.4.10 de UNE-EN 301549:2022)  
+  - Para algunos componentes de la interfaz de usuario con etiquetas que incluyen texto o imágenes de texto, el nombre visible no contiene el texto que se presenta visualmente. (requisito 9.2.5.3 de UNE-EN 301549:2022)  
+  - Al detectar algunos errores de introducción de datos, puede no mostrarse sugerencias para hacer la corrección. (requisito 9.3.3.3 de UNE-EN 301549:2022)  
+- **Carga desproporcionada**: no aplica.  
+- **Contenido que no entra dentro del ámbito de la legislación aplicable**: pueden existir contenidos de terceros que no están desarrollados por Mimus Estilístas ni bajo su control, como mapas o iframes.  
 
-### Diseño Visual
-- Ratios de contraste de color suficientes
-- Capacidad de cambio de tamaño de texto hasta el 200%
-- Sin dependencia del color solamente para transmitir información
-- Fuentes claras y legibles
-- Soporte de modo oscuro para reducir la fatiga visual
+## Preparación de la presente declaración de accesibilidad  
 
-### Estructura del Contenido
-- Jerarquía lógica de encabezados
-- Navegación clara y consistente
-- Títulos de página descriptivos
-- Mensajes de error y etiquetas de formulario significativos
+- La declaración fue preparada el **11/11/2024**.  
+- El método empleado fue una evaluación llevada a cabo por un tercero, con recursos externos.  
+- Última revisión de la declaración: **18/11/2025**.  
+- Comentario sobre la revisión: revisión anual.  
 
-### Contenido Multimedia
-- Subtítulos para contenido de vídeo
-- Transcripciones para contenido de audio
-- Alternativas de texto para multimedia
+## Observaciones y datos de contacto  
 
-## Limitaciones Conocidas
+Si detectas problemas de accesibilidad puedes:  
 
-Aunque nos esforzamos por una accesibilidad completa, puede haber algunas limitaciones:
+- Informar sobre cualquier posible incumplimiento del RD 1112/2018.  
+- Transmitir otras dificultades de acceso al contenido.  
+- Formular sugerencias de mejora relacionadas con la accesibilidad del sitio web.  
 
-- El contenido incrustado de terceros puede no ser completamente accesible
-- Algún contenido heredado puede no cumplir con los estándares actuales
-- Los documentos PDF pueden tener niveles de accesibilidad variables
+**Teléfono de contacto**: 984 39 02 59  
+**Dirección postal**: C/ Enrique II, 5, bajo 2, 33510 Pola de Siero, Asturias.  
 
-Estamos trabajando activamente para abordar estas limitaciones y mejorar la accesibilidad en todo el contenido.
+También puedes presentar:  
+- Una queja relativa al cumplimiento de los requisitos del RD 1112/2018.  
+- Una solicitud de **información accesible** relativa a:  
+  - Contenidos que están excluidos según el artículo 3, apartado 4, del RD.  
+  - Contenidos exentos por suponer una carga desproporcionada.
 
-## Tecnologías de Asistencia
+En la solicitud debes concretar hechos, razones y petición para que se pueda evaluar su razonabilidad y legitimidad.  
 
-Este sitio web ha sido probado con las siguientes tecnologías de asistencia:
+## Procedimiento de aplicación  
 
-- Lectores de pantalla (NVDA, JAWS, VoiceOver)
-- Navegación solo con teclado
-- Funcionalidad de zoom del navegador
-- Software de reconocimiento de voz
-
-## Comentarios y Asistencia
-
-Agradecemos sus comentarios sobre la accesibilidad de este sitio web. Si encuentra alguna barrera de accesibilidad o tiene sugerencias para mejorar, contáctenos:
-
-**Email:** [accessibility@example.com]  
-**Asunto:** Comentarios sobre Accesibilidad
-
-Por favor proporcione:
-- La URL de la página o contenido en cuestión
-- Una descripción del problema de accesibilidad
-- Su información de contacto (si desea una respuesta)
-
-Revisaremos sus comentarios y responderemos en un plazo de 5 días hábiles.
-
-## Mejora Continua
-
-La accesibilidad es un esfuerzo continuo. Regularmente:
-
-### Auditoría y Pruebas
-- Realizamos auditorías de accesibilidad regulares
-- Probamos con usuarios reales y tecnologías de asistencia
-- Revisamos el contenido nuevo para el cumplimiento de accesibilidad
-
-### Formación y Concienciación
-- Proporcionamos formación en accesibilidad a nuestro equipo
-- Nos mantenemos actualizados sobre las mejores prácticas de accesibilidad
-- Incorporamos la accesibilidad en nuestro proceso de diseño
-
-### Actualizaciones y Mantenimiento
-- Abordamos los problemas de accesibilidad reportados con prontitud
-- Actualizamos contenido y características con la accesibilidad en mente
-- Monitoreamos cambios en los estándares de accesibilidad
-
-## Cumplimiento Legal
-
-Nuestro objetivo es cumplir con las leyes y regulaciones de accesibilidad aplicables, incluyendo:
-- Ley de Estadounidenses con Discapacidades (ADA)
-- Sección 508 de la Ley de Rehabilitación
-- Ley Europea de Accesibilidad
-- Requisitos de accesibilidad locales y regionales
-
-## Contenido de Terceros
-
-Aunque nos esforzamos por garantizar la accesibilidad en todo nuestro sitio web, algunos contenidos y servicios de terceros pueden no estar completamente bajo nuestro control. Nosotros:
-- Seleccionamos servicios de terceros accesibles cuando sea posible
-- Proporcionamos alternativas accesibles cuando estén disponibles
-- Trabajamos con proveedores para mejorar la accesibilidad
-
-## Accesibilidad Móvil
-
-Nuestro sitio web está diseñado para ser responsive y accesible en dispositivos móviles, incluyendo:
-- Elementos de interfaz táctiles
-- Espaciado adecuado para objetivos táctiles
-- Navegación móvil accesible
-- Compatibilidad con lectores de pantalla móviles
-
-## Información de Contacto
-
-Para consultas o preocupaciones relacionadas con la accesibilidad:
-
-**Coordinador de Accesibilidad:** [Nombre]  
-**Email:** [accessibility@example.com]  
-**Teléfono:** [Número de Teléfono]  
-**Dirección:** [Su Dirección]
-
-## Actualizaciones de Esta Política
-
-Revisamos y actualizamos esta Política de Accesibilidad regularmente para reflejar nuestras prácticas y compromisos actuales. Consulte periódicamente para ver las actualizaciones.
-
-## Recursos Adicionales
-
-Para más información sobre accesibilidad web:
-- [Iniciativa de Accesibilidad Web (WAI)](https://www.w3.org/WAI/)
-- [Pautas WCAG](https://www.w3.org/WAI/WCAG21/quickref/)
-- [WebAIM](https://webaim.org/)
+- Si una vez presentada la queja o solicitud de información accesible **no obtienes respuesta** en 20 días hábiles, puedes iniciar una **reclamación**.  
+- También puedes reclamar si no estás de acuerdo con la decisión adoptada tras tu queja.  
 
 ---
 
-*Última actualización: {{ new Date().toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' }) }}*
+**Responsables**:  
+CAROLINA SAN JOSÉ SUÁREZ · YOLANDA FERNÁNDEZ DÍAZ  
+C/ Enrique II, 5, bajo 2, 33510 Pola de Siero, Asturias  
+Teléfono: 984 39 02 59  
+Correo: mimusestilistascb@hotmail.com  
