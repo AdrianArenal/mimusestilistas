@@ -42,7 +42,7 @@ const menuItems: NavigationMenuItem[] = [
       color="neutral"
       class="text-xs"
       :ui="{
-        link: 'text-xs text-muted hover:text-highlighted'
+      link: 'text-xs text-muted hover:text-highlighted'
       }"
     />
 
