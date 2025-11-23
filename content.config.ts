@@ -78,27 +78,51 @@ export default defineContentConfig({
       schema: z.object({
         title: z.string().nonempty(),
         description: z.string().nonempty(),
+        category: z.string().nonempty(),
+        price: z.string().nonempty(),
         image: z.string().nonempty().editor({ input: 'media' }),
-        url: z.string().nonempty(),
-        tags: z.array(z.string()),
-        date: z.date()
+        featured: z.boolean().optional(),
+        brand: z.string().optional()
+      })
+    }),
+    servicios: defineCollection({
+      type: 'data',
+      source: 'servicios/*.yml',
+      schema: z.object({
+        title: z.string().nonempty(),
+        description: z.string().nonempty(),
+        icon: z.string().editor({ input: 'icon' }),
+        price: z.string().nonempty(),
+        duration: z.string().nonempty(),
+        featured: z.boolean().optional()
+      })
+    }),
+    equipo: defineCollection({
+      type: 'data',
+      source: 'equipo/*.yml',
+      schema: z.object({
+        name: z.string().nonempty(),
+        role: z.string().nonempty(),
+        specialties: z.array(z.string()),
+        experience: z.string().nonempty(),
+        image: z.string().nonempty().editor({ input: 'media' }),
+        featured: z.boolean().optional()
       })
     }),
     pages: defineCollection({
       type: 'page',
       source: [
-        { include: 'productos.yml' }
+        { include: 'productos.yml' },
+        { include: 'servicios.yml' },
+        { include: 'equipo.yml' }
       ],
       schema: z.object({
-        links: z.array(createButtonSchema())
-      })
-    }),
-    sobreMi: defineCollection({
-      type: 'page',
-      source: 'sobre-mi.yml',
-      schema: z.object({
-        content: z.object({}),
-        images: z.array(createImageSchema())
+        links: z.array(createButtonSchema()).optional(),
+        cta: z.object({
+          primary: createButtonSchema(),
+          secondary: createButtonSchema().optional()
+        }).optional(),
+        images: z.array(createImageSchema()).optional()
       })
     }),
     policies: defineCollection({

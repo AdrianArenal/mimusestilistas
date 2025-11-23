@@ -1,0 +1,12 @@
+seo:
+  title: Nuestro Equipo - Mimu's Estilistas
+  description: Conoce al equipo profesional de Mimu's Estilistas. Yolanda Díaz, Carolina San José y Raquel González, expertas en peluquería con más de 20 años de experiencia
+title: Nuestro Equipo
+description: Profesionales apasionadas por su trabajo, dedicadas a realzar tu belleza
+images:
+  - src: /hero/random-1.avif
+    alt: Equipo Mimu's Estilistas
+  - src: /hero/random-2.avif
+    alt: Nuestro salón
+  - src: /hero/random-3.avif
+    alt: Ambiente profesional

@@ -1,117 +1,118 @@
 seo:
-  title: "Emma Thompson - Diseñadora UX/UI"
-  description: "¡Bienvenido a mi portfolio! Soy Emma Thompson, diseñadora UX/UI y desarrolladora front-end con base en Boston. Me especializo en crear experiencias digitales centradas en el usuario que son tanto hermosas como funcionales."
-title: "Hola, soy Emma Thompson Diseñadora UX/UI"
-description: "Creo experiencias digitales intuitivas donde el diseño se encuentra con la funcionalidad. Basada en Boston, dando vida a las ideas mediante código y creatividad."
+  title: "Mimu's Estilistas - Peluquería en Pola de Siero"
+  description: "Peluquería profesional en Pola de Siero, Asturias. Corte, color, tratamientos capilares y mucho más. Más de 20 años de experiencia cuidando tu imagen."
+title: "Bienvenido a Mimu's Estilistas"
+description: "Tu peluquería de confianza en Pola de Siero. Especialistas en corte, color y tratamientos capilares con un equipo profesional y cercano."
 hero:
   links:
-    - label: "Usa esta plantilla"
-      to: https://github.com/nuxt-ui-templates/portfolio
+    - label: "Reserva tu cita"
+      to: /contacto
+      color: "primary"
+    - label: "Ver servicios"
+      to: /servicios
       color: "neutral"
   images:
     - src: /hero/random-1.avif
-      alt: Random Image 1
+      alt: Corte de pelo profesional
     - src: /hero/random-2.avif
-      alt: Random Image 2
+      alt: Coloración y tintes
     - src: /hero/random-3.avif
-      alt: Random Image 3
+      alt: Tratamientos capilares
     - src: /hero/random-4.avif
-      alt: Random Image 4
+      alt: Peinados y recogidos
     - src: /hero/random-5.avif
-      alt: Random Image 5
+      alt: Estilismo profesional
     - src: /hero/random-6.avif
-      alt: Random Image 6
+      alt: Ambiente acogedor
     - src: /hero/random-7.avif
-      alt: Random Image 7
+      alt: Productos profesionales
     - src: /hero/random-8.avif
-      alt: Random Image 8
+      alt: Atención personalizada
     - src: /hero/random-9.avif
-      alt: Random Image 9
+      alt: Equipo profesional
 about:
-  title: "Sobre Mí"
+  title: "Nuestra Filosofía"
   description: |
-    Como diseñadora UX/UI y desarrolladora front-end con 6 años de experiencia, aprovecho mi título en Diseño Interactivo de la Universidad de Boston para crear experiencias digitales centradas en el usuario.
-    Mi enfoque combina estrategia creativa con experiencia técnica, transformando conceptos en productos digitales funcionales y con propósito que integran diseño y tecnología de manera fluida.
+    En Mimu's Estilistas llevamos más de 20 años cuidando la imagen de nuestros clientes en Pola de Siero. 
+    
+    Nuestro compromiso es ofrecerte un servicio profesional y personalizado, donde cada visita se convierte en una experiencia única. Trabajamos con las mejores marcas y técnicas del sector para garantizar resultados excepcionales que realcen tu belleza natural.
 experience:
-  title: Experiencia Laboral
+  title: Nuestro Equipo
   items:
-    - position: "Diseñadora de Marca en"
-      date: "2023 - Presente"
+    - position: "Estilista Senior y Propietaria"
+      date: "Fundadora"
       company:
-        name: Nuxt
-        logo: "i-simple-icons-nuxtdotjs"
-        url: "https://nuxt.com"
-        color: "#00DC82"
-    - position: "Diseñadora de Assets en"
-      date: "2022 - 2023"
+        name: Yolanda Díaz
+        logo: "i-lucide-scissors"
+        color: "#E91E63"
+    - position: "Especialista en Color"
+      date: "Estilista"
       company:
-        name: Raycast
-        logo: "i-simple-icons-raycast"
-        url: "https://raycast.com"
-        color: "#FF6363"
-    - position: "Diseñadora UX/UI Senior en"
-      date: "2020 - 2021"
+        name: Carolina San José
+        logo: "i-lucide-palette"
+        color: "#9C27B0"
+    - position: "Estilista y Tratamientos"
+      date: "Estilista"
       company:
-        name: Linear
-        logo: "i-simple-icons-linear"
-        url: "https://linear.app"
-        color: "#5E6AD2"
+        name: Raquel González
+        logo: "i-lucide-sparkles"
+        color: "#673AB7"
 testimonials:
-  - quote: "Emma's approach to UX design completely transformed our product. She has a rare ability to balance beautiful aesthetics with functional simplicity. The redesign not only looked better, but it reduced our customer support tickets by 40% and increased conversion rates across all key metrics."
+  - quote: "Llevo años viniendo a Mimu's y siempre salgo encantada. El trato es excepcional y el resultado siempre supera mis expectativas. Yolanda y su equipo son verdaderas profesionales."
     author:
-      name: 'Sarah Chen'
-      description: 'Product Director at Bloom Finance'
+      name: 'María García'
+      description: 'Cliente habitual'
       avatar:
         src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
         srcset: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Working with Emma was the best decision we made for our startup. She didn't just deliver designs—she challenged our assumptions, conducted thorough user research, and created an experience that truly resonated with our audience. Her technical knowledge of front-end development meant the handoff to our engineering team was seamless."
+  - quote: "Carolina es una artista del color. Me hizo un balayage espectacular y mi pelo quedó perfecto. Además, el ambiente en la peluquería es muy agradable y familiar."
     author:
-      name: 'Michael Rodriguez'
-      description: 'Co-founder of Wavelength Music'
+      name: 'Laura Fernández'
+      description: 'Cliente'
       avatar:
-        src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Emma stands out in her ability to translate complex sustainability data into intuitive interfaces. Her work on EcoTrack wasn't just visually stunning—it fundamentally changed how our users interact with environmental information. She approaches each problem with both creativity and analytical rigor, which is exactly what we needed."
+        src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
+        srcset: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
+  - quote: "Raquel me recomendó un tratamiento para mi pelo dañado y los resultados han sido increíbles. Se nota que utilizan productos de calidad y que saben lo que hacen."
     author:
-      name: 'Dr. Aisha Johnson'
-      description: 'Chief Innovation Officer at GreenTech Solutions'
+      name: 'Ana Suárez'
+      description: 'Cliente'
       avatar:
         src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
         srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
 faq:
   title: Preguntas Frecuentes
-  description: Respuestas a preguntas comunes sobre mi proceso y servicios.
+  description: Respuestas a las dudas más comunes sobre nuestros servicios.
   categories:
-    - title: Servicios y Proceso
+    - title: Servicios y Citas
       questions:
-        - label: ¿Qué servicios ofreces?
+        - label: ¿Qué servicios ofrecéis?
           content: |
-            Me especializo en diseño UX/UI y desarrollo front-end. Esto incluye investigación de usuarios, wireframing, prototipado interactivo, creación de interfaces de usuario intuitivas, construcción de sitios web y aplicaciones web responsive (especialmente con Vue.js/Nuxt.js), y desarrollo de sistemas de diseño. Mi objetivo es crear experiencias digitales fluidas desde el concepto hasta el despliegue.
-        - label: ¿Cómo es tu proceso de diseño?
+            Ofrecemos una amplia gama de servicios profesionales: corte de pelo para mujer, hombre y niños, coloración (tintes, mechas, balayage), tratamientos capilares intensivos, permanentes, alisados, peinados y recogidos para eventos especiales, manicura y cuidado de uñas. Todos nuestros servicios se personalizan según tus necesidades.
+        - label: ¿Necesito pedir cita previa?
           content: |
-            Mi proceso es colaborativo e iterativo, típicamente involucrando etapas como Descubrimiento e Investigación, Ideación y Prototipado, Pruebas de Usuario, Diseño Visual, y colaboración cercana con equipos de desarrollo durante la implementación. Adapto el proceso según las necesidades del proyecto, siempre enfocándome en soluciones centradas en el usuario.
-        - label: ¿Trabajas con startups?
+            Recomendamos pedir cita previa para asegurarte de que podemos atenderte en el horario que prefieras. Puedes llamarnos al 984 39 02 59, enviarnos un WhatsApp o usar nuestro formulario de contacto. También aceptamos clientes sin cita, aunque podrías tener que esperar.
+        - label: ¿Trabajáis con cita previa o sin cita?
           content: |
-            ¡Por supuesto! Disfruto trabajar con startups para ayudar a dar forma a su visión de producto y crear interfaces fáciles de usar desde cero. Puedo adaptar mi proceso para ajustarse al entorno dinámico de las startups.
-    - title: Precios y Plazos
+            Trabajamos principalmente con cita previa para ofrecer un servicio de calidad sin esperas. Sin embargo, si tenemos disponibilidad en el momento, estaremos encantadas de atenderte sin cita.
+    - title: Precios y Formas de Pago
       questions:
-        - label: ¿Cuánto cuesta típicamente un proyecto?
+        - label: ¿Cuáles son vuestros precios?
           content: |
-            Los costes del proyecto varían según el alcance, complejidad, características y plazos. Para proyectos completos de diseño UX/UI y desarrollo front-end, mis colaboraciones típicamente comienzan alrededor de $5,000, con proyectos promedio que oscilan entre $8,000 y $25,000. Para consultoría o tareas de diseño específicas, mi tarifa diaria es de $700.
-        - label: ¿Cuáles son tus condiciones de pago?
+            Nuestros precios varían según el servicio: Corte de mujer desde 18€, Corte de hombre desde 12€, Tinte desde 35€, Mechas/Balayage desde 45€, Tratamientos desde 15€, Manicura desde 10€. Para servicios más específicos o combinados, te recomendamos consultarnos directamente.
+        - label: ¿Qué formas de pago aceptáis?
           content: |
-            Generalmente requiero un depósito del 40% para programar el proyecto y comenzar a trabajar, con el 60% restante pagadero al completar y entregar el proyecto con éxito. Acepto pagos mediante transferencia bancaria y Stripe.
-        - label: ¿Cuánto tiempo lleva típicamente un proyecto?
+            Aceptamos pago en efectivo y tarjeta (crédito y débito). También aceptamos Bizum para mayor comodidad.
+        - label: ¿Hacéis descuentos o tenéis promociones?
           content: |
-            Los plazos dependen en gran medida del alcance y complejidad del proyecto. Los proyectos más pequeños pueden llevar de 3 a 4 semanas, mientras que los proyectos más grandes y complejos pueden durar de 2 a 4 meses. Siempre proporciono una estimación detallada del cronograma después de la fase inicial de descubrimiento.
-        - label: ¿Ofreces contratos de mantenimiento o soporte continuo?
-          content: |
-            Sí, para clientes que necesitan soporte de diseño continuo, desarrollo de funcionalidades o mantenimiento, ofrezco opciones de contrato mensual adaptadas a necesidades específicas. Hablemos si esto es algo que te interesa.
-    - title: Sobre Mí
+            Sí, regularmente tenemos promociones especiales y bonos de servicios con descuento. Síguenos en nuestras redes sociales o pregunta en la peluquería por nuestras ofertas actuales. También ofrecemos descuentos para estudiantes y jubilados.
+    - title: Ubicación y Horarios
       questions:
-        - label: ¿Qué es lo que más disfrutas de tu trabajo?
+        - label: ¿Dónde estáis ubicados?
           content: |
-            Me encanta el desafío de resolver problemas complejos a través del diseño y la tecnología. Es increíblemente gratificante ver a las personas interactuar con algo que he creado y encontrarlo genuinamente útil y fácil de navegar. Cerrar la brecha entre las necesidades del usuario y las posibilidades técnicas es lo que realmente me emociona.
-        - label: ¿Cuáles son tus hobbies fuera del trabajo?
+            Estamos en el centro de Pola de Siero, en Calle Enrique II, 5, bajo 2, 33510 Pola de Siero, Asturias. Disponemos de parking cercano y buena conexión con transporte público.
+        - label: ¿Cuál es vuestro horario?
           content: |
-            Cuando no estoy diseñando o programando, disfruto explorando los barrios de Boston, probando nuevas cafeterías y haciendo senderismo en las reservas cercanas. También me apasiona la fotografía y ocasionalmente contribuyo a proyectos de código abierto.
+            Nuestro horario es de lunes a viernes de 9:30 a 19:00h y sábados de 9:00 a 14:00h. Cerramos los domingos y festivos. Durante agosto, nuestro horario puede variar, consulta en nuestras redes sociales.
+        - label: ¿Ofrecéis servicios a domicilio?
+          content: |
+            Actualmente no ofrecemos servicios a domicilio regulares, pero para ocasiones especiales como bodas o eventos, podemos estudiar tu caso. Contáctanos y te informaremos de las posibilidades.
