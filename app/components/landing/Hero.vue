@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import type { IndexCollectionItem } from '@nuxt/content'
+import LogoSvg from '~/assets/svg/logo.svg?component'
+import ImagotypeSvg from '~/assets/svg/imagotype.svg?component'
 
 const { footer, global } = useAppConfig()
 
@@ -17,7 +19,7 @@ defineProps<{
     }"
   >
     <template #headline>
-      <span
+      <div
         v-motion
         :initial="{
           scale: 1.1,
@@ -32,14 +34,10 @@ defineProps<{
           duration: 600,
           delay: 100
         }"
+        class="mb-2"
       >
-        <UColorModeAvatar
-          class="size-18 ring ring-default ring-offset-3 ring-offset-(--ui-bg)"
-          :light="global.picture?.light!"
-          :dark="global.picture?.dark!"
-          :alt="global.picture?.alt!"
-        />
-      </span>
+        <ImagotypeSvg class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto text-foreground" />
+      </div>
     </template>
 
     <template #title>
@@ -105,26 +103,6 @@ defineProps<{
         class="flex items-center gap-2"
       >
         <UButton v-bind="page.hero.links[0]" />
-        <UButton
-          :color="global.available ? 'success' : 'error'"
-          variant="ghost"
-          class="gap-2"
-          :to="global.available ? global.meetingLink : ''"
-          :label="global.available ? 'Disponible para nuevos proyectos' : 'No disponible en este momento'"
-        >
-          <template #leading>
-            <span class="relative flex size-2">
-              <span
-                class="absolute inline-flex size-full rounded-full opacity-75"
-                :class="global.available ? 'bg-success animate-ping' : 'bg-error'"
-              />
-              <span
-                class="relative inline-flex size-2 scale-90 rounded-full"
-                :class="global.available ? 'bg-success' : 'bg-error'"
-              />
-            </span>
-          </template>
-        </UButton>
       </div>
 
       <div class="gap-x-4 inline-flex mt-4">

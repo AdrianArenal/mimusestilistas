@@ -16,6 +16,12 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  vite: {
+    plugins: [
+      require('vite-svg-loader').default()
+    ]
+  },
+
   compatibilityDate: '2024-11-01',
 
   nitro: {
