@@ -10,6 +10,11 @@ export default defineNuxtConfig({
     '@nuxtjs/seo'
   ],
 
+  site: {
+    url: 'https://mimusestilistas.com',
+    name: 'Mimu´s Estilistas'
+  },
+
   devtools: {
     enabled: true
   },
