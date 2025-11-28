@@ -6,8 +6,7 @@ export default defineAppConfig({
       alt: 'Logo Mimu\'s Estilistas'
     },
     meetingLink: '/contacto',
-    email: 'mimusestilistascb@hotmail.com',
-    available: true
+    email: 'mimusestilistascb@hotmail.com'
   },
   ui: {
     colors: {

@@ -24,14 +24,14 @@ defineProps<{
           :initial="{ opacity: 0, y: 20 }"
           :visible-once="{ opacity: 1, y: 0 }"
           :delay="400 + 200 * index"
-          class="text-muted flex items-center text-nowrap gap-2"
+          class="text-muted flex flex-col sm:flex-row sm:items-center gap-2"
         >
-          <p class="text-sm">
+          <p class="text-sm shrink-0">
             {{ experience.date }}
           </p>
-          <USeparator />
+          <USeparator class="hidden sm:block" />
           <ULink
-            class="flex items-center gap-1"
+            class="flex flex-wrap items-center gap-1"
             :to="experience.company.url"
             target="_blank"
           >

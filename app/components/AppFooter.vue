@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
+import ImagetypeSvg from '~/assets/svg/imagotype.svg?component'
 
 const { footer } = useAppConfig()
 
@@ -38,8 +39,13 @@ const menuItems: NavigationMenuItem[] = [
     }"
   >
     <template #left>
-      <div class="text-center lg:text-left order-1 lg:flex-1">
-        {{ footer.credits }}
+      <div class="flex flex-col lg:grid lg:grid-cols-2 items-center lg:items-start gap-3 lg:gap-x-8 lg:gap-y-2 order-1 lg:flex-1">
+        <NuxtLink to="/" aria-label="Ir a inicio - Mimu's Estilistas" class="lg:col-span-2">
+          <ImagetypeSvg class="h-7 w-auto text-foreground" />
+        </NuxtLink>
+        <div class="text-center lg:text-left text-muted lg:col-span-2">
+          {{ footer.credits }}
+        </div>
       </div>
     </template>
 
