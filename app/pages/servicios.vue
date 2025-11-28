@@ -1,10 +1,57 @@
 <script setup lang="ts">
 const { data: page } = await useAsyncData('servicios', () => queryCollection('pages').path('/servicios').first())
-const { data: services } = await useAsyncData('services-list', () => queryCollection('servicios').all())
 
 if (!page.value) {
   throw createError({ statusCode: 404, message: 'Página no encontrada' })
 }
+
+const services = [
+  {
+    title: 'Recogidos de Novia',
+    description: 'Peinados de novia personalizados para tu día más especial',
+    icon: 'i-lucide-heart',
+    price: 'Desde 80€',
+    duration: '90-120 min',
+    featured: true,
+    url: '/recogido-novia-en-pola-de-siero'
+  },
+  {
+    title: 'Peinados',
+    description: 'Peinados profesionales para eventos especiales',
+    icon: 'i-lucide-sparkle',
+    price: 'Desde 25€',
+    duration: '45-75 min',
+    featured: true,
+    url: '/peinado-en-pola-de-siero'
+  },
+  {
+    title: 'Color',
+    description: 'Servicio de coloración profesional con tintes de alta calidad',
+    icon: 'i-lucide-palette',
+    price: 'Desde 35€',
+    duration: '1-2 horas',
+    featured: true,
+    url: '/color-en-pola-de-siero'
+  },
+  {
+    title: 'Mechas',
+    description: 'Mechas, balayage y técnicas de iluminación capilar',
+    icon: 'i-lucide-sun',
+    price: 'Desde 45€',
+    duration: '2-3 horas',
+    featured: true,
+    url: '/mechas-en-pola-de-siero'
+  },
+  {
+    title: 'Tratamientos',
+    description: 'Tratamientos capilares para recuperar la salud de tu cabello',
+    icon: 'i-lucide-sparkles',
+    price: 'Desde 15€',
+    duration: '30-60 min',
+    featured: true,
+    url: '/tratamientos-en-pola-de-siero'
+  }
+]
 
 useSeoMeta({
   title: page.value.seo?.title,
@@ -94,26 +141,41 @@ useSeoMeta({
               {{ service.description }}
             </p>
 
-            <div class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-800">
-              <div class="flex-1">
-                <span class="text-xl font-bold text-primary block">
+            <div class="pt-4 border-t border-gray-200 dark:border-gray-800 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-bold text-primary">
                   {{ service.price }}
                 </span>
-                <p v-if="service.duration" class="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                  Duración: {{ service.duration }}
-                </p>
+                <span v-if="service.duration" class="text-sm text-gray-500 dark:text-gray-400">
+                  {{ service.duration }}
+                </span>
               </div>
-              <UButton
-                to="/contacto"
-                color="primary"
-                variant="soft"
-                size="sm"
-              >
-                Reservar
-                <template #trailing>
-                  <UIcon name="i-lucide-calendar" />
-                </template>
-              </UButton>
+              
+              <div class="flex gap-2">
+                <UButton
+                  :to="service.url"
+                  color="primary"
+                  variant="outline"
+                  size="sm"
+                  block
+                >
+                  Ver más
+                  <template #trailing>
+                    <UIcon name="i-lucide-arrow-right" />
+                  </template>
+                </UButton>
+                <UButton
+                  to="/contacto"
+                  color="primary"
+                  size="sm"
+                  block
+                >
+                  Reservar
+                  <template #trailing>
+                    <UIcon name="i-lucide-calendar" />
+                  </template>
+                </UButton>
+              </div>
             </div>
           </div>
         </UCard>
