@@ -16,40 +16,22 @@ const services = [
     url: '/recogido-novia-en-pola-de-siero'
   },
   {
-    title: 'Peinados',
-    description: 'Peinados profesionales para eventos especiales',
-    icon: 'i-lucide-sparkle',
-    price: 'Desde 25€',
-    duration: '45-75 min',
+    title: 'Peluquería',
+    description: 'Servicios completos: peinados, color, mechas, corte y tratamientos capilares',
+    icon: 'i-lucide-scissors',
+    price: 'Desde 12€',
+    duration: '30 min - 3 horas',
     featured: true,
-    url: '/peinado-en-pola-de-siero'
+    url: '/peluqueria-en-pola-de-siero'
   },
   {
-    title: 'Color',
-    description: 'Servicio de coloración profesional con tintes de alta calidad',
-    icon: 'i-lucide-palette',
-    price: 'Desde 35€',
-    duration: '1-2 horas',
-    featured: true,
-    url: '/color-en-pola-de-siero'
-  },
-  {
-    title: 'Mechas',
-    description: 'Mechas, balayage y técnicas de iluminación capilar',
-    icon: 'i-lucide-sun',
-    price: 'Desde 45€',
-    duration: '2-3 horas',
-    featured: true,
-    url: '/mechas-en-pola-de-siero'
-  },
-  {
-    title: 'Tratamientos',
-    description: 'Tratamientos capilares para recuperar la salud de tu cabello',
+    title: 'Estética',
+    description: 'Manicura, pedicura, uñas de gel y maquillaje profesional',
     icon: 'i-lucide-sparkles',
     price: 'Desde 15€',
-    duration: '30-60 min',
+    duration: '45 min - 1h 30 min',
     featured: true,
-    url: '/tratamientos-en-pola-de-siero'
+    url: '/estetica-en-pola-de-siero'
   }
 ]
 
@@ -104,37 +86,27 @@ useSeoMeta({
           class="p-6 ring-1 ring-gray-200 dark:ring-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
         >
           <div class="flex flex-col h-full">
-            <div class="flex items-start justify-between mb-4">
-              <div class="flex items-center gap-3">
-                <div 
-                  v-if="service.icon"
-                  class="p-3 bg-primary/10 rounded-lg"
-                >
-                  <UIcon
-                    :name="service.icon"
-                    class="w-6 h-6 text-primary"
-                  />
-                </div>
-                <div>
-                  <h3 class="text-lg font-semibold">
-                    {{ service.title }}
-                  </h3>
-                  <p 
-                    v-if="service.duration"
-                    class="text-sm text-gray-500 dark:text-gray-400 mt-1"
-                  >
-                    {{ service.duration }}
-                  </p>
-                </div>
-              </div>
-              <UBadge
-                v-if="service.featured"
-                color="primary"
-                variant="subtle"
-                size="xs"
+            <div class="flex items-center gap-3 mb-4">
+              <div 
+                v-if="service.icon"
+                class="p-3 bg-primary/10 rounded-lg"
               >
-                Popular
-              </UBadge>
+                <UIcon
+                  :name="service.icon"
+                  class="w-6 h-6 text-primary"
+                />
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold">
+                  {{ service.title }}
+                </h3>
+                <p 
+                  v-if="service.duration"
+                  class="text-sm text-gray-500 dark:text-gray-400 mt-1"
+                >
+                  {{ service.duration }}
+                </p>
+              </div>
             </div>
 
             <p class="text-gray-600 dark:text-gray-300 mb-4 grow">

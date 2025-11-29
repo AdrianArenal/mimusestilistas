@@ -6,6 +6,20 @@
 @theme static {
   --font-sans: 'Public Sans', sans-serif;
   --font-serif: 'Instrument Serif', serif;
+
+    /* Override default yellow color */
+  --color-yellow-50: #fef7ec;
+  --color-yellow-100: #fcecc9;
+  --color-yellow-200: #f9d68e;
+  --color-yellow-300: #f6ba53;
+  --color-yellow-400: #f3a32a;
+  --color-yellow-500: #cf8d1f;
+  --color-yellow-600: #b36914;
+  --color-yellow-700: #954d14;
+  --color-yellow-800: #7a3c18;
+  --color-yellow-900: #673216;
+  --color-yellow-950: #3b1808
+
 }
 
 :root {
