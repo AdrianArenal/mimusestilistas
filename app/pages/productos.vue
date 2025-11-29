@@ -1,104 +1,369 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('productos-page', () => {
-  return queryCollection('pages').path('/productos').first()
-})
-if (!page.value) {
-  throw createError({
-    statusCode: 404,
-    statusMessage: 'Página no encontrada',
-    fatal: true
-  })
-}
-
-const { data: products } = await useAsyncData('productos', () => {
-  return queryCollection('productos').all()
-})
-
 const { global } = useAppConfig()
 
+const page = {
+  title: 'Productos Profesionales',
+  description: 'Llévate a casa los mejores productos para mantener tu cabello perfecto entre visita y visita. Trabajamos con las mejores marcas del mercado.',
+  seo: {
+    title: 'Productos - Mimu\'s Estilistas',
+    description: 'Descubre nuestra selección de productos profesionales de peluquería. Champús, tratamientos, styling y más para cuidar tu cabello en casa'
+  }
+}
+
+const products = [
+  {
+    title: 'Champús Profesionales',
+    description: 'Champús de alta calidad para todo tipo de cabello',
+    category: 'Cuidado Capilar',
+    price: '12€ - 25€',
+    image: '/hero/random-1.avif',
+    featured: true,
+    brand: 'Varias marcas profesionales',
+    details: {
+      subtitle: 'Limpieza y cuidado diario',
+      intro: 'Descubre nuestra selección de champús profesionales, formulados para cada tipo de cabello y necesidad específica.',
+      varieties: [
+        { name: 'Champú hidratante', description: 'Para cabellos secos y dañados' },
+        { name: 'Champú voluminizador', description: 'Aporta cuerpo y volumen' },
+        { name: 'Champú anti-caspa', description: 'Elimina la caspa y calma el cuero cabelludo' },
+        { name: 'Champú para cabellos teñidos', description: 'Protege el color y prolonga su duración' },
+        { name: 'Champú sin sulfatos', description: 'Limpieza suave y natural' },
+        { name: 'Champú fortalecedor', description: 'Para cabellos débiles y con tendencia a caerse' }
+      ],
+      priceInfo: 'Desde 12€ hasta 25€ según marca y tamaño',
+      recommendations: 'Aplica sobre el cabello húmedo, masajea suavemente y aclara con agua abundante. Para mejores resultados, combínalo con el acondicionador de la misma gama.'
+    }
+  },
+  {
+    title: 'Acondicionadores y Mascarillas',
+    description: 'Tratamientos intensivos para nutrir y reparar tu cabello',
+    category: 'Tratamientos',
+    price: '15€ - 35€',
+    image: '/hero/random-2.avif',
+    featured: true,
+    brand: 'Varias marcas profesionales',
+    details: {
+      subtitle: 'Nutrición profunda',
+      intro: 'Complementa tu rutina de lavado con nuestros acondicionadores y mascarillas profesionales que reparan y nutren tu cabello en profundidad.',
+      varieties: [
+        { name: 'Acondicionadores diarios', description: 'Desenreda y suaviza' },
+        { name: 'Mascarillas reparadoras', description: 'Tratamiento intensivo semanal' },
+        { name: 'Acondicionadores sin aclarado', description: 'Protección extra durante todo el día' },
+        { name: 'Mascarillas de keratina', description: 'Reestructura la fibra capilar' },
+        { name: 'Tratamientos de aceites', description: 'Nutrición extrema para cabellos muy secos' }
+      ],
+      priceInfo: 'Acondicionadores: 15€ - 22€ | Mascarillas: 20€ - 35€',
+      recommendations: 'Acondicionador: Aplica después del champú, deja actuar 2-3 minutos y aclara. Mascarilla: Usa 1-2 veces por semana, deja actuar 5-10 minutos antes de aclarar.'
+    }
+  },
+  {
+    title: 'Productos de Styling',
+    description: 'Fija, moldea y da forma a tu peinado',
+    category: 'Styling',
+    price: '10€ - 28€',
+    image: '/hero/random-3.avif',
+    featured: true,
+    brand: 'Varias marcas profesionales',
+    details: {
+      subtitle: 'Peinados perfectos cada día',
+      intro: 'Consigue y mantén tu peinado perfecto con nuestra gama profesional de productos de styling.',
+      varieties: [
+        { name: 'Espumas', description: 'Volumen y fijación natural' },
+        { name: 'Geles', description: 'Fijación fuerte para peinados estructurados' },
+        { name: 'Lacas', description: 'Diferentes niveles de fijación' },
+        { name: 'Ceras y pomadas', description: 'Para looks modernos y texturizados' },
+        { name: 'Serums anti-frizz', description: 'Controla el encrespamiento' },
+        { name: 'Sprays de brillo', description: 'Acabado luminoso' },
+        { name: 'Protectores térmicos', description: 'Protege del calor de planchas y secadores' }
+      ],
+      priceInfo: 'Desde 10€ hasta 28€ según producto y tamaño',
+      recommendations: 'Aplica sobre cabello húmedo o seco según el producto. Empieza con poca cantidad e incrementa según necesites. Para looks naturales, distribuye bien el producto por todo el cabello.'
+    }
+  },
+  {
+    title: 'Tintes y Coloración',
+    description: 'Coloración profesional para usar en casa',
+    category: 'Color',
+    price: '8€ - 18€',
+    image: '/hero/random-4.avif',
+    featured: false,
+    brand: 'Varias marcas profesionales',
+    details: {
+      subtitle: 'Color profesional en casa',
+      intro: 'Disponemos de una selección de tintes profesionales que puedes usar en casa, aunque siempre recomendamos que lo apliques en nuestro salón para obtener los mejores resultados.',
+      varieties: [
+        { name: 'Tintes permanentes', description: 'Cobertura total de canas' },
+        { name: 'Tintes semi-permanentes', description: 'Color que se va lavando gradualmente' },
+        { name: 'Tintes fantasía', description: 'Colores vibrantes y creativos' },
+        { name: 'Baños de color', description: 'Refrescar el tono sin compromiso' },
+        { name: 'Decolorantes', description: 'Para aclarar el cabello (uso profesional recomendado)' }
+      ],
+      priceInfo: 'Tintes permanentes: 12€ - 18€ | Tintes semi-permanentes: 10€ - 15€ | Tintes fantasía: 8€ - 16€',
+      recommendations: 'Para cambios de color drásticos, correcciones o si es tu primera vez, te recomendamos encarecidamente que acudas a nuestro salón. Carolina, nuestra especialista en color, te asesorará y conseguirá resultados profesionales.'
+    }
+  },
+  {
+    title: 'Cepillos y Accesorios',
+    description: 'Herramientas profesionales para tu cabello',
+    category: 'Accesorios',
+    price: '5€ - 45€',
+    image: '/hero/random-5.avif',
+    featured: false,
+    brand: 'Varias marcas',
+    details: {
+      subtitle: 'Las herramientas adecuadas marcan la diferencia',
+      intro: 'Encuentra los mejores cepillos y accesorios profesionales para cuidar y peinar tu cabello en casa como en el salón.',
+      varieties: [
+        { name: 'Cepillos térmicos', description: 'Para secar y dar forma' },
+        { name: 'Cepillos desenredantes', description: 'Eliminan nudos sin dañar' },
+        { name: 'Peines profesionales', description: 'Para corte y peinado de precisión' },
+        { name: 'Cepillos paddle', description: 'Ideales para cabellos largos' },
+        { name: 'Cepillos de cerdas naturales', description: 'Aportan brillo natural' },
+        { name: 'Pinzas y coleteros', description: 'Accesorios para el día a día' },
+        { name: 'Gorros de ducha', description: 'Protege tu peinado' }
+      ],
+      priceInfo: 'Cepillos profesionales: 15€ - 45€ | Peines: 5€ - 12€ | Accesorios: 3€ - 10€',
+      recommendations: 'Consulta con nuestro equipo qué cepillo es el más adecuado para tu tipo de cabello y las técnicas de peinado que utilizas habitualmente.'
+    }
+  },
+  {
+    title: 'Kits y Packs Regalo',
+    description: 'Packs completos de productos con descuento',
+    category: 'Packs',
+    price: '25€ - 60€',
+    image: '/hero/random-6.avif',
+    featured: true,
+    brand: 'Varias marcas profesionales',
+    details: {
+      subtitle: 'Ahorra comprando packs completos',
+      intro: 'Descubre nuestros kits especiales que combinan los mejores productos para tu cabello con un precio más ventajoso. Perfectos también como regalo.',
+      varieties: [
+        { name: 'Pack Hidratación', description: 'Champú + Mascarilla + Serum anti-frizz' },
+        { name: 'Pack Volumen', description: 'Champú voluminizador + Espuma + Laca' },
+        { name: 'Pack Color', description: 'Champú protector del color + Acondicionador + Mascarilla' },
+        { name: 'Pack Reparación', description: 'Champú reparador + Mascarilla intensiva + Aceite nutritivo' },
+        { name: 'Pack Completo', description: 'Champú + Acondicionador + Mascarilla + Producto styling' }
+      ],
+      priceInfo: 'Pack básico (2 productos): 25€ - 35€ | Pack completo (3-4 productos): 40€ - 60€',
+      recommendations: 'Los packs ofrecen hasta un 20% de descuento sobre el precio individual de los productos. Pregúntanos por las ofertas actuales y packs personalizados. Todos nuestros packs se pueden presentar en bonitas bolsas regalo sin coste adicional. ¡El regalo perfecto para cualquier ocasión!'
+    }
+  }
+]
+
 useSeoMeta({
-  title: page.value?.seo?.title || page.value?.title,
-  ogTitle: page.value?.seo?.title || page.value?.title,
-  description: page.value?.seo?.description || page.value?.description,
-  ogDescription: page.value?.seo?.description || page.value?.description
+  title: page.seo.title,
+  ogTitle: page.seo.title,
+  description: page.seo.description,
+  ogDescription: page.seo.description
 })
 </script>
 
 <template>
-  <UPage v-if="page">
+  <UPage>
     <UPageHero
       :title="page.title"
       :description="page.description"
-      :links="page.links"
       :ui="{
         title: '!mx-0 text-left',
-        description: '!mx-0 text-left',
-        links: 'justify-start'
+        description: '!mx-0 text-left'
       }"
     >
       <template #links>
-        <div
-          v-if="page.links"
-          class="flex items-center gap-2"
-        >
+        <div class="flex flex-wrap items-center gap-2">
           <UButton
-            :label="page.links[0]?.label"
-            :to="global.meetingLink"
-            v-bind="page.links[0]"
+            label="Ver servicios"
+            to="/servicios"
+            color="neutral"
+            variant="subtle"
           />
           <UButton
-            :to="`mailto:${global.email}`"
-            v-bind="page.links[1]"
+            label="Reserva tu cita"
+            to="/contacto"
+            color="primary"
           />
         </div>
       </template>
     </UPageHero>
+
     <UPageSection
       :ui="{
         container: '!pt-0'
       }"
     >
-      <UPageCard
+      <div
         v-for="(product, index) in products"
         :key="product.title"
         v-motion
-        :initial="{ opacity: 0, y: 10 }"
+        :initial="{ opacity: 0, y: 20 }"
         :visible-once="{ opacity: 1, y: 0 }"
-        :delay="200 * index"
-        :title="product.title"
-        :description="product.description"
-        :to="product.url"
-        orientation="horizontal"
-        variant="naked"
-        :reverse="index % 2 === 1"
-        class="group"
-        :ui="{
-          wrapper: 'max-sm:order-last'
-        }"
+        :delay="150 * index"
+        class="mb-12"
       >
-        <template #leading>
-          <span class="text-sm text-muted">
-            {{ new Date(product.date).getFullYear() }}
-          </span>
-        </template>
-        <template #footer>
-          <ULink
-            :to="product.url"
-            class="text-sm text-primary flex items-center"
-          >
-            View Product
-            <UIcon
-              name="i-lucide-arrow-right"
-              class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
-            />
-          </ULink>
-        </template>
-        <img
-          :src="product.image"
-          :alt="product.title"
-          class="object-cover w-full h-48 rounded-lg"
+        <UCard
+          :ui="{
+            body: { padding: 'p-0 sm:p-0' },
+            rounded: 'rounded-xl',
+            shadow: 'shadow-lg'
+          }"
         >
-      </UPageCard>
+          <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+            <!-- Imagen -->
+            <div :class="index % 2 === 1 ? 'md:order-2' : ''">
+              <img
+                :src="product.image"
+                :alt="product.title"
+                class="object-cover w-full h-64 md:h-full rounded-t-xl md:rounded-none"
+                :class="index % 2 === 1 ? 'md:rounded-r-xl' : 'md:rounded-l-xl'"
+              >
+            </div>
+
+            <!-- Contenido -->
+            <div class="p-6 lg:p-8 space-y-6">
+              <!-- Header -->
+              <div class="space-y-3">
+                <UBadge
+                  :label="product.category"
+                  color="primary"
+                  variant="subtle"
+                  size="md"
+                />
+                <h2 class="text-2xl lg:text-3xl font-bold">
+                  {{ product.title }}
+                </h2>
+                <p class="text-lg text-muted">
+                  {{ product.description }}
+                </p>
+                <div class="flex items-center gap-2 text-primary">
+                  <UIcon
+                    name="i-lucide-tag"
+                    class="size-5"
+                  />
+                  <span class="text-xl font-semibold">{{ product.price }}</span>
+                </div>
+              </div>
+
+              <UDivider />
+
+              <!-- Intro -->
+              <div>
+                <h3 class="text-lg font-semibold mb-2">
+                  {{ product.details.subtitle }}
+                </h3>
+                <p class="text-muted">
+                  {{ product.details.intro }}
+                </p>
+              </div>
+
+              <!-- Variedades -->
+              <div>
+                <h4 class="text-base font-semibold mb-3 flex items-center gap-2">
+                  <UIcon
+                    name="i-lucide-sparkles"
+                    class="size-4 text-primary"
+                  />
+                  Variedades disponibles
+                </h4>
+                <div class="grid gap-2">
+                  <div
+                    v-for="variety in product.details.varieties"
+                    :key="variety.name"
+                    class="flex items-start gap-2 p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
+                  >
+                    <UIcon
+                      name="i-lucide-check"
+                      class="size-4 text-primary mt-0.5 shrink-0"
+                    />
+                    <div class="text-sm">
+                      <span class="font-medium">{{ variety.name }}</span>
+                      <span class="text-muted"> - {{ variety.description }}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Info adicional -->
+              <div class="grid sm:grid-cols-2 gap-4">
+                <UCard
+                  :ui="{
+                    body: { padding: 'p-4' },
+                    background: 'bg-primary-50 dark:bg-primary-950/30'
+                  }"
+                >
+                  <div class="space-y-1">
+                    <div class="flex items-center gap-2 text-primary">
+                      <UIcon
+                        name="i-lucide-coins"
+                        class="size-4"
+                      />
+                      <h5 class="text-sm font-semibold">
+                        Precios
+                      </h5>
+                    </div>
+                    <p class="text-xs text-muted">
+                      {{ product.details.priceInfo }}
+                    </p>
+                  </div>
+                </UCard>
+
+                <UCard
+                  :ui="{
+                    body: { padding: 'p-4' },
+                    background: 'bg-gray-50 dark:bg-gray-800/50'
+                  }"
+                >
+                  <div class="space-y-1">
+                    <div class="flex items-center gap-2">
+                      <UIcon
+                        name="i-lucide-store"
+                        class="size-4 text-primary"
+                      />
+                      <h5 class="text-sm font-semibold">
+                        Marca
+                      </h5>
+                    </div>
+                    <p class="text-xs text-muted">
+                      {{ product.brand }}
+                    </p>
+                  </div>
+                </UCard>
+              </div>
+
+              <!-- Recomendaciones -->
+              <UAlert
+                icon="i-lucide-lightbulb"
+                color="primary"
+                variant="soft"
+                title="Recomendaciones de uso"
+                :description="product.details.recommendations"
+                :ui="{
+                  description: 'text-sm'
+                }"
+              />
+
+              <!-- CTA -->
+              <div class="flex flex-wrap gap-3 pt-2">
+                <UButton
+                  to="/contacto"
+                  color="primary"
+                  size="lg"
+                  icon="i-lucide-shopping-bag"
+                >
+                  Consultar disponibilidad
+                </UButton>
+                <UButton
+                  :to="`tel:${global.phone}`"
+                  color="neutral"
+                  variant="soft"
+                  size="lg"
+                  icon="i-lucide-phone"
+                >
+                  Llamar ahora
+                </UButton>
+              </div>
+            </div>
+          </div>
+        </UCard>
+      </div>
     </UPageSection>
   </UPage>
 </template>
