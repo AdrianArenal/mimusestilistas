@@ -39,20 +39,20 @@ about:
 experience:
   title: Nuestro Equipo
   items:
-    - position: "Estilista Senior y Propietaria"
-      date: "Fundadora"
+    - position: "Estilista Senior"
+      date: "Más de 25 años"
       company:
         name: Yolanda Díaz
         logo: "i-lucide-scissors"
         color: "#E91E63"
     - position: "Especialista en Color"
-      date: "Estilista"
+      date: "Más de 15 años"
       company:
         name: Carolina San José
         logo: "i-lucide-palette"
         color: "#9C27B0"
     - position: "Estilista y Tratamientos"
-      date: "Estilista"
+      date: "Más de 12 años"
       company:
         name: Raquel González
         logo: "i-lucide-sparkles"

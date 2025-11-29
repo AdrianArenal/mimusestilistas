@@ -1,15 +1,32 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('equipo', () => queryCollection('pages').path('/equipo').first())
-const { data: team } = await useAsyncData('team-members', () => queryCollection('equipo').all())
-
-if (!page.value) {
-  throw createError({ statusCode: 404, message: 'Página no encontrada' })
-}
-
 useSeoMeta({
-  title: page.value.seo?.title,
-  description: page.value.seo?.description
+  title: 'Nuestro Equipo - Mimu\'s Estilistas en Pola de Siero',
+  description: 'Conoce a nuestro equipo de profesionales en Mimu\'s Estilistas. Más de 20 años de experiencia en peluquería y estética en Pola de Siero.'
 })
+
+const team = [
+  {
+    name: 'Yolanda Díaz',
+    role: 'Estilista Senior',
+    image: '/images/yoli.webp',
+    experience: 'Más de 25 años',
+    specialties: ['Corte', 'Peinados', 'Atención al cliente']
+  },
+  {
+    name: 'Carolina San José',
+    role: 'Especialista en Color',
+    image: '/images/carolina.webp',
+    experience: 'Más de 15 años',
+    specialties: ['Coloración', 'Mechas y Balayage', 'Corrección de color', 'Técnicas innovadoras']
+  },
+  {
+    name: 'Raquel González',
+    role: 'Estilista y Especialista en Tratamientos',
+    image: '/hero/random-3.avif',
+    experience: 'Más de 12 años',
+    specialties: ['Tratamientos capilares', 'Corte', 'Peinados de eventos', 'Cuidado del cabello']
+  }
+]
 </script>
 
 <template>
@@ -18,31 +35,14 @@ useSeoMeta({
       v-motion
       :initial="{ opacity: 0, y: 20 }"
       :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-      :title="page?.title"
-      :description="page?.description"
+      title="Nuestro Equipo"
+      description="Conoce a las profesionales que harán realidad tu cambio de imagen"
     />
 
     <UPageBody>
-      <!-- Hero images -->
-      <div
-        v-if="page?.images"
-        v-motion
-        :initial="{ opacity: 0 }"
-        :enter="{ opacity: 1, transition: { duration: 800, delay: 200 } }"
-        class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16 rounded-xl overflow-hidden"
-      >
-        <img
-          v-for="(image, index) in page?.images"
-          :key="index"
-          :src="image.src"
-          :alt="image.alt"
-          class="w-full h-64 object-cover"
-        >
-      </div>
-
       <!-- Team members -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <UCard
+      <div class="space-y-16 lg:space-y-24">
+        <div
           v-for="(member, index) in team"
           :key="index"
           v-motion
@@ -55,69 +55,81 @@ useSeoMeta({
               delay: index * 150 + 400 
             } 
           }"
-          class="overflow-hidden ring-1 ring-gray-200 dark:ring-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+          class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center"
+          :class="{ 'lg:grid-flow-dense': index % 2 === 1 }"
         >
-          <div class="flex flex-col h-full">
-            <!-- Member image -->
-            <div class="relative aspect-square overflow-hidden">
-              <img
-                :src="member.image"
-                :alt="member.name"
-                class="w-full h-full object-cover"
-              >
-              <div class="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent" />
-              <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <h3 class="text-2xl font-bold mb-1">
-                  {{ member.name }}
-                </h3>
-                <p class="text-white/90 font-medium">
-                  {{ member.role }}
-                </p>
+          <!-- Member image - Imagen grande y prominente -->
+          <div :class="{ 'lg:col-start-2': index % 2 === 1 }">
+            <UCard class="overflow-hidden rounded-2xl">
+              <div class="relative aspect-3/4 bg-gray-100 dark:bg-gray-900">
+                <NuxtImg
+                  :src="member.image"
+                  :alt="member.name"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                  quality="95"
+                  format="webp"
+                  sizes="sm:100vw md:50vw lg:600px"
+                />
               </div>
-            </div>
-
-            <!-- Member info -->
-            <div class="p-6">
-              <div class="mb-4">
-                <p class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">
-                  Experiencia
-                </p>
-                <p class="text-gray-900 dark:text-white">
-                  {{ member.experience }}
-                </p>
-              </div>
-
-              <div class="mb-6">
-                <p class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">
-                  Especialidades
-                </p>
-                <div class="flex flex-wrap gap-2">
-                  <UBadge
-                    v-for="specialty in member.specialties"
-                    :key="specialty"
-                    color="primary"
-                    variant="subtle"
-                    size="sm"
-                  >
-                    {{ specialty }}
-                  </UBadge>
-                </div>
-              </div>
-
-              <UButton
-                to="/contacto"
-                block
-                color="primary"
-                variant="soft"
-              >
-                Reservar cita
-                <template #trailing>
-                  <UIcon name="i-lucide-calendar" />
-                </template>
-              </UButton>
-            </div>
+            </UCard>
           </div>
-        </UCard>
+
+          <!-- Member info -->
+          <div :class="{ 'lg:col-start-1 lg:row-start-1': index % 2 === 1 }" class="space-y-6">
+            <!-- Nombre y rol -->
+            <div>
+              <h3 class="text-3xl lg:text-4xl font-bold mb-2 text-gray-900 dark:text-white">
+                {{ member.name }}
+              </h3>
+              <p class="text-primary font-medium text-xl flex items-center gap-2">
+                <UIcon name="i-lucide-sparkles" class="size-6" />
+                {{ member.role }}
+              </p>
+            </div>
+
+            <!-- Experiencia -->
+            <div class="flex items-center gap-3 text-lg">
+              <UIcon name="i-lucide-award" class="size-6 text-primary" />
+              <span class="text-gray-700 dark:text-gray-300 font-medium">
+                {{ member.experience }}
+              </span>
+            </div>
+
+            <!-- Especialidades -->
+            <div>
+              <p class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-3 flex items-center gap-2">
+                <UIcon name="i-lucide-star" class="size-4 text-primary" />
+                Especialidades
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <UBadge
+                  v-for="specialty in member.specialties"
+                  :key="specialty"
+                  color="primary"
+                  variant="soft"
+                  size="md"
+                  class="transition-all duration-300 hover:scale-105 hover:shadow-md"
+                >
+                  {{ specialty }}
+                </UBadge>
+              </div>
+            </div>
+
+            <!-- Botón de reserva -->
+            <UButton
+              to="/contacto"
+              color="primary"
+              size="xl"
+              class="shadow-md hover:shadow-lg transition-all duration-300"
+            >
+              <template #leading>
+                <UIcon name="i-lucide-calendar" />
+              </template>
+              Reservar cita con {{ member.name.split(' ')[0] }}
+            </UButton>
+          </div>
+        </div>
       </div>
 
       <!-- CTA Section -->
