@@ -6,7 +6,7 @@ description: Información legal sobre este sitio web
 # Aviso Legal
 
 El dominio https://peluqueriamimus.com es titularidad de Mimus Estilístas, C.B., con NIF E56316334, titular de los derechos de propiedad intelectual sobre las Webs y sus contenidos, sin perjuicio de los derechos legítimos de terceros.  
-La sociedad está provista de NIF: E56316334, y tiene su domicilio a los efectos del presente Aviso Legal, en Calle Enrique II 5 bajo 2, 33510 en Pola de Siero, Asturias, Ud. puede ponerse en contacto con nosotros en el siguiente correo electrónico: mimusestilistascb@hotmail.com.
+La sociedad está provista de NIF: E56316334, y tiene su domicilio a los efectos del presente Aviso Legal, en Calle Enrique II 5 bajo 2, 33510 en Pola de Siero, Asturias, Ud. puede ponerse en contacto con nosotros en el siguiente correo electrónico: mimusestilistas@gmail.com.
 
 ## Términos y condiciones
 

@@ -27,9 +27,25 @@ useSeoMeta({
       }"
     >
       <LandingAbout :page />
-      <LandingWorkExperience :page />
+      <div class="relative w-full aspect-9/16 rounded-lg overflow-hidden">
+        <video
+          class="w-full h-full object-contain"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          loading="lazy"
+          aria-label="Video de presentación de Mimu's Estilistas"
+        >
+          <source 
+            src="https://pub-820a050bd8b941bdb6f8494e6c3603c2.r2.dev/98a2-bbda-4b4d-aa7a-8eaede9f6ed8.webm" 
+            type="video/webm"
+          >
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
     </UPageSection>
-    <LandingTestimonials :page />
     <LandingFAQ :page />
   </UPage>
 </template>

@@ -296,7 +296,7 @@ useSeoMeta({
                   Según servicio
                 </p>
               </div>
-              <UDivider />
+              <hr class="border-gray-200 dark:border-gray-800" />
               <div class="p-4 bg-primary/10 rounded-lg">
                 <h4 class="font-semibold mb-2 text-sm">
                   ⭐ Popular
@@ -305,7 +305,7 @@ useSeoMeta({
                   El esmaltado semipermanente es nuestro servicio más solicitado por su durabilidad
                 </p>
               </div>
-              <UDivider />
+              <hr class="border-gray-200 dark:border-gray-800" />
               <div class="space-y-3">
                 <UButton
                   to="/contacto"

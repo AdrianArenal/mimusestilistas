@@ -366,7 +366,7 @@ useSeoMeta({
                   Según complejidad
                 </p>
               </div>
-              <UDivider />
+              <hr class="border-gray-200 dark:border-gray-800" />
               <div class="p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-800">
                 <h4 class="font-semibold mb-2 text-sm flex items-center gap-2">
                   <UIcon
@@ -379,7 +379,7 @@ useSeoMeta({
                   Para eventos importantes, ofrecemos prueba previa para garantizar el resultado perfecto
                 </p>
               </div>
-              <UDivider />
+              <hr class="border-gray-200 dark:border-gray-800" />
               <div class="space-y-3">
                 <UButton
                   to="/contacto"

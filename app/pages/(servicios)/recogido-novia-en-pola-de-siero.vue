@@ -259,7 +259,7 @@ useSeoMeta({
                   <UIcon name="i-lucide-clock" class="w-5 h-5 text-primary mt-0.5" />
                   <div>
                     <p class="font-medium">Horario</p>
-                    <p class="text-gray-600 dark:text-gray-400">Lunes a Sábado<br>9:00 - 20:00</p>
+                    <p class="text-gray-600 dark:text-gray-400">Lunes-Martes: 9:30-13:30 / 15:30-19:00<br>Jueves-Viernes: 9:30-19:00<br>Sábado: 9:30-13:30</p>
                   </div>
                 </div>
                 <div class="flex items-start gap-3">

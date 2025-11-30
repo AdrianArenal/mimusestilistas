@@ -107,13 +107,13 @@ useSeoMeta({
                 Envíanos un email
               </p>
               <a
-                href="mailto:mimusestilistascb@hotmail.com"
+                href="mailto:mimusestilistas@gmail.com"
                 class="text-xs md:text-sm text-primary hover:underline break-all block mb-3"
               >
-                mimusestilistascb@hotmail.com
+                mimusestilistas@gmail.com
               </a>
               <UButton
-                href="mailto:mimusestilistascb@hotmail.com"
+                href="mailto:mimusestilistas@gmail.com"
                 color="primary"
                 variant="soft"
                 size="xs"
@@ -184,7 +184,27 @@ useSeoMeta({
                   name="i-lucide-calendar-days"
                   class="size-4 md:size-5 text-primary shrink-0"
                 />
-                <span class="text-sm md:text-base font-semibold">Lunes - Viernes</span>
+                <span class="text-sm md:text-base font-semibold">Lunes - Martes</span>
+              </div>
+              <span class="text-sm md:text-base text-primary font-bold">9:30 - 13:30 / 15:30 - 19:00</span>
+            </div>
+            <div class="flex items-center justify-between p-3 md:p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
+              <div class="flex items-center gap-2 md:gap-3">
+                <UIcon
+                  name="i-lucide-calendar-x"
+                  class="size-4 md:size-5 text-gray-400 shrink-0"
+                />
+                <span class="text-sm md:text-base font-semibold">Miércoles</span>
+              </div>
+              <span class="text-sm md:text-base text-gray-500 font-bold">Cerrado</span>
+            </div>
+            <div class="flex items-center justify-between p-3 md:p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
+              <div class="flex items-center gap-2 md:gap-3">
+                <UIcon
+                  name="i-lucide-calendar-days"
+                  class="size-4 md:size-5 text-primary shrink-0"
+                />
+                <span class="text-sm md:text-base font-semibold">Jueves - Viernes</span>
               </div>
               <span class="text-sm md:text-base text-primary font-bold">9:30 - 19:00</span>
             </div>
@@ -194,19 +214,19 @@ useSeoMeta({
                   name="i-lucide-calendar"
                   class="size-4 md:size-5 text-primary shrink-0"
                 />
-                <span class="text-sm md:text-base font-semibold">Sábados</span>
+                <span class="text-sm md:text-base font-semibold">Sábado</span>
               </div>
-              <span class="text-sm md:text-base text-primary font-bold">9:00 - 14:00</span>
+              <span class="text-sm md:text-base text-primary font-bold">9:30 - 13:30</span>
             </div>
-            <div class="flex items-center justify-between p-3 md:p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg opacity-60">
+            <div class="flex items-center justify-between p-3 md:p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
               <div class="flex items-center gap-2 md:gap-3">
                 <UIcon
                   name="i-lucide-calendar-x"
-                  class="size-4 md:size-5 shrink-0"
+                  class="size-4 md:size-5 text-gray-400 shrink-0"
                 />
                 <span class="text-sm md:text-base font-semibold">Domingos y festivos</span>
               </div>
-              <span class="text-sm md:text-base font-bold">Cerrado</span>
+              <span class="text-sm md:text-base text-gray-500 font-bold">Cerrados</span>
             </div>
           </div>
         </UCard>
@@ -256,7 +276,7 @@ useSeoMeta({
                 WhatsApp
               </UButton>
               <UButton
-                href="mailto:mimusestilistascb@hotmail.com"
+                href="mailto:mimusestilistas@gmail.com"
                 size="lg"
                 color="neutral"
                 variant="soft"

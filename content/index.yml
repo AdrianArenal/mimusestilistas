@@ -36,49 +36,6 @@ about:
     En Mimu's Estilistas llevamos más de 20 años cuidando la imagen de nuestros clientes en Pola de Siero. 
     
     Nuestro compromiso es ofrecerte un servicio profesional y personalizado, donde cada visita se convierte en una experiencia única. Trabajamos con las mejores marcas y técnicas del sector para garantizar resultados excepcionales que realcen tu belleza natural.
-experience:
-  title: Nuestro Equipo
-  items:
-    - position: "Estilista Senior"
-      date: "Más de 25 años"
-      company:
-        name: Yolanda Díaz
-        logo: "i-lucide-scissors"
-        color: "#E91E63"
-    - position: "Especialista en Color"
-      date: "Más de 15 años"
-      company:
-        name: Carolina San José
-        logo: "i-lucide-palette"
-        color: "#9C27B0"
-    - position: "Estilista y Tratamientos"
-      date: "Más de 12 años"
-      company:
-        name: Raquel González
-        logo: "i-lucide-sparkles"
-        color: "#673AB7"
-testimonials:
-  - quote: "Llevo años viniendo a Mimu's y siempre salgo encantada. El trato es excepcional y el resultado siempre supera mis expectativas. Yolanda y su equipo son verdaderas profesionales."
-    author:
-      name: 'María García'
-      description: 'Cliente habitual'
-      avatar:
-        src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Carolina es una artista del color. Me hizo un balayage espectacular y mi pelo quedó perfecto. Además, el ambiente en la peluquería es muy agradable y familiar."
-    author:
-      name: 'Laura Fernández'
-      description: 'Cliente'
-      avatar:
-        src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Raquel me recomendó un tratamiento para mi pelo dañado y los resultados han sido increíbles. Se nota que utilizan productos de calidad y que saben lo que hacen."
-    author:
-      name: 'Ana Suárez'
-      description: 'Cliente'
-      avatar:
-        src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
 faq:
   title: Preguntas Frecuentes
   description: Respuestas a las dudas más comunes sobre nuestros servicios.
@@ -112,7 +69,7 @@ faq:
             Estamos en el centro de Pola de Siero, en Calle Enrique II, 5, bajo 2, 33510 Pola de Siero, Asturias. Disponemos de parking cercano y buena conexión con transporte público.
         - label: ¿Cuál es vuestro horario?
           content: |
-            Nuestro horario es de lunes a viernes de 9:30 a 19:00h y sábados de 9:00 a 14:00h. Cerramos los domingos y festivos. Durante agosto, nuestro horario puede variar, consulta en nuestras redes sociales.
+            Lunes - Martes: de 9:30 - 13:30 y 15:30 - 19:00. Miércoles: cerrado. Jueves - Viernes: 9:30 - 19:00. Sábado: 9:30 - 13:30. Domingos y festivos: cerrados. Durante agosto, nuestro horario puede variar, consulta en nuestras redes sociales.
         - label: ¿Ofrecéis servicios a domicilio?
           content: |
             Actualmente no ofrecemos servicios a domicilio regulares, pero para ocasiones especiales como bodas o eventos, podemos estudiar tu caso. Contáctanos y te informaremos de las posibilidades.
