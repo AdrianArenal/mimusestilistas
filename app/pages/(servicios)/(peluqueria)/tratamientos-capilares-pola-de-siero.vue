@@ -318,7 +318,7 @@ useSeoMeta({
                   Según tratamiento
                 </p>
               </div>
-              <UDivider />
+              <hr class="border-gray-200 dark:border-gray-800" />
               <div class="p-4 bg-primary/10 rounded-lg">
                 <h4 class="font-semibold mb-2 text-sm">
                   💡 Recomendación
@@ -327,7 +327,7 @@ useSeoMeta({
                   Para mejores resultados, realiza tratamientos cada 3-4 semanas
                 </p>
               </div>
-              <UDivider />
+              <hr class="border-gray-200 dark:border-gray-800" />
               <div class="space-y-3">
                 <UButton
                   to="/contacto"

@@ -201,7 +201,7 @@ useSeoMeta({
                   30-45 min
                 </p>
               </div>
-              <UDivider />
+              <hr class="border-gray-200 dark:border-gray-800" />
               <div class="space-y-3">
                 <UButton
                   to="/contacto"

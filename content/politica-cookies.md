@@ -90,7 +90,7 @@ También puedes configurar la instalación de cookies desde el formulario dispon
 **Contacto**  
 CAROLINA SAN JOSÉ SUÁREZ · YOLANDA FERNANDEZ DIAZ  
 C/ Enrique II, 5, bajo 2, Pola de Siero, 33510, Asturias  
-984 39 02 59 · mimusestilistascb@hotmail.com  
+984 39 02 59 · mimusestilistas@gmail.com  
 
 
 **Información adicional**  

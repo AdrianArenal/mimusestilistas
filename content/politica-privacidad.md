@@ -8,7 +8,7 @@ description: Cómo protegemos y gestionamos tus datos personales
 En cumplimiento de lo dispuesto en el Reglamento General de Protección de Datos vigente en la Unión Europea, el titular de este consentimiento autoriza a **Mimus Estilístas, C.B.** a tratar sus datos personales, y otorga esta autorización de manera expresa, libre, inequívoca e informada.  
 De la misma manera, el titular de este consentimiento ha sido informado de los siguientes datos:
 
-- **Responsable del tratamiento:** Mimus Estilístas, C.B. con domicilio en Calle Enrique II 5, bajo 2, 33510 Pola de Siero, Asturias. Correo electrónico: mimusestilistascb@hotmail.com  
+- **Responsable del tratamiento:** Mimus Estilístas, C.B. con domicilio en Calle Enrique II 5, bajo 2, 33510 Pola de Siero, Asturias. Correo electrónico: mimusestilistas@gmail.com  
 - **Finalidad:**  
   - Gestionar la solicitud de la información requerida.  
   - Mantener informado al usuario sobre la actividad y promociones de Mimus Estilístas, C.B. (envío de comunicaciones sobre productos, servicios, novedades y actividades, también por medios electrónicos, si el usuario marca la casilla de aceptación).  
@@ -21,7 +21,7 @@ De la misma manera, el titular de este consentimiento ha sido informado de los s
 - **Derechos:**  
   - El usuario puede ejercer los derechos de: **acceso, rectificación, supresión, limitación del tratamiento, portabilidad** y **oposición**.  
   - También puede retirar el consentimiento en cualquier momento y reclamar ante la **Agencia Española de Protección de Datos**.  
-  - Para ejercer sus derechos debe dirigirse por escrito al responsable (Mimus Estilístas, C.B.) al correo mimusestilistascb@hotmail.com.  
+  - Para ejercer sus derechos debe dirigirse por escrito al responsable (Mimus Estilístas, C.B.) al correo mimusestilistas@gmail.com.  
 - **Procedencia:** Los datos se recogen directamente del usuario a través de los formularios del sitio web.  
 - **Información adicional / advertencias al usuario:**  
   - Si no está de acuerdo con esta política, aconsejan no enviar datos personales.  
@@ -33,7 +33,7 @@ De la misma manera, el titular de este consentimiento ha sido informado de los s
 - **Seguridad de los datos:**  
   - Los datos se tratarán de forma automatizada con medidas técnicas y organizativas para garantizar su seguridad, integridad y disponibilidad.  
   - Los datos estarán en servidores con capacidad de seguridad adecuada.  
-  - El usuario puede ejercer sus derechos contactando por email al responsable (mimusestilistascb@hotmail.com), indicando qué derecho quiere ejercer.  
+  - El usuario puede ejercer sus derechos contactando por email al responsable (mimusestilistas@gmail.com), indicando qué derecho quiere ejercer.  
 - **Comunicaciones comerciales:**  
   - Si el usuario ha dado consentimiento para recibir comunicaciones, podrán revocar dicho consentimiento en cualquier momento.  
   - En cada envío comercial debe incluirse un mecanismo claro y gratuito para darse de baja (por ejemplo, email o enlace de baja).  
@@ -41,7 +41,7 @@ De la misma manera, el titular de este consentimiento ha sido informado de los s
 ## 2. Derechos de Protección de Datos
 
 Los responsables del tratamiento se comprometen a respetar la confidencialidad de los datos del usuario y garantizan el ejercicio de sus derechos: acceso, rectificación, cancelación, oposición, supresión y limitación del tratamiento.  
-Para ejercer estos derechos, el usuario debe escribir un correo a **mimusestilistascb@hotmail.com**, indicando qué derecho desea ejercer. En algunos casos se podrá solicitar copia de DNI u otro documento para acreditar identidad.  
+Para ejercer estos derechos, el usuario debe escribir un correo a **mimusestilistas@gmail.com**, indicando qué derecho desea ejercer. En algunos casos se podrá solicitar copia de DNI u otro documento para acreditar identidad.  
 
 En la comunicación de ejercicio de derechos, se recomienda indicar el email desde el cual se facilitaron los datos, para que se identifique correctamente.  
 
@@ -62,11 +62,11 @@ En la comunicación de ejercicio de derechos, se recomienda indicar el email des
 - La web usa servicios de terceros para estadísticas y publicidad (como **Google Analytics** y **DoubleClick**).  
 - También hay botones para compartir en redes sociales (Facebook, Twitter, Google +), lo que puede activar cookies de terceros.  
 - **Advertencia sobre eliminación de cookies:** Si bloquea todas las cookies, parte del sitio web puede no funcionar correctamente o deteriorar su experiencia.  
-- Si tiene dudas sobre la política de cookies, puede contactar por email a **mimusestilistascb@hotmail.com**.  
+- Si tiene dudas sobre la política de cookies, puede contactar por email a **mimusestilistas@gmail.com**.  
 
 ---
 
 **Contacto**:  
 Mimus Estilístas, C.B.  
 Calle Enrique II, 5, bajo 2, 33510 Pola de Siero, Asturias  
-Correo: mimusestilistascb@hotmail.com  
+Correo: mimusestilistas@gmail.com  

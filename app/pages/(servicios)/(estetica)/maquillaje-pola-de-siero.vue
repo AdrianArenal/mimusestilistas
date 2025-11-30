@@ -384,7 +384,7 @@ useSeoMeta({
                   Según estilo
                 </p>
               </div>
-              <UDivider />
+              <hr class="border-gray-200 dark:border-gray-800" />
               <div class="p-4 bg-primary/10 rounded-lg">
                 <h4 class="font-semibold mb-2 text-sm">
                   💍 Novias
@@ -402,7 +402,7 @@ useSeoMeta({
                   Ver recogidos de novia
                 </UButton>
               </div>
-              <UDivider />
+              <hr class="border-gray-200 dark:border-gray-800" />
               <div class="space-y-3">
                 <UButton
                   to="/contacto"
