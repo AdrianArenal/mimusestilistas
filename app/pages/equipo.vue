@@ -11,7 +11,7 @@ const team = [
     experience: '30 años de experiencia',
     specialties: [
       { name: 'Peluquería', to: '/peluqueria-en-pola-de-siero' },
-      { name: 'Novias', to: '/recogido-novia-en-pola-de-siero' },
+      { name: 'Bodas y Eventos', to: '/novia-en-pola-de-siero' },
       { name: 'Color', to: '/color-pelo-pola-de-siero' }
     ]
   },

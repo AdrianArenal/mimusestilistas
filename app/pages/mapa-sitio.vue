@@ -181,10 +181,10 @@ useSeoMeta({
           <ul class="space-y-2">
             <li>
               <NuxtLink
-                to="/recogido-novia-en-pola-de-siero"
+                to="/novia-en-pola-de-siero"
                 class="text-primary hover:underline"
               >
-                Recogidos de Novia
+                Bodas y Eventos
               </NuxtLink>
             </li>
           </ul>
