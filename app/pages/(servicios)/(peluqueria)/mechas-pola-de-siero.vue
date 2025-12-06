@@ -315,7 +315,7 @@ useSeoMeta({
             Color
           </UButton>
           <UButton
-            to="/tratamientos-capilares-pola-de-siero"
+            to="/tratamientos-pola-de-siero"
             color="neutral"
             variant="outline"
             block

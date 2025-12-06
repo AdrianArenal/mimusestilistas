@@ -119,7 +119,7 @@ useSeoMeta({
                 </li>
                 <li>
                   <NuxtLink
-                    to="/tratamientos-capilares-pola-de-siero"
+                    to="/tratamientos-pola-de-siero"
                     class="text-gray-600 dark:text-gray-400 hover:text-primary"
                   >
                     → Tratamientos Capilares

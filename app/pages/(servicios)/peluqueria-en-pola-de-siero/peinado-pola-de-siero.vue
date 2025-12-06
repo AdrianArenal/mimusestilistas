@@ -313,7 +313,7 @@ useSeoMeta({
             Corte
           </UButton>
           <UButton
-            to="/peluqueria-en-pola-de-siero/tratamientos-capilares-pola-de-siero"
+            to="/tratamientos-pola-de-siero"
             color="neutral"
             variant="outline"
             size="lg"
