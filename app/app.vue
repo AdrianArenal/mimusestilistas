@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Analytics } from '@vercel/analytics/nuxt'
+
 const colorMode = useColorMode()
 
 const color = computed(() => colorMode.value === 'dark' ? '#020618' : 'white')
@@ -58,5 +60,7 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
         :fuse="{ resultLimit: 42 }"
       />
     </ClientOnly>
+
+    <Analytics />
   </UApp>
 </template>
