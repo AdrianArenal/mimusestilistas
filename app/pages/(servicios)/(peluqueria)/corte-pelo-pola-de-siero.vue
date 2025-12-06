@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Corte de Pelo en Pola de Siero - Mimu\'s Estilistas',
-  description: 'Cortes de pelo profesionales para mujer, hombre y niños en Pola de Siero. Asesoramiento personalizado. Desde 12€. Reserva tu cita.'
+  description: 'Cortes de pelo profesionales para mujer, hombre y niños en Pola de Siero. Asesoramiento personalizado. Reserva tu cita.'
 })
 </script>
 
@@ -71,56 +71,41 @@ useSeoMeta({
             </h3>
             <div class="space-y-4">
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Corte mujer
-                  </h4>
-                  <span class="text-primary font-bold">18€ - 25€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Corte mujer
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400">
                   Corte personalizado con asesoramiento profesional. Incluye lavado y acabado.
                 </p>
               </div>
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Corte hombre
-                  </h4>
-                  <span class="text-primary font-bold">12€ - 15€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Corte hombre
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400">
                   Corte clásico o moderno adaptado a tu estilo. Incluye lavado.
                 </p>
               </div>
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Corte niño/niña
-                  </h4>
-                  <span class="text-primary font-bold">10€ - 12€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Corte niño/niña
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400">
                   Cortes para los más pequeños en un ambiente agradable y divertido.
                 </p>
               </div>
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Flequillo
-                  </h4>
-                  <span class="text-primary font-bold">5€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Flequillo
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400">
                   Retoque de flequillo entre cortes.
                 </p>
               </div>
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Repaso puntas
-                  </h4>
-                  <span class="text-primary font-bold">8€ - 12€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Repaso puntas
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400">
                   Sanea las puntas sin perder largo. Mantén tu cabello sano.
                 </p>
@@ -185,23 +170,6 @@ useSeoMeta({
                   class="w-8 h-8 text-primary"
                 />
               </div>
-              <div>
-                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">
-                  Precio desde
-                </h3>
-                <p class="text-3xl font-bold text-primary">
-                  12€
-                </p>
-              </div>
-              <div>
-                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">
-                  Duración
-                </h3>
-                <p class="text-lg font-semibold">
-                  30-45 min
-                </p>
-              </div>
-              <hr class="border-gray-200 dark:border-gray-800" />
               <div class="space-y-3">
                 <UButton
                   to="/contacto"
@@ -262,7 +230,7 @@ useSeoMeta({
             Mechas
           </UButton>
           <UButton
-            to="/tratamientos-capilares-pola-de-siero"
+            to="/tratamientos-pola-de-siero"
             color="neutral"
             variant="outline"
             block

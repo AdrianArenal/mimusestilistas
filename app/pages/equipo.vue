@@ -6,25 +6,34 @@ useSeoMeta({
 
 const team = [
   {
-    name: 'Yolanda Díaz',
-    role: 'Estilista Senior',
+    name: 'Yolanda Fernández Díaz',
     image: '/images/yoli.webp',
-    experience: 'Más de 25 años',
-    specialties: ['Corte', 'Peinados', 'Atención al cliente']
+    experience: '30 años de experiencia',
+    specialties: [
+      { name: 'Peluquería', to: '/peluqueria-en-pola-de-siero' },
+      { name: 'Novias', to: '/recogido-novia-en-pola-de-siero' },
+      { name: 'Color', to: '/color-pelo-pola-de-siero' }
+    ]
   },
   {
-    name: 'Carolina San José',
-    role: 'Especialista en Color',
+    name: 'Carolina San José Suárez',
     image: '/images/carolina.webp',
-    experience: 'Más de 15 años',
-    specialties: ['Coloración', 'Mechas y Balayage', 'Corrección de color', 'Técnicas innovadoras']
+    experience: '29 años de experiencia',
+    specialties: [
+      { name: 'Color', to: '/color-pelo-pola-de-siero' },
+      { name: 'Mechas', to: '/mechas-pola-de-siero' },
+      { name: 'Matices', to: '/color-pelo-pola-de-siero' }
+    ]
   },
   {
-    name: 'Raquel González',
-    role: 'Estilista y Especialista en Tratamientos',
+    name: 'Raquel González Cueto',
     image: '/hero/random-3.avif',
-    experience: 'Más de 12 años',
-    specialties: ['Tratamientos capilares', 'Corte', 'Peinados de eventos', 'Cuidado del cabello']
+    experience: '27 años de experiencia',
+    specialties: [
+      { name: 'Mechas', to: '/mechas-pola-de-siero' },
+      { name: 'Balayage', to: '/mechas-pola-de-siero' },
+      { name: 'Babylights', to: '/mechas-pola-de-siero' }
+    ]
   }
 ]
 </script>
@@ -40,6 +49,25 @@ const team = [
     />
 
     <UPageBody>
+      <!-- Header Image -->
+      <div
+        v-motion
+        :initial="{ opacity: 0, y: 20 }"
+        :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 200 } }"
+        class="mb-12 lg:mb-16"
+      >
+        <div class="relative aspect-video lg:aspect-21/9 bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+          <NuxtImg
+            src="/images/17.webp"
+            alt="Equipo Mimu's Estilistas"
+            class="w-full h-full object-cover"
+            loading="eager"
+            quality="95"
+            format="webp"
+          />
+        </div>
+      </div>
+
       <!-- Team members -->
       <div class="space-y-16 lg:space-y-24">
         <div
@@ -77,18 +105,14 @@ const team = [
 
           <!-- Member info -->
           <div :class="{ 'lg:col-start-1 lg:row-start-1': index % 2 === 1 }" class="space-y-6">
-            <!-- Nombre y rol -->
+            <!-- Nombre -->
             <div>
-              <h3 class="text-3xl lg:text-4xl font-bold mb-2 text-gray-900 dark:text-white">
+              <h3 class="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">
                 {{ member.name }}
               </h3>
-              <p class="text-primary font-medium text-xl flex items-center gap-2">
-                <UIcon name="i-lucide-sparkles" class="size-6" />
-                {{ member.role }}
-              </p>
             </div>
 
-            <!-- Experiencia -->
+            <!-- Años de experiencia -->
             <div class="flex items-center gap-3 text-lg">
               <UIcon name="i-lucide-award" class="size-6 text-primary" />
               <span class="text-gray-700 dark:text-gray-300 font-medium">
@@ -103,16 +127,17 @@ const team = [
                 Especialidades
               </p>
               <div class="flex flex-wrap gap-2">
-                <UBadge
-                  v-for="specialty in member.specialties"
-                  :key="specialty"
+                <UButton
+                  v-for="(specialty, idx) in member.specialties"
+                  :key="idx"
+                  :to="specialty.to"
                   color="primary"
                   variant="soft"
                   size="md"
                   class="transition-all duration-300 hover:scale-105 hover:shadow-md"
                 >
-                  {{ specialty }}
-                </UBadge>
+                  {{ specialty.name }}
+                </UButton>
               </div>
             </div>
 
@@ -126,7 +151,7 @@ const team = [
               <template #leading>
                 <UIcon name="i-lucide-calendar" />
               </template>
-              Reservar cita con {{ member.name.split(' ')[0] }}
+              Reservar con {{ member.name.split(' ')[0] }}
             </UButton>
           </div>
         </div>

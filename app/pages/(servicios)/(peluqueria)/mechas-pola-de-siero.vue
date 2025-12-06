@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Mechas en Pola de Siero - Balayage & Babylights | Mimu\'s Estilistas',
-  description: 'Mechas californianas, balayage, babylights y más. Técnicas de iluminación profesional en Pola de Siero. Desde 45€.'
+  description: 'Mechas californianas, balayage, babylights y más. Técnicas de iluminación profesional en Pola de Siero.'
 })
 </script>
 
@@ -71,12 +71,9 @@ useSeoMeta({
             </h3>
             <div class="space-y-4">
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Balayage
-                  </h4>
-                  <span class="text-primary font-bold">60€ - 90€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Balayage
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
                   Técnica a mano alzada que crea un degradado natural y luminoso. 
                   Efecto soleado con transiciones suaves.
@@ -89,12 +86,9 @@ useSeoMeta({
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Babylights
-                  </h4>
-                  <span class="text-primary font-bold">70€ - 100€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Babylights
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
                   Mechas muy finas que imitan el efecto natural del sol en el cabello infantil. 
                   Resultado delicado y sofisticado.
@@ -107,12 +101,9 @@ useSeoMeta({
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Mechas californianas
-                  </h4>
-                  <span class="text-primary font-bold">55€ - 85€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Mechas californianas
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
                   Mechas que aclaran progresivamente desde medios a puntas. 
                   Efecto surfero y natural.
@@ -125,12 +116,9 @@ useSeoMeta({
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Mechas tradicionales
-                  </h4>
-                  <span class="text-primary font-bold">45€ - 65€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Mechas tradicionales
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
                   Mechas con gorro o papel. Iluminación uniforme con contraste definido.
                 </p>
@@ -142,12 +130,9 @@ useSeoMeta({
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Lowlights
-                  </h4>
-                  <span class="text-primary font-bold">50€ - 75€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Lowlights
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
                   Mechas más oscuras que el tono base para aportar profundidad y dimensión.
                 </p>
@@ -270,26 +255,6 @@ useSeoMeta({
                   class="w-8 h-8 text-primary"
                 />
               </div>
-              <div>
-                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">
-                  Precio desde
-                </h3>
-                <p class="text-3xl font-bold text-primary">
-                  45€
-                </p>
-              </div>
-              <div>
-                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">
-                  Duración
-                </h3>
-                <p class="text-lg font-semibold">
-                  2h - 4h
-                </p>
-                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                  Según técnica y cabello
-                </p>
-              </div>
-              <hr class="border-gray-200 dark:border-gray-800" />
               <div class="space-y-3">
                 <UButton
                   to="/contacto"
@@ -350,7 +315,7 @@ useSeoMeta({
             Color
           </UButton>
           <UButton
-            to="/tratamientos-capilares-pola-de-siero"
+            to="/tratamientos-pola-de-siero"
             color="neutral"
             variant="outline"
             block

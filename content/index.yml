@@ -48,20 +48,9 @@ faq:
         - label: ¿Necesito pedir cita previa?
           content: |
             Recomendamos pedir cita previa para asegurarte de que podemos atenderte en el horario que prefieras. Puedes llamarnos al 984 39 02 59, enviarnos un WhatsApp o usar nuestro formulario de contacto. También aceptamos clientes sin cita, aunque podrías tener que esperar.
-        - label: ¿Trabajáis con cita previa o sin cita?
+        - label: ¿Hacéis trabajos para bodas y eventos similares?
           content: |
-            Trabajamos principalmente con cita previa para ofrecer un servicio de calidad sin esperas. Sin embargo, si tenemos disponibilidad en el momento, estaremos encantadas de atenderte sin cita.
-    - title: Precios y Formas de Pago
-      questions:
-        - label: ¿Cuáles son vuestros precios?
-          content: |
-            Nuestros precios varían según el servicio: Corte de mujer desde 18€, Corte de hombre desde 12€, Tinte desde 35€, Mechas/Balayage desde 45€, Tratamientos desde 15€, Manicura desde 10€. Para servicios más específicos o combinados, te recomendamos consultarnos directamente.
-        - label: ¿Qué formas de pago aceptáis?
-          content: |
-            Aceptamos pago en efectivo y tarjeta (crédito y débito). También aceptamos Bizum para mayor comodidad.
-        - label: ¿Hacéis descuentos o tenéis promociones?
-          content: |
-            Sí, regularmente tenemos promociones especiales y bonos de servicios con descuento. Síguenos en nuestras redes sociales o pregunta en la peluquería por nuestras ofertas actuales. También ofrecemos descuentos para estudiantes y jubilados.
+            ¡Por supuesto! Somos especialistas en eventos especiales, especialmente bodas. Ofrecemos servicios de peinados y maquillaje tanto para la novia como para las invitadas. Además, disponemos de servicio a domicilio para realizar el trabajo en el lugar que prefieras, garantizando comodidad y profesionalidad en tu día especial. Contáctanos para planificar tu evento.
     - title: Ubicación y Horarios
       questions:
         - label: ¿Dónde estáis ubicados?
@@ -70,6 +59,6 @@ faq:
         - label: ¿Cuál es vuestro horario?
           content: |
             Lunes - Martes: de 9:30 - 13:30 y 15:30 - 19:00. Miércoles: cerrado. Jueves - Viernes: 9:30 - 19:00. Sábado: 9:30 - 13:30. Domingos y festivos: cerrados. Durante agosto, nuestro horario puede variar, consulta en nuestras redes sociales.
-        - label: ¿Ofrecéis servicios a domicilio?
+        - label: ¿El local es accesible para personas con movilidad reducida?
           content: |
-            Actualmente no ofrecemos servicios a domicilio regulares, pero para ocasiones especiales como bodas o eventos, podemos estudiar tu caso. Contáctanos y te informaremos de las posibilidades.
+            Sí, nuestro salón cumple con todos los requisitos de accesibilidad para personas con movilidad reducida. Disponemos de acceso sin barreras arquitectónicas y espacios amplios para garantizar la comodidad de todos nuestros clientes.

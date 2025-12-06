@@ -10,8 +10,6 @@ const services = [
     title: 'Recogidos de Novia',
     description: 'Peinados de novia personalizados para tu día más especial',
     icon: 'i-lucide-heart',
-    price: 'Desde 80€',
-    duration: '90-120 min',
     featured: true,
     url: '/recogido-novia-en-pola-de-siero'
   },
@@ -19,8 +17,6 @@ const services = [
     title: 'Peluquería',
     description: 'Servicios completos: peinados, color, mechas, corte y tratamientos capilares',
     icon: 'i-lucide-scissors',
-    price: 'Desde 12€',
-    duration: '30 min - 3 horas',
     featured: true,
     url: '/peluqueria-en-pola-de-siero'
   },
@@ -28,8 +24,6 @@ const services = [
     title: 'Estética',
     description: 'Manicura, pedicura, uñas de gel y maquillaje profesional',
     icon: 'i-lucide-sparkles',
-    price: 'Desde 15€',
-    duration: '45 min - 1h 30 min',
     featured: true,
     url: '/estetica-en-pola-de-siero'
   }
@@ -96,33 +90,16 @@ useSeoMeta({
                   class="w-6 h-6 text-primary"
                 />
               </div>
-              <div>
-                <h3 class="text-lg font-semibold">
-                  {{ service.title }}
-                </h3>
-                <p 
-                  v-if="service.duration"
-                  class="text-sm text-gray-500 dark:text-gray-400 mt-1"
-                >
-                  {{ service.duration }}
-                </p>
-              </div>
+              <h3 class="text-lg font-semibold">
+                {{ service.title }}
+              </h3>
             </div>
 
             <p class="text-gray-600 dark:text-gray-300 mb-4 grow">
               {{ service.description }}
             </p>
 
-            <div class="pt-4 border-t border-gray-200 dark:border-gray-800 space-y-3">
-              <div class="flex items-center justify-between">
-                <span class="text-xl font-bold text-primary">
-                  {{ service.price }}
-                </span>
-                <span v-if="service.duration" class="text-sm text-gray-500 dark:text-gray-400">
-                  {{ service.duration }}
-                </span>
-              </div>
-              
+            <div class="pt-4 border-t border-gray-200 dark:border-gray-800">
               <div class="flex gap-2">
                 <UButton
                   :to="service.url"

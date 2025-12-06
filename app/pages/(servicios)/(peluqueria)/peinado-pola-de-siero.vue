@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Peinados en Pola de Siero - Mimu\'s Estilistas',
-  description: 'Peinados profesionales para todo tipo de eventos y ocasiones en Pola de Siero. Desde 15€. Reserva tu cita.'
+  description: 'Peinados profesionales para todo tipo de eventos y ocasiones en Pola de Siero. Reserva tu cita.'
 })
 </script>
 
@@ -71,12 +71,9 @@ useSeoMeta({
             </h3>
             <div class="space-y-4">
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Peinado casual
-                  </h4>
-                  <span class="text-primary font-bold">15€ - 20€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Peinado casual
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
                   Peinados sencillos y elegantes para el día a día. Ondas suaves, alisados, 
                   coletas sofisticadas o semirecogidos.
@@ -87,12 +84,9 @@ useSeoMeta({
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Peinado para eventos
-                  </h4>
-                  <span class="text-primary font-bold">25€ - 35€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Peinado para eventos
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
                   Peinados más elaborados con ondas marcadas, recogidos elegantes, trenzas 
                   sofisticadas o semirecogidos con volumen.
@@ -103,12 +97,9 @@ useSeoMeta({
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Peinado alta ceremonia
-                  </h4>
-                  <span class="text-primary font-bold">40€ - 60€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Peinado alta ceremonia
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
                   Peinados espectaculares con técnicas avanzadas. Recogidos altos, moños bajos 
                   con trenzas, peinados estructurados con accesorios.
@@ -119,15 +110,12 @@ useSeoMeta({
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Ondas y rizos
-                  </h4>
-                  <span class="text-primary font-bold">20€ - 30€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Ondas y rizos
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
                   Marcado de ondas suaves, rizos definidos o bucles glamourosos con tenacillas 
-                  o plancha. Duradero y con movimiento natural.
+                  o plancha. Acabado duradero y con movimiento natural.
                 </p>
                 <p class="text-xs text-gray-500 dark:text-gray-400">
                   Ideal para: Cualquier ocasión, look romántico
@@ -135,12 +123,9 @@ useSeoMeta({
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Alisado profesional
-                  </h4>
-                  <span class="text-primary font-bold">15€ - 25€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Alisado profesional
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
                   Alisado con plancha profesional que elimina el frizz y aporta brillo y suavidad. 
                   Acabado pulido y elegante.
@@ -151,12 +136,9 @@ useSeoMeta({
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Trenzas y recogidos
-                  </h4>
-                  <span class="text-primary font-bold">25€ - 45€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Trenzas y recogidos
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
                   Trenzas de espiga, boxer, holandesas, francesas. Recogidos bajos, moños 
                   románticos o estructurados.
@@ -235,7 +217,7 @@ useSeoMeta({
                   class="size-5 text-primary mt-0.5 shrink-0"
                 />
                 <div>
-                  <span class="font-medium">Mayor duración:</span> Técnicas profesionales que aguantan todo el día
+                  <span class="font-medium">Resultado profesional:</span> Técnicas profesionales que aguantan todo el día
                 </div>
               </li>
               <li class="flex items-start gap-2">
@@ -347,26 +329,6 @@ useSeoMeta({
                   class="w-8 h-8 text-primary"
                 />
               </div>
-              <div>
-                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">
-                  Precio desde
-                </h3>
-                <p class="text-3xl font-bold text-primary">
-                  15€
-                </p>
-              </div>
-              <div>
-                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">
-                  Duración
-                </h3>
-                <p class="text-lg font-semibold">
-                  30min - 1h 30min
-                </p>
-                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                  Según complejidad
-                </p>
-              </div>
-              <hr class="border-gray-200 dark:border-gray-800" />
               <div class="p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-800">
                 <h4 class="font-semibold mb-2 text-sm flex items-center gap-2">
                   <UIcon
@@ -440,7 +402,7 @@ useSeoMeta({
             Mechas
           </UButton>
           <UButton
-            to="/tratamientos-capilares-pola-de-siero"
+            to="/tratamientos-pola-de-siero"
             color="neutral"
             variant="outline"
             block

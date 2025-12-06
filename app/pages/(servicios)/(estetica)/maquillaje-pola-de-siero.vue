@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Maquillaje en Pola de Siero - Novias y Eventos | Mimu\'s Estilistas',
-  description: 'Maquillaje profesional para bodas, eventos y ocasiones especiales en Pola de Siero. Novias, invitadas y más. Desde 25€.'
+  description: 'Maquillaje profesional para bodas, eventos y ocasiones especiales en Pola de Siero. Novias, invitadas y más.'
 })
 </script>
 
@@ -60,8 +60,7 @@ useSeoMeta({
             </h2>
             <p class="text-gray-600 dark:text-gray-300">
               Nuestro servicio de maquillaje profesional está diseñado para realzar tu belleza natural 
-              y adaptarse perfectamente a cada ocasión. Utilizamos productos de alta calidad de larga 
-              duración para que te sientas segura y hermosa durante todo el evento.
+              y adaptarse perfectamente a cada ocasión. Utilizamos productos de alta calidad para que te sientas segura y hermosa durante todo el evento.
             </p>
           </UCard>
 
@@ -71,12 +70,9 @@ useSeoMeta({
             </h3>
             <div class="space-y-4">
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Maquillaje de día
-                  </h4>
-                  <span class="text-primary font-bold">25€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Maquillaje de día
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
                   Maquillaje natural y ligero que realza tus rasgos sin recargar. 
                   Perfecto para el día a día o eventos diurnos.
@@ -89,12 +85,9 @@ useSeoMeta({
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Maquillaje de noche
-                  </h4>
-                  <span class="text-primary font-bold">35€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Maquillaje de noche
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
                   Maquillaje más intenso y duradero para eventos nocturnos. 
                   Acentúa tus rasgos con técnicas de contorno e iluminación.
@@ -107,19 +100,15 @@ useSeoMeta({
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Maquillaje de novia
-                  </h4>
-                  <span class="text-primary font-bold">60€ - 80€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Maquillaje de novia
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
                   Maquillaje especial para el día más importante. Prueba previa incluida 
-                  para asegurar el look perfecto. Productos de larga duración.
+                  para asegurar el look perfecto.
                 </p>
                 <div class="flex flex-wrap gap-2 mt-2">
                   <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Prueba incluida</span>
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Larga duración</span>
                   <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Personalizado</span>
                 </div>
                 <div class="mt-3 p-3 bg-white dark:bg-gray-900 rounded border border-primary/30">
@@ -127,7 +116,7 @@ useSeoMeta({
                     ✨ Incluye:
                   </p>
                   <ul class="text-xs space-y-1 text-gray-600 dark:text-gray-400">
-                    <li>• Prueba previa (2-4 semanas antes)</li>
+                    <li>• Prueba previa</li>
                     <li>• Maquillaje el día de la boda</li>
                     <li>• Productos profesionales waterproof</li>
                     <li>• Retoques y kit de emergencia</li>
@@ -136,12 +125,9 @@ useSeoMeta({
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Maquillaje para invitadas
-                  </h4>
-                  <span class="text-primary font-bold">40€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Maquillaje para invitadas
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
                   Maquillaje elegante para bodas, comuniones o bautizos. 
                   Adaptado a tu vestimenta y al tipo de evento.
@@ -154,12 +140,9 @@ useSeoMeta({
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Maquillaje para eventos especiales
-                  </h4>
-                  <span class="text-primary font-bold">35€ - 50€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Maquillaje para eventos especiales
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400">
                   Galas, fiestas, graduaciones o sesiones fotográficas. 
                   Maquillaje personalizado según la ocasión.
@@ -167,15 +150,11 @@ useSeoMeta({
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Prueba de maquillaje
-                  </h4>
-                  <span class="text-primary font-bold">30€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Prueba de maquillaje
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Sesión para probar diferentes estilos y decidir tu look. 
-                  Importe descontable del servicio final.
+                  Sesión para probar diferentes estilos y decidir tu look.
                 </p>
               </div>
             </div>
@@ -364,25 +343,6 @@ useSeoMeta({
                   name="i-lucide-palette"
                   class="w-8 h-8 text-primary"
                 />
-              </div>
-              <div>
-                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">
-                  Precio desde
-                </h3>
-                <p class="text-3xl font-bold text-primary">
-                  25€
-                </p>
-              </div>
-              <div>
-                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">
-                  Duración
-                </h3>
-                <p class="text-lg font-semibold">
-                  45min - 1h 30min
-                </p>
-                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                  Según estilo
-                </p>
               </div>
               <hr class="border-gray-200 dark:border-gray-800" />
               <div class="p-4 bg-primary/10 rounded-lg">
