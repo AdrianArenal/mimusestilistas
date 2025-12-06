@@ -217,52 +217,7 @@ useSeoMeta({
             </div>
           </UCard>
 
-          <UCard
-            v-motion
-            :initial="{ opacity: 0, y: 20 }"
-            :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 400 } }"
-          >
-            <h3 class="text-xl font-semibold mb-4">
-              Precios
-            </h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div class="p-4 bg-primary/5 rounded-lg border border-primary/20">
-                <p class="font-medium mb-1">
-                  Recogido sencillo
-                </p>
-                <p class="text-2xl font-bold text-primary">
-                  25€
-                </p>
-              </div>
-              <div class="p-4 bg-primary/5 rounded-lg border border-primary/20">
-                <p class="font-medium mb-1">
-                  Recogido elaborado
-                </p>
-                <p class="text-2xl font-bold text-primary">
-                  35€ - 45€
-                </p>
-              </div>
-              <div class="p-4 bg-primary/5 rounded-lg border border-primary/20">
-                <p class="font-medium mb-1">
-                  Ondas / Planchado
-                </p>
-                <p class="text-2xl font-bold text-primary">
-                  20€ - 30€
-                </p>
-              </div>
-              <div class="p-4 bg-primary/5 rounded-lg border border-primary/20">
-                <p class="font-medium mb-1">
-                  Peinado niña (comunión)
-                </p>
-                <p class="text-2xl font-bold text-primary">
-                  15€ - 25€
-                </p>
-              </div>
-            </div>
-            <p class="mt-4 text-sm text-gray-500">
-              *Los precios pueden variar según la complejidad y longitud del cabello
-            </p>
-          </UCard>
+
         </div>
 
         <!-- Sidebar -->
@@ -280,23 +235,6 @@ useSeoMeta({
                   class="w-8 h-8 text-primary"
                 />
               </div>
-              <div>
-                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">
-                  Precio desde
-                </h3>
-                <p class="text-3xl font-bold text-primary">
-                  15€
-                </p>
-              </div>
-              <div>
-                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">
-                  Duración
-                </h3>
-                <p class="text-lg font-semibold">
-                  45-75 min
-                </p>
-              </div>
-              <hr class="border-gray-200 dark:border-gray-800" />
               <div class="space-y-3">
                 <UButton
                   to="/contacto"

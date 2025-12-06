@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Uñas en Pola de Siero - Manicura y Pedicura | Mimu\'s Estilistas',
-  description: 'Manicura, pedicura y uñas de gel profesionales en Pola de Siero. Esmaltado semipermanente. Desde 15€. Pide cita.'
+  description: 'Manicura, pedicura y uñas de gel profesionales en Pola de Siero. Esmaltado semipermanente. Pide cita.'
 })
 </script>
 
@@ -71,12 +71,9 @@ useSeoMeta({
             </h3>
             <div class="space-y-4">
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Manicura básica
-                  </h4>
-                  <span class="text-primary font-bold">15€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Manicura básica
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400">
                   Limado, cuidado de cutículas, hidratación y esmaltado clásico. 
                   El cuidado esencial para uñas saludables.
@@ -84,30 +81,23 @@ useSeoMeta({
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Manicura con esmaltado semipermanente
-                  </h4>
-                  <span class="text-primary font-bold">25€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Manicura con esmaltado semipermanente
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                  Manicura completa con esmaltado que dura hasta 3 semanas sin desconcharse. 
+                  Manicura completa con esmaltado de alta calidad sin desconcharse. 
                   Brillo perfecto y duradero.
                 </p>
                 <div class="flex flex-wrap gap-2 mt-2">
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Duración 3 semanas</span>
                   <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">No descascarilla</span>
                   <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Brillo intenso</span>
                 </div>
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Uñas de gel
-                  </h4>
-                  <span class="text-primary font-bold">35€ - 45€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Uñas de gel
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
                   Construcción con gel para alargar y fortalecer tus uñas naturales. 
                   Acabado natural y resistente.
@@ -120,39 +110,29 @@ useSeoMeta({
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Relleno de gel
-                  </h4>
-                  <span class="text-primary font-bold">30€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Relleno de gel
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Mantenimiento de tus uñas de gel. Recomendado cada 3-4 semanas.
+                  Mantenimiento de tus uñas de gel.
                 </p>
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Retirada de semipermanente o gel
-                  </h4>
-                  <span class="text-primary font-bold">8€ - 12€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Retirada de semipermanente o gel
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400">
                   Retirada profesional sin dañar la uña natural. Incluye hidratación.
                 </p>
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Nail art y decoración
-                  </h4>
-                  <span class="text-primary font-bold">Desde 3€/uña</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Nail art y decoración
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                  Diseños personalizados, degradados, francesas, pedrería y más. 
-                  Precio según complejidad.
+                  Diseños personalizados, degradados, francesas, pedrería y más.
                 </p>
                 <div class="flex flex-wrap gap-2 mt-2">
                   <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Francesas</span>
@@ -169,12 +149,9 @@ useSeoMeta({
             </h3>
             <div class="space-y-4">
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Pedicura básica
-                  </h4>
-                  <span class="text-primary font-bold">20€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Pedicura básica
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400">
                   Baño, limado, tratamiento de cutículas, exfoliación, hidratación y esmaltado. 
                   Pies suaves y cuidados.
@@ -182,25 +159,19 @@ useSeoMeta({
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Pedicura con semipermanente
-                  </h4>
-                  <span class="text-primary font-bold">30€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Pedicura con semipermanente
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Pedicura completa con esmaltado semipermanente de larga duración. 
+                  Pedicura completa con esmaltado semipermanente. 
                   Perfecto para el verano.
                 </p>
               </div>
 
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Pedicura spa
-                  </h4>
-                  <span class="text-primary font-bold">35€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Pedicura spa
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
                   Pedicura completa con masaje relajante, mascarilla nutritiva y parafina. 
                   Experiencia de bienestar total.
@@ -243,7 +214,7 @@ useSeoMeta({
                   class="size-5 text-primary mt-0.5 shrink-0"
                 />
                 <div>
-                  <span class="font-medium">Mantenimiento regular:</span> Retoca el semipermanente cada 3 semanas
+                  <span class="font-medium">Mantenimiento regular:</span> Retoca el semipermanente regularmente
                 </div>
               </li>
               <li class="flex items-start gap-2">
@@ -276,25 +247,6 @@ useSeoMeta({
                   name="i-lucide-sparkle"
                   class="w-8 h-8 text-primary"
                 />
-              </div>
-              <div>
-                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">
-                  Precio desde
-                </h3>
-                <p class="text-3xl font-bold text-primary">
-                  15€
-                </p>
-              </div>
-              <div>
-                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">
-                  Duración
-                </h3>
-                <p class="text-lg font-semibold">
-                  45min - 1h 30min
-                </p>
-                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                  Según servicio
-                </p>
               </div>
               <hr class="border-gray-200 dark:border-gray-800" />
               <div class="p-4 bg-primary/10 rounded-lg">

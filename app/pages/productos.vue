@@ -15,7 +15,6 @@ const products = [
     title: 'Champús Profesionales',
     description: 'Champús de alta calidad para todo tipo de cabello',
     category: 'Cuidado Capilar',
-    price: '12€ - 25€',
     image: '/hero/random-1.avif',
     featured: true,
     brand: 'Varias marcas profesionales',
@@ -30,7 +29,6 @@ const products = [
         { name: 'Champú sin sulfatos', description: 'Limpieza suave y natural' },
         { name: 'Champú fortalecedor', description: 'Para cabellos débiles y con tendencia a caerse' }
       ],
-      priceInfo: 'Desde 12€ hasta 25€ según marca y tamaño',
       recommendations: 'Aplica sobre el cabello húmedo, masajea suavemente y aclara con agua abundante. Para mejores resultados, combínalo con el acondicionador de la misma gama.'
     }
   },
@@ -38,7 +36,6 @@ const products = [
     title: 'Acondicionadores y Mascarillas',
     description: 'Tratamientos intensivos para nutrir y reparar tu cabello',
     category: 'Tratamientos',
-    price: '15€ - 35€',
     image: '/hero/random-2.avif',
     featured: true,
     brand: 'Varias marcas profesionales',
@@ -52,7 +49,6 @@ const products = [
         { name: 'Mascarillas de keratina', description: 'Reestructura la fibra capilar' },
         { name: 'Tratamientos de aceites', description: 'Nutrición extrema para cabellos muy secos' }
       ],
-      priceInfo: 'Acondicionadores: 15€ - 22€ | Mascarillas: 20€ - 35€',
       recommendations: 'Acondicionador: Aplica después del champú, deja actuar 2-3 minutos y aclara. Mascarilla: Usa 1-2 veces por semana, deja actuar 5-10 minutos antes de aclarar.'
     }
   },
@@ -60,7 +56,6 @@ const products = [
     title: 'Productos de Styling',
     description: 'Fija, moldea y da forma a tu peinado',
     category: 'Styling',
-    price: '10€ - 28€',
     image: '/hero/random-3.avif',
     featured: true,
     brand: 'Varias marcas profesionales',
@@ -76,7 +71,6 @@ const products = [
         { name: 'Sprays de brillo', description: 'Acabado luminoso' },
         { name: 'Protectores térmicos', description: 'Protege del calor de planchas y secadores' }
       ],
-      priceInfo: 'Desde 10€ hasta 28€ según producto y tamaño',
       recommendations: 'Aplica sobre cabello húmedo o seco según el producto. Empieza con poca cantidad e incrementa según necesites. Para looks naturales, distribuye bien el producto por todo el cabello.'
     }
   },
@@ -84,7 +78,6 @@ const products = [
     title: 'Tintes y Coloración',
     description: 'Coloración profesional para usar en casa',
     category: 'Color',
-    price: '8€ - 18€',
     image: '/hero/random-4.avif',
     featured: false,
     brand: 'Varias marcas profesionales',
@@ -98,7 +91,6 @@ const products = [
         { name: 'Baños de color', description: 'Refrescar el tono sin compromiso' },
         { name: 'Decolorantes', description: 'Para aclarar el cabello (uso profesional recomendado)' }
       ],
-      priceInfo: 'Tintes permanentes: 12€ - 18€ | Tintes semi-permanentes: 10€ - 15€ | Tintes fantasía: 8€ - 16€',
       recommendations: 'Para cambios de color drásticos, correcciones o si es tu primera vez, te recomendamos encarecidamente que acudas a nuestro salón. Carolina, nuestra especialista en color, te asesorará y conseguirá resultados profesionales.'
     }
   },
@@ -106,7 +98,6 @@ const products = [
     title: 'Cepillos y Accesorios',
     description: 'Herramientas profesionales para tu cabello',
     category: 'Accesorios',
-    price: '5€ - 45€',
     image: '/hero/random-5.avif',
     featured: false,
     brand: 'Varias marcas',
@@ -122,7 +113,6 @@ const products = [
         { name: 'Pinzas y coleteros', description: 'Accesorios para el día a día' },
         { name: 'Gorros de ducha', description: 'Protege tu peinado' }
       ],
-      priceInfo: 'Cepillos profesionales: 15€ - 45€ | Peines: 5€ - 12€ | Accesorios: 3€ - 10€',
       recommendations: 'Consulta con nuestro equipo qué cepillo es el más adecuado para tu tipo de cabello y las técnicas de peinado que utilizas habitualmente.'
     }
   },
@@ -130,7 +120,6 @@ const products = [
     title: 'Kits y Packs Regalo',
     description: 'Packs completos de productos con descuento',
     category: 'Packs',
-    price: '25€ - 60€',
     image: '/hero/random-6.avif',
     featured: true,
     brand: 'Varias marcas profesionales',
@@ -144,8 +133,7 @@ const products = [
         { name: 'Pack Reparación', description: 'Champú reparador + Mascarilla intensiva + Aceite nutritivo' },
         { name: 'Pack Completo', description: 'Champú + Acondicionador + Mascarilla + Producto styling' }
       ],
-      priceInfo: 'Pack básico (2 productos): 25€ - 35€ | Pack completo (3-4 productos): 40€ - 60€',
-      recommendations: 'Los packs ofrecen hasta un 20% de descuento sobre el precio individual de los productos. Pregúntanos por las ofertas actuales y packs personalizados. Todos nuestros packs se pueden presentar en bonitas bolsas regalo sin coste adicional. ¡El regalo perfecto para cualquier ocasión!'
+      recommendations: 'Pregúntanos por las ofertas actuales y packs personalizados. Todos nuestros packs se pueden presentar en bonitas bolsas regalo. ¡El regalo perfecto para cualquier ocasión!'
     }
   }
 ]
@@ -233,13 +221,6 @@ useSeoMeta({
                 <p class="text-lg text-muted">
                   {{ product.description }}
                 </p>
-                <div class="flex items-center gap-2 text-primary">
-                  <UIcon
-                    name="i-lucide-tag"
-                    class="size-5"
-                  />
-                  <span class="text-xl font-semibold">{{ product.price }}</span>
-                </div>
               </div>
 
               <hr class="border-gray-200 dark:border-gray-800" />
@@ -282,29 +263,7 @@ useSeoMeta({
               </div>
 
               <!-- Info adicional -->
-              <div class="grid sm:grid-cols-2 gap-4">
-                <UCard
-                  :ui="{
-                    body: { padding: 'p-4' },
-                    background: 'bg-primary-50 dark:bg-primary-950/30'
-                  }"
-                >
-                  <div class="space-y-1">
-                    <div class="flex items-center gap-2 text-primary">
-                      <UIcon
-                        name="i-lucide-coins"
-                        class="size-4"
-                      />
-                      <h5 class="text-sm font-semibold">
-                        Precios
-                      </h5>
-                    </div>
-                    <p class="text-xs text-muted">
-                      {{ product.details.priceInfo }}
-                    </p>
-                  </div>
-                </UCard>
-
+              <div>
                 <UCard
                   :ui="{
                     body: { padding: 'p-4' },

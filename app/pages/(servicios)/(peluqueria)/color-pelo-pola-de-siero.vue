@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Color de Pelo en Pola de Siero - Mimu\'s Estilistas',
-  description: 'Tintes profesionales y coloración personalizada en Pola de Siero. Marcas de calidad. Desde 25€. Pide tu cita.'
+  description: 'Tintes profesionales y coloración personalizada en Pola de Siero. Marcas de calidad. Pide tu cita.'
 })
 </script>
 
@@ -71,56 +71,41 @@ useSeoMeta({
             </h3>
             <div class="space-y-4">
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Color raíces
-                  </h4>
-                  <span class="text-primary font-bold">25€ - 35€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Color raíces
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400">
                   Retoque de raíces para mantener tu color perfecto. Incluye lavado y secado.
                 </p>
               </div>
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Color completo
-                  </h4>
-                  <span class="text-primary font-bold">40€ - 60€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Color completo
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400">
                   Coloración de todo el cabello. Cambio de look o mantenimiento total.
                 </p>
               </div>
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Baño de color
-                  </h4>
-                  <span class="text-primary font-bold">30€ - 40€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Baño de color
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400">
                   Tonifica y aporta brillo sin modificar drásticamente tu color base.
                 </p>
               </div>
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Decoloración
-                  </h4>
-                  <span class="text-primary font-bold">Desde 50€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Decoloración
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400">
                   Para cambios radicales o base para colores fantasía. Requiere valoración previa.
                 </p>
               </div>
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <div class="flex justify-between items-start mb-2">
-                  <h4 class="font-semibold">
-                    Decapado
-                  </h4>
-                  <span class="text-primary font-bold">Desde 45€</span>
-                </div>
+                <h4 class="font-semibold mb-2">
+                  Decapado
+                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400">
                   Eliminación de color artificial para corregir tonos o preparar nuevo color.
                 </p>
@@ -222,26 +207,6 @@ useSeoMeta({
                   class="w-8 h-8 text-primary"
                 />
               </div>
-              <div>
-                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">
-                  Precio desde
-                </h3>
-                <p class="text-3xl font-bold text-primary">
-                  25€
-                </p>
-              </div>
-              <div>
-                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">
-                  Duración
-                </h3>
-                <p class="text-lg font-semibold">
-                  1h 30min - 3h
-                </p>
-                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                  Según técnica
-                </p>
-              </div>
-              <hr class="border-gray-200 dark:border-gray-800" />
               <div class="space-y-3">
                 <UButton
                   to="/contacto"

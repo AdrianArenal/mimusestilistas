@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Estética en Pola de Siero - Uñas y Maquillaje | Mimu\'s Estilistas',
-  description: 'Servicios de estética profesional en Pola de Siero: manicura, pedicura, uñas de gel y maquillaje. Desde 15€. Reserva tu cita.'
+  description: 'Servicios de estética profesional en Pola de Siero: manicura, pedicura, uñas de gel y maquillaje. Reserva tu cita.'
 })
 
 const services = [
@@ -9,8 +9,6 @@ const services = [
     title: 'Uñas',
     description: 'Manicura, pedicura y uñas de gel con acabados perfectos',
     icon: 'i-lucide-sparkle',
-    price: 'Desde 15€',
-    duration: '45min - 1h 30min',
     link: '/unas-pola-de-siero',
     features: [
       'Manicura y pedicura',
@@ -23,8 +21,6 @@ const services = [
     title: 'Maquillaje',
     description: 'Maquillaje profesional para eventos y ocasiones especiales',
     icon: 'i-lucide-palette',
-    price: 'Desde 25€',
-    duration: '45min - 1h 30min',
     link: '/maquillaje-pola-de-siero',
     features: [
       'Maquillaje de día',
@@ -132,23 +128,6 @@ const services = [
                     <p class="text-gray-600 dark:text-gray-400 text-sm">
                       {{ service.description }}
                     </p>
-                  </div>
-                </div>
-
-                <div class="flex items-center gap-4 mb-4 text-sm">
-                  <div class="flex items-center gap-2">
-                    <UIcon
-                      name="i-lucide-euro"
-                      class="size-4 text-primary"
-                    />
-                    <span class="font-semibold text-primary">{{ service.price }}</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <UIcon
-                      name="i-lucide-clock"
-                      class="size-4 text-gray-500"
-                    />
-                    <span class="text-gray-600 dark:text-gray-400">{{ service.duration }}</span>
                   </div>
                 </div>
 

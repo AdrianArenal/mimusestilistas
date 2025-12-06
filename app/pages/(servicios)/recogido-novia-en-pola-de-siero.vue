@@ -63,7 +63,7 @@ useSeoMeta({
               <li class="flex items-start gap-2">
                 <UIcon name="i-lucide-check" class="w-5 h-5 text-primary mt-0.5" />
                 <div>
-                  <span class="font-medium">Prueba previa personalizada:</span> Incluida en el precio
+                  <span class="font-medium">Prueba previa personalizada:</span> Incluida
                 </div>
               </li>
               <li class="flex items-start gap-2">
@@ -120,7 +120,7 @@ useSeoMeta({
           <UCard>
             <h3 class="text-xl font-semibold mb-4">Prueba de peinado</h3>
             <p class="text-gray-600 dark:text-gray-300 mb-4">
-              La prueba previa está incluida en el precio y es fundamental para:
+              La prueba previa está incluida y es fundamental para:
             </p>
             <ul class="space-y-2 text-gray-600 dark:text-gray-300">
               <li class="flex items-start gap-2">
@@ -140,29 +140,6 @@ useSeoMeta({
                 Resolver cualquier duda que tengas
               </li>
             </ul>
-          </UCard>
-
-          <UCard>
-            <h3 class="text-xl font-semibold mb-4">Precios</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                <p class="font-medium mb-1">Recogido de novia completo</p>
-                <p class="text-primary font-bold">80€ - 100€</p>
-                <p class="text-xs text-gray-500 mt-1">Incluye prueba previa</p>
-              </div>
-              <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                <p class="font-medium mb-1">Peinado madrina/invitada</p>
-                <p class="text-primary font-bold">50€ - 60€</p>
-              </div>
-              <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                <p class="font-medium mb-1">Pack novia + 2 madrinas</p>
-                <p class="text-primary font-bold">180€</p>
-              </div>
-              <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                <p class="font-medium mb-1">Desplazamiento</p>
-                <p class="text-primary font-bold">Consultar</p>
-              </div>
-            </div>
           </UCard>
 
           <UCard>
@@ -214,18 +191,6 @@ useSeoMeta({
               <div class="p-4 bg-primary/10 rounded-lg w-fit">
                 <UIcon name="i-lucide-heart" class="w-8 h-8 text-primary" />
               </div>
-              
-              <div>
-                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">Precio</h3>
-                <p class="text-2xl font-bold text-primary">Desde 80€</p>
-              </div>
-
-              <div>
-                <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">Duración</h3>
-                <p class="text-lg font-semibold">90-120 min</p>
-              </div>
-
-              <hr class="border-gray-200 dark:border-gray-700" />
 
               <div class="space-y-3">
                 <UButton to="/contacto" block size="lg" color="primary">
