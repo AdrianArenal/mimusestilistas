@@ -7,13 +7,6 @@ if (!page.value) {
 
 const services = [
   {
-    title: 'Recogidos de Novia',
-    description: 'Peinados de novia personalizados para tu día más especial',
-    icon: 'i-lucide-heart',
-    featured: true,
-    url: '/recogido-novia-en-pola-de-siero'
-  },
-  {
     title: 'Peluquería',
     description: 'Servicios completos: peinados, color, mechas, corte y tratamientos capilares',
     icon: 'i-lucide-scissors',
@@ -26,6 +19,13 @@ const services = [
     icon: 'i-lucide-sparkles',
     featured: true,
     url: '/estetica-en-pola-de-siero'
+  },
+  {
+    title: 'Bodas y Eventos',
+    description: 'Peinados para novias, peinados y maquillaje para invitadas',
+    icon: 'i-lucide-heart',
+    featured: true,
+    url: '/novia-en-pola-de-siero'
   }
 ]
 
@@ -37,58 +37,32 @@ useSeoMeta({
 
 <template>
   <UContainer class="py-12">
-    <UPageHeader
-      v-motion
-      :initial="{ opacity: 0, y: 20 }"
-      :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-      :title="page?.title"
-      :description="page?.description"
-    >
+    <UPageHeader v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
+      :title="page?.title" :description="page?.description">
       <template #links>
         <div class="flex flex-wrap gap-3">
-          <UButton
-            v-if="page?.cta?.primary"
-            v-bind="page.cta.primary"
-            size="lg"
-          />
-          <UButton
-            v-if="page?.cta?.secondary"
-            v-bind="page.cta.secondary"
-            color="neutral"
-            variant="outline"
-            size="lg"
-          />
+          <UButton v-if="page?.cta?.primary" v-bind="page.cta.primary" size="lg" />
+          <UButton v-if="page?.cta?.secondary" v-bind="page.cta.secondary" color="neutral" variant="outline"
+            size="lg" />
         </div>
       </template>
     </UPageHeader>
 
     <UPageBody>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-        <UCard
-          v-for="(service, index) in services"
-          :key="index"
-          v-motion
-          :initial="{ opacity: 0, y: 30 }"
-          :enter="{ 
-            opacity: 1, 
-            y: 0, 
-            transition: { 
-              duration: 600, 
-              delay: index * 100 
-            } 
-          }"
-          class="p-6 ring-1 ring-gray-200 dark:ring-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
-        >
+        <UCard v-for="(service, index) in services" :key="index" v-motion :initial="{ opacity: 0, y: 30 }" :enter="{
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 600,
+            delay: index * 100
+          }
+        }"
+          class="p-6 ring-1 ring-gray-200 dark:ring-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
           <div class="flex flex-col h-full">
             <div class="flex items-center gap-3 mb-4">
-              <div 
-                v-if="service.icon"
-                class="p-3 bg-primary/10 rounded-lg"
-              >
-                <UIcon
-                  :name="service.icon"
-                  class="w-6 h-6 text-primary"
-                />
+              <div v-if="service.icon" class="p-3 bg-primary/10 rounded-lg">
+                <UIcon :name="service.icon" class="w-6 h-6 text-primary" />
               </div>
               <h3 class="text-lg font-semibold">
                 {{ service.title }}
@@ -100,70 +74,37 @@ useSeoMeta({
             </p>
 
             <div class="pt-4 border-t border-gray-200 dark:border-gray-800">
-              <div class="flex gap-2">
-                <UButton
-                  :to="service.url"
-                  color="primary"
-                  variant="outline"
-                  size="sm"
-                  block
-                >
-                  Ver más
-                  <template #trailing>
-                    <UIcon name="i-lucide-arrow-right" />
-                  </template>
-                </UButton>
-                <UButton
-                  to="/contacto"
-                  color="primary"
-                  size="sm"
-                  block
-                >
-                  Reservar
-                  <template #trailing>
-                    <UIcon name="i-lucide-calendar" />
-                  </template>
-                </UButton>
-              </div>
+              <UButton :to="service.url" color="primary" variant="outline" size="sm" block>
+                Ver más
+                <template #trailing>
+                  <UIcon name="i-lucide-arrow-right" />
+                </template>
+              </UButton>
             </div>
           </div>
         </UCard>
       </div>
 
       <!-- Call to Action Section -->
-      <div
-        v-motion
-        :initial="{ opacity: 0, y: 30 }"
-        :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 600 } }"
-        class="mt-16 text-center"
-      >
+      <div v-motion :initial="{ opacity: 0, y: 30 }"
+        :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 600 } }" class="mt-16 text-center">
         <UCard
-          class="p-8 bg-linear-to-r from-primary/10 via-primary/5 to-primary/10 ring-1 ring-primary/20 rounded-2xl"
-        >
+          class="p-8 bg-linear-to-r from-primary/10 via-primary/5 to-primary/10 ring-1 ring-primary/20 rounded-2xl">
           <h2 class="text-2xl md:text-3xl font-bold mb-4">
             ¿Lista para tu transformación?
           </h2>
           <p class="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-            Reserva tu cita ahora y deja que nuestro equipo de profesionales cuide de ti. 
+            Reserva tu cita ahora y deja que nuestro equipo de profesionales cuide de ti.
             Más de 20 años de experiencia respaldan nuestro trabajo.
           </p>
           <div class="flex flex-wrap gap-3 justify-center">
-            <UButton
-              to="/contacto"
-              size="lg"
-              color="primary"
-            >
+            <UButton to="/contacto" size="lg" color="primary">
               <template #leading>
                 <UIcon name="i-lucide-calendar" />
               </template>
               Reservar cita
             </UButton>
-            <UButton
-              href="tel:984390259"
-              size="lg"
-              color="neutral"
-              variant="outline"
-            >
+            <UButton href="tel:984390259" size="lg" color="neutral" variant="outline">
               <template #leading>
                 <UIcon name="i-lucide-phone" />
               </template>

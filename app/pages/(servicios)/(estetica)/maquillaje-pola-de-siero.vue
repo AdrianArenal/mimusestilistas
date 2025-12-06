@@ -353,7 +353,7 @@ useSeoMeta({
                   Prueba previa siempre incluida para novias. Tu día perfecto merece un maquillaje perfecto.
                 </p>
                 <UButton
-                  to="/recogido-novia-en-pola-de-siero"
+                  to="/novia-en-pola-de-siero"
                   size="xs"
                   color="neutral"
                   variant="ghost"
