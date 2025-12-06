@@ -1,7 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Color de Pelo en Pola de Siero - Mimu\'s Estilistas',
-  description: 'Tintes profesionales y coloración personalizada en Pola de Siero. Marcas de calidad. Pide tu cita.'
+  title: 'Color de Pelo',
+  ogTitle: 'Color de Pelo',
+  description: 'Tintes profesionales y coloración personalizada en Pola de Siero. Marcas de calidad. Pide tu cita.',
+  ogDescription: 'Tintes profesionales y coloración personalizada en Pola de Siero. Marcas de calidad. Pide tu cita.'
 })
 </script>
 

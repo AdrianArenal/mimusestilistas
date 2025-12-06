@@ -1,7 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Matizados en Pola de Siero - Mimu\'s Estilistas',
-  description: 'Servicio profesional de matizados para todo tipo de cabello. Consigue el tono perfecto y elimina reflejos no deseados en Pola de Siero, Asturias.'
+  title: 'Matizados',
+  ogTitle: 'Matizados',
+  description: 'Servicio profesional de matizados para todo tipo de cabello. Consigue el tono perfecto y elimina reflejos no deseados en Pola de Siero, Asturias.',
+  ogDescription: 'Servicio profesional de matizados para todo tipo de cabello. Consigue el tono perfecto y elimina reflejos no deseados en Pola de Siero, Asturias.'
 })
 
 const galleryImages = [

@@ -1,7 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Uñas en Pola de Siero - Manicura y Pedicura | Mimu\'s Estilistas',
-  description: 'Manicura, pedicura y uñas de gel profesionales en Pola de Siero. Esmaltado semipermanente. Pide cita.'
+  title: 'Uñas',
+  ogTitle: 'Uñas',
+  description: 'Manicura, pedicura y uñas de gel profesionales en Pola de Siero. Esmaltado semipermanente. Pide cita.',
+  ogDescription: 'Manicura, pedicura y uñas de gel profesionales en Pola de Siero. Esmaltado semipermanente. Pide cita.'
 })
 </script>
 

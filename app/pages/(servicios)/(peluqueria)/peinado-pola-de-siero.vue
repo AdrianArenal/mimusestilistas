@@ -1,7 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Peinados en Pola de Siero - Mimu\'s Estilistas',
-  description: 'Peinados profesionales para todo tipo de eventos y ocasiones en Pola de Siero. Reserva tu cita.'
+  title: 'Peinados',
+  ogTitle: 'Peinados',
+  description: 'Peinados profesionales para todo tipo de eventos y ocasiones en Pola de Siero. Reserva tu cita.',
+  ogDescription: 'Peinados profesionales para todo tipo de eventos y ocasiones en Pola de Siero. Reserva tu cita.'
 })
 </script>
 

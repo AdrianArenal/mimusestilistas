@@ -1,7 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Peluquería en Pola de Siero - Mimu\'s Estilistas',
-  description: 'Servicios completos de peluquería: peinados, color, mechas, corte y tratamientos capilares. Más de 20 años cuidando tu cabello en Pola de Siero, Asturias.'
+  title: 'Peluquería en Pola de Siero',
+  ogTitle: 'Peluquería en Pola de Siero',
+  description: 'Servicios completos de peluquería: peinados, color, mechas, corte y tratamientos capilares. Más de 20 años cuidando tu cabello en Pola de Siero, Asturias.',
+  ogDescription: 'Servicios completos de peluquería: peinados, color, mechas, corte y tratamientos capilares. Más de 20 años cuidando tu cabello en Pola de Siero, Asturias.'
 })
 
 const services = [

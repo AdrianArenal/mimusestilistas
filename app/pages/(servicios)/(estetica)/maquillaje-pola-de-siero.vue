@@ -1,7 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Maquillaje en Pola de Siero - Novias y Eventos | Mimu\'s Estilistas',
-  description: 'Maquillaje profesional para bodas, eventos y ocasiones especiales en Pola de Siero. Novias, invitadas y más.'
+  title: 'Maquillaje',
+  ogTitle: 'Maquillaje',
+  description: 'Maquillaje profesional para bodas, eventos y ocasiones especiales en Pola de Siero. Novias, invitadas y más.',
+  ogDescription: 'Maquillaje profesional para bodas, eventos y ocasiones especiales en Pola de Siero. Novias, invitadas y más.'
 })
 </script>
 

@@ -1,7 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Mechas en Pola de Siero - Balayage & Babylights | Mimu\'s Estilistas',
-  description: 'Mechas californianas, balayage, babylights y más. Técnicas de iluminación profesional en Pola de Siero.'
+  title: 'Mechas y Balayage',
+  ogTitle: 'Mechas y Balayage',
+  description: 'Mechas californianas, balayage, babylights y más. Técnicas de iluminación profesional en Pola de Siero.',
+  ogDescription: 'Mechas californianas, balayage, babylights y más. Técnicas de iluminación profesional en Pola de Siero.'
 })
 </script>
 

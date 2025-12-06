@@ -1,7 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Diseño de Color en Pola de Siero - Mimu\'s Estilistas',
-  description: 'Servicio profesional de diseño de color: decoloración, color completo, baño de color y color de raíces. Personaliza tu look en Pola de Siero, Asturias.'
+  title: 'Diseño de Color',
+  ogTitle: 'Diseño de Color',
+  description: 'Servicio profesional de diseño de color: decoloración, color completo, baño de color y color de raíces. Personaliza tu look en Pola de Siero, Asturias.',
+  ogDescription: 'Servicio profesional de diseño de color: decoloración, color completo, baño de color y color de raíces. Personaliza tu look en Pola de Siero, Asturias.'
 })
 
 const galleryImages = [

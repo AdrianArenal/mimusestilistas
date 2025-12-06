@@ -31,7 +31,9 @@ const services = [
 
 useSeoMeta({
   title: page.value.seo?.title,
-  description: page.value.seo?.description
+  ogTitle: page.value.seo?.title,
+  description: page.value.seo?.description,
+  ogDescription: page.value.seo?.description
 })
 </script>
 

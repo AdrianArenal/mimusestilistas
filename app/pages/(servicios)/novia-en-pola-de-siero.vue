@@ -1,7 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Bodas y Eventos - Mimu\'s Estilistas',
-  description: 'Peinados para novias, peinados y maquillaje para invitadas. Servicio profesional para tu día especial en Pola de Siero'
+  title: 'Bodas y Eventos',
+  ogTitle: 'Bodas y Eventos',
+  description: 'Peinados para novias, peinados y maquillaje para invitadas. Servicio profesional para tu día especial en Pola de Siero',
+  ogDescription: 'Peinados para novias, peinados y maquillaje para invitadas. Servicio profesional para tu día especial en Pola de Siero'
 })
 </script>
 
@@ -101,6 +103,22 @@ useSeoMeta({
         :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 300 } }"
         class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mb-16"
       >
+        <!-- Video 2 -->
+        <div class="lg:order-2">
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            class="w-full h-auto object-cover rounded-xl shadow-lg"
+            preload="auto"
+            aria-label="Maquillaje de novia en Mimu's Estilistas"
+          >
+            <source src="https://pub-820a050bd8b941bdb6f8494e6c3603c2.r2.dev/boda1.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+          </video>
+        </div>
+
         <!-- Texto 2 -->
         <div class="space-y-4 lg:order-1">
           <h2 class="text-3xl font-bold">Servicios para invitadas</h2>
@@ -124,22 +142,6 @@ useSeoMeta({
               <p class="text-gray-600 dark:text-gray-300">Productos profesionales de alta calidad</p>
             </div>
           </div>
-        </div>
-
-        <!-- Video 2 -->
-        <div class="lg:order-2">
-          <video
-            autoplay
-            muted
-            loop
-            playsinline
-            class="w-full h-auto object-cover rounded-xl shadow-lg"
-            preload="auto"
-            aria-label="Maquillaje de novia en Mimu's Estilistas"
-          >
-            <source src="https://pub-820a050bd8b941bdb6f8494e6c3603c2.r2.dev/boda1.mp4" type="video/mp4">
-            Tu navegador no soporta el elemento de video.
-          </video>
         </div>
       </div>
 

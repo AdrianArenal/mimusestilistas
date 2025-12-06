@@ -1,7 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Tratamientos Capilares en Pola de Siero - Mimu\'s Estilistas',
-  description: 'Tratamientos profesionales Fibre Clinix y Authentic Beauty Concept. Repara y nutre tu cabello en Pola de Siero, Asturias.'
+  title: 'Tratamientos Capilares',
+  ogTitle: 'Tratamientos Capilares',
+  description: 'Tratamientos profesionales Fibre Clinix y Authentic Beauty Concept. Repara y nutre tu cabello en Pola de Siero, Asturias.',
+  ogDescription: 'Tratamientos profesionales Fibre Clinix y Authentic Beauty Concept. Repara y nutre tu cabello en Pola de Siero, Asturias.'
 })
 
 const galleryImages = [

@@ -5,10 +5,17 @@ const page = {
   title: 'Productos Profesionales',
   description: 'Llévate a casa los mejores productos para mantener tu cabello perfecto entre visita y visita. Trabajamos con las mejores marcas del mercado.',
   seo: {
-    title: 'Productos - Mimu\'s Estilistas',
+    title: 'Productos Profesionales',
     description: 'Descubre nuestra selección de productos profesionales de peluquería. Champús, tratamientos, styling y más para cuidar tu cabello en casa'
   }
 }
+
+useSeoMeta({
+  title: page.seo.title,
+  ogTitle: page.seo.title,
+  description: page.seo.description,
+  ogDescription: page.seo.description
+})
 
 const products = [
   {

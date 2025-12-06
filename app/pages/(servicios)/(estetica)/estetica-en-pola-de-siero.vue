@@ -1,7 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Estética en Pola de Siero - Uñas y Maquillaje | Mimu\'s Estilistas',
-  description: 'Servicios de estética profesional en Pola de Siero: manicura, pedicura, uñas de gel y maquillaje. Reserva tu cita.'
+  title: 'Estética en Pola de Siero',
+  ogTitle: 'Estética en Pola de Siero',
+  description: 'Servicios de estética profesional en Pola de Siero: manicura, pedicura, uñas de gel y maquillaje. Reserva tu cita.',
+  ogDescription: 'Servicios de estética profesional en Pola de Siero: manicura, pedicura, uñas de gel y maquillaje. Reserva tu cita.'
 })
 
 const services = [

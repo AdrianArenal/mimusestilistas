@@ -1,7 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Balayage con Highlights en Pola de Siero - Mimu\'s Estilistas',
-  description: 'Balayage con highlights profesional. Técnica de barrido con iluminaciones estratégicas para un degradado natural en Pola de Siero, Asturias.'
+  title: 'Balayage con Highlights',
+  ogTitle: 'Balayage con Highlights',
+  description: 'Balayage con highlights profesional. Técnica de barrido con iluminaciones estratégicas para un degradado natural en Pola de Siero, Asturias.',
+  ogDescription: 'Balayage con highlights profesional. Técnica de barrido con iluminaciones estratégicas para un degradado natural en Pola de Siero, Asturias.'
 })
 
 const galleryImages = [

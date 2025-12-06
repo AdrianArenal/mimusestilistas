@@ -1,7 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Corte de Pelo en Pola de Siero - Mimu\'s Estilistas',
-  description: 'Cortes de pelo profesionales para mujer, hombre y niños en Pola de Siero. Asesoramiento personalizado. Reserva tu cita.'
+  title: 'Corte de Pelo',
+  ogTitle: 'Corte de Pelo',
+  description: 'Cortes de pelo profesionales para mujer, hombre y niños en Pola de Siero. Asesoramiento personalizado. Reserva tu cita.',
+  ogDescription: 'Cortes de pelo profesionales para mujer, hombre y niños en Pola de Siero. Asesoramiento personalizado. Reserva tu cita.'
 })
 </script>
 

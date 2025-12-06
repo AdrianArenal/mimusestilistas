@@ -1,7 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Contacto - Mimu\'s Estilistas',
-  description: 'Visítanos en Pola de Siero, Asturias. Encuéntranos en Calle Enrique II, 5, bajo 2. Llámanos al 984 39 02 59 para reservar tu cita.'
+  title: 'Contacto',
+  ogTitle: 'Contacto',
+  description: 'Visítanos en Pola de Siero, Asturias. Encuéntranos en Calle Enrique II, 5, bajo 2. Llámanos al 984 39 02 59 para reservar tu cita.',
+  ogDescription: 'Visítanos en Pola de Siero, Asturias. Encuéntranos en Calle Enrique II, 5, bajo 2. Llámanos al 984 39 02 59 para reservar tu cita.'
 })
 </script>
 

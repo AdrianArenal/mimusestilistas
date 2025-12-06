@@ -1,7 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Mapa del Sitio - Mimu\'s Estilistas',
-  description: 'Navega por todas las páginas de Mimu\'s Estilistas en Pola de Siero. Servicios de peluquería, estética y más.'
+  title: 'Mapa del Sitio',
+  ogTitle: 'Mapa del Sitio',
+  description: 'Navega por todas las páginas de Mimu\'s Estilistas en Pola de Siero. Servicios de peluquería, estética y más.',
+  ogDescription: 'Navega por todas las páginas de Mimu\'s Estilistas en Pola de Siero. Servicios de peluquería, estética y más.'
 })
 </script>
 

@@ -1,7 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Babylights en Pola de Siero - Mimu\'s Estilistas',
-  description: 'Babylights profesionales para una iluminación natural y sutil. Mechas finas que aportan luminosidad a tu cabello en Pola de Siero, Asturias.'
+  title: 'Babylights',
+  ogTitle: 'Babylights',
+  description: 'Babylights profesionales para una iluminación natural y sutil. Mechas finas que aportan luminosidad a tu cabello en Pola de Siero, Asturias.',
+  ogDescription: 'Babylights profesionales para una iluminación natural y sutil. Mechas finas que aportan luminosidad a tu cabello en Pola de Siero, Asturias.'
 })
 
 const galleryImages = [

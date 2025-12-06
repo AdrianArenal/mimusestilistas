@@ -1,7 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Nuestro Equipo - Mimu\'s Estilistas en Pola de Siero',
-  description: 'Conoce a nuestro equipo de profesionales en Mimu\'s Estilistas. Más de 20 años de experiencia en peluquería y estética en Pola de Siero.'
+  title: 'Nuestro Equipo',
+  ogTitle: 'Nuestro Equipo',
+  description: 'Conoce a nuestro equipo de profesionales en Mimu\'s Estilistas. Más de 20 años de experiencia en peluquería y estética en Pola de Siero.',
+  ogDescription: 'Conoce a nuestro equipo de profesionales en Mimu\'s Estilistas. Más de 20 años de experiencia en peluquería y estética en Pola de Siero.'
 })
 
 const team = [
