@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Tratamientos Capilares',
-  ogTitle: 'Tratamientos Capilares',
+  title: 'Tratamientos',
+  ogTitle: 'Tratamientos',
   description: 'Tratamientos profesionales Fibre Clinix y Authentic Beauty Concept. Repara y nutre tu cabello en Pola de Siero, Asturias.',
   ogDescription: 'Tratamientos profesionales Fibre Clinix y Authentic Beauty Concept. Repara y nutre tu cabello en Pola de Siero, Asturias.'
 })
@@ -22,7 +22,7 @@ const galleryImages = [
       v-motion
       :initial="{ opacity: 0, y: 20 }"
       :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-      title="Tratamientos Capilares"
+      title="Tratamientos"
       description="Repara, hidrata y fortalece tu cabello con tratamientos profesionales"
     >
       <template #headline>
