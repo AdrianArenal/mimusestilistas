@@ -38,16 +38,16 @@ De la misma manera, el titular de este consentimiento ha sido informado de los s
   - Si el usuario ha dado consentimiento para recibir comunicaciones, podrán revocar dicho consentimiento en cualquier momento.  
   - En cada envío comercial debe incluirse un mecanismo claro y gratuito para darse de baja (por ejemplo, email o enlace de baja).  
 
-## 2. Derechos de Protección de Datos
+## 2. Derechos de Proteccion de Datos
 
 Los responsables del tratamiento se comprometen a respetar la confidencialidad de los datos del usuario y garantizan el ejercicio de sus derechos: acceso, rectificación, cancelación, oposición, supresión y limitación del tratamiento.  
 Para ejercer estos derechos, el usuario debe escribir un correo a **mimusestilistas@gmail.com**, indicando qué derecho desea ejercer. En algunos casos se podrá solicitar copia de DNI u otro documento para acreditar identidad.  
 
 En la comunicación de ejercicio de derechos, se recomienda indicar el email desde el cual se facilitaron los datos, para que se identifique correctamente.  
 
-## 3. Información sobre Cookies
+## 3. Informacion sobre Cookies
 
-- En cumplimiento del artículo 22.2 de la Ley 34/2002 (LSSI), informan sobre el uso de cookies.  
+- En cumplimiento del artículo 22.2 de la Ley 34/2002 (LSSI), informan sobre el uso de cookies.
 - Se definen los tipos de cookies usados:  
   - **Cookies de análisis:** para medir y analizar el uso de la web (por ejemplo, con Google Analytics).  
   - **Cookies técnicas:** necesarias para navegar y usar funciones (como formularios).  

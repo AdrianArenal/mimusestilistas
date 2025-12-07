@@ -5,7 +5,7 @@ description: Información sobre cómo utilizamos las cookies
 
 # Política de Cookies
 
-## Definición y función de las cookies
+## Definicion y funcion de las cookies
 
 ¿Qué son las cookies? Una cookie es un fichero que se descarga en su ordenador al acceder a determinadas páginas web. Las cookies permiten a una página web, entre otras cosas, almacenar y recuperar información sobre los hábitos de navegación de un usuario o de su equipo y, dependiendo de la información que contengan y de la forma en que utilice su equipo, pueden utilizarse para reconocer al usuario.  
 
@@ -40,9 +40,9 @@ A continuación, se realiza una clasificación de las cookies en función de una
      Son aquellas que permiten la gestión, de la forma más eficaz posible, de los espacios publicitarios, almacenando información del comportamiento de los visitantes para mostrar publicidad personalizada.  
 
 
-## ¿Qué cookies utiliza esta página web?
+## Que cookies utiliza esta pagina web?
 
-Aquí hay un resumen de las cookies específicas utilizadas por Peluquería Mimus:  
+Aquí hay un resumen de las cookies específicas utilizadas por Peluquería Mimus:
 
 
 | Nombre | Entidad | Duración | Finalidad | Función | Deber de información y consentimiento |
@@ -57,16 +57,16 @@ Aquí hay un resumen de las cookies específicas utilizadas por Peluquería Mimu
 | _ga | Propia (Google Analytics) | 2 años | Analítica | Distinguir usuarios | sí |
 | _ga_7Z7XBQLDW5 | Propia (Google Analytics) | 2 años | Analítica | Mantener estado de sesión | sí |  
 
-## ¿Quién y para qué utiliza las cookies?
+## Quien y para que utiliza las cookies?
 
 - Las **cookies técnicas** tienen el único objetivo de garantizar el correcto funcionamiento de la página web. Si se desactivan estas cookies, no se podrá recibir correctamente todos los contenidos. Estas cookies son accesibles exclusivamente por el titular del sitio web.  
 - Las **cookies analíticas** tienen como objetivo realizar el seguimiento y análisis estadístico del comportamiento agregadoo de los usuarios. Si se desactivan, la web puede seguir funcionando, pero se pierde parte del análisis de uso.  
 - Esta página web utiliza **Google Analytics**, un servicio de analítica web de Google para medir y analizar la navegación. A través de esta herramienta se obtienen datos como el número de usuarios, páginas vistas, duración de visitas, navegador, operador, idioma, tipo de dispositivo o ciudad estimada por IP.  
 
 
-## Configuración de cookies
+## Configuracion de cookies
 
-### A través del navegador
+### A traves del navegador
 
 Puedes permitir, bloquear o eliminar las cookies instaladas en tu equipo utilizando la configuración del navegador:
 
@@ -77,9 +77,9 @@ Puedes permitir, bloquear o eliminar las cookies instaladas en tu equipo utiliza
 - Para **Opera**  
 
 
-### A través de la página web
+### A traves de la pagina web
 
-También puedes configurar la instalación de cookies desde el formulario disponible en la web, donde puedes ver qué cookies son necesarias y cuáles no:  
+También puedes configurar la instalación de cookies desde el formulario disponible en la web, donde puedes ver qué cookies son necesarias y cuáles no:
 - Cookies técnicas (Necesarias)  
 - Cookies de personalización (Necesarias)  
 - Cookies analíticas  

@@ -8,7 +8,7 @@ description: Información legal sobre este sitio web
 El dominio https://peluqueriamimus.com es titularidad de Mimus Estilístas, C.B., con NIF E56316334, titular de los derechos de propiedad intelectual sobre las Webs y sus contenidos, sin perjuicio de los derechos legítimos de terceros.  
 La sociedad está provista de NIF: E56316334, y tiene su domicilio a los efectos del presente Aviso Legal, en Calle Enrique II 5 bajo 2, 33510 en Pola de Siero, Asturias, Ud. puede ponerse en contacto con nosotros en el siguiente correo electrónico: mimusestilistas@gmail.com.
 
-## Términos y condiciones
+## Terminos y condiciones
 
 El usuario accede voluntariamente a este sitio web. El acceso y navegación en este sitio web implica aceptar y conocer las advertencias legales, condiciones y términos de uso contenidos en ella. El mero acceso no implica el establecimiento de ningún tipo de relación comercial entre Mimus Estilístas, C.B. y el usuario.  
 El Aviso Legal y/o las Condiciones de los servicios prestados a través del presente sitio web, podrá sufrir modificaciones de cualquier tipo, cuando Mimus Estilístas, C.B. lo considere oportuno o con la finalidad de adecuarse a los cambios legislativos y tecnológicos futuros. Estas modificaciones serán notificadas convenientemente siendo válidas desde su publicación en este sitio web, salvo manifestación en contrario.  
@@ -31,7 +31,7 @@ Mimus Estilístas, C.B. ofrece determinados servicios/productos a los usuarios, 
 Mimus Estilístas, C.B. realiza los máximos esfuerzos para evitar errores en los contenidos que se publican en el sitio web. Todos los contenidos que se ofrecen a través del sitio web se encuentran actualizados, reservándose Mimus Estilístas, C.B. la facultad de poder modificarlos en cualquier momento. Mimus Estilístas, C.B. no se responsabiliza de las consecuencias que puedan derivarse de los errores en los contenidos proporcionados por terceros que puedan aparecer en este sitio web.  
 Mimus Estilístas, C.B. ofrece enlaces, directa o indirectamente, a recursos o sitios de Internet que se encuentran fuera del presente sitio web. La presencia de estos enlaces en el sitio web tienen una finalidad informativa.
 
-## Limitación de responsabilidad
+## Limitacion de responsabilidad
 
 No se garantiza que los servicios del sitio Web sean ininterrumpidos, oportunos, seguros o libres de error, ni se ofrece ninguna garantía con respecto a los resultados que se puedan obtener del uso de los servicios o de la precisión o fiabilidad de cualquier información obtenida. No se controlan, ni se hacen propios, ni se garantiza la exactitud, calidad, veracidad, fiabilidad o idoneidad de las informaciones y servicios facilitados o prestados por terceros a través del sitio Web.  
 De igual forma, no controla y no garantiza la ausencia de virus u otros elementos lesivos en los contenidos o servicios facilitados o prestados por terceros a través del sitio Web.  

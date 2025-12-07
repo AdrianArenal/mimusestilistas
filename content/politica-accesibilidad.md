@@ -9,7 +9,7 @@ MIMUS Estilístas, C.B. (NIF E-56316334) se ha comprometido a hacer accesible su
 
 La presente declaración de accesibilidad se aplica al sitio web **www.peluqueriamimus.com**.  
 
-## Situación de cumplimiento  
+## Situacion de cumplimiento
 
 Esta página web ha sido diseñada adaptándose a los estándares y normativas vigentes en relación con la accesibilidad y la usabilidad. No obstante, es posible que encuentre algún contenido que no se adapte al 100 % a estos estándares.  
 
@@ -27,9 +27,9 @@ A continuación se describen los puntos que no cumplen con el RD 1112/2018:
 - **Carga desproporcionada**: no aplica.  
 - **Contenido que no entra dentro del ámbito de la legislación aplicable**: pueden existir contenidos de terceros que no están desarrollados por Mimus Estilístas ni bajo su control, como mapas o iframes.  
 
-## Preparación de la presente declaración de accesibilidad  
+## Preparacion de la presente declaracion de accesibilidad
 
-- La declaración fue preparada el **11/11/2024**.  
+- La declaración fue preparada el **11/11/2024**.
 - El método empleado fue una evaluación llevada a cabo por un tercero, con recursos externos.  
 - Última revisión de la declaración: **18/11/2025**.  
 - Comentario sobre la revisión: revisión anual.  
@@ -53,9 +53,9 @@ También puedes presentar:
 
 En la solicitud debes concretar hechos, razones y petición para que se pueda evaluar su razonabilidad y legitimidad.  
 
-## Procedimiento de aplicación  
+## Procedimiento de aplicacion
 
-- Si una vez presentada la queja o solicitud de información accesible **no obtienes respuesta** en 20 días hábiles, puedes iniciar una **reclamación**.  
+- Si una vez presentada la queja o solicitud de información accesible **no obtienes respuesta** en 20 días hábiles, puedes iniciar una **reclamación**.
 - También puedes reclamar si no estás de acuerdo con la decisión adoptada tras tu queja.  
 
 ---
