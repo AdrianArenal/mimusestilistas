@@ -12,49 +12,49 @@ const services = [
     description: 'Coloración personalizada con técnicas profesionales: decoloración, color completo, baño de color y color de raíces',
     icon: 'i-lucide-palette',
     url: '/color-pola-de-siero',
-    thumbnail: '/hero/random-1.avif'
+    thumbnail: '/images/color.webp'
   },
   {
     title: 'Matizados',
     description: 'Todo tipo de matizados para conseguir el tono perfecto y eliminar reflejos no deseados',
     icon: 'i-lucide-droplet',
     url: '/matizado-pola-de-siero',
-    thumbnail: '/hero/random-2.avif'
+    thumbnail: '/images/matizados.webp'
   },
   {
     title: 'Babylights',
     description: 'Iluminación sutil y natural con mechas finas para un efecto luminoso',
     icon: 'i-lucide-sun',
     url: '/babylights-pola-de-siero',
-    thumbnail: '/hero/random-3.avif'
+    thumbnail: '/images/babylights.webp'
   },
   {
     title: 'Balayage con Highlights',
     description: 'Técnica de barrido con iluminaciones estratégicas para un degradado natural',
     icon: 'i-lucide-paintbrush',
     url: '/balayage-pola-de-siero',
-    thumbnail: '/hero/random-4.avif'
+    thumbnail: '/images/balayage.webp'
   },
   {
     title: 'Peinados',
     description: 'Todo tipo de peinados para cualquier ocasión: desde looks casuales hasta alta ceremonia',
     icon: 'i-lucide-sparkles',
     url: '/peinado-pola-de-siero',
-    thumbnail: '/hero/random-5.avif'
+    thumbnail: '/images/peinados.webp'
   },
   {
     title: 'Cortes',
     description: 'Cortes personalizados para mujer, hombre y niños con asesoramiento profesional',
     icon: 'i-lucide-scissors',
     url: '/corte-pelo-pola-de-siero',
-    thumbnail: '/hero/random-6.avif'
+    thumbnail: '/images/cortes.webp'
   },
   {
-    title: 'Tratamientos Capilares',
+    title: 'Tratamientos',
     description: 'Fibre Clinix y Authentic Beauty Concept para reparar y nutrir tu cabello',
     icon: 'i-lucide-heart',
     url: '/tratamientos-pola-de-siero',
-    thumbnail: '/hero/random-7.avif'
+    thumbnail: '/images/tratamientos.webp'
   }
 ]
 </script>
@@ -129,67 +129,61 @@ const services = [
       </UCard>
 
       <!-- Servicios Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-        <UCard
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <NuxtLink
           v-for="(service, index) in services"
           :key="service.title"
-          v-motion
-          :initial="{ opacity: 0, y: 20 }"
-          :enter="{ 
-            opacity: 1, 
-            y: 0, 
-            transition: { 
-              duration: 600, 
-              delay: 150 + (index * 50) 
-            } 
-          }"
-          class="hover:shadow-xl transition-all duration-300 overflow-hidden group"
+          :to="service.url"
+          class="flex"
         >
-          <NuxtLink
-            :to="service.url"
-            class="block"
+          <UCard
+            v-motion
+            :initial="{ opacity: 0, y: 20 }"
+            :enter="{ 
+              opacity: 1, 
+              y: 0, 
+              transition: { 
+                duration: 600, 
+                delay: 150 + (index * 50) 
+              } 
+            }"
+            class="hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer w-full"
+            :ui="{ body: 'p-4 sm:p-6 h-full flex flex-col' }"
           >
-            <!-- Imagen thumbnail -->
-            <div class="relative h-48 overflow-hidden rounded-t-lg -mx-6 -mt-6 mb-4">
-              <NuxtImg
-                :src="service.thumbnail"
-                :alt="service.title"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                loading="lazy"
-                format="webp"
-              />
-              <div class="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
-              <div class="absolute bottom-3 left-3">
-                <div class="p-2 bg-white/90 dark:bg-gray-900/90 rounded-lg backdrop-blur-sm">
-                  <UIcon
-                    :name="service.icon"
-                    class="w-5 h-5 text-primary"
-                  />
+            <div class="flex flex-col h-full">
+              <!-- Imagen thumbnail -->
+              <div class="relative h-120 sm:h-80 md:h-96 overflow-hidden rounded-t-lg -mx-6 -mt-6 mb-4">
+                <NuxtImg
+                  :src="service.thumbnail"
+                  :alt="service.title"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
+                  format="webp"
+                />
+                <div class="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
+                <div class="absolute bottom-3 left-3">
+                  <div class="p-2 bg-white/90 dark:bg-gray-900/90 rounded-lg backdrop-blur-sm">
+                    <UIcon
+                      :name="service.icon"
+                      class="w-5 h-5 text-primary"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div>
               <h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
                 {{ service.title }}
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
                 {{ service.description }}
               </p>
-              <UButton
-                color="neutral"
-                variant="ghost"
-                size="sm"
-                class="group-hover:text-primary"
-              >
-                Ver más
-                <template #trailing>
-                  <UIcon name="i-lucide-arrow-right" class="transition-transform group-hover:translate-x-1" />
-                </template>
-              </UButton>
+              <div class="mt-auto pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center justify-between text-neutral group-hover:text-primary transition-colors">
+                <span class="font-medium text-sm">Ver más</span>
+                <UIcon name="i-lucide-arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              </div>
             </div>
-          </NuxtLink>
-        </UCard>
+          </UCard>
+        </NuxtLink>
       </div>
 
       <!-- CTA Final -->

@@ -10,6 +10,7 @@ const services = [
     title: 'Peluquería',
     description: 'Servicios completos: peinados, color, mechas, corte y tratamientos capilares',
     icon: 'i-lucide-scissors',
+    image: '/images/2.webp',
     featured: true,
     url: '/peluqueria-en-pola-de-siero'
   },
@@ -17,6 +18,7 @@ const services = [
     title: 'Estética',
     description: 'Manicura, pedicura, uñas de gel y maquillaje profesional',
     icon: 'i-lucide-sparkles',
+    image: '/images/7.webp',
     featured: true,
     url: '/estetica-en-pola-de-siero'
   },
@@ -24,6 +26,7 @@ const services = [
     title: 'Bodas y Eventos',
     description: 'Peinados para novias, peinados y maquillaje para invitadas',
     icon: 'i-lucide-heart',
+    image: '/images/25.webp',
     featured: true,
     url: '/novia-en-pola-de-siero'
   }
@@ -51,40 +54,42 @@ useSeoMeta({
     </UPageHeader>
 
     <UPageBody>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-        <UCard v-for="(service, index) in services" :key="index" v-motion :initial="{ opacity: 0, y: 30 }" :enter="{
-          opacity: 1,
-          y: 0,
-          transition: {
-            duration: 600,
-            delay: index * 100
-          }
-        }"
-          class="p-6 ring-1 ring-gray-200 dark:ring-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <div class="flex flex-col h-full">
-            <div class="flex items-center gap-3 mb-4">
-              <div v-if="service.icon" class="p-3 bg-primary/10 rounded-lg">
-                <UIcon :name="service.icon" class="w-6 h-6 text-primary" />
+      <div class="flex flex-col gap-8 mt-12">
+        <NuxtLink :to="service.url" v-for="(service, index) in services" :key="index" class="block">
+          <UCard v-motion :initial="{ opacity: 0, y: 30 }" :enter="{
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 600,
+              delay: index * 100
+            }
+          }"
+            class="overflow-hidden ring-1 ring-gray-200 dark:ring-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+            <div class="flex flex-col lg:flex-row h-full" :class="{ 'lg:flex-row-reverse': index === 1 }">
+              <div v-if="service.image" class="relative w-full lg:w-96 h-80 md:h-80 lg:h-96 overflow-hidden shrink-0">
+                <NuxtImg :src="service.image" :alt="service.title" class="w-full h-full object-cover" />
+                <div class="absolute top-4 right-4 p-3 bg-white/90 dark:bg-gray-900/90 rounded-lg shadow-lg">
+                  <UIcon :name="service.icon" class="w-6 h-6 text-primary" />
+                </div>
               </div>
-              <h3 class="text-lg font-semibold">
-                {{ service.title }}
-              </h3>
-            </div>
+              
+              <div class="p-6 flex flex-col grow">
+                <h3 class="text-lg font-semibold mb-3">
+                  {{ service.title }}
+                </h3>
 
-            <p class="text-gray-600 dark:text-gray-300 mb-4 grow">
-              {{ service.description }}
-            </p>
+                <p class="text-gray-600 dark:text-gray-300 mb-4 grow">
+                  {{ service.description }}
+                </p>
 
-            <div class="pt-4 border-t border-gray-200 dark:border-gray-800">
-              <UButton :to="service.url" color="primary" variant="outline" size="sm" block>
-                Ver más
-                <template #trailing>
-                  <UIcon name="i-lucide-arrow-right" />
-                </template>
-              </UButton>
+                <div class="pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center justify-between text-primary">
+                  <span class="font-medium">Ver más</span>
+                  <UIcon name="i-lucide-arrow-right" class="w-5 h-5" />
+                </div>
+              </div>
             </div>
-          </div>
-        </UCard>
+          </UCard>
+        </NuxtLink>
       </div>
 
       <!-- Call to Action Section -->
