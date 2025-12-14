@@ -26,12 +26,12 @@ export default defineAppConfig({
     colorMode: false,
     links: [{
       'icon': 'i-lucide-facebook',
-      'to': 'https://facebook.com',
+      'to': 'https://www.facebook.com/p/mimus-estilistas-61553670413042/?locale=es_ES',
       'target': '_blank',
       'aria-label': 'Mimu\'s Estilistas en Facebook'
     }, {
       'icon': 'i-lucide-instagram',
-      'to': 'https://instagram.com',
+      'to': 'https://www.instagram.com/mimus_estilistas/',
       'target': '_blank',
       'aria-label': 'Mimu\'s Estilistas en Instagram'
     }, {

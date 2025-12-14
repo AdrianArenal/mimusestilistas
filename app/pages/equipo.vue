@@ -20,7 +20,7 @@ const team = [
   {
     name: 'Carolina San José Suárez',
     image: '/images/carolina.webp',
-    experience: '29 años de experiencia',
+    experience: '18 años de experiencia',
     specialties: [
       { name: 'Color', to: '/color-pelo-pola-de-siero' },
       { name: 'Mechas', to: '/mechas-pola-de-siero' },
@@ -29,7 +29,7 @@ const team = [
   },
   {
     name: 'Raquel González Cueto',
-    image: '/hero/random-3.avif',
+    image: '/images/raquel.webp',
     experience: '27 años de experiencia',
     specialties: [
       { name: 'Mechas', to: '/mechas-pola-de-siero' },
@@ -90,19 +90,21 @@ const team = [
         >
           <!-- Member image - Imagen grande y prominente -->
           <div :class="{ 'lg:col-start-2': index % 2 === 1 }">
-            <UCard class="overflow-hidden rounded-2xl">
-              <div class="relative aspect-3/4 bg-gray-100 dark:bg-gray-900">
-                <NuxtImg
-                  :src="member.image"
-                  :alt="member.name"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                  quality="95"
-                  format="webp"
-                  sizes="sm:100vw md:50vw lg:600px"
-                />
-              </div>
-            </UCard>
+            <div class="animate-pulse-border rounded-2xl p-0.5">
+              <UCard class="overflow-hidden rounded-2xl">
+                <div class="relative aspect-3/4 bg-gray-100 dark:bg-gray-900">
+                  <NuxtImg
+                    :src="member.image"
+                    :alt="member.name"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                    quality="95"
+                    format="webp"
+                    sizes="sm:100vw md:50vw lg:600px"
+                  />
+                </div>
+              </UCard>
+            </div>
           </div>
 
           <!-- Member info -->
