@@ -2,8 +2,8 @@
 useSeoMeta({
   title: 'Uñas',
   ogTitle: 'Uñas',
-  description: 'Manicura, pedicura y uñas de gel profesionales en Pola de Siero. Esmaltado semipermanente. Pide cita.',
-  ogDescription: 'Manicura, pedicura y uñas de gel profesionales en Pola de Siero. Esmaltado semipermanente. Pide cita.'
+  description: 'Manicura y pedicura básica con esmaltado semipermanente en Pola de Siero. Pide cita.',
+  ogDescription: 'Manicura y pedicura básica con esmaltado semipermanente en Pola de Siero. Pide cita.'
 })
 </script>
 
@@ -14,7 +14,7 @@ useSeoMeta({
       :initial="{ opacity: 0, y: 20 }"
       :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
       title="Uñas"
-      description="Manicura y pedicura profesional para uñas perfectas"
+      description="Manicura y pedicura básica para uñas cuidadas"
     >
       <template #headline>
         <UBreadcrumb
@@ -54,22 +54,20 @@ useSeoMeta({
     </UPageHeader>
 
     <UPageBody>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <div class="lg:col-span-2 space-y-6">
+      <div class="space-y-6">
           <UCard>
             <h2 class="text-2xl font-bold mb-4">
-              Cuida tus manos y pies con nuestros servicios profesionales
+              Cuida tus manos y pies
             </h2>
             <p class="text-gray-600 dark:text-gray-300">
-              Ofrecemos servicios completos de manicura y pedicura con productos de calidad y 
-              técnicas profesionales. Desde cuidados básicos hasta uñas de gel y diseños personalizados, 
-              cada servicio está pensado para que luzcas uñas impecables y saludables.
+              Ofrecemos servicios básicos de manicura y pedicura con productos de calidad. 
+              Cuidados esenciales para que luzcas uñas limpias y saludables.
             </p>
           </UCard>
 
           <UCard>
             <h3 class="text-xl font-semibold mb-4">
-              Servicios de manicura
+              Manicura
             </h3>
             <div class="space-y-4">
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
@@ -86,68 +84,16 @@ useSeoMeta({
                 <h4 class="font-semibold mb-2">
                   Manicura con esmaltado semipermanente
                 </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                  Manicura completa con esmaltado de alta calidad sin desconcharse. 
-                  Brillo perfecto y duradero.
-                </p>
-                <div class="flex flex-wrap gap-2 mt-2">
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">No descascarilla</span>
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Brillo intenso</span>
-                </div>
-              </div>
-
-              <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <h4 class="font-semibold mb-2">
-                  Uñas de gel
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                  Construcción con gel para alargar y fortalecer tus uñas naturales. 
-                  Acabado natural y resistente.
-                </p>
-                <div class="flex flex-wrap gap-2 mt-2">
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Alargamiento</span>
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Fortalecimiento</span>
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Natural</span>
-                </div>
-              </div>
-
-              <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <h4 class="font-semibold mb-2">
-                  Relleno de gel
-                </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Mantenimiento de tus uñas de gel.
+                  Manicura completa con esmaltado de larga duración.
                 </p>
-              </div>
-
-              <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <h4 class="font-semibold mb-2">
-                  Retirada de semipermanente o gel
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Retirada profesional sin dañar la uña natural. Incluye hidratación.
-                </p>
-              </div>
-
-              <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <h4 class="font-semibold mb-2">
-                  Nail art y decoración
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                  Diseños personalizados, degradados, francesas, pedrería y más.
-                </p>
-                <div class="flex flex-wrap gap-2 mt-2">
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Francesas</span>
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Degradados</span>
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Pedrería</span>
-                </div>
               </div>
             </div>
           </UCard>
 
           <UCard>
             <h3 class="text-xl font-semibold mb-4">
-              Servicios de pedicura
+              Pedicura
             </h3>
             <div class="space-y-4">
               <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
@@ -158,31 +104,6 @@ useSeoMeta({
                   Baño, limado, tratamiento de cutículas, exfoliación, hidratación y esmaltado. 
                   Pies suaves y cuidados.
                 </p>
-              </div>
-
-              <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <h4 class="font-semibold mb-2">
-                  Pedicura con semipermanente
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Pedicura completa con esmaltado semipermanente. 
-                  Perfecto para el verano.
-                </p>
-              </div>
-
-              <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <h4 class="font-semibold mb-2">
-                  Pedicura spa
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                  Pedicura completa con masaje relajante, mascarilla nutritiva y parafina. 
-                  Experiencia de bienestar total.
-                </p>
-                <div class="flex flex-wrap gap-2 mt-2">
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Masaje</span>
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Mascarilla</span>
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Parafina</span>
-                </div>
               </div>
             </div>
           </UCard>
@@ -240,55 +161,6 @@ useSeoMeta({
             </ul>
           </UCard>
         </div>
-
-        <div class="space-y-6">
-          <UCard class="sticky top-24">
-            <div class="space-y-4">
-              <div class="p-4 bg-primary/10 rounded-lg w-fit">
-                <UIcon
-                  name="i-lucide-sparkle"
-                  class="w-8 h-8 text-primary"
-                />
-              </div>
-              <hr class="border-gray-200 dark:border-gray-800" />
-              <div class="p-4 bg-primary/10 rounded-lg">
-                <h4 class="font-semibold mb-2 text-sm">
-                  ⭐ Popular
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-300">
-                  El esmaltado semipermanente es nuestro servicio más solicitado por su durabilidad
-                </p>
-              </div>
-              <hr class="border-gray-200 dark:border-gray-800" />
-              <div class="space-y-3">
-                <UButton
-                  to="/contacto"
-                  block
-                  size="lg"
-                  color="primary"
-                >
-                  <template #leading>
-                    <UIcon name="i-lucide-calendar" />
-                  </template>
-                  Reservar cita
-                </UButton>
-                <UButton
-                  href="tel:984390259"
-                  block
-                  size="lg"
-                  color="neutral"
-                  variant="outline"
-                >
-                  <template #leading>
-                    <UIcon name="i-lucide-phone" />
-                  </template>
-                  Llamar ahora
-                </UButton>
-              </div>
-            </div>
-          </UCard>
-        </div>
-      </div>
 
       <div class="mt-16">
         <h2 class="text-2xl font-bold mb-6">

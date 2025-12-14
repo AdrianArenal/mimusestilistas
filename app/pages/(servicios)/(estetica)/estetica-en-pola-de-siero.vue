@@ -2,34 +2,24 @@
 useSeoMeta({
   title: 'Estética en Pola de Siero',
   ogTitle: 'Estética en Pola de Siero',
-  description: 'Servicios de estética profesional en Pola de Siero: manicura, pedicura, uñas de gel y maquillaje. Reserva tu cita.',
-  ogDescription: 'Servicios de estética profesional en Pola de Siero: manicura, pedicura, uñas de gel y maquillaje. Reserva tu cita.'
+  description: 'Servicios de estética en Pola de Siero: manicura, pedicura y maquillaje. Reserva tu cita.',
+  ogDescription: 'Servicios de estética en Pola de Siero: manicura, pedicura y maquillaje. Reserva tu cita.'
 })
 
 const services = [
   {
     title: 'Uñas',
-    description: 'Manicura, pedicura y uñas de gel con acabados perfectos',
+    description: 'Manicura y pedicura básica con esmaltado semipermanente',
     icon: 'i-lucide-sparkle',
-    link: '/unas-pola-de-siero',
-    features: [
-      'Manicura y pedicura',
-      'Uñas de gel',
-      'Esmaltado semipermanente',
-      'Nail art y decoración'
-    ]
+    url: '/unas-pola-de-siero',
+    thumbnail: '/images/7.webp'
   },
   {
     title: 'Maquillaje',
-    description: 'Maquillaje profesional para eventos y ocasiones especiales',
+    description: 'Maquillaje para eventos y ocasiones especiales',
     icon: 'i-lucide-palette',
-    link: '/maquillaje-pola-de-siero',
-    features: [
-      'Maquillaje de día',
-      'Maquillaje de noche',
-      'Novias e invitadas',
-      'Maquillaje para eventos'
-    ]
+    url: '/maquillaje-pola-de-siero',
+    thumbnail: '/images/8.webp'
   }
 ]
 </script>
@@ -41,7 +31,7 @@ const services = [
       :initial="{ opacity: 0, y: 20 }"
       :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
       title="Estética"
-      description="Servicios de estética profesional en Pola de Siero"
+      description="Servicios de estética en Pola de Siero"
     >
       <template #headline>
         <UBreadcrumb
@@ -88,183 +78,73 @@ const services = [
             </h2>
             <p class="text-gray-600 dark:text-gray-300 mb-4">
               En Mimu's Estilistas no solo cuidamos tu cabello, también ofrecemos servicios 
-              de estética profesional para que luzcas impecable de pies a cabeza. Desde uñas 
-              perfectas hasta maquillaje para eventos especiales, nuestro equipo está preparado 
-              para realzar tu belleza natural.
+              de estética para que luzcas impecable. Desde uñas cuidadas hasta maquillaje para 
+              eventos especiales, estamos aquí para realzar tu belleza natural.
             </p>
             <p class="text-gray-600 dark:text-gray-300">
-              Trabajamos con productos de alta calidad y técnicas actualizadas para garantizar 
-              resultados duraderos y acabados profesionales. Cada servicio es personalizado 
-              según tus preferencias y necesidades.
+              Trabajamos con productos de calidad para ofrecerte servicios esenciales adaptados 
+              a tus necesidades.
             </p>
           </div>
         </UCard>
       </div>
 
-      <div class="mb-12">
-        <h2 class="text-2xl font-bold mb-6">
-          Nuestros servicios de estética
-        </h2>
-        <div class="grid md:grid-cols-2 gap-6">
-          <NuxtLink
-            v-for="service in services"
-            :key="service.title"
-            :to="service.link"
-            class="block"
+      <!-- Servicios Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
+        <NuxtLink
+          v-for="(service, index) in services"
+          :key="service.title"
+          :to="service.url"
+          class="flex"
+        >
+          <UCard
+            v-motion
+            :initial="{ opacity: 0, y: 20 }"
+            :enter="{ 
+              opacity: 1, 
+              y: 0, 
+              transition: { 
+                duration: 600, 
+                delay: 150 + (index * 50) 
+              } 
+            }"
+            class="hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer w-full"
+            :ui="{ body: 'p-4 sm:p-6 h-full flex flex-col' }"
           >
-            <UCard
-              class="h-full hover:shadow-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer"
-            >
-              <div class="flex flex-col h-full">
-                <div class="flex items-start gap-4 mb-4">
-                  <div class="p-3 bg-primary/10 rounded-lg">
+            <div class="flex flex-col h-full">
+              <!-- Imagen thumbnail -->
+              <div class="relative h-120 sm:h-80 md:h-96 overflow-hidden rounded-t-lg -mx-6 -mt-6 mb-4">
+                <NuxtImg
+                  :src="service.thumbnail"
+                  :alt="service.title"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
+                  format="webp"
+                />
+                <div class="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
+                <div class="absolute bottom-3 left-3">
+                  <div class="p-2 bg-white/90 dark:bg-gray-900/90 rounded-lg backdrop-blur-sm">
                     <UIcon
                       :name="service.icon"
-                      class="w-8 h-8 text-primary"
-                    />
-                  </div>
-                  <div class="flex-1">
-                    <h3 class="text-xl font-bold mb-1">
-                      {{ service.title }}
-                    </h3>
-                    <p class="text-gray-600 dark:text-gray-400 text-sm">
-                      {{ service.description }}
-                    </p>
-                  </div>
-                </div>
-
-                <div class="space-y-2 mb-4 flex-1">
-                  <p class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Incluye:
-                  </p>
-                  <ul class="space-y-1.5">
-                    <li
-                      v-for="feature in service.features"
-                      :key="feature"
-                      class="flex items-start gap-2 text-sm"
-                    >
-                      <UIcon
-                        name="i-lucide-check"
-                        class="size-4 text-primary mt-0.5 shrink-0"
-                      />
-                      <span class="text-gray-600 dark:text-gray-400">{{ feature }}</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="pt-4 border-t border-gray-200 dark:border-gray-700">
-                  <div class="flex items-center justify-between">
-                    <span class="text-sm font-medium text-primary">
-                      Ver detalles
-                    </span>
-                    <UIcon
-                      name="i-lucide-arrow-right"
-                      class="size-5 text-primary"
+                      class="w-5 h-5 text-primary"
                     />
                   </div>
                 </div>
               </div>
-            </UCard>
-          </NuxtLink>
-        </div>
-      </div>
 
-      <div class="grid md:grid-cols-2 gap-8 mb-12">
-        <UCard>
-          <h3 class="text-xl font-semibold mb-4">
-            ¿Por qué elegirnos?
-          </h3>
-          <ul class="space-y-3">
-            <li class="flex items-start gap-2">
-              <UIcon
-                name="i-lucide-badge-check"
-                class="size-5 text-primary mt-0.5 shrink-0"
-              />
-              <div>
-                <span class="font-medium">Profesionales cualificadas:</span> Equipo con formación continua
-              </div>
-            </li>
-            <li class="flex items-start gap-2">
-              <UIcon
-                name="i-lucide-badge-check"
-                class="size-5 text-primary mt-0.5 shrink-0"
-              />
-              <div>
-                <span class="font-medium">Productos de calidad:</span> Trabajamos con las mejores marcas
-              </div>
-            </li>
-            <li class="flex items-start gap-2">
-              <UIcon
-                name="i-lucide-badge-check"
-                class="size-5 text-primary mt-0.5 shrink-0"
-              />
-              <div>
-                <span class="font-medium">Higiene y seguridad:</span> Protocolos estrictos de limpieza
-              </div>
-            </li>
-            <li class="flex items-start gap-2">
-              <UIcon
-                name="i-lucide-badge-check"
-                class="size-5 text-primary mt-0.5 shrink-0"
-              />
-              <div>
-                <span class="font-medium">Atención personalizada:</span> Cada cliente es único
-              </div>
-            </li>
-          </ul>
-        </UCard>
-
-        <UCard>
-          <h3 class="text-xl font-semibold mb-4">
-            Horarios y reservas
-          </h3>
-          <div class="space-y-4">
-            <div>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
-                Estamos disponibles de lunes a sábado. Te recomendamos reservar con antelación, 
-                especialmente para eventos y fechas especiales.
+              <h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                {{ service.title }}
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                {{ service.description }}
               </p>
+              <div class="mt-auto pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center justify-between text-neutral group-hover:text-primary transition-colors">
+                <span class="font-medium text-sm">Ver más</span>
+                <UIcon name="i-lucide-arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              </div>
             </div>
-            <div class="space-y-3">
-              <UButton
-                to="/contacto"
-                block
-                size="lg"
-                color="primary"
-              >
-                <template #leading>
-                  <UIcon name="i-lucide-calendar" />
-                </template>
-                Reservar cita
-              </UButton>
-              <UButton
-                href="tel:984390259"
-                block
-                size="lg"
-                color="neutral"
-                variant="outline"
-              >
-                <template #leading>
-                  <UIcon name="i-lucide-phone" />
-                </template>
-                984 39 02 59
-              </UButton>
-              <UButton
-                href="https://wa.me/34984390259"
-                target="_blank"
-                block
-                size="lg"
-                color="neutral"
-                variant="ghost"
-              >
-                <template #leading>
-                  <UIcon name="i-lucide-message-circle" />
-                </template>
-                WhatsApp
-              </UButton>
-            </div>
-          </div>
-        </UCard>
+          </UCard>
+        </NuxtLink>
       </div>
 
       <UCard class="bg-primary/5">
