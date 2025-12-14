@@ -33,6 +33,7 @@ const isOpen = ref(false)
       v-model:open="isOpen"
       direction="right"
       title="Menú"
+      description="Navegación principal del sitio"
       :ui="{ 
         content: 'w-72',
         body: 'p-0'

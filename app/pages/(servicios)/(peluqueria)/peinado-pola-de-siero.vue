@@ -5,6 +5,15 @@ useSeoMeta({
   description: 'Peinados profesionales para todo tipo de eventos y ocasiones en Pola de Siero. Reserva tu cita.',
   ogDescription: 'Peinados profesionales para todo tipo de eventos y ocasiones en Pola de Siero. Reserva tu cita.'
 })
+
+const galleryImages = [
+  { src: '/hero/random-1.avif', alt: 'Peinado 1' },
+  { src: '/hero/random-2.avif', alt: 'Peinado 2' },
+  { src: '/hero/random-3.avif', alt: 'Peinado 3' },
+  { src: '/hero/random-4.avif', alt: 'Peinado 4' },
+  { src: '/hero/random-5.avif', alt: 'Peinado 5' },
+  { src: '/hero/random-6.avif', alt: 'Peinado 6' }
+]
 </script>
 
 <template>
@@ -17,7 +26,7 @@ useSeoMeta({
       description="Peinados profesionales para cualquier ocasión"
     >
       <template #headline>
-        <UBreadcrumb
+        <ResponsiveBreadcrumb
           :items="[
             { label: 'Inicio', to: '/' },
             { label: 'Servicios', to: '/servicios' },
@@ -28,22 +37,13 @@ useSeoMeta({
       </template>
       <template #links>
         <div class="flex flex-wrap gap-3">
-          <UButton
-            to="/contacto"
-            size="lg"
-            color="primary"
-          >
+          <UButton to="/contacto" size="lg" color="primary">
             <template #leading>
               <UIcon name="i-lucide-calendar" />
             </template>
             Reservar cita
           </UButton>
-          <UButton
-            href="tel:984390259"
-            size="lg"
-            color="neutral"
-            variant="outline"
-          >
+          <UButton href="tel:984390259" size="lg" color="neutral" variant="outline">
             <template #leading>
               <UIcon name="i-lucide-phone" />
             </template>
@@ -54,365 +54,140 @@ useSeoMeta({
     </UPageHeader>
 
     <UPageBody>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <div class="lg:col-span-2 space-y-6">
-          <UCard>
-            <h2 class="text-2xl font-bold mb-4">
-              El peinado perfecto para cada momento
-            </h2>
-            <p class="text-gray-600 dark:text-gray-300">
-              Ya sea para un evento especial, una ocasión formal o simplemente para lucir radiante 
-              en tu día a día, creamos peinados personalizados que realzan tu belleza natural 
-              y se adaptan perfectamente a tu estilo y tipo de cabello.
-            </p>
-          </UCard>
-
-          <UCard>
-            <h3 class="text-xl font-semibold mb-4">
-              Tipos de peinados
-            </h3>
-            <div class="space-y-4">
-              <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <h4 class="font-semibold mb-2">
-                  Peinado casual
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                  Peinados sencillos y elegantes para el día a día. Ondas suaves, alisados, 
-                  coletas sofisticadas o semirecogidos.
-                </p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">
-                  Ideal para: Trabajo, comidas, reuniones informales
-                </p>
-              </div>
-
-              <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <h4 class="font-semibold mb-2">
-                  Peinado para eventos
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                  Peinados más elaborados con ondas marcadas, recogidos elegantes, trenzas 
-                  sofisticadas o semirecogidos con volumen.
-                </p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">
-                  Ideal para: Bodas, bautizos, comuniones, fiestas
-                </p>
-              </div>
-
-              <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <h4 class="font-semibold mb-2">
-                  Peinado alta ceremonia
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                  Peinados espectaculares con técnicas avanzadas. Recogidos altos, moños bajos 
-                  con trenzas, peinados estructurados con accesorios.
-                </p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">
-                  Ideal para: Bodas, galas, eventos importantes
-                </p>
-              </div>
-
-              <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <h4 class="font-semibold mb-2">
-                  Ondas y rizos
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                  Marcado de ondas suaves, rizos definidos o bucles glamourosos con tenacillas 
-                  o plancha. Acabado duradero y con movimiento natural.
-                </p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">
-                  Ideal para: Cualquier ocasión, look romántico
-                </p>
-              </div>
-
-              <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <h4 class="font-semibold mb-2">
-                  Alisado profesional
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                  Alisado con plancha profesional que elimina el frizz y aporta brillo y suavidad. 
-                  Acabado pulido y elegante.
-                </p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">
-                  Ideal para: Look sofisticado y pulido
-                </p>
-              </div>
-
-              <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <h4 class="font-semibold mb-2">
-                  Trenzas y recogidos
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                  Trenzas de espiga, boxer, holandesas, francesas. Recogidos bajos, moños 
-                  románticos o estructurados.
-                </p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">
-                  Ideal para: Eventos, look bohemio o elegante
-                </p>
-              </div>
+      <!-- Texto introductorio -->
+      <UCard
+        v-motion
+        :initial="{ opacity: 0, y: 20 }"
+        :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 100 } }"
+        class="mb-12"
+      >
+        <div class="prose dark:prose-invert max-w-none">
+          <div class="flex items-start gap-4">
+            <div class="p-4 bg-primary/10 rounded-xl">
+              <UIcon name="i-lucide-sparkles" class="w-8 h-8 text-primary" />
             </div>
-          </UCard>
-
-          <UCard>
-            <h3 class="text-xl font-semibold mb-4">
-              Ocasiones especiales
-            </h3>
-            <div class="grid md:grid-cols-2 gap-4">
-              <div class="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-                <UIcon
-                  name="i-lucide-heart"
-                  class="text-primary mb-2"
-                />
-                <h4 class="font-semibold mb-1">
-                  Invitadas de boda
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Peinados elegantes que duran toda la celebración
-                </p>
-              </div>
-              <div class="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-                <UIcon
-                  name="i-lucide-sparkles"
-                  class="text-primary mb-2"
-                />
-                <h4 class="font-semibold mb-1">
-                  Graduaciones
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Looks sofisticados para tu día especial
-                </p>
-              </div>
-              <div class="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-                <UIcon
-                  name="i-lucide-gift"
-                  class="text-primary mb-2"
-                />
-                <h4 class="font-semibold mb-1">
-                  Comuniones y bautizos
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Peinados que complementan tu look de madrina o invitada
-                </p>
-              </div>
-              <div class="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-                <UIcon
-                  name="i-lucide-party-popper"
-                  class="text-primary mb-2"
-                />
-                <h4 class="font-semibold mb-1">
-                  Fiestas y galas
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Peinados con personalidad para destacar
-                </p>
-              </div>
+            <div class="flex-1">
+              <h2 class="text-2xl md:text-3xl font-bold mb-4 mt-0">
+                El peinado perfecto para cada momento
+              </h2>
+              <p class="text-lg text-gray-600 dark:text-gray-300 mb-4">
+                Ya sea para un evento especial, una ocasión formal o simplemente para lucir radiante 
+                en tu día a día, creamos peinados personalizados que realzan tu belleza natural 
+                y se adaptan perfectamente a tu estilo y tipo de cabello.
+              </p>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                Desde ondas suaves y recogidos elegantes hasta peinados de alta ceremonia para bodas 
+                y eventos importantes. Trabajamos con técnicas profesionales y productos de calidad 
+                para garantizar un acabado duradero que te haga sentir especial.
+              </p>
             </div>
-          </UCard>
+          </div>
 
-          <UCard>
-            <h3 class="text-xl font-semibold mb-4">
-              ¿Por qué elegir un peinado profesional?
-            </h3>
-            <ul class="space-y-2">
-              <li class="flex items-start gap-2">
-                <UIcon
-                  name="i-lucide-check"
-                  class="size-5 text-primary mt-0.5 shrink-0"
-                />
-                <div>
-                  <span class="font-medium">Resultado profesional:</span> Técnicas profesionales que aguantan todo el día
-                </div>
-              </li>
-              <li class="flex items-start gap-2">
-                <UIcon
-                  name="i-lucide-check"
-                  class="size-5 text-primary mt-0.5 shrink-0"
-                />
-                <div>
-                  <span class="font-medium">Asesoramiento experto:</span> Te ayudamos a elegir el peinado más favorecedor
-                </div>
-              </li>
-              <li class="flex items-start gap-2">
-                <UIcon
-                  name="i-lucide-check"
-                  class="size-5 text-primary mt-0.5 shrink-0"
-                />
-                <div>
-                  <span class="font-medium">Acabado impecable:</span> Perfección en cada detalle
-                </div>
-              </li>
-              <li class="flex items-start gap-2">
-                <UIcon
-                  name="i-lucide-check"
-                  class="size-5 text-primary mt-0.5 shrink-0"
-                />
-                <div>
-                  <span class="font-medium">Productos de calidad:</span> Fijadores y sprays profesionales
-                </div>
-              </li>
-              <li class="flex items-start gap-2">
-                <UIcon
-                  name="i-lucide-check"
-                  class="size-5 text-primary mt-0.5 shrink-0"
-                />
-                <div>
-                  <span class="font-medium">Sin preocupaciones:</span> Disfruta del evento sin pensar en tu pelo
-                </div>
-              </li>
-            </ul>
-          </UCard>
-
-          <UCard>
-            <h3 class="text-xl font-semibold mb-4">
-              Consejos para tu peinado
-            </h3>
-            <div class="space-y-3">
-              <div class="flex gap-3">
-                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
-                  <span class="text-primary font-bold">1</span>
-                </div>
-                <div>
-                  <h4 class="font-semibold mb-1">
-                    Reserva con antelación
-                  </h4>
-                  <p class="text-sm text-gray-600 dark:text-gray-400">
-                    Especialmente para eventos importantes, reserva con tiempo
-                  </p>
-                </div>
-              </div>
-              <div class="flex gap-3">
-                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
-                  <span class="text-primary font-bold">2</span>
-                </div>
-                <div>
-                  <h4 class="font-semibold mb-1">
-                    Trae referencias
-                  </h4>
-                  <p class="text-sm text-gray-600 dark:text-gray-400">
-                    Fotos de peinados que te gusten ayudan a comunicar tu visión
-                  </p>
-                </div>
-              </div>
-              <div class="flex gap-3">
-                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
-                  <span class="text-primary font-bold">3</span>
-                </div>
-                <div>
-                  <h4 class="font-semibold mb-1">
-                    Lava tu cabello el día anterior
-                  </h4>
-                  <p class="text-sm text-gray-600 dark:text-gray-400">
-                    El cabello recién lavado puede ser más difícil de peinar
-                  </p>
-                </div>
-              </div>
-              <div class="flex gap-3">
-                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
-                  <span class="text-primary font-bold">4</span>
-                </div>
-                <div>
-                  <h4 class="font-semibold mb-1">
-                    Considera tu vestimenta
-                  </h4>
-                  <p class="text-sm text-gray-600 dark:text-gray-400">
-                    El peinado debe complementar tu outfit y el estilo del evento
-                  </p>
-                </div>
-              </div>
+          <div class="grid md:grid-cols-2 gap-6 mt-8">
+            <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
+              <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
+                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                Para Toda Ocasión
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Desde looks casuales hasta peinados de alta ceremonia para bodas y galas.
+              </p>
             </div>
-          </UCard>
+
+            <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
+              <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
+                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                Técnicas Profesionales
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Ondas, rizos, alisados, recogidos, trenzas y todo tipo de acabados expertos.
+              </p>
+            </div>
+
+            <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
+              <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
+                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                Larga Duración
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Utilizamos productos profesionales que aseguran que tu peinado dure todo el evento.
+              </p>
+            </div>
+
+            <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
+              <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
+                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                Personalizado
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Adaptamos cada peinado a tu tipo de cabello, vestimenta y estilo del evento.
+              </p>
+            </div>
+          </div>
         </div>
+      </UCard>
 
-        <div class="space-y-6">
-          <UCard class="sticky top-24">
-            <div class="space-y-4">
-              <div class="p-4 bg-primary/10 rounded-lg w-fit">
-                <UIcon
-                  name="i-lucide-wind"
-                  class="w-8 h-8 text-primary"
-                />
-              </div>
-              <div class="p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-800">
-                <h4 class="font-semibold mb-2 text-sm flex items-center gap-2">
-                  <UIcon
-                    name="i-lucide-info"
-                    class="text-amber-600"
-                  />
-                  <span>Prueba previa</span>
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-300">
-                  Para eventos importantes, ofrecemos prueba previa para garantizar el resultado perfecto
-                </p>
-              </div>
-              <hr class="border-gray-200 dark:border-gray-800" />
-              <div class="space-y-3">
-                <UButton
-                  to="/contacto"
-                  block
-                  size="lg"
-                  color="primary"
-                >
-                  <template #leading>
-                    <UIcon name="i-lucide-calendar" />
-                  </template>
-                  Reservar cita
-                </UButton>
-                <UButton
-                  href="tel:984390259"
-                  block
-                  size="lg"
-                  color="neutral"
-                  variant="outline"
-                >
-                  <template #leading>
-                    <UIcon name="i-lucide-phone" />
-                  </template>
-                  Llamar ahora
-                </UButton>
-              </div>
-            </div>
-          </UCard>
-        </div>
-      </div>
-
-      <div class="mt-16">
-        <h2 class="text-2xl font-bold mb-6">
-          Otros servicios de peluquería
+      <!-- Galería de imágenes -->
+      <div
+        v-motion
+        :initial="{ opacity: 0, y: 20 }"
+        :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 200 } }"
+      >
+        <h2 class="text-2xl font-bold mb-6 text-center">
+          Galería de trabajos
         </h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <UButton
-            to="/corte-pelo-pola-de-siero"
-            color="neutral"
-            variant="outline"
-            block
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+          <div
+            v-for="(image, index) in galleryImages"
+            :key="index"
+            v-motion
+            :initial="{ opacity: 0, scale: 0.9 }"
+            :visible-once="{ opacity: 1, scale: 1 }"
+            :delay="100 * index"
+            class="relative aspect-square overflow-hidden rounded-xl group cursor-pointer hover:shadow-xl transition-all duration-300"
           >
-            Corte
-          </UButton>
-          <UButton
-            to="/color-pelo-pola-de-siero"
-            color="neutral"
-            variant="outline"
-            block
-          >
-            Color
-          </UButton>
-          <UButton
-            to="/mechas-pola-de-siero"
-            color="neutral"
-            variant="outline"
-            block
-          >
-            Mechas
-          </UButton>
-          <UButton
-            to="/tratamientos-pola-de-siero"
-            color="neutral"
-            variant="outline"
-            block
-          >
-            Tratamientos
-          </UButton>
+            <NuxtImg
+              :src="image.src"
+              :alt="image.alt"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+              format="webp"
+            />
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
+          </div>
         </div>
       </div>
+
+      <!-- CTA -->
+      <UCard
+        v-motion
+        :initial="{ opacity: 0, y: 20 }"
+        :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 300 } }"
+        class="bg-linear-to-br from-primary/10 via-primary/5 to-transparent ring-1 ring-primary/20"
+      >
+        <div class="text-center py-8">
+          <h3 class="text-2xl font-bold mb-4">
+            ¿Tienes un evento especial?
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
+            Reserva tu cita y luce el peinado perfecto para tu ocasión especial.
+          </p>
+          <div class="flex flex-wrap gap-3 justify-center">
+            <UButton to="/contacto" size="lg" color="primary">
+              <template #leading>
+                <UIcon name="i-lucide-calendar" />
+              </template>
+              Reservar cita
+            </UButton>
+            <UButton href="tel:984390259" size="lg" color="neutral" variant="outline">
+              <template #leading>
+                <UIcon name="i-lucide-phone" />
+              </template>
+              Llamar ahora
+            </UButton>
+          </div>
+        </div>
+      </UCard>
     </UPageBody>
   </UContainer>
 </template>

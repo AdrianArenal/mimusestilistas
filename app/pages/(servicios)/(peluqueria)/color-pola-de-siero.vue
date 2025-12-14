@@ -26,7 +26,7 @@ const galleryImages = [
       description="Coloración personalizada con técnicas profesionales adaptadas a tu estilo"
     >
       <template #headline>
-        <UBreadcrumb
+        <ResponsiveBreadcrumb
           :items="[
             { label: 'Inicio', to: '/' },
             { label: 'Servicios', to: '/servicios' },

@@ -7,12 +7,12 @@ useSeoMeta({
 })
 
 const galleryImages = [
-  { src: '/hero/random-1.avif', alt: 'Babylights 1' },
-  { src: '/hero/random-2.avif', alt: 'Babylights 2' },
-  { src: '/hero/random-3.avif', alt: 'Babylights 3' },
-  { src: '/hero/random-4.avif', alt: 'Babylights 4' },
-  { src: '/hero/random-5.avif', alt: 'Babylights 5' },
-  { src: '/hero/random-6.avif', alt: 'Babylights 6' }
+  { url: 'https://www.instagram.com/reel/DCTYh5cM-8Z/', alt: 'Babylights 1' },
+  { url: 'https://www.instagram.com/reel/C_k5NrwsMW0/', alt: 'Babylights 2' },
+  { url: 'https://www.instagram.com/reel/C8fYcA9sOMw/', alt: 'Babylights 3' },
+  { url: 'https://www.instagram.com/reel/C6BHWeds1u2/', alt: 'Babylights 4' },
+  { url: 'https://www.instagram.com/reel/C4-OYXisEOT/', alt: 'Babylights 5' },
+  { url: 'https://www.instagram.com/reel/C3uT7D4M1mK/', alt: 'Babylights 6' }
 ]
 </script>
 
@@ -26,7 +26,7 @@ const galleryImages = [
       description="Iluminación sutil y natural con mechas finas"
     >
       <template #headline>
-        <UBreadcrumb
+        <ResponsiveBreadcrumb
           :items="[
             { label: 'Inicio', to: '/' },
             { label: 'Servicios', to: '/servicios' },
@@ -137,25 +137,30 @@ const galleryImages = [
         <h2 class="text-2xl font-bold mb-6 text-center">
           Galería de trabajos
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
-          <div
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12 items-start">
+          <a
             v-for="(image, index) in galleryImages"
             :key="index"
+            :href="image.url"
+            target="_blank"
+            rel="noopener noreferrer"
             v-motion
             :initial="{ opacity: 0, scale: 0.9 }"
             :visible-once="{ opacity: 1, scale: 1 }"
             :delay="100 * index"
-            class="relative aspect-square overflow-hidden rounded-xl group cursor-pointer hover:shadow-xl transition-all duration-300"
+            class="relative overflow-hidden rounded-xl group hover:shadow-xl transition-all duration-300 block"
+            style="padding-bottom: 190%;"
           >
-            <NuxtImg
-              :src="image.src"
-              :alt="image.alt"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              loading="lazy"
-              format="webp"
+            <iframe
+              :src="`${image.url}embed`"
+              class="absolute inset-0 w-full h-full border-0"
+              frameborder="0"
+              scrolling="no"
+              allowtransparency="true"
+              :title="image.alt"
             />
-            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
-          </div>
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 pointer-events-none" />
+          </a>
         </div>
       </div>
 

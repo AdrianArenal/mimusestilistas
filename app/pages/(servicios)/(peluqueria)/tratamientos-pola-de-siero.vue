@@ -26,7 +26,7 @@ const galleryImages = [
       description="Repara, hidrata y fortalece tu cabello con tratamientos profesionales"
     >
       <template #headline>
-        <UBreadcrumb
+        <ResponsiveBreadcrumb
           :items="[
             { label: 'Inicio', to: '/' },
             { label: 'Servicios', to: '/servicios' },

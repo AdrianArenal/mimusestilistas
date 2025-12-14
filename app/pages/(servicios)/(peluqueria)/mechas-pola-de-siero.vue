@@ -1,10 +1,19 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Mechas y Balayage',
-  ogTitle: 'Mechas y Balayage',
-  description: 'Mechas californianas, balayage, babylights y más. Técnicas de iluminación profesional en Pola de Siero.',
-  ogDescription: 'Mechas californianas, balayage, babylights y más. Técnicas de iluminación profesional en Pola de Siero.'
+  title: 'Mechas',
+  ogTitle: 'Mechas',
+  description: 'Mechas profesionales en Pola de Siero. Babylights, balayage y técnicas modernas. Reserva tu cita.',
+  ogDescription: 'Mechas profesionales en Pola de Siero. Babylights, balayage y técnicas modernas. Reserva tu cita.'
 })
+
+const galleryImages = [
+  { src: '/hero/random-1.avif', alt: 'Mechas 1' },
+  { src: '/hero/random-2.avif', alt: 'Mechas 2' },
+  { src: '/hero/random-3.avif', alt: 'Mechas 3' },
+  { src: '/hero/random-4.avif', alt: 'Mechas 4' },
+  { src: '/hero/random-5.avif', alt: 'Mechas 5' },
+  { src: '/hero/random-6.avif', alt: 'Mechas 6' }
+]
 </script>
 
 <template>
@@ -13,11 +22,11 @@ useSeoMeta({
       v-motion
       :initial="{ opacity: 0, y: 20 }"
       :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-      title="Mechas y Balayage"
-      description="Ilumina tu cabello con técnicas profesionales de mechas"
+      title="Mechas"
+      description="Iluminación y dimensión con técnicas profesionales"
     >
       <template #headline>
-        <UBreadcrumb
+        <ResponsiveBreadcrumb
           :items="[
             { label: 'Inicio', to: '/' },
             { label: 'Servicios', to: '/servicios' },
@@ -28,22 +37,13 @@ useSeoMeta({
       </template>
       <template #links>
         <div class="flex flex-wrap gap-3">
-          <UButton
-            to="/contacto"
-            size="lg"
-            color="primary"
-          >
+          <UButton to="/contacto" size="lg" color="primary">
             <template #leading>
               <UIcon name="i-lucide-calendar" />
             </template>
             Reservar cita
           </UButton>
-          <UButton
-            href="tel:984390259"
-            size="lg"
-            color="neutral"
-            variant="outline"
-          >
+          <UButton href="tel:984390259" size="lg" color="neutral" variant="outline">
             <template #leading>
               <UIcon name="i-lucide-phone" />
             </template>
@@ -54,278 +54,140 @@ useSeoMeta({
     </UPageHeader>
 
     <UPageBody>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <div class="lg:col-span-2 space-y-6">
-          <UCard>
-            <h2 class="text-2xl font-bold mb-4">
-              Ilumina tu cabello con las mejores técnicas
-            </h2>
-            <p class="text-gray-600 dark:text-gray-300">
-              Las mechas y el balayage son técnicas de coloración que aportan luminosidad, 
-              profundidad y movimiento natural a tu cabello. Trabajamos de forma personalizada 
-              para conseguir el efecto perfecto según tu tono base y estilo.
-            </p>
-          </UCard>
-
-          <UCard>
-            <h3 class="text-xl font-semibold mb-4">
-              Técnicas de mechas
-            </h3>
-            <div class="space-y-4">
-              <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <h4 class="font-semibold mb-2">
-                  Balayage
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                  Técnica a mano alzada que crea un degradado natural y luminoso. 
-                  Efecto soleado con transiciones suaves.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Natural</span>
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Luminoso</span>
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Bajo mantenimiento</span>
-                </div>
-              </div>
-
-              <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <h4 class="font-semibold mb-2">
-                  Babylights
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                  Mechas muy finas que imitan el efecto natural del sol en el cabello infantil. 
-                  Resultado delicado y sofisticado.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Delicado</span>
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Sofisticado</span>
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Ultra natural</span>
-                </div>
-              </div>
-
-              <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <h4 class="font-semibold mb-2">
-                  Mechas californianas
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                  Mechas que aclaran progresivamente desde medios a puntas. 
-                  Efecto surfero y natural.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Surfero</span>
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Gradual</span>
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Sin raíz</span>
-                </div>
-              </div>
-
-              <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <h4 class="font-semibold mb-2">
-                  Mechas tradicionales
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                  Mechas con gorro o papel. Iluminación uniforme con contraste definido.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Clásico</span>
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Definido</span>
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Luminoso</span>
-                </div>
-              </div>
-
-              <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <h4 class="font-semibold mb-2">
-                  Lowlights
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                  Mechas más oscuras que el tono base para aportar profundidad y dimensión.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Profundidad</span>
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Dimensión</span>
-                  <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded">Volumen visual</span>
-                </div>
-              </div>
+      <!-- Texto introductorio -->
+      <UCard
+        v-motion
+        :initial="{ opacity: 0, y: 20 }"
+        :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 100 } }"
+        class="mb-12"
+      >
+        <div class="prose dark:prose-invert max-w-none">
+          <div class="flex items-start gap-4">
+            <div class="p-4 bg-primary/10 rounded-xl">
+              <UIcon name="i-lucide-sparkles" class="w-8 h-8 text-primary" />
             </div>
-          </UCard>
-
-          <UCard>
-            <h3 class="text-xl font-semibold mb-4">
-              Ventajas de las mechas
-            </h3>
-            <ul class="space-y-2">
-              <li class="flex items-start gap-2">
-                <UIcon
-                  name="i-lucide-sparkles"
-                  class="size-5 text-primary mt-0.5 shrink-0"
-                />
-                <div>
-                  <span class="font-medium">Luminosidad natural:</span> Aportan luz sin cambio drástico
-                </div>
-              </li>
-              <li class="flex items-start gap-2">
-                <UIcon
-                  name="i-lucide-sparkles"
-                  class="size-5 text-primary mt-0.5 shrink-0"
-                />
-                <div>
-                  <span class="font-medium">Bajo mantenimiento:</span> No requieren retoques frecuentes de raíz
-                </div>
-              </li>
-              <li class="flex items-start gap-2">
-                <UIcon
-                  name="i-lucide-sparkles"
-                  class="size-5 text-primary mt-0.5 shrink-0"
-                />
-                <div>
-                  <span class="font-medium">Efecto volumen:</span> Crean sensación de más densidad capilar
-                </div>
-              </li>
-              <li class="flex items-start gap-2">
-                <UIcon
-                  name="i-lucide-sparkles"
-                  class="size-5 text-primary mt-0.5 shrink-0"
-                />
-                <div>
-                  <span class="font-medium">Versatilidad:</span> Se adaptan a cualquier longitud y textura
-                </div>
-              </li>
-              <li class="flex items-start gap-2">
-                <UIcon
-                  name="i-lucide-sparkles"
-                  class="size-5 text-primary mt-0.5 shrink-0"
-                />
-                <div>
-                  <span class="font-medium">Personalización:</span> Infinitas combinaciones de tonos
-                </div>
-              </li>
-            </ul>
-          </UCard>
-
-          <UCard>
-            <h3 class="text-xl font-semibold mb-4">
-              Cuidados posteriores
-            </h3>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">
-              Para mantener tus mechas radiantes:
-            </p>
-            <ul class="space-y-2">
-              <li class="flex items-start gap-2">
-                <UIcon
-                  name="i-lucide-check"
-                  class="size-5 text-primary mt-0.5 shrink-0"
-                />
-                <div>
-                  Usa champú y acondicionador para cabello teñido
-                </div>
-              </li>
-              <li class="flex items-start gap-2">
-                <UIcon
-                  name="i-lucide-check"
-                  class="size-5 text-primary mt-0.5 shrink-0"
-                />
-                <div>
-                  Aplica mascarilla nutritiva 1-2 veces por semana
-                </div>
-              </li>
-              <li class="flex items-start gap-2">
-                <UIcon
-                  name="i-lucide-check"
-                  class="size-5 text-primary mt-0.5 shrink-0"
-                />
-                <div>
-                  Protege del calor con productos termoprotectores
-                </div>
-              </li>
-              <li class="flex items-start gap-2">
-                <UIcon
-                  name="i-lucide-check"
-                  class="size-5 text-primary mt-0.5 shrink-0"
-                />
-                <div>
-                  Retoca cada 3-4 meses según crecimiento y preferencia
-                </div>
-              </li>
-            </ul>
-          </UCard>
-        </div>
-
-        <div class="space-y-6">
-          <UCard class="sticky top-24">
-            <div class="space-y-4">
-              <div class="p-4 bg-primary/10 rounded-lg w-fit">
-                <UIcon
-                  name="i-lucide-sun"
-                  class="w-8 h-8 text-primary"
-                />
-              </div>
-              <div class="space-y-3">
-                <UButton
-                  to="/contacto"
-                  block
-                  size="lg"
-                  color="primary"
-                >
-                  <template #leading>
-                    <UIcon name="i-lucide-calendar" />
-                  </template>
-                  Reservar cita
-                </UButton>
-                <UButton
-                  href="tel:984390259"
-                  block
-                  size="lg"
-                  color="neutral"
-                  variant="outline"
-                >
-                  <template #leading>
-                    <UIcon name="i-lucide-phone" />
-                  </template>
-                  Llamar ahora
-                </UButton>
-              </div>
+            <div class="flex-1">
+              <h2 class="text-2xl md:text-3xl font-bold mb-4 mt-0">
+                Mechas para iluminar y dar vida a tu cabello
+              </h2>
+              <p class="text-lg text-gray-600 dark:text-gray-300 mb-4">
+                Las mechas son perfectas para añadir luminosidad, movimiento y dimensión a tu cabello. 
+                Trabajamos con diferentes técnicas como babylights, balayage y highlights para crear 
+                efectos naturales o más marcados según tus preferencias.
+              </p>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                Cada técnica se adapta a tu estilo y tipo de cabello. Desde iluminaciones sutiles 
+                que imitan el efecto del sol, hasta mechas más definidas que aportan contraste y personalidad. 
+                Te asesoramos para elegir la opción que mejor te favorezca.
+              </p>
             </div>
-          </UCard>
-        </div>
-      </div>
+          </div>
 
-      <div class="mt-16">
-        <h2 class="text-2xl font-bold mb-6">
-          Otros servicios de peluquería
+          <div class="grid md:grid-cols-2 gap-6 mt-8">
+            <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
+              <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
+                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                Técnicas Modernas
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Dominamos babylights, balayage, highlights y otras técnicas actuales de iluminación.
+              </p>
+            </div>
+
+            <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
+              <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
+                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                Efecto Natural
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Creamos iluminaciones que parecen besos del sol, con transiciones suaves y armoniosas.
+              </p>
+            </div>
+
+            <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
+              <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
+                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                Poco Mantenimiento
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                El crecimiento es gradual y natural, por lo que no necesitas retoques constantes.
+              </p>
+            </div>
+
+            <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
+              <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
+                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                Para Todos los Tonos
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Adaptamos las mechas a cualquier color de base, desde rubios hasta castaños oscuros.
+              </p>
+            </div>
+          </div>
+        </div>
+      </UCard>
+
+      <!-- Galería de imágenes -->
+      <div
+        v-motion
+        :initial="{ opacity: 0, y: 20 }"
+        :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 200 } }"
+      >
+        <h2 class="text-2xl font-bold mb-6 text-center">
+          Galería de trabajos
         </h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <UButton
-            to="/peinado-pola-de-siero"
-            color="neutral"
-            variant="outline"
-            block
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+          <div
+            v-for="(image, index) in galleryImages"
+            :key="index"
+            v-motion
+            :initial="{ opacity: 0, scale: 0.9 }"
+            :visible-once="{ opacity: 1, scale: 1 }"
+            :delay="100 * index"
+            class="relative aspect-square overflow-hidden rounded-xl group cursor-pointer hover:shadow-xl transition-all duration-300"
           >
-            Peinados
-          </UButton>
-          <UButton
-            to="/corte-pelo-pola-de-siero"
-            color="neutral"
-            variant="outline"
-            block
-          >
-            Corte
-          </UButton>
-          <UButton
-            to="/color-pelo-pola-de-siero"
-            color="neutral"
-            variant="outline"
-            block
-          >
-            Color
-          </UButton>
-          <UButton
-            to="/tratamientos-pola-de-siero"
-            color="neutral"
-            variant="outline"
-            block
-          >
-            Tratamientos
-          </UButton>
+            <NuxtImg
+              :src="image.src"
+              :alt="image.alt"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+              format="webp"
+            />
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
+          </div>
         </div>
       </div>
+
+      <!-- CTA -->
+      <UCard
+        v-motion
+        :initial="{ opacity: 0, y: 20 }"
+        :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 300 } }"
+        class="bg-linear-to-br from-primary/10 via-primary/5 to-transparent ring-1 ring-primary/20"
+      >
+        <div class="text-center py-8">
+          <h3 class="text-2xl font-bold mb-4">
+            ¿Quieres darle luz a tu cabello?
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
+            Reserva tu cita y te asesoraremos sobre la técnica de mechas que mejor te favorece.
+          </p>
+          <div class="flex flex-wrap gap-3 justify-center">
+            <UButton to="/contacto" size="lg" color="primary">
+              <template #leading>
+                <UIcon name="i-lucide-calendar" />
+              </template>
+              Reservar cita
+            </UButton>
+            <UButton href="tel:984390259" size="lg" color="neutral" variant="outline">
+              <template #leading>
+                <UIcon name="i-lucide-phone" />
+              </template>
+              Llamar ahora
+            </UButton>
+          </div>
+        </div>
+      </UCard>
     </UPageBody>
   </UContainer>
 </template>

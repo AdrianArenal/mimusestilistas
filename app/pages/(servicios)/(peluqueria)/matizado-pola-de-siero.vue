@@ -26,7 +26,7 @@ const galleryImages = [
       description="Consigue el tono perfecto y elimina reflejos no deseados"
     >
       <template #headline>
-        <UBreadcrumb
+        <ResponsiveBreadcrumb
           :items="[
             { label: 'Inicio', to: '/' },
             { label: 'Servicios', to: '/servicios' },
