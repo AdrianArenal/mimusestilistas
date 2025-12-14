@@ -17,7 +17,7 @@ useSeoMeta({
       description="Manicura y pedicura básica para uñas cuidadas"
     >
       <template #headline>
-        <UBreadcrumb
+        <ResponsiveBreadcrumb
           :items="[
             { label: 'Inicio', to: '/' },
             { label: 'Servicios', to: '/servicios' },

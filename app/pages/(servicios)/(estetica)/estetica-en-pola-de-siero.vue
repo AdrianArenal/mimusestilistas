@@ -34,7 +34,7 @@ const services = [
       description="Servicios de estética en Pola de Siero"
     >
       <template #headline>
-        <UBreadcrumb
+        <ResponsiveBreadcrumb
           :items="[
             { label: 'Inicio', to: '/' },
             { label: 'Servicios', to: '/servicios' },

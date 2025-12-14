@@ -69,7 +69,7 @@ const services = [
       description="Servicios completos de peluquería profesional. Más de 20 años cuidando tu cabello con pasión y experiencia."
     >
       <template #headline>
-        <UBreadcrumb
+        <ResponsiveBreadcrumb
           :items="[
             { label: 'Inicio', to: '/' },
             { label: 'Servicios', to: '/servicios' },

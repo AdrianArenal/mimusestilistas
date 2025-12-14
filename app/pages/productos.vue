@@ -208,7 +208,7 @@ const blondmeColumns = [
 
               <p class="text-lg pt-4">
                 <strong>Ven a Mimus Peluquería y descubre la diferencia que hace trabajar con una marca líder como
-                  Schwarzkopf.</strong>
+                  <ULink to="https://shop.schwarzkopf-professional.es/es/?utm_source=mimus&utm_medium=cpc&utm_campaign=SKP_ES_eShop_ES-FMCG-SKP-Search-BR-ALL_always-on-2025&utm_term=g_e_schwarzkopf&utm_content=schwarzkopf-pure-brand&gad_source=1&gad_campaignid=13623422308&gbraid=0AAAAAB3CrcZEcIfpv2ztQP_abtB6730xG&gclid=CjwKCAiA3fnJBhAgEiwAyqmY5SM6H_vHLiDHUsgXHVh_Gw20r0wwfV6vg9l-ZrJyygPFl3jONuNVSBoC0eQQAvD_BwE" target="_blank" class="text-primary hover:underline">Schwarzkopf</ULink>.</strong>
               </p>
             </div>
 
@@ -254,7 +254,7 @@ const blondmeColumns = [
                   Authentic Beauty Concept
                 </h2>
                 <p class="text-lg text-muted leading-relaxed">
-                  Authentic Beauty Concept es la gama vegana de Schwarzkopf dedicada a la pureza y sostenibilidad.
+                  <ULink to="https://www.authenticbeautyconcept.es/" target="_blank" class="text-primary hover:underline">Authentic Beauty Concept</ULink> es la gama vegana de Schwarzkopf dedicada a la pureza y sostenibilidad.
                 </p>
               </div>
 

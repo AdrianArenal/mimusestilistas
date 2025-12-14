@@ -7,12 +7,12 @@ useSeoMeta({
 })
 
 const galleryImages = [
-  { src: '/hero/random-1.avif', alt: 'Balayage con highlights 1' },
-  { src: '/hero/random-2.avif', alt: 'Balayage con highlights 2' },
-  { src: '/hero/random-3.avif', alt: 'Balayage con highlights 3' },
-  { src: '/hero/random-4.avif', alt: 'Balayage con highlights 4' },
-  { src: '/hero/random-5.avif', alt: 'Balayage con highlights 5' },
-  { src: '/hero/random-6.avif', alt: 'Balayage con highlights 6' }
+  { url: 'https://www.instagram.com/reel/DFkSYPpMNFU/', alt: 'Balayage con highlights 1' },
+  { url: 'https://www.instagram.com/reel/DDOwoe-sZZU/', alt: 'Balayage con highlights 2' },
+  { url: 'https://www.instagram.com/reel/C5z_1S8MYwb/', alt: 'Balayage con highlights 3' },
+  { url: 'https://www.instagram.com/reel/C-vAmFysa1w/', alt: 'Balayage con highlights 4' },
+  { url: 'https://www.instagram.com/reel/C9iFPn_M6Ab/', alt: 'Balayage con highlights 5' },
+  { url: 'https://www.instagram.com/reel/C6QUtPPsJ7B/', alt: 'Balayage con highlights 6' }
 ]
 </script>
 
@@ -26,7 +26,7 @@ const galleryImages = [
       description="Técnica de barrido con iluminaciones estratégicas"
     >
       <template #headline>
-        <UBreadcrumb
+        <ResponsiveBreadcrumb
           :items="[
             { label: 'Inicio', to: '/' },
             { label: 'Servicios', to: '/servicios' },
@@ -136,25 +136,30 @@ const galleryImages = [
         <h2 class="text-2xl font-bold mb-6 text-center">
           Galería de trabajos
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
-          <div
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12 items-start">
+          <a
             v-for="(image, index) in galleryImages"
             :key="index"
+            :href="image.url"
+            target="_blank"
+            rel="noopener noreferrer"
             v-motion
             :initial="{ opacity: 0, scale: 0.9 }"
             :visible-once="{ opacity: 1, scale: 1 }"
             :delay="100 * index"
-            class="relative aspect-square overflow-hidden rounded-xl group cursor-pointer hover:shadow-xl transition-all duration-300"
+            class="relative overflow-hidden rounded-xl group hover:shadow-xl transition-all duration-300 block"
+            style="padding-bottom: 190%;"
           >
-            <NuxtImg
-              :src="image.src"
-              :alt="image.alt"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              loading="lazy"
-              format="webp"
+            <iframe
+              :src="`${image.url}embed`"
+              class="absolute inset-0 w-full h-full border-0"
+              frameborder="0"
+              scrolling="no"
+              allowtransparency="true"
+              :title="image.alt"
             />
-            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
-          </div>
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 pointer-events-none" />
+          </a>
         </div>
       </div>
 

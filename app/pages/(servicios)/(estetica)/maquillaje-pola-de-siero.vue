@@ -17,7 +17,7 @@ useSeoMeta({
       description="Maquillaje para realzar tu belleza natural"
     >
       <template #headline>
-        <UBreadcrumb
+        <ResponsiveBreadcrumb
           :items="[
             { label: 'Inicio', to: '/' },
             { label: 'Servicios', to: '/servicios' },

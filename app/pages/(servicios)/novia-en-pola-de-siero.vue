@@ -17,7 +17,7 @@ useSeoMeta({
       description="Peinados para novias, peinados y maquillaje para invitadas. Hacemos de tu día especial un momento inolvidable"
     >
       <template #headline>
-        <UBreadcrumb
+        <ResponsiveBreadcrumb
           :items="[
             { label: 'Inicio', to: '/' },
             { label: 'Servicios', to: '/servicios' },
