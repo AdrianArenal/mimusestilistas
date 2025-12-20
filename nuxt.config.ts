@@ -12,7 +12,13 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://mimusestilistas.com',
-    name: "Mimu's Estilistas"
+    name: "Mimu's Estilistas",
+    defaultLocale: 'es'
+  },
+
+  i18n: {
+    locales: ['es'],
+    defaultLocale: 'es'
   },
 
   app: {

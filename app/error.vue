@@ -10,13 +10,13 @@ defineProps({
 
 useHead({
   htmlAttrs: {
-    lang: 'en'
+    lang: 'es'
   }
 })
 
 useSeoMeta({
-  title: 'Page not found',
-  description: 'We are sorry but this page could not be found.'
+  title: 'Página no encontrada',
+  description: 'Lo sentimos, pero no pudimos encontrar esta página.'
 })
 
 const [{ data: navigation }, { data: files }] = await Promise.all([
