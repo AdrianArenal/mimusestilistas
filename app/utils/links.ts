@@ -18,6 +18,6 @@ export const navLinks: NavigationMenuItem[] = [{
   to: '/equipo'
 }, {
   label: 'Contacto',
-  icon: 'i-lucide-mail',
+  icon: 'i-lucide-phone',
   to: '/contacto'
 }]

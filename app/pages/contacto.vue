@@ -25,20 +25,20 @@ useSeoMeta({
         :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 100 } }"
         class="ring-1 ring-gray-200 dark:ring-gray-800 rounded-2xl shadow-lg mb-12"
       >
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <!-- Location -->
-          <div class="flex items-start gap-2">
-            <div class="p-1 bg-primary/10 rounded-lg shrink-0">
+          <div class="flex items-start gap-3 md:gap-4">
+            <div class="p-2 md:p-2.5 bg-primary/10 rounded-lg shrink-0">
               <UIcon
                 name="i-lucide-map-pin"
-                class="size-4 text-primary"
+                class="size-5 md:size-6 text-primary"
               />
             </div>
             <div class="flex-1 min-w-0">
-              <h3 class="text-base md:text-lg font-bold mb-1.5 md:mb-2">
+              <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">
                 Nuestra ubicación
               </h3>
-              <p class="text-gray-600 dark:text-gray-300 text-xs md:text-sm mb-3">
+              <p class="text-gray-600 dark:text-gray-300 text-sm md:text-base mb-4 leading-relaxed">
                 Calle Enrique II, 5, bajo 2<br>
                 33510 Pola de Siero<br>
                 Asturias, España
@@ -48,7 +48,7 @@ useSeoMeta({
                 target="_blank"
                 color="primary"
                 variant="soft"
-                size="xs"
+                size="sm"
               >
                 <template #trailing>
                   <UIcon name="i-lucide-external-link" />
@@ -59,23 +59,23 @@ useSeoMeta({
           </div>
 
           <!-- Phone -->
-          <div class="flex items-start gap-2">
-            <div class="p-1 bg-primary/10 rounded-lg shrink-0">
+          <div class="flex items-start gap-3 md:gap-4">
+            <div class="p-2 md:p-2.5 bg-primary/10 rounded-lg shrink-0">
               <UIcon
                 name="i-lucide-phone"
-                class="size-4 text-primary"
+                class="size-5 md:size-6 text-primary"
               />
             </div>
             <div class="flex-1 min-w-0">
-              <h3 class="text-base md:text-lg font-bold mb-1.5 md:mb-2">
+              <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">
                 Llámanos
               </h3>
-              <p class="text-gray-600 dark:text-gray-300 text-xs md:text-sm mb-3">
+              <p class="text-gray-600 dark:text-gray-300 text-sm md:text-base mb-4">
                 Reserva tu cita por teléfono
               </p>
               <a
                 href="tel:984390259"
-                class="text-xl md:text-2xl font-bold text-primary hover:underline block mb-3"
+                class="text-2xl md:text-3xl font-bold text-primary hover:underline block mb-4"
               >
                 984 39 02 59
               </a>
@@ -83,47 +83,12 @@ useSeoMeta({
                 href="tel:984390259"
                 color="primary"
                 variant="soft"
-                size="xs"
+                size="sm"
               >
                 <template #leading>
                   <UIcon name="i-lucide-phone-call" />
                 </template>
                 Llamar ahora
-              </UButton>
-            </div>
-          </div>
-
-          <!-- Email -->
-          <div class="flex items-start gap-2">
-            <div class="p-1 bg-primary/10 rounded-lg shrink-0">
-              <UIcon
-                name="i-lucide-mail"
-                class="size-4 text-primary"
-              />
-            </div>
-            <div class="flex-1 min-w-0">
-              <h3 class="text-base md:text-lg font-bold mb-1.5 md:mb-2">
-                Escríbenos
-              </h3>
-              <p class="text-gray-600 dark:text-gray-300 text-xs md:text-sm mb-3">
-                Envíanos un email
-              </p>
-              <a
-                href="mailto:mimusestilistas@gmail.com"
-                class="text-xs md:text-sm text-primary hover:underline break-all block mb-3"
-              >
-                mimusestilistas@gmail.com
-              </a>
-              <UButton
-                href="mailto:mimusestilistas@gmail.com"
-                color="primary"
-                variant="soft"
-                size="xs"
-              >
-                <template #leading>
-                  <UIcon name="i-lucide-send" />
-                </template>
-                Enviar email
               </UButton>
             </div>
           </div>
@@ -154,7 +119,7 @@ useSeoMeta({
         </UCard>
       </div>
 
-      <!-- Schedule and WhatsApp Section -->
+      <!-- Schedule and CTA Section -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
         <!-- Schedule Card -->
         <UCard
@@ -264,30 +229,6 @@ useSeoMeta({
                   <UIcon name="i-lucide-phone" />
                 </template>
                 Llamar para reservar
-              </UButton>
-              <UButton
-                href="https://wa.me/34984390259?text=Hola,%20me%20gustaría%20reservar%20una%20cita"
-                size="lg"
-                color="success"
-                block
-                target="_blank"
-              >
-                <template #leading>
-                  <UIcon name="i-simple-icons-whatsapp" />
-                </template>
-                WhatsApp
-              </UButton>
-              <UButton
-                href="mailto:mimusestilistas@gmail.com"
-                size="lg"
-                color="neutral"
-                variant="soft"
-                block
-              >
-                <template #leading>
-                  <UIcon name="i-lucide-mail" />
-                </template>
-                Enviar email
               </UButton>
             </div>
           </div>
