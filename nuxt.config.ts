@@ -12,11 +12,14 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://mimusestilistas.com',
-    name: 'Mimu´s Estilistas'
+    name: "Mimu's Estilistas"
   },
 
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'es'
+      },
       link: [
         { rel: 'icon', type: 'image/png', href: '/favicon-96x96.png', sizes: '96x96' },
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
@@ -25,7 +28,7 @@ export default defineNuxtConfig({
         { rel: 'manifest', href: '/site.webmanifest' }
       ],
       meta: [
-        { name: 'apple-mobile-web-app-title', content: 'Mimu´s estilistas' }
+        { name: 'apple-mobile-web-app-title', content: "Mimu's estilistas" }
       ]
     }
   },

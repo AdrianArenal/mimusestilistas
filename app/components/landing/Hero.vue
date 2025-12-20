@@ -267,7 +267,7 @@ onUnmounted(() => {
         class="max-w-lg mx-auto"
         @select="onSelect"
       >
-        <img :src="item" width="512" height="512" class="rounded-lg aspect-square object-cover w-full">
+        <img :src="item" alt="Trabajos de peluquería y estética realizados en Mimu's Estilistas" width="512" height="512" class="rounded-lg aspect-square object-cover w-full">
       </UCarousel>
 
       <div class="relative">

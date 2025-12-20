@@ -20,7 +20,6 @@ useHead({
 })
 
 useSeoMeta({
-  titleTemplate: '%s - Mimu´s Estilistas',
   twitterCard: 'summary_large_image'
 })
 
