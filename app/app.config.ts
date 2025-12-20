@@ -5,8 +5,7 @@ export default defineAppConfig({
       light: '/hero/random-1.avif',
       alt: 'Logo Mimu\'s Estilistas'
     },
-    meetingLink: '/contacto',
-    email: 'mimusestilistascb@hotmail.com'
+    meetingLink: '/contacto'
   },
   ui: {
     colors: {

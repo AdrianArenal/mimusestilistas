@@ -245,7 +245,7 @@ useSeoMeta({
               color="primary"
             >
               <template #leading>
-                <UIcon name="i-lucide-mail" />
+                <UIcon name="i-lucide-phone" />
               </template>
               Contactar
             </UButton>
