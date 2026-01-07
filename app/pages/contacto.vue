@@ -230,6 +230,19 @@ useSeoMeta({
                 </template>
                 Llamar para reservar
               </UButton>
+              <UButton
+                href="https://g.page/r/CUjz0HlYvopoEBM/review"
+                target="_blank"
+                size="lg"
+                color="neutral"
+                variant="soft"
+                block
+              >
+                <template #leading>
+                  <UIcon name="i-lucide-star" />
+                </template>
+                Dejar una reseña
+              </UButton>
             </div>
           </div>
         </UCard>
