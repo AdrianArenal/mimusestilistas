@@ -62,12 +62,27 @@ const menuItems: NavigationMenuItem[] = [
 
     <template #right>
       <template v-if="footer?.links">
-        <div class="flex gap-2 shrink-0">
+        <div class="flex flex-col items-center lg:items-end gap-2">
+          <div class="flex gap-2 shrink-0">
+            <UButton
+              v-for="(link, index) of footer?.links"
+              :key="index"
+              v-bind="{ size: 'xs', color: 'neutral', variant: 'ghost', ...link }"
+            />
+          </div>
           <UButton
-            v-for="(link, index) of footer?.links"
-            :key="index"
-            v-bind="{ size: 'xs', color: 'neutral', variant: 'ghost', ...link }"
-          />
+            href="https://g.page/r/CUjz0HlYvopoEBM/review"
+            target="_blank"
+            size="xs"
+            color="primary"
+            variant="soft"
+            class="whitespace-nowrap"
+          >
+            <template #leading>
+              <UIcon name="i-lucide-star" class="size-4" />
+            </template>
+            Valorar
+          </UButton>
         </div>
       </template>
     </template>
