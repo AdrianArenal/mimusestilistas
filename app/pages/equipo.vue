@@ -10,7 +10,6 @@ const team = [
   {
     name: 'Yolanda Fernández Díaz',
     image: '/images/yoli.webp',
-    experience: '30 años de experiencia',
     specialties: [
       { name: 'Peluquería', to: '/peluqueria-en-pola-de-siero' },
       { name: 'Bodas y Eventos', to: '/novia-en-pola-de-siero' },
@@ -20,7 +19,6 @@ const team = [
   {
     name: 'Carolina San José Suárez',
     image: '/images/carolina.webp',
-    experience: '18 años de experiencia',
     specialties: [
       { name: 'Color', to: '/color-pelo-pola-de-siero' },
       { name: 'Mechas', to: '/mechas-pola-de-siero' },
@@ -30,7 +28,6 @@ const team = [
   {
     name: 'Raquel González Cueto',
     image: '/images/raquel.webp',
-    experience: '27 años de experiencia',
     specialties: [
       { name: 'Mechas', to: '/mechas-pola-de-siero' },
       { name: 'Balayage', to: '/mechas-pola-de-siero' },
@@ -114,14 +111,6 @@ const team = [
               <h3 class="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">
                 {{ member.name }}
               </h3>
-            </div>
-
-            <!-- Años de experiencia -->
-            <div class="flex items-center gap-3 text-lg">
-              <UIcon name="i-lucide-award" class="size-6 text-primary" />
-              <span class="text-gray-700 dark:text-gray-300 font-medium">
-                {{ member.experience }}
-              </span>
             </div>
 
             <!-- Especialidades -->
