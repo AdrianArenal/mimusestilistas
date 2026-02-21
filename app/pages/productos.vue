@@ -19,79 +19,101 @@ useSeoMeta({
   ogDescription: page.seo.description
 })
 
-// Glow - Para cabello coloreado
+// Styling
+const stylingProducts = [
+  { producto: 'Base Arcilla', tamano: '85 ml', precio: '€ 32,70' },
+  { producto: 'Espuma Amplificadora', tamano: '200 ml', precio: '€ 33,60' },
+  { producto: 'Crema de Forma', tamano: '150 ml', precio: '€ 30,70' },
+  { producto: 'Pasta de Cera Efecto Gritty', tamano: '85 ml', precio: '€ 30,25' },
+  { producto: 'Pomada Sólida', tamano: '85 ml', precio: '€ 30,25' },
+  { producto: 'Champú en Seco', tamano: '250 ml', precio: '€ 33,60' },
+  { producto: 'Laca Funcional', tamano: '300 ml', precio: '€ 31,20' },
+  { producto: 'Laca de Fijación Fuerte', tamano: '300 ml', precio: '€ 31,20' },
+  { producto: 'Spray Salino Ninfa', tamano: '250 ml', precio: '€ 32,70' },
+  { producto: 'Polvo en Spray Nude', tamano: '12 g', precio: '€ 32,70' },
+  { producto: 'Spray de Textura Aireada', tamano: '300 ml', precio: '€ 33,60' },
+  { producto: 'Pasta de Fijación Flexible', tamano: '85 ml', precio: '€ 30,25' },
+  { producto: 'Cosmic Blow-Dry Jelly', tamano: '150 ml', precio: '€ 32,70' }
+]
+
+const beyondHairProducts = [
+  { producto: 'Eau de Toilette', tamano: '50 ml', precio: '€ 59,20' },
+  { producto: 'Agua Perfeccionadora', tamano: '100 ml', precio: '€ 31,70' },
+  { producto: 'Crema para Cabello y Manos', tamano: '75 ml', precio: '€ 25,10' },
+  { producto: 'Exfoliante Sensorial en Crema', tamano: '250 ml', precio: '€ 44,50' }
+]
+
+const minisProducts = [
+  { producto: 'Glow Champú', tamano: '50 ml', precio: '€ 7,30' },
+  { producto: 'Glow Mascarilla', tamano: '30 ml', precio: '€ 7,30' },
+  { producto: 'Glow Serum en Spray', tamano: '50 ml', precio: '€ 9,85' },
+  { producto: 'Hydrate Champú', tamano: '50 ml', precio: '€ 7,30' },
+  { producto: 'Hydrate Mascarilla', tamano: '30 ml', precio: '€ 7,30' },
+  { producto: 'Replenish Champú', tamano: '50 ml', precio: '€ 7,30' },
+  { producto: 'Replenish Mascarilla Ligera', tamano: '30 ml', precio: '€ 7,30' },
+  { producto: 'Replenish Mascarilla Intensiva', tamano: '30 ml', precio: '€ 7,30' },
+  { producto: 'Replenish Bálsamo Regenerador de Puntas Abiertas', tamano: '30 ml', precio: '€ 8,10' },
+  { producto: 'Amplify Champú', tamano: '50 ml', precio: '€ 7,30' },
+  { producto: 'Crema de Forma', tamano: '30 ml', precio: '€ 8,10' },
+  { producto: 'Champú en Seco', tamano: '100 ml', precio: '€ 11,80' },
+  { producto: 'Laca de Fijación Fuerte', tamano: '100 ml', precio: '€ 11,80' },
+  { producto: 'Crema para Cabello y Manos', tamano: '30 ml', precio: '€ 9,85' },
+  { producto: 'Cosmic Blow-Dry Jelly', tamano: '30 ml', precio: '€ 8,10' }
+]
+
+const velasMementoProducts = [
+  { producto: 'Vela Memento Base', tamano: '240 gr', precio: '€ 24,00' },
+  { producto: 'Vela Memento Glow', tamano: '240 gr', precio: '€ 24,00' },
+  { producto: 'Vela Memento Amplify', tamano: '240 gr', precio: '€ 24,00' },
+  { producto: 'Vela Memento Hydrate', tamano: '240 gr', precio: '€ 24,00' },
+  { producto: 'Vela Memento Replenish', tamano: '240 gr', precio: '€ 24,00' }
+]
+
+const allHairScalpProducts = [
+  { producto: 'Champú Purificante', tamano: '300 ml', precio: '€ 31,10' },
+  { producto: 'Champú Esencial', tamano: '300 ml', precio: '€ 31,10' },
+  { producto: 'Mascarilla de Gel Hidratante', tamano: '200 ml', precio: '€ 47,90' },
+  { producto: 'Aceite Embellecedor Intensivo', tamano: '100 ml', precio: '€ 45,10' },
+  { producto: 'Aceite de Cuidado Fluido', tamano: '100 ml', precio: '€ 45,10' }
+]
+
 const glowProducts = [
-  { producto: 'Glow Champú', tamano: '300 ml', precio: '30,20 €' },
-  { producto: 'Glow Acondicionador', tamano: '250 ml', precio: '35,20 €' },
-  { producto: 'Glow Mascarilla', tamano: '200 ml', precio: '45,70 €' },
-  { producto: 'Cool Glow Champú', tamano: '300 ml', precio: '30,20 €' },
-  { producto: 'Glow Serum en Spray', tamano: '200 ml', precio: '46,60 €' }
+  { producto: 'Glow Champú', tamano: '300 ml', precio: '€ 31,10' },
+  { producto: 'Glow Acondicionador', tamano: '250 ml', precio: '€ 36,20' },
+  { producto: 'Glow Mascarilla', tamano: '200 ml', precio: '€ 47,10' },
+  { producto: 'Cool Glow Champú', tamano: '300 ml', precio: '€ 31,10' },
+  { producto: 'Glow Serum en Spray', tamano: '200 ml', precio: '€ 48,00' }
 ]
 
-// Amplify – Para cabello fino
 const amplifyProducts = [
-  { producto: 'Amplify Champú', tamano: '300 ml', precio: '30,20 €' },
-  { producto: 'Amplify Champú 1l (Familia)', tamano: '1 l', precio: '40,00 €' },
-  { producto: 'Amplify Acondicionador', tamano: '250 ml', precio: '35,20 €' },
-  { producto: 'Amplify Spray Acondicionador', tamano: '250 ml', precio: '36,25 €' }
+  { producto: 'Amplify Champú', tamano: '300 ml', precio: '€ 31,10' },
+  { producto: 'Amplify Acondicionador', tamano: '250 ml', precio: '€ 36,20' },
+  { producto: 'Amplify Spray Acondicionador', tamano: '250 ml', precio: '€ 37,15' }
 ]
 
-// Hydrate – Para cabello seco
 const hydrateProducts = [
-  { producto: 'Hydrate Champú', tamano: '300 ml', precio: '30,20 €' },
-  { producto: 'Hydrate Acondicionador', tamano: '250 ml', precio: '35,20 €' },
-  { producto: 'Hydrate Spray Acondicionador', tamano: '250 ml', precio: '36,25 €' },
-  { producto: 'Hydrate Mascarilla', tamano: '200 ml', precio: '45,70 €' },
-  { producto: 'Hydrate Loción', tamano: '150 ml', precio: '33,65 €' },
-  { producto: 'Hydrate Tratamiento Intensivo', tamano: '200 ml', precio: '45,70 €' },
-  { producto: 'Hydrate Serum Suavizante', tamano: '100 ml', precio: '41,80 €' },
-  { producto: 'Hydrate Potenciador de Rizos', tamano: '250 ml', precio: '41,80 €' }
+  { producto: 'Hydrate Champú', tamano: '300 ml', precio: '€ 31,10' },
+  { producto: 'Hydrate Acondicionador', tamano: '250 ml', precio: '€ 36,20' },
+  { producto: 'Hydrate Spray Acondicionador', tamano: '250 ml', precio: '€ 37,15' },
+  { producto: 'Hydrate Mascarilla', tamano: '200 ml', precio: '€ 47,10' },
+  { producto: 'Hydrate Loción', tamano: '150 ml', precio: '€ 34,65' },
+  { producto: 'Hydrate Tratamiento Intensivo', tamano: '200 ml', precio: '€ 47,10' },
+  { producto: 'Hydrate Serum Suavizante', tamano: '100 ml', precio: '€ 43,15' },
+  { producto: 'Hydrate Potenciador de Rizos', tamano: '250 ml', precio: '€ 43,15' }
 ]
 
-// Replenish – Para cabello dañado
 const replenishProducts = [
-  { producto: 'Replenish Champú', tamano: '300 ml', precio: '30,20 €' },
-  { producto: 'Replenish Acondicionador', tamano: '250 ml', precio: '35,20 €' },
-  { producto: 'Replenish Spray Acondicionador', tamano: '250 ml', precio: '36,25 €' },
-  { producto: 'Replenish Mascarilla', tamano: '200 ml', precio: '45,70 €' },
-  { producto: 'Replenish Bálsamo', tamano: '150 ml', precio: '32,70 €' }
-]
-
-// GHD
-const ghdProducts = [
-  { modelo: 'GHD gold azul', precio: '259 €' },
-  { modelo: 'GHD chorus max', precio: '369 €' },
-  { modelo: 'GHD chorus', precio: '369 €' },
-  { modelo: 'GHD platinum', precio: '299 €' },
-  { modelo: 'GHD gold', precio: '249 €' },
-  { modelo: 'GHD max', precio: '269 €' },
-  { modelo: 'GHD original', precio: '209 €' }
-]
-
-// Blondme
-const blondmeProducts = [
-  { producto: 'Champú Blondme', precio: '18,90 €' },
-  { producto: 'Acondicionador', precio: '21,90 €' },
-  { producto: 'Mascarilla', precio: '26,90 €' },
-  { producto: 'Aceite', precio: '21,90 €' },
-  { producto: 'Bálsamo sellador', precio: '21,20 €' },
-  { producto: 'Spray morado', precio: '21,90 €' },
-  { producto: 'Gotas de matización morada', precio: '26,90 €' }
+  { producto: 'Replenish Champú', tamano: '300 ml', precio: '€ 31,10' },
+  { producto: 'Replenish Acondicionador', tamano: '250 ml', precio: '€ 36,20' },
+  { producto: 'Replenish Spray Acondicionador', tamano: '250 ml', precio: '€ 37,15' },
+  { producto: 'Replenish Mascarilla en Crema Ligera', tamano: '200 ml', precio: '€ 47,10' },
+  { producto: 'Replenish Mascarilla en Crema Intensiva', tamano: '200 ml', precio: '€ 47,10' },
+  { producto: 'Replenish Bálsamo Regenerador de Puntas Abiertas', tamano: '150 ml', precio: '€ 34,65' }
 ]
 
 const productColumns = [
   { accessorKey: 'producto', header: 'PRODUCTO' },
   { accessorKey: 'tamano', header: 'TAMAÑO' },
-  { accessorKey: 'precio', header: 'PRECIO' }
-]
-
-const ghdColumns = [
-  { accessorKey: 'modelo', header: 'MODELO' },
-  { accessorKey: 'precio', header: 'PRECIO' }
-]
-
-const blondmeColumns = [
-  { accessorKey: 'producto', header: 'PRODUCTO' },
   { accessorKey: 'precio', header: 'PRECIO' }
 ]
 </script>
@@ -120,37 +142,55 @@ const blondmeColumns = [
               <li>
                 <NuxtLink to="#glow" class="text-primary hover:underline flex items-center gap-2">
                   <UIcon name="i-lucide-chevron-right" class="size-4" />
-                  Glow - Para cabello coloreado
+                  Glow
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="#amplify" class="text-primary hover:underline flex items-center gap-2">
                   <UIcon name="i-lucide-chevron-right" class="size-4" />
-                  Amplify - Para cabello fino
+                  Amplify
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="#hydrate" class="text-primary hover:underline flex items-center gap-2">
                   <UIcon name="i-lucide-chevron-right" class="size-4" />
-                  Hydrate - Para cabello seco
+                  Hydrate
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="#replenish" class="text-primary hover:underline flex items-center gap-2">
                   <UIcon name="i-lucide-chevron-right" class="size-4" />
-                  Replenish - Para cabello dañado
+                  Replenish
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="#blondme" class="text-primary hover:underline flex items-center gap-2">
+                <NuxtLink to="#all-hair-scalp" class="text-primary hover:underline flex items-center gap-2">
                   <UIcon name="i-lucide-chevron-right" class="size-4" />
-                  Blondme - Para cabellos rubios
+                  All Hair & Scalp Types
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="#ghd" class="text-primary hover:underline flex items-center gap-2">
+                <NuxtLink to="#styling" class="text-primary hover:underline flex items-center gap-2">
                   <UIcon name="i-lucide-chevron-right" class="size-4" />
-                  Planchas GHD
+                  Styling
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="#beyond-hair" class="text-primary hover:underline flex items-center gap-2">
+                  <UIcon name="i-lucide-chevron-right" class="size-4" />
+                  Beyond Hair
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="#minis" class="text-primary hover:underline flex items-center gap-2">
+                  <UIcon name="i-lucide-chevron-right" class="size-4" />
+                  Minis
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="#velas-memento" class="text-primary hover:underline flex items-center gap-2">
+                  <UIcon name="i-lucide-chevron-right" class="size-4" />
+                  Velas Memento
                 </NuxtLink>
               </li>
             </ul>
@@ -316,7 +356,7 @@ const blondmeColumns = [
           </div>
         </UCard>
 
-        <!-- Glow - Para cabello coloreado -->
+        <!-- Glow -->
         <div id="glow" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 400 } }">
           <div>
             <h2 class="text-2xl font-bold mb-2">
@@ -334,14 +374,14 @@ const blondmeColumns = [
           </UCard>
         </div>
 
-        <!-- Amplify - Para cabello fino -->
-        <div id="amplify" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 450 } }">
+        <!-- Amplify -->
+        <div id="amplify" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 500 } }">
           <div>
             <h2 class="text-2xl font-bold mb-2">
-              Amplify – Para cabello fino
+              Amplify
             </h2>
             <p class="text-muted">
-              Da volumen y cuerpo a cabellos finos y sin vida.
+              Para cabello fino
             </p>
           </div>
           <UCard>
@@ -352,14 +392,14 @@ const blondmeColumns = [
           </UCard>
         </div>
 
-        <!-- Hydrate - Para cabello seco -->
-        <div id="hydrate" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 500 } }">
+        <!-- Hydrate -->
+        <div id="hydrate" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 550 } }">
           <div>
             <h2 class="text-2xl font-bold mb-2">
-              Hydrate – Para cabello seco
+              Hydrate
             </h2>
             <p class="text-muted">
-              Hidratación profunda para cabellos secos y deshidratados.
+              Para cabello seco
             </p>
           </div>
           <UCard>
@@ -370,14 +410,14 @@ const blondmeColumns = [
           </UCard>
         </div>
 
-        <!-- Replenish - Para cabello dañado -->
-        <div id="replenish" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 550 } }">
+        <!-- Replenish -->
+        <div id="replenish" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 600 } }">
           <div>
             <h2 class="text-2xl font-bold mb-2">
-              Replenish – Para cabello dañado
+              Replenish
             </h2>
             <p class="text-muted">
-              Reparación intensiva para cabellos dañados y debilitados.
+              Para cabello dañado
             </p>
           </div>
           <UCard>
@@ -388,61 +428,95 @@ const blondmeColumns = [
           </UCard>
         </div>
 
-        <!-- Blondme -->
-        <div id="blondme" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 600 } }">
+        <!-- All Hair & Scalp Types -->
+        <div id="all-hair-scalp" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 650 } }">
           <div>
             <h2 class="text-2xl font-bold mb-2">
-              Blondme
+              All Hair & Scalp Types
             </h2>
             <p class="text-muted">
-              Cuidado especializado para cabellos rubios y con mechas.
+              Para todo tipo de cabello y cuero cabelludo
             </p>
           </div>
           <UCard>
-            <UTable :data="blondmeProducts" :columns="blondmeColumns" :ui="{
+            <UTable :data="allHairScalpProducts" :columns="productColumns" :ui="{
               th: 'py-1.5 px-2',
               td: 'py-1.5 px-2'
             }" />
           </UCard>
         </div>
 
-        <!-- GHD -->
-        <div id="ghd" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 650 } }">
+        <!-- Styling -->
+        <div id="styling" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 700 } }">
           <div>
             <h2 class="text-2xl font-bold mb-2">
-              Planchas GHD
+              Styling
             </h2>
             <p class="text-muted">
-              Las mejores planchas profesionales para un acabado perfecto.
+              Para todo tipo de cabello
             </p>
           </div>
           <UCard>
-            <UTable :data="ghdProducts" :columns="ghdColumns" :ui="{
+            <UTable :data="stylingProducts" :columns="productColumns" :ui="{
               th: 'py-1.5 px-2',
               td: 'py-1.5 px-2'
             }" />
           </UCard>
         </div>
 
-        <!-- CTA Final -->
-        <UCard class="bg-primary/5" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 700 } }">
-          <div class="text-center space-y-4 p-8">
-            <h3 class="text-xl font-bold">
-              ¿Necesitas asesoramiento?
-            </h3>
-            <p class="text-muted max-w-2xl mx-auto">
-              Nuestro equipo estará encantado de ayudarte a elegir los productos más adecuados para tu tipo de cabello.
+        <!-- Beyond Hair -->
+        <div id="beyond-hair" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 750 } }">
+          <div>
+            <h2 class="text-2xl font-bold mb-2">
+              Beyond Hair
+            </h2>
+            <p class="text-muted">
+              Para cabello, rostro y piel
             </p>
-            <div class="flex flex-wrap justify-center gap-3">
-              <UButton to="/contacto" color="primary" size="lg" icon="i-lucide-shopping-bag">
-                Consultar disponibilidad
-              </UButton>
-              <UButton to="tel:984390259" color="neutral" variant="outline" size="lg" icon="i-lucide-phone">
-                Llamar ahora
-              </UButton>
-            </div>
           </div>
-        </UCard>
+          <UCard>
+            <UTable :data="beyondHairProducts" :columns="productColumns" :ui="{
+              th: 'py-1.5 px-2',
+              td: 'py-1.5 px-2'
+            }" />
+          </UCard>
+        </div>
+
+        <!-- Minis -->
+        <div id="minis" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 800 } }">
+          <div>
+            <h2 class="text-2xl font-bold mb-2">
+              Minis
+            </h2>
+            <p class="text-muted">
+              Tamaños pequeños ideales para viajar o probar
+            </p>
+          </div>
+          <UCard>
+            <UTable :data="minisProducts" :columns="productColumns" :ui="{
+              th: 'py-1.5 px-2',
+              td: 'py-1.5 px-2'
+            }" />
+          </UCard>
+        </div>
+
+        <!-- Velas Memento -->
+        <div id="velas-memento" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 850 } }">
+          <div>
+            <h2 class="text-2xl font-bold mb-2">
+              Velas Memento
+            </h2>
+            <p class="text-muted">
+              Velas veganas premium perfumadas
+            </p>
+          </div>
+          <UCard>
+            <UTable :data="velasMementoProducts" :columns="productColumns" :ui="{
+              th: 'py-1.5 px-2',
+              td: 'py-1.5 px-2'
+            }" />
+          </UCard>
+        </div>
       </div>
     </UContainer>
   </UPage>
