@@ -26,3 +26,6 @@ logs
 # VSC
 .history
 .vscode/*
+
+# Skilld references (recreated by `skilld install`)
+.skilld

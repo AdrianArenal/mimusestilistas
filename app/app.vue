@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { Analytics } from '@vercel/analytics/nuxt'
-
 const colorMode = useColorMode()
 
 const color = computed(() => colorMode.value === 'dark' ? '#020618' : 'white')
@@ -23,7 +21,7 @@ useSeoMeta({
   twitterCard: 'summary_large_image'
 })
 
-defineOgImageComponent('OGImage')
+defineOgImage('OGImage', { title: 'Mimus Estilistas', description: 'Peluquería y estética en Pola de Siero, Asturias' })
 
 const [{ data: navigation }, { data: files }] = await Promise.all([
   useAsyncData('navigation', () => {
@@ -59,7 +57,5 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
         :fuse="{ resultLimit: 42 }"
       />
     </ClientOnly>
-
-    <Analytics />
   </UApp>
 </template>

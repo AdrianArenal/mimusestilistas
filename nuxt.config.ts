@@ -7,17 +7,14 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/nuxt',
     '@vueuse/motion/nuxt',
-    '@nuxtjs/seo'
+    '@nuxtjs/seo',
+    '@nuxt/fonts',
+    'nuxt-ai-ready'
   ],
 
   site: {
     url: 'https://mimusestilistas.com',
     name: "Mimu's Estilistas",
-    defaultLocale: 'es'
-  },
-
-  i18n: {
-    locales: ['es'],
     defaultLocale: 'es'
   },
 
@@ -48,7 +45,13 @@ export default defineNuxtConfig({
   vite: {
     plugins: [
       require('vite-svg-loader').default()
-    ]
+    ],
+    optimizeDeps: {
+      include: [
+        '@vue/devtools-core',
+        '@vue/devtools-kit',
+      ]
+    }
   },
 
   compatibilityDate: '2024-11-01',
