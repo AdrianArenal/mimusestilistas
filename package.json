@@ -9,27 +9,29 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "prepare": "npx skilld prepare || true"
   },
   "dependencies": {
-    "@iconify-json/lucide": "1.2.73",
-    "@iconify-json/simple-icons": "1.2.58",
-    "@nuxt/content": "3.8.0",
+    "@iconify-json/lucide": "1.2.111",
+    "@iconify-json/simple-icons": "1.2.84",
+    "@nuxt/content": "3.14.0",
+    "@nuxt/fonts": "0.14.0",
     "@nuxt/image": "2.0.0",
-    "@nuxt/ui": "4.1.0",
-    "@nuxtjs/seo": "3.2.2",
-    "@vercel/analytics": "1.6.1",
-    "@vercel/speed-insights": "1.3.1",
-    "@vueuse/motion": "2.2.6",
-    "@vueuse/nuxt": "13.9.0",
-    "better-sqlite3": "12.4.1",
-    "nuxt": "4.2.1"
+    "@nuxt/ui": "4.8.1",
+    "@nuxtjs/seo": "5.1.3",
+    "@takumi-rs/core": "1.6.0",
+    "@vueuse/motion": "3.0.3",
+    "@vueuse/nuxt": "14.3.0",
+    "better-sqlite3": "12.10.0",
+    "nuxt": "4.4.6",
+    "nuxt-ai-ready": "1.3.7"
   },
   "devDependencies": {
-    "@nuxt/eslint": "1.10.0",
-    "eslint": "9.39.1",
-    "typescript": "5.9.3",
-    "vite-svg-loader": "5.1.0",
-    "vue-tsc": "3.1.3"
+    "@nuxt/eslint": "1.15.2",
+    "eslint": "10.4.1",
+    "typescript": "6.0.3",
+    "vite-svg-loader": "5.1.1",
+    "vue-tsc": "3.3.3"
   }
 }
