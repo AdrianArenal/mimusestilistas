@@ -18,7 +18,7 @@ const menuItems: NavigationMenuItem[] = [
     to: '/mapa-sitio'
   },
   {
-    label: 'Política de Privacidad',
+    label: 'Política de privacidad',
     to: '/politica-privacidad'
   },
   {
@@ -39,12 +39,21 @@ const menuItems: NavigationMenuItem[] = [
     }"
   >
     <template #left>
-      <div class="flex flex-col lg:grid lg:grid-cols-2 items-center lg:items-start gap-3 lg:gap-x-8 lg:gap-y-2 order-1 lg:flex-1">
-        <NuxtLink to="/" aria-label="Ir a inicio - Mimu's Estilistas" class="lg:col-span-2">
+      <div class="flex flex-col gap-3 order-1 lg:flex-1">
+        <NuxtLink to="/" aria-label="Ir a inicio - Mimu's Estilistas">
           <ImagetypeSvg class="h-7 w-auto text-foreground" />
         </NuxtLink>
-        <div class="text-center lg:text-left text-muted lg:col-span-2">
+        <div class="text-center lg:text-left text-muted">
           {{ footer.credits }}
+        </div>
+        <!-- Textos legales — siempre visibles en el footer -->
+        <div class="flex flex-wrap items-center justify-between gap-2 border-t border-border pt-3 text-xs text-muted lg:text-left">
+          <span class="font-semibold text-foreground">Textos legales</span>
+          <div class="flex flex-wrap gap-3">
+            <NuxtLink to="/aviso-legal" class="hover:text-foreground">Aviso Legal</NuxtLink>
+            <NuxtLink to="/politica-cookies" class="hover:text-foreground">Política de Cookies</NuxtLink>
+            <NuxtLink to="/politica-privacidad" class="hover:text-foreground">Política de privacidad</NuxtLink>
+          </div>
         </div>
       </div>
     </template>
