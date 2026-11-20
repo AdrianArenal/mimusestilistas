@@ -5,34 +5,6 @@ useSeoMeta({
   description: 'Visítanos en Pola de Siero, Asturias. Encuéntranos en Calle Enrique II, 5, bajo 2. Llámanos al 984 39 02 59 para reservar tu cita.',
   ogDescription: 'Visítanos en Pola de Siero, Asturias. Encuéntranos en Calle Enrique II, 5, bajo 2. Llámanos al 984 39 02 59 para reservar tu cita.'
 })
-const form = reactive({
-  nombre: '',
-  telefono: '',
-  correo: '',
-  comentarios: '',
-  aceptaPrivacidad: false
-})
-const enviando = ref(false)
-const mensaje = ref('')
-
-function enviarFormulario() {
-  if (!form.aceptaPrivacidad) {
-    mensaje.value = 'Debes aceptar la Política de privacidad para enviar el formulario.'
-    return
-  }
-  enviando.value = true
-  // TODO: conectar el endpoint real del formulario (uCoz, Netlify Forms, propio backend...)
-  mensaje.value = '¡Gracias por tu mensaje! Te contactaremos lo antes posible.'
-  setTimeout(() => {
-    form.nombre = ''
-    form.telefono = ''
-    form.correo = ''
-    form.comentarios = ''
-    form.aceptaPrivacidad = false
-    mensaje.value = ''
-    enviando.value = false
-  }, 3000)
-}
 </script>
 
 <template>
@@ -224,53 +196,6 @@ function enviarFormulario() {
               <span class="text-sm md:text-base text-gray-500 font-bold">Cerrados</span>
             </div>
           </div>
-        </UCard>
-
-        <!-- Forma de contacto / reserva -->
-        <UCard
-          v-motion
-          :initial="{ opacity: 0, y: 20 }"
-          :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 450 } }"
-          class="p-6 md:p-8 ring-1 ring-gray-200 dark:ring-gray-800 rounded-xl"
-        >
-          <h3 class="text-lg font-bold mb-4">Reserva tu cita</h3>
-          <form @submit.prevent="enviarFormulario" novalidate>
-            <div class="space-y-4">
-              <div>
-                <label for="nombre" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Nombre</label>
-                <input id="nombre" v-model="form.nombre" type="text" placeholder="Tu nombre" class="w-full border border-gray-300 dark:border-gray-600 dark:bg-gray-800 rounded-md px-3 py-2 text-sm">
-              </div>
-              <div>
-                <label for="telefono" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Teléfono</label>
-                <input id="telefono" v-model="form.telefono" type="tel" placeholder="984 39 02 59" class="w-full border border-gray-300 dark:border-gray-600 dark:bg-gray-800 rounded-md px-3 py-2 text-sm">
-              </div>
-              <div>
-                <label for="correo" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Correo electrónico</label>
-                <input id="correo" v-model="form.correo" type="email" placeholder="tucorreo@ejemplo.com" class="w-full border border-gray-300 dark:border-gray-600 dark:bg-gray-800 rounded-md px-3 py-2 text-sm">
-              </div>
-              <div>
-                <label for="comentarios" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Comentarios</label>
-                <textarea id="comentarios" v-model="form.comentarios" rows="3" placeholder="¿Cómo podemos ayudarte?" class="w-full border border-gray-300 dark:border-gray-600 dark:bg-gray-800 rounded-md px-3 py-2 text-sm"></textarea>
-              </div>
-              <div class="flex items-start gap-2 pt-2">
-                <input id="privacidad" v-model="form.aceptaPrivacidad" type="checkbox">
-                <label for="privacidad" class="text-sm text-gray-700 dark:text-gray-300">
-                  He leído y acepto la <a href="/politica-privacidad" class="text-primary underline">Política de privacidad</a>
-                </label>
-              </div>
-              <UButton
-                type="submit"
-                :loading="enviando"
-                size="sm"
-                color="primary"
-                variant="solid"
-                class="w-full"
-              >
-                Enviar mensaje
-              </UButton>
-              <p v-if="mensaje" class="text-sm text-green-700 dark:text-green-300">{{ mensaje }}</p>
-            </div>
-          </form>
         </UCard>
 
         <!-- CTA Card -->

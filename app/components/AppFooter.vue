@@ -46,15 +46,6 @@ const menuItems: NavigationMenuItem[] = [
         <div class="text-center lg:text-left text-muted">
           {{ footer.credits }}
         </div>
-        <!-- Textos legales — siempre visibles en el footer -->
-        <div class="flex flex-wrap items-center justify-between gap-2 border-t border-border pt-3 text-xs text-muted lg:text-left">
-          <span class="font-semibold text-foreground">Textos legales</span>
-          <div class="flex flex-wrap gap-3">
-            <NuxtLink to="/aviso-legal" class="hover:text-foreground">Aviso Legal</NuxtLink>
-            <NuxtLink to="/politica-cookies" class="hover:text-foreground">Política de Cookies</NuxtLink>
-            <NuxtLink to="/politica-privacidad" class="hover:text-foreground">Política de privacidad</NuxtLink>
-          </div>
-        </div>
       </div>
     </template>
 
