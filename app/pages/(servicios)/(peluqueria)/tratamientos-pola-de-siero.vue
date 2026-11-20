@@ -48,7 +48,7 @@ const galleryImages = [
             Reservar cita
           </UButton>
           <UButton
-            href="tel:984390259"
+            href="tel:604812695"
             size="lg"
             color="neutral"
             variant="outline"
@@ -56,7 +56,7 @@ const galleryImages = [
             <template #leading>
               <UIcon name="i-lucide-phone" />
             </template>
-            984 39 02 59
+            604 81 26 95
           </UButton>
         </div>
       </template>
@@ -202,7 +202,7 @@ const galleryImages = [
               </template>
               Reservar cita
             </UButton>
-            <UButton href="tel:984390259" size="lg" color="neutral" variant="outline">
+            <UButton href="tel:604812695" size="lg" color="neutral" variant="outline">
               <template #leading>
                 <UIcon name="i-lucide-phone" />
               </template>

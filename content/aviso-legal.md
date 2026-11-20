@@ -51,7 +51,7 @@ Las referencias a marcas comerciales o marcas registradas o signos distintivos, 
 **Contacto**  
 CAROLINA SAN JOSÉ SUÁREZ · YOLANDA FERNANDEZ DIAZ  
 C/ Enrique II, 5, bajo 2, Pola de Siero, 33510 Asturias  
-984 39 02 59  
+604 81 26 95  
 mimusestilistas@gmail.com
 
 ---

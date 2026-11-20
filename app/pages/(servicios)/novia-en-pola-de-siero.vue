@@ -33,11 +33,11 @@ useSeoMeta({
             </template>
             Reservar cita
           </UButton>
-          <UButton href="tel:984390259" size="lg" color="neutral" variant="outline">
+          <UButton href="tel:604812695" size="lg" color="neutral" variant="outline">
             <template #leading>
               <UIcon name="i-lucide-phone" />
             </template>
-            984 39 02 59
+            604 81 26 95
           </UButton>
         </div>
       </template>
@@ -86,7 +86,7 @@ useSeoMeta({
               </template>
               Reservar ahora
             </UButton>
-            <UButton href="tel:984390259" color="neutral" variant="outline" size="lg">
+            <UButton href="tel:604812695" color="neutral" variant="outline" size="lg">
               <template #leading>
                 <UIcon name="i-lucide-phone" />
               </template>
@@ -239,11 +239,11 @@ useSeoMeta({
                 </template>
                 Reservar ahora
               </UButton>
-              <UButton href="tel:984390259" size="lg" color="neutral" variant="outline">
+              <UButton href="tel:604812695" size="lg" color="neutral" variant="outline">
                 <template #leading>
                   <UIcon name="i-lucide-phone" />
                 </template>
-                984 39 02 59
+                604 81 26 95
               </UButton>
             </div>
           </div>
@@ -274,7 +274,7 @@ useSeoMeta({
                   </template>
                   Reservar cita
                 </UButton>
-                <UButton href="tel:984390259" block size="lg" color="neutral" variant="outline">
+                <UButton href="tel:604812695" block size="lg" color="neutral" variant="outline">
                   <template #leading>
                     <UIcon name="i-lucide-phone" />
                   </template>
