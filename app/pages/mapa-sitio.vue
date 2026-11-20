@@ -242,14 +242,14 @@ useSeoMeta({
               Contactar
             </UButton>
             <UButton
-              href="tel:984390259"
+              href="tel:604812695"
               color="neutral"
               variant="outline"
             >
               <template #leading>
                 <UIcon name="i-lucide-phone" />
               </template>
-              984 39 02 59
+              604 81 26 95
             </UButton>
           </div>
         </div>
