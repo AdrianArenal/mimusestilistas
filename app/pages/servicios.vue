@@ -16,7 +16,7 @@ const services = [
   },
   {
     title: 'Estética',
-    description: 'Manicura, pedicura, uñas de gel y maquillaje profesional',
+    description: 'Maquillaje profesional para eventos especiales',
     icon: 'i-lucide-sparkles',
     image: '/images/7.webp',
     featured: true,
