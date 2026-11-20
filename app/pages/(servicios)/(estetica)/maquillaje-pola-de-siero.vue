@@ -150,14 +150,6 @@ useSeoMeta({
         </h2>
         <div class="flex gap-4">
           <UButton
-            to="/unas-pola-de-siero"
-            color="neutral"
-            variant="outline"
-            size="lg"
-          >
-            Uñas
-          </UButton>
-          <UButton
             to="/estetica-en-pola-de-siero"
             color="neutral"
             variant="ghost"

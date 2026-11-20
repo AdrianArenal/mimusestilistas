@@ -2,18 +2,11 @@
 useSeoMeta({
   title: 'Estética en Pola de Siero',
   ogTitle: 'Estética en Pola de Siero',
-  description: 'Servicios de estética en Pola de Siero: manicura, pedicura y maquillaje. Reserva tu cita.',
-  ogDescription: 'Servicios de estética en Pola de Siero: manicura, pedicura y maquillaje. Reserva tu cita.'
+  description: 'Servicios de estética en Pola de Siero: maquillaje profesional para eventos y ocasiones especiales. Reserva tu cita.',
+  ogDescription: 'Servicios de estética en Pola de Siero: maquillaje profesional para eventos y ocasiones especiales. Reserva tu cita.'
 })
 
 const services = [
-  {
-    title: 'Uñas',
-    description: 'Manicura y pedicura básica con esmaltado semipermanente',
-    icon: 'i-lucide-sparkle',
-    url: '/unas-pola-de-siero',
-    thumbnail: '/images/7.webp'
-  },
   {
     title: 'Maquillaje',
     description: 'Maquillaje para eventos y ocasiones especiales',
@@ -78,8 +71,8 @@ const services = [
             </h2>
             <p class="text-gray-600 dark:text-gray-300 mb-4">
               En Mimu's Estilistas no solo cuidamos tu cabello, también ofrecemos servicios 
-              de estética para que luzcas impecable. Desde uñas cuidadas hasta maquillaje para 
-              eventos especiales, estamos aquí para realzar tu belleza natural.
+              de estética para que luzcas impecable. Nuestro servicio de maquillaje para 
+              eventos especiales está aquí para realzar tu belleza natural.
             </p>
             <p class="text-gray-600 dark:text-gray-300">
               Trabajamos con productos de calidad para ofrecerte servicios esenciales adaptados 

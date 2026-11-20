@@ -152,14 +152,6 @@ useSeoMeta({
               <ul class="ml-4 mt-1 space-y-1 text-sm">
                 <li>
                   <NuxtLink
-                    to="/unas-pola-de-siero"
-                    class="text-gray-600 dark:text-gray-400 hover:text-primary"
-                  >
-                    → Uñas (Manicura y Pedicura)
-                  </NuxtLink>
-                </li>
-                <li>
-                  <NuxtLink
                     to="/maquillaje-pola-de-siero"
                     class="text-gray-600 dark:text-gray-400 hover:text-primary"
                   >
