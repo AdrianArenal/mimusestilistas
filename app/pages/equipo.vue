@@ -48,25 +48,6 @@ const team = [
     />
 
     <UPageBody>
-      <!-- Header Image -->
-      <div
-        v-motion
-        :initial="{ opacity: 0, y: 20 }"
-        :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 200 } }"
-        class="mb-12 lg:mb-16"
-      >
-        <div class="relative aspect-video lg:aspect-21/9 bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-          <NuxtImg
-            src="/images/17.webp"
-            alt="Equipo Mimu's Estilistas"
-            class="w-full h-full object-cover"
-            loading="eager"
-            quality="95"
-            format="webp"
-          />
-        </div>
-      </div>
-
       <!-- Team members -->
       <div class="space-y-16 lg:space-y-24">
         <div
