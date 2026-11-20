@@ -5,96 +5,53 @@ description: Información sobre cómo utilizamos las cookies
 
 # Política de Cookies
 
-## Definicion y funcion de las cookies
+## Definición y función de las cookies
 
-¿Qué son las cookies? Una cookie es un fichero que se descarga en su ordenador al acceder a determinadas páginas web. Las cookies permiten a una página web, entre otras cosas, almacenar y recuperar información sobre los hábitos de navegación de un usuario o de su equipo y, dependiendo de la información que contengan y de la forma en que utilice su equipo, pueden utilizarse para reconocer al usuario.  
+Las cookies son archivos o tecnologías similares que se descargan o almacenan en el dispositivo de la persona usuaria al acceder a una página web. Permiten, entre otras funciones, recordar determinadas preferencias, facilitar el funcionamiento de la página o, cuando se hayan habilitado y aceptado, obtener información sobre su utilización.
 
+## Quién utiliza las cookies de esta web
 
-## Tipos de cookies
+Esta política se aplica al sitio web [https://mimusestilistas.com/](https://mimusestilistas.com/). Los datos identificativos y de contacto de su titular figuran en el [Aviso Legal](../aviso-legal). En esta web pueden utilizarse cookies gestionadas por su titular y, en su caso, por los terceros identificados en la tabla del apartado 4. Cada cookie se utiliza para la finalidad concreta indicada en dicha tabla.
 
-A continuación, se realiza una clasificación de las cookies en función de una serie de categorías. No obstante es necesario tener en cuenta que una misma cookie puede estar incluida en más de una categoría.  
+## *Qué tipos de cookies se utilizan*
 
+La web puede utilizar las siguientes categorías, siempre que aparezcan identificadas en la tabla del apartado 4:
 
-1. Tipos de cookies según la entidad que las gestione  
-   - **Cookies propias**  
-     Son aquéllas que se envían al equipo del usuario desde un equipo o dominio gestionado por el propio titular de la página web y desde el que se presta el servicio solicitado por el usuario.  
-   - **Cookies de terceros**  
-     Son aquéllas que se envían al equipo del usuario desde un equipo o dominio que no es gestionado por el propio titular de la página web, sino por otra entidad que trata los datos obtenidos a través de las cookies. En el caso de que las cookies sean instaladas desde un equipo o dominio gestionado por el propio titular de la página web pero la información que se recoja mediante éstas sea gestionada por un tercero, podrán no ser consideradas como cookies propias.  
+- **Cookies técnicas o necesarias:** permiten el funcionamiento de la web y la prestación de servicios solicitados por la persona usuaria, así como recordar sus preferencias sobre cookies cuando proceda.
+- **Cookies de análisis o medición:** permiten obtener información sobre la utilización de la web con fines estadísticos y de mejora de sus contenidos o servicios. *ELIMINAR DE ESTE APARTADO CUALQUIER CATEGORÍA QUE NO SE UTILICE. AÑADIR OTRAS CATEGORÍAS ÚNICAMENTE SI SE COMPRUEBA QUE LA WEB LAS EMPLEA, DESCRIBIENDO SU FINALIDAD REAL.*
+- Las cookies que no sean necesarias para el funcionamiento de la web o para prestar un servicio solicitado solo se utilizarán si la persona usuaria presta previamente su consentimiento.
 
-2. Tipos de cookies según el plazo de tiempo que permanecen activadas  
-   - **Cookies de sesión**  
-     Son un tipo de cookies diseñadas para recabar y almacenar datos mientras el usuario accede a una página web. Se suelen emplear para almacenar información que solo interesa conservar para la prestación del servicio solicitado por el usuario en una sola ocasión.  
-   - **Cookies persistentes**  
-     Son un tipo de cookies en el que los datos siguen almacenados en el terminal y pueden ser accedidos y tratados durante un periodo definido por el responsable de la cookie, y que puede ir de unos minutos a varios años.  
+## *Qué cookies concretas utiliza la web?*
 
-3. Tipos de cookies según su finalidad  
-   - **Cookies técnicas**  
-     Son aquéllas que permiten al usuario la navegación a través de una página web, plataforma o aplicación y la utilización de las diferentes opciones o servicios que en ella existan.  
-   - **Cookies de personalización**  
-     Son aquéllas que permiten al usuario acceder al servicio con algunas características de carácter general predefinidas en función de una serie de criterios en el terminal del usuario.  
-   - **Cookies de análisis (analítica)**  
-     Son aquéllas que permiten al responsable de las mismas el seguimiento y análisis del comportamiento de los usuarios de los sitios web a los que están vinculadas. La información recogida mediante este tipo de cookies se utiliza en la medición de la actividad del conjunto de los usuarios y para la elaboración de perfiles de navegación, con el fin de introducir mejoras en función del análisis de los datos de uso.  
-   - **Cookies publicitarias**  
-     Son aquéllas que permiten la gestión, de la forma más eficaz posible, de los espacios publicitarios que el editor haya incluido en su página web, adecuando el contenido del anuncio al contenido del servicio solicitado o al uso que realice de la página web.  
-   - **Cookies de publicidad comportamental**  
-     Son aquellas que permiten la gestión, de la forma más eficaz posible, de los espacios publicitarios, almacenando información del comportamiento de los visitantes para mostrar publicidad personalizada.  
-
-
-## Que cookies utiliza esta pagina web?
-
-Aquí hay un resumen de las cookies específicas utilizadas por Peluquería Mimus:
-
-
-| Nombre | Entidad | Duración | Finalidad | Función | Deber de información y consentimiento |
+| Nombre | Entidad que la utiliza | Propia o de tercero | Finalidad concreta | Plazo | Categoría |
 |---|---|---|---|---|---|
-| PHPSESSID | Propia | Sesión | Técnica | Almacena información necesaria para mantener la sesión abierta en el servidor | no |
-| configuracion_cookies | Propia | 1 año | Técnica | Guarda la configuración de cookies establecida por el usuario | no |
-| wordpress_logged_in_ | Propia | 1 año | Técnica | Guarda info de inicio de sesión | no |
-| wordpress_sec_ | Propia | 14 días | Técnica | Mantiene la sesión activa | no |
-| wordpress_test_cookie | Propia | Sesión | Técnica | Comprueba si las cookies están activadas en el navegador | no |
-| _gat_gtag | Propia (Google Analytics) | Sesión | Analítica | Limita el porcentaje de solicitudes | sí |
-| _gid | Propia (Google Analytics) | 24 horas | Analítica | Distinguir usuarios | sí |
-| _ga | Propia (Google Analytics) | 2 años | Analítica | Distinguir usuarios | sí |
-| _ga_7Z7XBQLDW5 | Propia (Google Analytics) | 2 años | Analítica | Mantener estado de sesión | sí |  
+| *NOMBRE* | *TITULAR / TERCERO* | *PROPIA / TERCERO* | *DESCRIPCIÓN* | *PLAZO* | *TÉCNICA / ANÁLISIS / OTRA* |
 
-## Quien y para que utiliza las cookies?
+*AÑADIR UNA FILA POR CADA COOKIE UTILIZADA. Si se emplean cookies de terceros, identificar a cada tercero y añadir, cuando proceda, un enlace a su información sobre tratamiento de datos y las transferencias internacionales.*
 
-- Las **cookies técnicas** tienen el único objetivo de garantizar el correcto funcionamiento de la página web. Si se desactivan estas cookies, no se podrá recibir correctamente todos los contenidos. Estas cookies son accesibles exclusivamente por el titular del sitio web.  
-- Las **cookies analíticas** tienen como objetivo realizar el seguimiento y análisis estadístico del comportamiento agregadoo de los usuarios. Si se desactivan, la web puede seguir funcionando, pero se pierde parte del análisis de uso.  
-- Esta página web utiliza **Google Analytics**, un servicio de analítica web de Google para medir y analizar la navegación. A través de esta herramienta se obtienen datos como el número de usuarios, páginas vistas, duración de visitas, navegador, operador, idioma, tipo de dispositivo o ciudad estimada por IP.  
+## ¿Cómo puede aceptar, rechazar o configurar las cookies?
 
+Al acceder a la web, el aviso de cookies permite tomar una decisión sobre las cookies que requieren consentimiento:
 
-## Configuracion de cookies
+- Mediante «Aceptar», puede consentir el uso de todas esas cookies.
+- Mediante «Rechazar», puede denegar su uso.
+- Mediante «Configurar», puede elegir las categorías que desea permitir y guardar su selección.
 
-### A traves del navegador
+Las cookies técnicas necesarias pueden utilizarse sin solicitar consentimiento cuando cumplen los requisitos legales correspondientes. La elección sobre las demás cookies no afecta a su utilización. Continuar navegando, desplazarse por la página o no interactuar con el aviso no constituye una aceptación de las cookies que requieren consentimiento.
 
-Puedes permitir, bloquear o eliminar las cookies instaladas en tu equipo utilizando la configuración del navegador:
+## ¿Cómo puede modificar sus preferencias o retirar el consentimiento?
 
-- Para **Firefox**  
-- Para **Chrome**  
-- Para **Explorer**  
-- Para **Safari**  
-- Para **Opera**  
+Puede cambiar su elección o retirar en cualquier momento el consentimiento previamente otorgado mediante el enlace «Configuración de cookies», disponible en [enlace con la Política de Cookies](../politica-cookies). Desde ese acceso podrá volver a abrir el panel de configuración y guardar una nueva selección. La retirada del consentimiento impide que se sigan utilizando las cookies afectadas conforme a la nueva elección.
 
+Para eliminar las cookies que ya estén almacenadas en su dispositivo, puede utilizar las opciones de borrado de su navegador. Si ha aceptado cookies de terceros, puede ser necesario eliminarlas también desde las opciones de su navegador o mediante las herramientas que ofrezcan dichos terceros.
 
-### A traves de la pagina web
+## Información adicional
 
-También puedes configurar la instalación de cookies desde el formulario disponible en la web, donde puedes ver qué cookies son necesarias y cuáles no:
-- Cookies técnicas (Necesarias)  
-- Cookies de personalización (Necesarias)  
-- Cookies analíticas  
-
+Puede consultar la información general sobre el tratamiento de sus datos personales y el ejercicio de sus derechos en nuestra [Política de Privacidad](../politica-privacidad), disponible en enlace con la Política de Privacidad. Esta política se revisará cuando cambien las cookies utilizadas, sus finalidades o los terceros que intervienen en su uso.
 
 ---
 
-**Contacto**  
-CAROLINA SAN JOSÉ SUÁREZ · YOLANDA FERNANDEZ DIAZ  
-C/ Enrique II, 5, bajo 2, Pola de Siero, 33510, Asturias  
-984 39 02 59 · mimusestilistas@gmail.com  
-
-
-**Información adicional**  
-- Aviso Legal  
-- Política de Privacidad  
-- Política de Accesibilidad  
-
+A8 C/ Ezcurdia 194 2ºA 33203 Gijón
+info@coberlegal.es
+984 491 470
+www.coberlegal.es

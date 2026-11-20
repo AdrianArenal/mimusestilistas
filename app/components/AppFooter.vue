@@ -18,7 +18,7 @@ const menuItems: NavigationMenuItem[] = [
     to: '/mapa-sitio'
   },
   {
-    label: 'Política de Privacidad',
+    label: 'Política de privacidad',
     to: '/politica-privacidad'
   },
   {
@@ -39,11 +39,11 @@ const menuItems: NavigationMenuItem[] = [
     }"
   >
     <template #left>
-      <div class="flex flex-col lg:grid lg:grid-cols-2 items-center lg:items-start gap-3 lg:gap-x-8 lg:gap-y-2 order-1 lg:flex-1">
-        <NuxtLink to="/" aria-label="Ir a inicio - Mimu's Estilistas" class="lg:col-span-2">
+      <div class="flex flex-col gap-3 order-1 lg:flex-1">
+        <NuxtLink to="/" aria-label="Ir a inicio - Mimu's Estilistas">
           <ImagetypeSvg class="h-7 w-auto text-foreground" />
         </NuxtLink>
-        <div class="text-center lg:text-left text-muted lg:col-span-2">
+        <div class="text-center lg:text-left text-muted">
           {{ footer.credits }}
         </div>
       </div>
