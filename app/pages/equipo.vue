@@ -15,24 +15,6 @@ const team = [
       { name: 'Bodas y Eventos', to: '/novia-en-pola-de-siero' },
       { name: 'Color', to: '/color-pelo-pola-de-siero' }
     ]
-  },
-  {
-    name: 'Carolina San José Suárez',
-    image: '/images/carolina.webp',
-    specialties: [
-      { name: 'Color', to: '/color-pelo-pola-de-siero' },
-      { name: 'Mechas', to: '/mechas-pola-de-siero' },
-      { name: 'Matices', to: '/color-pelo-pola-de-siero' }
-    ]
-  },
-  {
-    name: 'Raquel González Cueto',
-    image: '/images/raquel.webp',
-    specialties: [
-      { name: 'Mechas', to: '/mechas-pola-de-siero' },
-      { name: 'Balayage', to: '/mechas-pola-de-siero' },
-      { name: 'Babylights', to: '/mechas-pola-de-siero' }
-    ]
   }
 ]
 </script>

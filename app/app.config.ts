@@ -35,7 +35,7 @@ export default defineAppConfig({
       'aria-label': 'Mimu\'s Estilistas en Instagram'
     }, {
       'icon': 'i-lucide-phone',
-      'to': 'tel:984390259',
+      'to': 'tel:604812695',
       'aria-label': 'Llamar a Mimu\'s Estilistas'
     }]
   }

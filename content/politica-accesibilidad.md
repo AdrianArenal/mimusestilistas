@@ -42,7 +42,7 @@ Si detectas problemas de accesibilidad puedes:
 - Transmitir otras dificultades de acceso al contenido.  
 - Formular sugerencias de mejora relacionadas con la accesibilidad del sitio web.  
 
-**Teléfono de contacto**: 984 39 02 59  
+**Teléfono de contacto**: 604 81 26 95  
 **Dirección postal**: C/ Enrique II, 5, bajo 2, 33510 Pola de Siero, Asturias.  
 
 También puedes presentar:  
@@ -63,5 +63,5 @@ En la solicitud debes concretar hechos, razones y petición para que se pueda ev
 **Responsables**:  
 CAROLINA SAN JOSÉ SUÁREZ · YOLANDA FERNÁNDEZ DÍAZ  
 C/ Enrique II, 5, bajo 2, 33510 Pola de Siero, Asturias  
-Teléfono: 984 39 02 59  
+Teléfono: 604 81 26 95  
 Correo: mimusestilistas@gmail.com  

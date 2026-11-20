@@ -90,7 +90,7 @@ const services = [
             Reservar cita
           </UButton>
           <UButton
-            href="tel:984390259"
+            href="tel:604812695"
             size="lg"
             color="neutral"
             variant="outline"
@@ -98,7 +98,7 @@ const services = [
             <template #leading>
               <UIcon name="i-lucide-phone" />
             </template>
-            984 39 02 59
+            604 81 26 95
           </UButton>
         </div>
       </template>
@@ -217,7 +217,7 @@ const services = [
               Reservar cita ahora
             </UButton>
             <UButton
-              href="tel:984390259"
+              href="tel:604812695"
               size="lg"
               color="neutral"
               variant="outline"
@@ -225,7 +225,7 @@ const services = [
               <template #leading>
                 <UIcon name="i-lucide-phone" />
               </template>
-              Llamar: 984 39 02 59
+              Llamar: 604 81 26 95
             </UButton>
           </div>
         </div>

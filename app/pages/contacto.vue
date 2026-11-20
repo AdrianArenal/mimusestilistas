@@ -2,8 +2,8 @@
 useSeoMeta({
   title: 'Contacto',
   ogTitle: 'Contacto',
-  description: 'Visítanos en Pola de Siero, Asturias. Encuéntranos en Calle Enrique II, 5, bajo 2. Llámanos al 984 39 02 59 para reservar tu cita.',
-  ogDescription: 'Visítanos en Pola de Siero, Asturias. Encuéntranos en Calle Enrique II, 5, bajo 2. Llámanos al 984 39 02 59 para reservar tu cita.'
+  description: 'Visítanos en Pola de Siero, Asturias. Encuéntranos en Calle Enrique II, 5, bajo 2. Llámanos al 604 81 26 95 para reservar tu cita.',
+  ogDescription: 'Visítanos en Pola de Siero, Asturias. Encuéntranos en Calle Enrique II, 5, bajo 2. Llámanos al 604 81 26 95 para reservar tu cita.'
 })
 </script>
 
@@ -74,13 +74,13 @@ useSeoMeta({
                 Reserva tu cita por teléfono
               </p>
               <a
-                href="tel:984390259"
+                href="tel:604812695"
                 class="text-2xl md:text-3xl font-bold text-primary hover:underline block mb-4"
               >
-                984 39 02 59
+                604 81 26 95
               </a>
               <UButton
-                href="tel:984390259"
+                href="tel:604812695"
                 color="primary"
                 variant="soft"
                 size="sm"
@@ -220,7 +220,7 @@ useSeoMeta({
             </div>
             <div class="space-y-3">
               <UButton
-                href="tel:984390259"
+                href="tel:604812695"
                 size="lg"
                 color="primary"
                 block
