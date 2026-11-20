@@ -5,14 +5,14 @@ description: Cómo protegemos y gestionamos tus datos personales
 
 # Política de privacidad
 
-En cumplimiento de lo dispuesto en el Reglamento General de Protección de Datos vigente en la Unión Europea, el titular de este consentimiento autoriza a **Mimus Estilístas, C.B.** a tratar sus datos personales, y otorga esta autorización de manera expresa, libre, inequívoca e informada.
+En cumplimiento de lo dispuesto en el Reglamento General de Protección de Datos vigente en la Unión Europea, el titular de este consentimiento autoriza a **Yolanda Fernández Díaz** a tratar sus datos personales, y otorga esta autorización de manera expresa, libre, inequívoca e informada.
 
 De la misma manera, el titular de este consentimiento ha sido informado de los siguientes datos:
 
-- **Responsable del tratamiento:** Mimus Estilístas, C.B. con domicilio en Calle Enrique II 5, bajo 2, 33510 Pola de Siero, Asturias. Correo electrónico: [mimusestilistas@gmail.com](mailto:mimusestilistas@gmail.com)
+- **Responsable del tratamiento:** Yolanda Fernández Díaz con domicilio en Calle Enrique II 5, bajo 2, 33510 Pola de Siero, Asturias. Correo electrónico: [mimusestilistas@gmail.com](mailto:mimusestilistas@gmail.com)
 - **Finalidad:**  
   - Gestionar la solicitud de la información requerida.  
-  - Mantener informado al usuario sobre la actividad y promociones de Mimus Estilístas, C.B. (envío de comunicaciones sobre productos, servicios, novedades y actividades, también por medios electrónicos, si el usuario marca la casilla de aceptación).
+  - Mantener informado al usuario sobre la actividad y promociones de Yolanda Fernández Díaz (envío de comunicaciones sobre productos, servicios, novedades y actividades, también por medios electrónicos, si el usuario marca la casilla de aceptación).
 - **Plazo de conservación:**  
   - Los datos personales se conservan durante **cinco años** desde la última confirmación de interés, salvo petición de supresión.  
   - Si se solicita información mediante formulario o correo, y no hay otro tratamiento posterior, los datos se mantendrán durante los plazos legales para obligaciones o posibles responsabilidades.  
@@ -22,14 +22,14 @@ De la misma manera, el titular de este consentimiento ha sido informado de los s
 - **Derechos:**  
   - El usuario puede ejercer los derechos de: **acceso, rectificación, supresión, limitación del tratamiento, portabilidad** y **oposición**.  
   - También puede retirar el consentimiento en cualquier momento y reclamar ante la **Agencia Española de Protección de Datos**.  
-  - Para ejercer sus derechos debe dirigirse por escrito al responsable (Mimus Estilístas, C.B.) al correo [mimusestilistas@gmail.com](mailto:mimusestilistas@gmail.com).
+  - Para ejercer sus derechos debe dirigirse por escrito al responsable (Yolanda Fernández Díaz) al correo [mimusestilistas@gmail.com](mailto:mimusestilistas@gmail.com).
 - **Procedencia:** Los datos se recogen directamente del usuario a través de los formularios del sitio web.
 - **Información adicional / advertencias al usuario:**  
   - Si no está de acuerdo con esta política, aconsejan no enviar datos personales.  
   - Al usar el formulario de contacto, el usuario autoriza explícitamente la recogida de su nombre, teléfono y correo electrónico para los fines descritos.  
   - Se advierte que no se deben proporcionar datos de terceros sin su consentimiento; el usuario debe evitar enviar datos falsos, erróneos o de terceros sin autorización.  
   - Si el usuario es menor de 18 años, sólo puede proporcionar datos con el consentimiento de padres o tutores (y debe enviarse un formulario con DNI y firma).  
-  - Mimus Estilístas, C.B. no se hace responsable si un menor facilita sus datos sin conocimiento de los responsables legales.  
+  - Yolanda Fernández Díaz no se hace responsable si un menor facilita sus datos sin conocimiento de los responsables legales.  
   - En caso de datos falsos o inexactos, la empresa se reserva el derecho de cancelar la suscripción y terminar la relación.
 - **Seguridad de los datos:**  
   - Los datos se tratarán de forma automatizada con medidas técnicas y organizativas para garantizar su seguridad, integridad y disponibilidad.  
@@ -65,7 +65,7 @@ En la comunicación de ejercicio de derechos, se recomienda indicar el email des
 ---
 
 **Contacto**  
-Mimus Estilístas, C.B.  
+Yolanda Fernández Díaz  
 Calle Enrique II, 5, bajo 2, Pola de Siero, Asturias  
 Correo: [mimusestilistas@gmail.com](mailto:mimusestilistas@gmail.com)
 
