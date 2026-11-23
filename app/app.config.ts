@@ -21,11 +21,11 @@ export default defineAppConfig({
     }
   },
   footer: {
-    credits: `Mimu's Estilistas • © ${new Date().getFullYear()} • Pola de Siero, Asturias`,
+    credits: `Mimus • © ${new Date().getFullYear()} • Pola de Siero, Asturias`,
     colorMode: false,
     links: [{
       'icon': 'i-lucide-facebook',
-      'to': 'https://www.facebook.com/p/mimus-estilistas-61553670413042/?locale=es_ES',
+      'to': 'https://www.facebook.com/p/mimus-61553670413042/?locale=es_ES',
       'target': '_blank',
       'aria-label': 'Mimu\'s Estilistas en Facebook'
     }, {

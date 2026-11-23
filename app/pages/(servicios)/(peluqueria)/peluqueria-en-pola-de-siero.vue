@@ -121,7 +121,7 @@ const services = [
             Tu salón de confianza en Pola de Siero
           </h2>
           <p class="text-gray-600 dark:text-gray-300 text-lg">
-            En Mimu's Estilistas te ofrecemos una experiencia completa de peluquería con servicios 
+            En Mimus te ofrecemos una experiencia completa de peluquería con servicios 
             profesionales adaptados a tus necesidades. Nuestro equipo de expertas te asesorará 
             para que luzcas siempre radiante.
           </p>

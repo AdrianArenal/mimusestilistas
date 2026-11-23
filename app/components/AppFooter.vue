@@ -40,7 +40,7 @@ const menuItems: NavigationMenuItem[] = [
   >
     <template #left>
       <div class="flex flex-col gap-3 order-1 lg:flex-1">
-        <NuxtLink to="/" aria-label="Ir a inicio - Mimu's Estilistas">
+        <NuxtLink to="/" aria-label="Ir a inicio - Mimus">
           <ImagetypeSvg class="h-7 w-auto text-foreground" />
         </NuxtLink>
         <div class="text-center lg:text-left text-muted">

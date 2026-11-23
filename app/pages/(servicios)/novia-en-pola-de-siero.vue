@@ -60,7 +60,7 @@ useSeoMeta({
             playsinline
             class="w-full h-auto object-cover rounded-xl shadow-lg"
             preload="auto"
-            aria-label="Peinado de novia en Mimu's Estilistas"
+            aria-label="Peinado de novia en Mimus"
           >
             <source src="https://pub-820a050bd8b941bdb6f8494e6c3603c2.r2.dev/boda2.mp4" type="video/mp4">
             Tu navegador no soporta el elemento de video.
@@ -71,7 +71,7 @@ useSeoMeta({
         <div class="space-y-4">
           <h2 class="text-3xl font-bold">Peinados de novia personalizados</h2>
           <p class="text-gray-600 dark:text-gray-300 text-lg">
-            En Mimu's Estilistas entendemos que tu boda es uno de los días más importantes de tu vida. 
+            En Mimus entendemos que tu boda es uno de los días más importantes de tu vida. 
             Cada novia es única y merece un peinado que refleje su personalidad y estilo.
           </p>
           <p class="text-gray-600 dark:text-gray-300">
@@ -112,7 +112,7 @@ useSeoMeta({
             playsinline
             class="w-full h-auto object-cover rounded-xl shadow-lg"
             preload="auto"
-            aria-label="Maquillaje de novia en Mimu's Estilistas"
+            aria-label="Maquillaje de novia en Mimus"
           >
             <source src="https://pub-820a050bd8b941bdb6f8494e6c3603c2.r2.dev/boda1.mp4" type="video/mp4">
             Tu navegador no soporta el elemento de video.

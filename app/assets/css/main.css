@@ -31,6 +31,10 @@
   }
 }
 
+body {
+  background-color: #f5f0e8;
+}
+
 .dark {
   ::selection {
     color: #ffffff;

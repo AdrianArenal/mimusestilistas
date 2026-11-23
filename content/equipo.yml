@@ -1,11 +1,11 @@
 seo:
-  title: Nuestro Equipo - Mimu's Estilistas
-  description: Conoce al equipo profesional de Mimu's Estilistas. Yolanda Fernández Díaz, experta en peluquería y estética con más de 20 años de experiencia
+  title: Nuestro Equipo - Mimus
+  description: Conoce al equipo profesional de Mimus. Yolanda Fernández Díaz, experta en peluquería y estética con más de 20 años de experiencia
 title: Nuestro Equipo
 description: Profesionales apasionadas por su trabajo, dedicadas a realzar tu belleza
 images:
   - src: /hero/random-1.avif
-    alt: Equipo Mimu's Estilistas
+    alt: Equipo Mimus
   - src: /hero/random-2.avif
     alt: Nuestro salón
   - src: /hero/random-3.avif

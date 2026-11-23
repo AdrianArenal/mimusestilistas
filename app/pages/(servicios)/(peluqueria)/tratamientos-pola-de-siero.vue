@@ -80,7 +80,7 @@ const galleryImages = [
                 Tratamientos capilares profesionales
               </h2>
               <p class="text-lg text-gray-600 dark:text-gray-300 mb-4">
-                En Mimu's Estilistas trabajamos con las mejores marcas del mercado para ofrecer tratamientos 
+                En Mimus trabajamos con las mejores marcas del mercado para ofrecer tratamientos 
                 capilares de alta gama que reparan, nutren y transforman tu cabello. Utilizamos <strong>Fibre Clinix</strong> de Schwarzkopf 
                 y <strong>Authentic Beauty Concept</strong> para garantizar resultados profesionales y duraderos.
               </p>

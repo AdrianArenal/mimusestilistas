@@ -71,7 +71,7 @@ const galleryImages = [
                 Coloración personalizada y profesional
               </h2>
               <p class="text-lg text-gray-600 dark:text-gray-300 mb-4">
-                En Mimu's Estilistas somos expertas en diseño de color. Ya sea que quieras un cambio radical 
+                En Mimus somos expertas en diseño de color. Ya sea que quieras un cambio radical 
                 o simplemente refrescar tu tono natural, nuestro equipo te asesorará para conseguir el resultado 
                 perfecto adaptado a tu estilo y personalidad.
               </p>

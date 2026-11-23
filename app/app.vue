@@ -21,7 +21,7 @@ useSeoMeta({
   twitterCard: 'summary_large_image'
 })
 
-defineOgImage('OGImage', { title: 'Mimus Estilistas', description: 'Peluquería y estética en Pola de Siero, Asturias' })
+defineOgImage('OGImage', { title: 'Mimus', description: 'Peluquería y estética en Pola de Siero, Asturias' })
 
 const [{ data: navigation }, { data: files }] = await Promise.all([
   useAsyncData('navigation', () => {
