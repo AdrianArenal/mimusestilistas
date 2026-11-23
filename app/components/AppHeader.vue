@@ -12,8 +12,15 @@ const isOpen = ref(false)
   <div class="fixed top-2 sm:top-4 mx-auto left-1/2 transform -translate-x-1/2 z-10 w-[calc(100%-1rem)] sm:w-auto">
     <!-- Mobile Menu (Drawer) -->
     <div class="lg:hidden bg-muted/80 backdrop-blur-sm rounded-full px-4 py-2 border border-muted/50 shadow-lg shadow-neutral-950/5 flex items-center justify-between">
-      <NuxtLink to="/" aria-label="Ir a inicio - Mimus">
-        <img src="/isotipo-mimus.svg" alt="Logo Mimus" class="h-7 w-auto" />
+      <NuxtLink
+        to="/"
+        aria-label="Ir a inicio - Mimus"
+      >
+        <img
+          src="/isotipo-mimus.svg"
+          alt="Logo Mimus"
+          class="h-7 w-auto"
+        >
       </NuxtLink>
       <div class="flex items-center gap-2">
         <UButton
@@ -31,15 +38,23 @@ const isOpen = ref(false)
       direction="right"
       title="Menú"
       description="Navegación principal del sitio"
-      :ui="{ 
+      :ui="{
         content: 'w-72',
         body: 'p-0'
       }"
     >
       <template #body>
         <div class="flex justify-center py-6 border-b border-muted/20">
-          <NuxtLink to="/" aria-label="Ir a inicio - Mimus" @click="isOpen = false">
-            <img src="/logo-mimus.svg" alt="Logo Mimus" class="h-16 w-auto" />
+          <NuxtLink
+            to="/"
+            aria-label="Ir a inicio - Mimus"
+            @click="isOpen = false"
+          >
+            <img
+              src="/logo-mimus.svg"
+              alt="Logo Mimus"
+              class="h-16 w-auto"
+            >
           </NuxtLink>
         </div>
         <nav class="flex flex-col">
@@ -51,7 +66,11 @@ const isOpen = ref(false)
             active-class="bg-primary/10 text-primary font-semibold"
             @click="isOpen = false"
           >
-            <UIcon v-if="link.icon" :name="link.icon" class="size-5" />
+            <UIcon
+              v-if="link.icon"
+              :name="link.icon"
+              class="size-5"
+            />
             {{ link.label }}
           </NuxtLink>
         </nav>
@@ -60,8 +79,15 @@ const isOpen = ref(false)
 
     <!-- Desktop Menu -->
     <div class="hidden lg:flex items-center gap-4 bg-muted/80 backdrop-blur-sm rounded-full px-4 border border-muted/50 shadow-lg shadow-neutral-950/5">
-      <NuxtLink to="/" aria-label="Ir a inicio - Mimus">
-        <img src="/isotipo-mimus.svg" alt="Logo Mimus" class="h-8 w-auto" />
+      <NuxtLink
+        to="/"
+        aria-label="Ir a inicio - Mimus"
+      >
+        <img
+          src="/isotipo-mimus.svg"
+          alt="Logo Mimus"
+          class="h-8 w-auto"
+        >
       </NuxtLink>
       <UNavigationMenu
         :items="links"
@@ -72,8 +98,7 @@ const isOpen = ref(false)
           link: 'px-2 py-1',
           linkLeadingIcon: 'hidden'
         }"
-      >
-      </UNavigationMenu>
+      />
     </div>
   </div>
 </template>

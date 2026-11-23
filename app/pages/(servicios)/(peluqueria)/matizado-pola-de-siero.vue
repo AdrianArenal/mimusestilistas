@@ -37,13 +37,22 @@ const galleryImages = [
       </template>
       <template #links>
         <div class="flex flex-wrap gap-3">
-          <UButton to="/contacto" size="lg" color="primary">
+          <UButton
+            to="/contacto"
+            size="lg"
+            color="primary"
+          >
             <template #leading>
               <UIcon name="i-lucide-calendar" />
             </template>
             Reservar cita
           </UButton>
-          <UButton href="tel:604812695" size="lg" color="neutral" variant="outline">
+          <UButton
+            href="tel:604812695"
+            size="lg"
+            color="neutral"
+            variant="outline"
+          >
             <template #leading>
               <UIcon name="i-lucide-phone" />
             </template>
@@ -64,20 +73,23 @@ const galleryImages = [
         <div class="prose dark:prose-invert max-w-none">
           <div class="flex items-start gap-4">
             <div class="p-4 bg-primary/10 rounded-xl">
-              <UIcon name="i-lucide-droplet" class="w-8 h-8 text-primary" />
+              <UIcon
+                name="i-lucide-droplet"
+                class="w-8 h-8 text-primary"
+              />
             </div>
             <div class="flex-1">
               <h2 class="text-2xl md:text-3xl font-bold mb-4 mt-0">
                 Matizados profesionales para el tono perfecto
               </h2>
               <p class="text-lg text-gray-600 dark:text-gray-300 mb-4">
-                Los matizados son tratamientos de color semipermanentes que permiten neutralizar reflejos no deseados 
-                y conseguir el tono exacto que buscas. Son perfectos para cabellos decolorados, rubios, grises o con mechas 
+                Los matizados son tratamientos de color semipermanentes que permiten neutralizar reflejos no deseados
+                y conseguir el tono exacto que buscas. Son perfectos para cabellos decolorados, rubios, grises o con mechas
                 que necesitan ajustar sus matices.
               </p>
               <p class="text-gray-600 dark:text-gray-300 mb-4">
-                En Mimus trabajamos con matizadores profesionales de alta calidad que no solo corrigen el tono, 
-                sino que también aportan brillo, suavidad y cuidado a tu cabello. Ya sea que busques eliminar tonos naranjas, 
+                En Mimus trabajamos con matizadores profesionales de alta calidad que no solo corrigen el tono,
+                sino que también aportan brillo, suavidad y cuidado a tu cabello. Ya sea que busques eliminar tonos naranjas,
                 amarillos o potenciar los fríos, tenemos la solución perfecta para ti.
               </p>
             </div>
@@ -86,7 +98,10 @@ const galleryImages = [
           <div class="grid md:grid-cols-2 gap-6 mt-8">
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-check-circle"
+                  class="w-5 h-5 text-primary"
+                />
                 Matizado Violeta/Morado
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -96,7 +111,10 @@ const galleryImages = [
 
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-check-circle"
+                  class="w-5 h-5 text-primary"
+                />
                 Matizado Azul
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -106,7 +124,10 @@ const galleryImages = [
 
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-check-circle"
+                  class="w-5 h-5 text-primary"
+                />
                 Matizado Ceniza
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -116,7 +137,10 @@ const galleryImages = [
 
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-check-circle"
+                  class="w-5 h-5 text-primary"
+                />
                 Matizado Beige/Dorado
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -173,13 +197,22 @@ const galleryImages = [
             Consúltanos y te asesoraremos sobre el matizado perfecto para tu cabello.
           </p>
           <div class="flex flex-wrap gap-3 justify-center">
-            <UButton to="/contacto" size="lg" color="primary">
+            <UButton
+              to="/contacto"
+              size="lg"
+              color="primary"
+            >
               <template #leading>
                 <UIcon name="i-lucide-calendar" />
               </template>
               Reservar cita
             </UButton>
-            <UButton href="tel:604812695" size="lg" color="neutral" variant="outline">
+            <UButton
+              href="tel:604812695"
+              size="lg"
+              color="neutral"
+              variant="outline"
+            >
               <template #leading>
                 <UIcon name="i-lucide-phone" />
               </template>

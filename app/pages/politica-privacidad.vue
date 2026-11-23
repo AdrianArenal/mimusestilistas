@@ -19,7 +19,10 @@ useSeoMeta({
 <template>
   <UContainer class="py-12">
     <UPageBody prose>
-      <ContentRenderer v-if="page" :value="page" />
+      <ContentRenderer
+        v-if="page"
+        :value="page"
+      />
     </UPageBody>
   </UContainer>
 </template>

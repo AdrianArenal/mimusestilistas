@@ -37,13 +37,13 @@ const team = [
           :key="index"
           v-motion
           :initial="{ opacity: 0, y: 30 }"
-          :enter="{ 
-            opacity: 1, 
-            y: 0, 
-            transition: { 
-              duration: 600, 
-              delay: index * 150 + 400 
-            } 
+          :enter="{
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 600,
+              delay: index * 150 + 400
+            }
           }"
           class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center"
           :class="{ 'lg:grid-flow-dense': index % 2 === 1 }"
@@ -68,7 +68,10 @@ const team = [
           </div>
 
           <!-- Member info -->
-          <div :class="{ 'lg:col-start-1 lg:row-start-1': index % 2 === 1 }" class="space-y-6">
+          <div
+            :class="{ 'lg:col-start-1 lg:row-start-1': index % 2 === 1 }"
+            class="space-y-6"
+          >
             <!-- Nombre -->
             <div>
               <h3 class="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">
@@ -79,7 +82,10 @@ const team = [
             <!-- Especialidades -->
             <div>
               <p class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-star" class="size-4 text-primary" />
+                <UIcon
+                  name="i-lucide-star"
+                  class="size-4 text-primary"
+                />
                 Especialidades
               </p>
               <div class="flex flex-wrap gap-2">
@@ -128,7 +134,7 @@ const team = [
               Confía en profesionales con experiencia
             </h2>
             <p class="text-gray-600 dark:text-gray-300 mb-6">
-              Nuestro equipo está formado continuamente para ofrecerte los mejores servicios 
+              Nuestro equipo está formado continuamente para ofrecerte los mejores servicios
               y las técnicas más actuales. Más de 20 años cuidando de la imagen de nuestros clientes.
             </p>
             <div class="flex flex-wrap gap-3 justify-center">

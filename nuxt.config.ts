@@ -12,10 +12,8 @@ export default defineNuxtConfig({
     'nuxt-ai-ready'
   ],
 
-  site: {
-    url: 'https://mimusestilistas.com',
-    name: "Mimu's Estilistas",
-    defaultLocale: 'es'
+  devtools: {
+    enabled: true
   },
 
   app: {
@@ -31,16 +29,41 @@ export default defineNuxtConfig({
         { rel: 'manifest', href: '/site.webmanifest' }
       ],
       meta: [
-        { name: 'apple-mobile-web-app-title', content: "Mimu's estilistas" }
+        { name: 'apple-mobile-web-app-title', content: 'Mimu\'s estilistas' }
       ]
     }
   },
 
-  devtools: {
-    enabled: true
+  css: ['~/assets/css/main.css'],
+
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth'
+    }
   },
 
-  css: ['~/assets/css/main.css'],
+  site: {
+    url: 'https://mimusestilistas.com',
+    name: 'Mimu\'s Estilistas',
+    defaultLocale: 'es'
+  },
+
+  colorMode: {
+    preference: 'light',
+    fallback: 'light',
+    classSuffix: ''
+  },
+
+  compatibilityDate: '2024-11-01',
+
+  nitro: {
+    prerender: {
+      routes: [
+        '/'
+      ],
+      crawlLinks: true
+    }
+  },
 
   vite: {
     plugins: [
@@ -49,25 +72,8 @@ export default defineNuxtConfig({
     optimizeDeps: {
       include: [
         '@vue/devtools-core',
-        '@vue/devtools-kit',
+        '@vue/devtools-kit'
       ]
-    }
-  },
-
-  compatibilityDate: '2024-11-01',
-
-  router: {
-    options: {
-      scrollBehaviorType: 'smooth'
-    }
-  },
-
-  nitro: {
-    prerender: {
-      routes: [
-        '/'
-      ],
-      crawlLinks: true
     }
   },
 

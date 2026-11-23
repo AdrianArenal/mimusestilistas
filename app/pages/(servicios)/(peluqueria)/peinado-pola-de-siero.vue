@@ -37,13 +37,22 @@ const galleryImages = [
       </template>
       <template #links>
         <div class="flex flex-wrap gap-3">
-          <UButton to="/contacto" size="lg" color="primary">
+          <UButton
+            to="/contacto"
+            size="lg"
+            color="primary"
+          >
             <template #leading>
               <UIcon name="i-lucide-calendar" />
             </template>
             Reservar cita
           </UButton>
-          <UButton href="tel:604812695" size="lg" color="neutral" variant="outline">
+          <UButton
+            href="tel:604812695"
+            size="lg"
+            color="neutral"
+            variant="outline"
+          >
             <template #leading>
               <UIcon name="i-lucide-phone" />
             </template>
@@ -64,20 +73,23 @@ const galleryImages = [
         <div class="prose dark:prose-invert max-w-none">
           <div class="flex items-start gap-4">
             <div class="p-4 bg-primary/10 rounded-xl">
-              <UIcon name="i-lucide-sparkles" class="w-8 h-8 text-primary" />
+              <UIcon
+                name="i-lucide-sparkles"
+                class="w-8 h-8 text-primary"
+              />
             </div>
             <div class="flex-1">
               <h2 class="text-2xl md:text-3xl font-bold mb-4 mt-0">
                 El peinado perfecto para cada momento
               </h2>
               <p class="text-lg text-gray-600 dark:text-gray-300 mb-4">
-                Ya sea para un evento especial, una ocasión formal o simplemente para lucir radiante 
-                en tu día a día, creamos peinados personalizados que realzan tu belleza natural 
+                Ya sea para un evento especial, una ocasión formal o simplemente para lucir radiante
+                en tu día a día, creamos peinados personalizados que realzan tu belleza natural
                 y se adaptan perfectamente a tu estilo y tipo de cabello.
               </p>
               <p class="text-gray-600 dark:text-gray-300 mb-4">
-                Desde ondas suaves y recogidos elegantes hasta peinados de alta ceremonia para bodas 
-                y eventos importantes. Trabajamos con técnicas profesionales y productos de calidad 
+                Desde ondas suaves y recogidos elegantes hasta peinados de alta ceremonia para bodas
+                y eventos importantes. Trabajamos con técnicas profesionales y productos de calidad
                 para garantizar un acabado duradero que te haga sentir especial.
               </p>
             </div>
@@ -86,7 +98,10 @@ const galleryImages = [
           <div class="grid md:grid-cols-2 gap-6 mt-8">
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-check-circle"
+                  class="w-5 h-5 text-primary"
+                />
                 Para Toda Ocasión
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -96,7 +111,10 @@ const galleryImages = [
 
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-check-circle"
+                  class="w-5 h-5 text-primary"
+                />
                 Técnicas Profesionales
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -106,7 +124,10 @@ const galleryImages = [
 
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-check-circle"
+                  class="w-5 h-5 text-primary"
+                />
                 Larga Duración
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -116,7 +137,10 @@ const galleryImages = [
 
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-check-circle"
+                  class="w-5 h-5 text-primary"
+                />
                 Personalizado
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -173,13 +197,22 @@ const galleryImages = [
             Reserva tu cita y luce el peinado perfecto para tu ocasión especial.
           </p>
           <div class="flex flex-wrap gap-3 justify-center">
-            <UButton to="/contacto" size="lg" color="primary">
+            <UButton
+              to="/contacto"
+              size="lg"
+              color="primary"
+            >
               <template #leading>
                 <UIcon name="i-lucide-calendar" />
               </template>
               Reservar cita
             </UButton>
-            <UButton href="tel:604812695" size="lg" color="neutral" variant="outline">
+            <UButton
+              href="tel:604812695"
+              size="lg"
+              color="neutral"
+              variant="outline"
+            >
               <template #leading>
                 <UIcon name="i-lucide-phone" />
               </template>

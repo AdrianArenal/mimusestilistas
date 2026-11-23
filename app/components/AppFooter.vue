@@ -29,8 +29,8 @@ const menuItems: NavigationMenuItem[] = [
 
 <template>
   <UFooter
-    class="z-10 bg-default"
-    :ui="{ 
+    class="z-10"
+    :ui="{
       left: 'text-muted text-xs',
       container: 'py-8 lg:py-4 flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-4 lg:gap-x-3',
       center: 'order-2 lg:order-2 flex items-center justify-center w-full lg:w-auto',
@@ -39,8 +39,15 @@ const menuItems: NavigationMenuItem[] = [
   >
     <template #left>
       <div class="flex flex-col gap-3 order-1 lg:flex-1">
-        <NuxtLink to="/" aria-label="Ir a inicio - Mimus">
-          <img src="/isotipo-mimus.svg" alt="Logo Mimus" class="h-7 w-auto" />
+        <NuxtLink
+          to="/"
+          aria-label="Ir a inicio - Mimus"
+        >
+          <img
+            src="/isotipo-mimus.svg"
+            alt="Logo Mimus"
+            class="h-7 w-auto"
+          >
         </NuxtLink>
         <div class="text-center lg:text-left text-muted">
           {{ footer.credits }}
@@ -78,7 +85,10 @@ const menuItems: NavigationMenuItem[] = [
             class="whitespace-nowrap"
           >
             <template #leading>
-              <UIcon name="i-lucide-star" class="size-4" />
+              <UIcon
+                name="i-lucide-star"
+                class="size-4"
+              />
             </template>
             Valorar
           </UButton>

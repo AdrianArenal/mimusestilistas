@@ -55,94 +55,92 @@ useSeoMeta({
 
     <UPageBody>
       <div class="space-y-6">
-          <UCard>
-            <h2 class="text-2xl font-bold mb-4">
-              Luce radiante en cada ocasión
-            </h2>
-            <p class="text-gray-600 dark:text-gray-300">
-              Nuestro servicio de maquillaje está diseñado para realzar tu belleza natural 
-              y adaptarse a cada ocasión. Utilizamos productos de calidad para que te sientas segura y hermosa durante todo el evento.
-            </p>
-          </UCard>
+        <UCard>
+          <h2 class="text-2xl font-bold mb-4">
+            Luce radiante en cada ocasión
+          </h2>
+          <p class="text-gray-600 dark:text-gray-300">
+            Nuestro servicio de maquillaje está diseñado para realzar tu belleza natural
+            y adaptarse a cada ocasión. Utilizamos productos de calidad para que te sientas segura y hermosa durante todo el evento.
+          </p>
+        </UCard>
 
-          <UCard>
-            <h3 class="text-xl font-semibold mb-4">
-              Servicios de maquillaje
-            </h3>
-            <div class="space-y-4">
-              <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <h4 class="font-semibold mb-2">
-                  Maquillaje de día
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Maquillaje natural y ligero que realza tus rasgos. 
-                  Perfecto para eventos diurnos.
-                </p>
-              </div>
-
-              <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <h4 class="font-semibold mb-2">
-                  Maquillaje de noche
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Maquillaje más intenso y duradero para eventos nocturnos.
-                </p>
-              </div>
-
-              <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
-                <h4 class="font-semibold mb-2">
-                  Maquillaje para eventos
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Comuniones, bautizos, fiestas o graduaciones. 
-                  Maquillaje adaptado a la ocasión.
-                </p>
-              </div>
+        <UCard>
+          <h3 class="text-xl font-semibold mb-4">
+            Servicios de maquillaje
+          </h3>
+          <div class="space-y-4">
+            <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
+              <h4 class="font-semibold mb-2">
+                Maquillaje de día
+              </h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Maquillaje natural y ligero que realza tus rasgos.
+                Perfecto para eventos diurnos.
+              </p>
             </div>
-          </UCard>
 
-          <UCard>
-            <h3 class="text-xl font-semibold mb-4">
-              Estilos de maquillaje
-            </h3>
-            <div class="grid md:grid-cols-2 gap-4">
-              <div class="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-                <h4 class="font-semibold mb-2">
-                  Natural
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Realza tu belleza sin efectos excesivos. Piel luminosa, cejas definidas, labios nude.
-                </p>
-              </div>
-              <div class="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-                <h4 class="font-semibold mb-2">
-                  Clásico elegante
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Sofisticado y atemporal. Smokey eyes suave, labios rojos o nude, piel perfecta.
-                </p>
-              </div>
-              <div class="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-                <h4 class="font-semibold mb-2">
-                  Glamuroso
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Impactante para eventos nocturnos. Ojos ahumados, pestañas postizas, labios intensos.
-                </p>
-              </div>
-              <div class="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-                <h4 class="font-semibold mb-2">
-                  Romántico
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Suave y delicado. Tonos rosados, melocotón e iluminación sutil.
-                </p>
-              </div>
+            <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
+              <h4 class="font-semibold mb-2">
+                Maquillaje de noche
+              </h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Maquillaje más intenso y duradero para eventos nocturnos.
+              </p>
             </div>
-          </UCard>
 
+            <div class="p-4 border-l-4 border-primary bg-gray-50 dark:bg-gray-800/50">
+              <h4 class="font-semibold mb-2">
+                Maquillaje para eventos
+              </h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Comuniones, bautizos, fiestas o graduaciones.
+                Maquillaje adaptado a la ocasión.
+              </p>
+            </div>
+          </div>
+        </UCard>
 
-        </div>
+        <UCard>
+          <h3 class="text-xl font-semibold mb-4">
+            Estilos de maquillaje
+          </h3>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
+              <h4 class="font-semibold mb-2">
+                Natural
+              </h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Realza tu belleza sin efectos excesivos. Piel luminosa, cejas definidas, labios nude.
+              </p>
+            </div>
+            <div class="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
+              <h4 class="font-semibold mb-2">
+                Clásico elegante
+              </h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Sofisticado y atemporal. Smokey eyes suave, labios rojos o nude, piel perfecta.
+              </p>
+            </div>
+            <div class="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
+              <h4 class="font-semibold mb-2">
+                Glamuroso
+              </h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Impactante para eventos nocturnos. Ojos ahumados, pestañas postizas, labios intensos.
+              </p>
+            </div>
+            <div class="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
+              <h4 class="font-semibold mb-2">
+                Romántico
+              </h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Suave y delicado. Tonos rosados, melocotón e iluminación sutil.
+              </p>
+            </div>
+          </div>
+        </UCard>
+      </div>
 
       <div class="mt-16">
         <h2 class="text-2xl font-bold mb-6">

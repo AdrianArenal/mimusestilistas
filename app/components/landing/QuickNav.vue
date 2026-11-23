@@ -32,7 +32,7 @@ const quickLinks = [
 </script>
 
 <template>
-  <UPageSection 
+  <UPageSection
     class="lg:hidden"
     :ui="{
       container: '!py-8 sm:!py-12'
@@ -52,7 +52,7 @@ const quickLinks = [
           }"
         >
           <div class="flex flex-col items-center text-center gap-3">
-            <div 
+            <div
               :class="[
                 'flex items-center justify-center rounded-full transition-all duration-300',
                 'size-12 sm:size-16',
@@ -60,8 +60,8 @@ const quickLinks = [
                 `bg-${link.color}-50 dark:bg-${link.color}-900/20`
               ]"
             >
-              <UIcon 
-                :name="link.icon" 
+              <UIcon
+                :name="link.icon"
                 :class="[
                   'size-6 sm:size-8',
                   `text-${link.color}-600 dark:text-${link.color}-400`

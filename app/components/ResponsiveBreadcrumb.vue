@@ -15,7 +15,7 @@ const measureRef = ref<HTMLElement>()
 // Items compactos: inicio, dropdown con intermedios, y último
 const compactItems = computed<ExtendedBreadcrumbItem[]>(() => {
   if (props.items.length <= 2) return props.items
-  
+
   return [
     props.items[0]!, // Inicio
     {
@@ -40,9 +40,12 @@ const showCompact = computed(() => {
 </script>
 
 <template>
-  <div ref="containerRef" class="relative w-full">
+  <div
+    ref="containerRef"
+    class="relative w-full"
+  >
     <!-- Breadcrumb de medición - invisible, sin restricciones de ancho -->
-    <div 
+    <div
       ref="measureRef"
       class="invisible absolute top-0 left-0 w-max pointer-events-none"
       aria-hidden="true"
@@ -61,14 +64,14 @@ const showCompact = computed(() => {
         <template #ellipsis="{ item }: { item: ExtendedBreadcrumbItem }">
           <ClientOnly>
             <UPopover :popper="{ strategy: 'fixed', placement: 'bottom-start' }">
-              <UButton 
-                icon="i-lucide-ellipsis" 
-                color="neutral" 
-                variant="link" 
+              <UButton
+                icon="i-lucide-ellipsis"
+                color="neutral"
+                variant="link"
                 size="xs"
-                class="p-0.5" 
+                class="p-0.5"
               />
-              
+
               <template #content>
                 <div class="p-2 min-w-48 max-w-xs">
                   <NuxtLink

@@ -70,12 +70,12 @@ const services = [
               Completa tu belleza con nuestros servicios de estética
             </h2>
             <p class="text-gray-600 dark:text-gray-300 mb-4">
-              En Mimu's Estilistas no solo cuidamos tu cabello, también ofrecemos servicios 
-              de estética para que luzcas impecable. Nuestro servicio de maquillaje para 
+              En Mimu's Estilistas no solo cuidamos tu cabello, también ofrecemos servicios
+              de estética para que luzcas impecable. Nuestro servicio de maquillaje para
               eventos especiales está aquí para realzar tu belleza natural.
             </p>
             <p class="text-gray-600 dark:text-gray-300">
-              Trabajamos con productos de calidad para ofrecerte servicios esenciales adaptados 
+              Trabajamos con productos de calidad para ofrecerte servicios esenciales adaptados
               a tus necesidades.
             </p>
           </div>
@@ -93,13 +93,13 @@ const services = [
           <UCard
             v-motion
             :initial="{ opacity: 0, y: 20 }"
-            :enter="{ 
-              opacity: 1, 
-              y: 0, 
-              transition: { 
-                duration: 600, 
-                delay: 150 + (index * 50) 
-              } 
+            :enter="{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 600,
+                delay: 150 + (index * 50)
+              }
             }"
             class="hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer w-full"
             :ui="{ body: 'p-4 sm:p-6 h-full flex flex-col' }"
@@ -133,7 +133,10 @@ const services = [
               </p>
               <div class="mt-auto pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center justify-between text-neutral group-hover:text-primary transition-colors">
                 <span class="font-medium text-sm">Ver más</span>
-                <UIcon name="i-lucide-arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                <UIcon
+                  name="i-lucide-arrow-right"
+                  class="w-4 h-4 transition-transform group-hover:translate-x-1"
+                />
               </div>
             </div>
           </UCard>

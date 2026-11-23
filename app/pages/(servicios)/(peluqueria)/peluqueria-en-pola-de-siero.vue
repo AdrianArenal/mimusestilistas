@@ -121,8 +121,8 @@ const services = [
             Tu salón de confianza en Pola de Siero
           </h2>
           <p class="text-gray-600 dark:text-gray-300 text-lg">
-            En Mimus te ofrecemos una experiencia completa de peluquería con servicios 
-            profesionales adaptados a tus necesidades. Nuestro equipo de expertas te asesorará 
+            En Mimus te ofrecemos una experiencia completa de peluquería con servicios
+            profesionales adaptados a tus necesidades. Nuestro equipo de expertas te asesorará
             para que luzcas siempre radiante.
           </p>
         </div>
@@ -139,13 +139,13 @@ const services = [
           <UCard
             v-motion
             :initial="{ opacity: 0, y: 20 }"
-            :enter="{ 
-              opacity: 1, 
-              y: 0, 
-              transition: { 
-                duration: 600, 
-                delay: 150 + (index * 50) 
-              } 
+            :enter="{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 600,
+                delay: 150 + (index * 50)
+              }
             }"
             class="hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer w-full"
             :ui="{ body: 'p-4 sm:p-6 h-full flex flex-col' }"
@@ -179,7 +179,10 @@ const services = [
               </p>
               <div class="mt-auto pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center justify-between text-neutral group-hover:text-primary transition-colors">
                 <span class="font-medium text-sm">Ver más</span>
-                <UIcon name="i-lucide-arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                <UIcon
+                  name="i-lucide-arrow-right"
+                  class="w-4 h-4 transition-transform group-hover:translate-x-1"
+                />
               </div>
             </div>
           </UCard>
@@ -202,7 +205,7 @@ const services = [
             ¿Lista para lucir radiante?
           </h3>
           <p class="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-            Reserva tu cita y descubre por qué somos el salón de confianza de Pola de Siero. 
+            Reserva tu cita y descubre por qué somos el salón de confianza de Pola de Siero.
             Más de 20 años cuidando tu imagen con profesionalidad y cariño.
           </p>
           <div class="flex flex-wrap gap-3 justify-center">

@@ -37,13 +37,22 @@ const galleryImages = [
       </template>
       <template #links>
         <div class="flex flex-wrap gap-3">
-          <UButton to="/contacto" size="lg" color="primary">
+          <UButton
+            to="/contacto"
+            size="lg"
+            color="primary"
+          >
             <template #leading>
               <UIcon name="i-lucide-calendar" />
             </template>
             Reservar cita
           </UButton>
-          <UButton href="tel:604812695" size="lg" color="neutral" variant="outline">
+          <UButton
+            href="tel:604812695"
+            size="lg"
+            color="neutral"
+            variant="outline"
+          >
             <template #leading>
               <UIcon name="i-lucide-phone" />
             </template>
@@ -64,20 +73,23 @@ const galleryImages = [
         <div class="prose dark:prose-invert max-w-none">
           <div class="flex items-start gap-4">
             <div class="p-4 bg-primary/10 rounded-xl">
-              <UIcon name="i-lucide-paintbrush" class="w-8 h-8 text-primary" />
+              <UIcon
+                name="i-lucide-paintbrush"
+                class="w-8 h-8 text-primary"
+              />
             </div>
             <div class="flex-1">
               <h2 class="text-2xl md:text-3xl font-bold mb-4 mt-0">
                 Balayage con Highlights: lo mejor de dos técnicas
               </h2>
               <p class="text-lg text-gray-600 dark:text-gray-300 mb-4">
-                Esta técnica combina lo mejor del balayage (barrido a mano alzada) con highlights estratégicos 
-                para crear un efecto de iluminación multidimensional espectacular. El balayage aporta un degradado 
+                Esta técnica combina lo mejor del balayage (barrido a mano alzada) con highlights estratégicos
+                para crear un efecto de iluminación multidimensional espectacular. El balayage aporta un degradado
                 natural y suave, mientras que los highlights añaden toques de luz más intensos en zonas clave.
               </p>
               <p class="text-gray-600 dark:text-gray-300 mb-4">
-                En Mimus personalizamos cada trabajo según tu tono base, la forma de tu rostro y el 
-                efecto que deseas conseguir. El resultado es un cabello con mucho movimiento, dimensión y un acabado 
+                En Mimus personalizamos cada trabajo según tu tono base, la forma de tu rostro y el
+                efecto que deseas conseguir. El resultado es un cabello con mucho movimiento, dimensión y un acabado
                 profesional que se mantiene hermoso durante meses gracias a su crecimiento natural.
               </p>
             </div>
@@ -86,7 +98,10 @@ const galleryImages = [
           <div class="grid md:grid-cols-2 gap-6 mt-8">
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-check-circle"
+                  class="w-5 h-5 text-primary"
+                />
                 Degradado Natural
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -96,7 +111,10 @@ const galleryImages = [
 
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-check-circle"
+                  class="w-5 h-5 text-primary"
+                />
                 Iluminación Estratégica
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -106,7 +124,10 @@ const galleryImages = [
 
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-check-circle"
+                  class="w-5 h-5 text-primary"
+                />
                 Efecto Multidimensional
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -116,7 +137,10 @@ const galleryImages = [
 
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-check-circle"
+                  class="w-5 h-5 text-primary"
+                />
                 Personalizado
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -140,10 +164,10 @@ const galleryImages = [
           <a
             v-for="(image, index) in galleryImages"
             :key="index"
+            v-motion
             :href="image.url"
             target="_blank"
             rel="noopener noreferrer"
-            v-motion
             :initial="{ opacity: 0, scale: 0.9 }"
             :visible-once="{ opacity: 1, scale: 1 }"
             :delay="100 * index"
@@ -178,13 +202,22 @@ const galleryImages = [
             El balayage con highlights es perfecto para ti. Reserva tu cita y transforma tu look.
           </p>
           <div class="flex flex-wrap gap-3 justify-center">
-            <UButton to="/contacto" size="lg" color="primary">
+            <UButton
+              to="/contacto"
+              size="lg"
+              color="primary"
+            >
               <template #leading>
                 <UIcon name="i-lucide-calendar" />
               </template>
               Reservar cita
             </UButton>
-            <UButton href="tel:604812695" size="lg" color="neutral" variant="outline">
+            <UButton
+              href="tel:604812695"
+              size="lg"
+              color="neutral"
+              variant="outline"
+            >
               <template #leading>
                 <UIcon name="i-lucide-phone" />
               </template>

@@ -50,7 +50,7 @@ function scrollToThumbnail(index: number) {
       const thumbnailWidth = thumbnail.offsetWidth
       const containerWidth = container.clientWidth
       const scrollLeft = thumbnailLeft - (containerWidth / 2) + (thumbnailWidth / 2)
-      
+
       container.scrollTo({ left: scrollLeft, behavior: 'smooth' })
     }
   }
@@ -58,9 +58,9 @@ function scrollToThumbnail(index: number) {
 
 function updateGradients() {
   if (!thumbnailsContainer.value) return
-  
+
   const { scrollLeft, scrollWidth, clientWidth } = thumbnailsContainer.value
-  
+
   showLeftGradient.value = scrollLeft > 10
   showRightGradient.value = scrollLeft < scrollWidth - clientWidth - 10
 }
@@ -87,11 +87,11 @@ function stopAutoplay() {
 function pauseAutoplay() {
   isAutoplayPaused.value = true
   stopAutoplay()
-  
+
   if (resumeTimeout) {
     clearTimeout(resumeTimeout)
   }
-  
+
   resumeTimeout = setTimeout(() => {
     isAutoplayPaused.value = false
     startAutoplay()
@@ -149,7 +149,11 @@ onUnmounted(() => {
         }"
         class="mb-2"
       >
-        <img src="/logo-mimus.svg" alt="Logo Mimus" class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto" />
+        <img
+          src="/logo-mimus.svg"
+          alt="Logo Mimus"
+          class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
+        >
       </div>
     </template>
 
@@ -265,28 +269,34 @@ onUnmounted(() => {
         class="max-w-lg mx-auto"
         @select="onSelect"
       >
-        <img :src="item" alt="Trabajos de peluquería y estética realizados en Mimus" width="512" height="512" class="rounded-lg aspect-square object-cover w-full">
+        <img
+          :src="item"
+          alt="Trabajos de peluquería y estética realizados en Mimus"
+          width="512"
+          height="512"
+          class="rounded-lg aspect-square object-cover w-full"
+        >
       </UCarousel>
 
       <div class="relative">
         <!-- Left gradient -->
         <Transition name="fade">
-          <div 
+          <div
             v-if="showLeftGradient"
-            class="absolute left-0 top-4 bottom-0 w-16 bg-linear-to-r from-background to-transparent pointer-events-none z-10" 
+            class="absolute left-0 top-4 bottom-0 w-16 bg-linear-to-r from-background to-transparent pointer-events-none z-10"
           />
         </Transition>
-        
+
         <!-- Right gradient -->
         <Transition name="fade">
-          <div 
+          <div
             v-if="showRightGradient"
-            class="absolute right-0 top-4 bottom-0 w-16 bg-linear-to-l from-background to-transparent pointer-events-none z-10" 
+            class="absolute right-0 top-4 bottom-0 w-16 bg-linear-to-l from-background to-transparent pointer-events-none z-10"
           />
         </Transition>
-        
+
         <!-- Thumbnails container -->
-        <div 
+        <div
           ref="thumbnailsContainer"
           class="pt-2 flex gap-3 overflow-x-scroll overflow-y-hidden snap-x snap-mandatory px-4 -mb-4 pb-4"
           style="scrollbar-width: none; -ms-overflow-style: none;"
@@ -295,15 +305,15 @@ onUnmounted(() => {
             v-for="(item, index) in carouselImages"
             :key="index"
             class="shrink-0 w-16 h-16 cursor-pointer transition-all duration-200 snap-center rounded-lg overflow-hidden"
-            :class="activeIndex === index 
-              ? 'ring-2 ring-primary ring-offset-2 ring-offset-background' 
+            :class="activeIndex === index
+              ? 'ring-2 ring-primary ring-offset-2 ring-offset-background'
               : 'opacity-60 hover:opacity-100'"
             @click="select(index)"
           >
-            <img 
-              :src="item" 
-              width="64" 
-              height="64" 
+            <img
+              :src="item"
+              width="64"
+              height="64"
               class="w-full h-full object-cover"
               :alt="`Thumbnail ${index + 1}`"
             >
