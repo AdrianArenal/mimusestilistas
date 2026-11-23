@@ -37,13 +37,22 @@ const galleryImages = [
       </template>
       <template #links>
         <div class="flex flex-wrap gap-3">
-          <UButton to="/contacto" size="lg" color="primary">
+          <UButton
+            to="/contacto"
+            size="lg"
+            color="primary"
+          >
             <template #leading>
               <UIcon name="i-lucide-calendar" />
             </template>
             Reservar cita
           </UButton>
-          <UButton href="tel:604812695" size="lg" color="neutral" variant="outline">
+          <UButton
+            href="tel:604812695"
+            size="lg"
+            color="neutral"
+            variant="outline"
+          >
             <template #leading>
               <UIcon name="i-lucide-phone" />
             </template>
@@ -64,20 +73,23 @@ const galleryImages = [
         <div class="prose dark:prose-invert max-w-none">
           <div class="flex items-start gap-4">
             <div class="p-4 bg-primary/10 rounded-xl">
-              <UIcon name="i-lucide-palette" class="w-8 h-8 text-primary" />
+              <UIcon
+                name="i-lucide-palette"
+                class="w-8 h-8 text-primary"
+              />
             </div>
             <div class="flex-1">
               <h2 class="text-2xl md:text-3xl font-bold mb-4 mt-0">
                 Coloración personalizada y profesional
               </h2>
               <p class="text-lg text-gray-600 dark:text-gray-300 mb-4">
-                En Mimus somos expertas en diseño de color. Ya sea que quieras un cambio radical 
-                o simplemente refrescar tu tono natural, nuestro equipo te asesorará para conseguir el resultado 
+                En Mimus somos expertas en diseño de color. Ya sea que quieras un cambio radical
+                o simplemente refrescar tu tono natural, nuestro equipo te asesorará para conseguir el resultado
                 perfecto adaptado a tu estilo y personalidad.
               </p>
               <p class="text-gray-600 dark:text-gray-300 mb-4">
-                Trabajamos con productos profesionales de alta calidad que cuidan tu cabello mientras logran 
-                colores vibrantes y duraderos. Desde decoloraciones para cambios de look completos hasta baños 
+                Trabajamos con productos profesionales de alta calidad que cuidan tu cabello mientras logran
+                colores vibrantes y duraderos. Desde decoloraciones para cambios de look completos hasta baños
                 de color para matizar y dar brillo, pasando por color de raíces para mantener tu tono impecable.
               </p>
             </div>
@@ -86,7 +98,10 @@ const galleryImages = [
           <div class="grid md:grid-cols-2 gap-6 mt-8">
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-check-circle"
+                  class="w-5 h-5 text-primary"
+                />
                 Decoloración
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -96,7 +111,10 @@ const galleryImages = [
 
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-check-circle"
+                  class="w-5 h-5 text-primary"
+                />
                 Color Completo
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -106,7 +124,10 @@ const galleryImages = [
 
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-check-circle"
+                  class="w-5 h-5 text-primary"
+                />
                 Baño de Color
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -116,7 +137,10 @@ const galleryImages = [
 
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-check-circle"
+                  class="w-5 h-5 text-primary"
+                />
                 Color de Raíces
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -173,13 +197,22 @@ const galleryImages = [
             Contacta con nosotras y te asesoraremos para encontrar el color perfecto para ti.
           </p>
           <div class="flex flex-wrap gap-3 justify-center">
-            <UButton to="/contacto" size="lg" color="primary">
+            <UButton
+              to="/contacto"
+              size="lg"
+              color="primary"
+            >
               <template #leading>
                 <UIcon name="i-lucide-calendar" />
               </template>
               Reservar cita
             </UButton>
-            <UButton href="tel:604812695" size="lg" color="neutral" variant="outline">
+            <UButton
+              href="tel:604812695"
+              size="lg"
+              color="neutral"
+              variant="outline"
+            >
               <template #leading>
                 <UIcon name="i-lucide-phone" />
               </template>

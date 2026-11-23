@@ -37,13 +37,22 @@ const galleryImages = [
       </template>
       <template #links>
         <div class="flex flex-wrap gap-3">
-          <UButton to="/contacto" size="lg" color="primary">
+          <UButton
+            to="/contacto"
+            size="lg"
+            color="primary"
+          >
             <template #leading>
               <UIcon name="i-lucide-calendar" />
             </template>
             Reservar cita
           </UButton>
-          <UButton href="tel:604812695" size="lg" color="neutral" variant="outline">
+          <UButton
+            href="tel:604812695"
+            size="lg"
+            color="neutral"
+            variant="outline"
+          >
             <template #leading>
               <UIcon name="i-lucide-phone" />
             </template>
@@ -64,21 +73,24 @@ const galleryImages = [
         <div class="prose dark:prose-invert max-w-none">
           <div class="flex items-start gap-4">
             <div class="p-4 bg-primary/10 rounded-xl">
-              <UIcon name="i-lucide-sun" class="w-8 h-8 text-primary" />
+              <UIcon
+                name="i-lucide-sun"
+                class="w-8 h-8 text-primary"
+              />
             </div>
             <div class="flex-1">
               <h2 class="text-2xl md:text-3xl font-bold mb-4 mt-0">
                 Babylights: iluminación sutil como la de un niño
               </h2>
               <p class="text-lg text-gray-600 dark:text-gray-300 mb-4">
-                Los babylights son mechas ultrafinas que imitan el efecto natural del sol en el cabello infantil. 
-                Esta técnica consiste en aplicar finísimas mechas distribuidas estratégicamente por todo el cabello 
+                Los babylights son mechas ultrafinas que imitan el efecto natural del sol en el cabello infantil.
+                Esta técnica consiste en aplicar finísimas mechas distribuidas estratégicamente por todo el cabello
                 para crear una iluminación delicada, natural y muy favorecedora.
               </p>
               <p class="text-gray-600 dark:text-gray-300 mb-4">
-                Es perfecta si buscas aclarar tu cabello de forma gradual y natural, sin grandes contrastes. 
-                Los babylights aportan luminosidad, dimensión y movimiento al cabello, consiguiendo un efecto 
-                "beso de sol" muy sofisticado y elegante. Son ideales para cualquier base de color y requieren 
+                Es perfecta si buscas aclarar tu cabello de forma gradual y natural, sin grandes contrastes.
+                Los babylights aportan luminosidad, dimensión y movimiento al cabello, consiguiendo un efecto
+                "beso de sol" muy sofisticado y elegante. Son ideales para cualquier base de color y requieren
                 poco mantenimiento.
               </p>
             </div>
@@ -87,7 +99,10 @@ const galleryImages = [
           <div class="grid md:grid-cols-2 gap-6 mt-8">
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-check-circle"
+                  class="w-5 h-5 text-primary"
+                />
                 Resultado Natural
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -97,7 +112,10 @@ const galleryImages = [
 
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-check-circle"
+                  class="w-5 h-5 text-primary"
+                />
                 Bajo Mantenimiento
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -107,7 +125,10 @@ const galleryImages = [
 
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-check-circle"
+                  class="w-5 h-5 text-primary"
+                />
                 Luminosidad y Dimensión
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -117,7 +138,10 @@ const galleryImages = [
 
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-check-circle"
+                  class="w-5 h-5 text-primary"
+                />
                 Para Todos los Tonos
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -141,10 +165,10 @@ const galleryImages = [
           <a
             v-for="(image, index) in galleryImages"
             :key="index"
+            v-motion
             :href="image.url"
             target="_blank"
             rel="noopener noreferrer"
-            v-motion
             :initial="{ opacity: 0, scale: 0.9 }"
             :visible-once="{ opacity: 1, scale: 1 }"
             :delay="100 * index"
@@ -179,13 +203,22 @@ const galleryImages = [
             Los babylights son perfectos para ti. Reserva tu cita y descubre este efecto tan natural.
           </p>
           <div class="flex flex-wrap gap-3 justify-center">
-            <UButton to="/contacto" size="lg" color="primary">
+            <UButton
+              to="/contacto"
+              size="lg"
+              color="primary"
+            >
               <template #leading>
                 <UIcon name="i-lucide-calendar" />
               </template>
               Reservar cita
             </UButton>
-            <UButton href="tel:604812695" size="lg" color="neutral" variant="outline">
+            <UButton
+              href="tel:604812695"
+              size="lg"
+              color="neutral"
+              variant="outline"
+            >
               <template #leading>
                 <UIcon name="i-lucide-phone" />
               </template>

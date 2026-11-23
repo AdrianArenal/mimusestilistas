@@ -27,13 +27,22 @@ useSeoMeta({
       </template>
       <template #links>
         <div class="flex flex-wrap gap-3">
-          <UButton to="/contacto" size="lg" color="primary">
+          <UButton
+            to="/contacto"
+            size="lg"
+            color="primary"
+          >
             <template #leading>
               <UIcon name="i-lucide-calendar" />
             </template>
             Reservar cita
           </UButton>
-          <UButton href="tel:604812695" size="lg" color="neutral" variant="outline">
+          <UButton
+            href="tel:604812695"
+            size="lg"
+            color="neutral"
+            variant="outline"
+          >
             <template #leading>
               <UIcon name="i-lucide-phone" />
             </template>
@@ -62,31 +71,45 @@ useSeoMeta({
             preload="auto"
             aria-label="Peinado de novia en Mimus"
           >
-            <source src="https://pub-820a050bd8b941bdb6f8494e6c3603c2.r2.dev/boda2.mp4" type="video/mp4">
+            <source
+              src="https://pub-820a050bd8b941bdb6f8494e6c3603c2.r2.dev/boda2.mp4"
+              type="video/mp4"
+            >
             Tu navegador no soporta el elemento de video.
           </video>
         </div>
 
         <!-- Texto 1 -->
         <div class="space-y-4">
-          <h2 class="text-3xl font-bold">Peinados de novia personalizados</h2>
+          <h2 class="text-3xl font-bold">
+            Peinados de novia personalizados
+          </h2>
           <p class="text-gray-600 dark:text-gray-300 text-lg">
-            En Mimus entendemos que tu boda es uno de los días más importantes de tu vida. 
+            En Mimus entendemos que tu boda es uno de los días más importantes de tu vida.
             Cada novia es única y merece un peinado que refleje su personalidad y estilo.
           </p>
           <p class="text-gray-600 dark:text-gray-300">
-            Creamos recogidos únicos y personalizados que te harán sentir radiante y especial. 
-            Desde estilos clásicos y elegantes hasta looks más modernos y románticos, 
+            Creamos recogidos únicos y personalizados que te harán sentir radiante y especial.
+            Desde estilos clásicos y elegantes hasta looks más modernos y románticos,
             trabajamos contigo para encontrar el peinado perfecto que complemente tu vestido y complementos.
           </p>
           <div class="flex gap-3 pt-4">
-            <UButton to="/contacto" color="primary" size="lg">
+            <UButton
+              to="/contacto"
+              color="primary"
+              size="lg"
+            >
               <template #leading>
                 <UIcon name="i-lucide-calendar" />
               </template>
               Reservar ahora
             </UButton>
-            <UButton href="tel:604812695" color="neutral" variant="outline" size="lg">
+            <UButton
+              href="tel:604812695"
+              color="neutral"
+              variant="outline"
+              size="lg"
+            >
               <template #leading>
                 <UIcon name="i-lucide-phone" />
               </template>
@@ -114,32 +137,47 @@ useSeoMeta({
             preload="auto"
             aria-label="Maquillaje de novia en Mimus"
           >
-            <source src="https://pub-820a050bd8b941bdb6f8494e6c3603c2.r2.dev/boda1.mp4" type="video/mp4">
+            <source
+              src="https://pub-820a050bd8b941bdb6f8494e6c3603c2.r2.dev/boda1.mp4"
+              type="video/mp4"
+            >
             Tu navegador no soporta el elemento de video.
           </video>
         </div>
 
         <!-- Texto 2 -->
         <div class="space-y-4 lg:order-1">
-          <h2 class="text-3xl font-bold">Servicios para invitadas</h2>
+          <h2 class="text-3xl font-bold">
+            Servicios para invitadas
+          </h2>
           <p class="text-gray-600 dark:text-gray-300 text-lg">
-            No solo cuidamos de la novia. También ofrecemos servicios de peinado y maquillaje 
+            No solo cuidamos de la novia. También ofrecemos servicios de peinado y maquillaje
             para las invitadas que quieran lucir perfectas en este día especial.
           </p>
           <p class="text-gray-600 dark:text-gray-300">
-            Nos desplazamos al lugar de tu evento para mayor comodidad, permitiendo que todo el 
-            grupo se prepare juntos en un ambiente relajado y sin prisas. También ofrecemos la posibilidad 
-            de abrir el salón en exclusiva para vosotras en ese día tan especial. Coordinamos el equipo 
+            Nos desplazamos al lugar de tu evento para mayor comodidad, permitiendo que todo el
+            grupo se prepare juntos en un ambiente relajado y sin prisas. También ofrecemos la posibilidad
+            de abrir el salón en exclusiva para vosotras en ese día tan especial. Coordinamos el equipo
             y los tiempos para que todo esté listo a la hora perfecta.
           </p>
           <div class="pt-4">
             <div class="flex items-start gap-3 mb-3">
-              <UIcon name="i-lucide-check-circle" class="w-6 h-6 text-primary mt-1 shrink-0" />
-              <p class="text-gray-600 dark:text-gray-300">Servicio a domicilio disponible</p>
+              <UIcon
+                name="i-lucide-check-circle"
+                class="w-6 h-6 text-primary mt-1 shrink-0"
+              />
+              <p class="text-gray-600 dark:text-gray-300">
+                Servicio a domicilio disponible
+              </p>
             </div>
             <div class="flex items-start gap-3">
-              <UIcon name="i-lucide-check-circle" class="w-6 h-6 text-primary mt-1 shrink-0" />
-              <p class="text-gray-600 dark:text-gray-300">Productos profesionales de alta calidad</p>
+              <UIcon
+                name="i-lucide-check-circle"
+                class="w-6 h-6 text-primary mt-1 shrink-0"
+              />
+              <p class="text-gray-600 dark:text-gray-300">
+                Productos profesionales de alta calidad
+              </p>
             </div>
           </div>
         </div>
@@ -226,20 +264,34 @@ useSeoMeta({
       >
         <UCard class="bg-primary/5 border-primary/20">
           <div class="text-center py-8">
-            <UIcon name="i-lucide-calendar-heart" class="w-12 h-12 text-primary mx-auto mb-4" />
-            <h3 class="text-2xl font-bold mb-4">Reserva tu cita</h3>
+            <UIcon
+              name="i-lucide-calendar-heart"
+              class="w-12 h-12 text-primary mx-auto mb-4"
+            />
+            <h3 class="text-2xl font-bold mb-4">
+              Reserva tu cita
+            </h3>
             <p class="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-              Te recomendamos reservar tu prueba con al menos 1-2 meses de antelación. 
+              Te recomendamos reservar tu prueba con al menos 1-2 meses de antelación.
               Para el día de la boda, podemos desplazarnos a tu domicilio o lugar de preparación.
             </p>
             <div class="flex flex-wrap gap-3 justify-center">
-              <UButton to="/contacto" size="lg" color="primary">
+              <UButton
+                to="/contacto"
+                size="lg"
+                color="primary"
+              >
                 <template #leading>
                   <UIcon name="i-lucide-calendar" />
                 </template>
                 Reservar ahora
               </UButton>
-              <UButton href="tel:604812695" size="lg" color="neutral" variant="outline">
+              <UButton
+                href="tel:604812695"
+                size="lg"
+                color="neutral"
+                variant="outline"
+              >
                 <template #leading>
                   <UIcon name="i-lucide-phone" />
                 </template>
@@ -255,26 +307,40 @@ useSeoMeta({
         v-motion
         :initial="{ opacity: 0, y: 30 }"
         :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 200 } }"
-        class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12" style="display: none;"
+        class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12"
+        style="display: none;"
       >
-        <div class="lg:col-span-2 space-y-6">
-        </div>
+        <div class="lg:col-span-2 space-y-6" />
 
         <div class="space-y-6">
           <UCard>
             <div class="space-y-4">
               <div class="p-4 bg-primary/10 rounded-lg w-fit">
-                <UIcon name="i-lucide-heart" class="w-8 h-8 text-primary" />
+                <UIcon
+                  name="i-lucide-heart"
+                  class="w-8 h-8 text-primary"
+                />
               </div>
 
               <div class="space-y-3">
-                <UButton to="/contacto" block size="lg" color="primary">
+                <UButton
+                  to="/contacto"
+                  block
+                  size="lg"
+                  color="primary"
+                >
                   <template #leading>
                     <UIcon name="i-lucide-calendar" />
                   </template>
                   Reservar cita
                 </UButton>
-                <UButton href="tel:604812695" block size="lg" color="neutral" variant="outline">
+                <UButton
+                  href="tel:604812695"
+                  block
+                  size="lg"
+                  color="neutral"
+                  variant="outline"
+                >
                   <template #leading>
                     <UIcon name="i-lucide-phone" />
                   </template>
@@ -286,27 +352,50 @@ useSeoMeta({
 
           <UCard>
             <div class="space-y-4">
-              <h3 class="font-semibold text-lg">Información adicional</h3>
+              <h3 class="font-semibold text-lg">
+                Información adicional
+              </h3>
               <div class="space-y-3 text-sm">
                 <div class="flex items-start gap-3">
-                  <UIcon name="i-lucide-map-pin" class="w-5 h-5 text-primary mt-0.5" />
+                  <UIcon
+                    name="i-lucide-map-pin"
+                    class="w-5 h-5 text-primary mt-0.5"
+                  />
                   <div>
-                    <p class="font-medium">Ubicación</p>
-                    <p class="text-gray-600 dark:text-gray-400">Pola de Siero, Asturias</p>
+                    <p class="font-medium">
+                      Ubicación
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-400">
+                      Pola de Siero, Asturias
+                    </p>
                   </div>
                 </div>
                 <div class="flex items-start gap-3">
-                  <UIcon name="i-lucide-clock" class="w-5 h-5 text-primary mt-0.5" />
+                  <UIcon
+                    name="i-lucide-clock"
+                    class="w-5 h-5 text-primary mt-0.5"
+                  />
                   <div>
-                    <p class="font-medium">Horario</p>
-                    <p class="text-gray-600 dark:text-gray-400">Lunes-Martes: 9:30-13:30 / 15:30-19:00<br>Jueves-Viernes: 9:30-19:00<br>Sábado: 9:30-13:30</p>
+                    <p class="font-medium">
+                      Horario
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-400">
+                      Lunes-Martes: 9:30-13:30 / 15:30-19:00<br>Jueves-Viernes: 9:30-19:00<br>Sábado: 9:30-13:30
+                    </p>
                   </div>
                 </div>
                 <div class="flex items-start gap-3">
-                  <UIcon name="i-lucide-sparkles" class="w-5 h-5 text-primary mt-0.5" />
+                  <UIcon
+                    name="i-lucide-sparkles"
+                    class="w-5 h-5 text-primary mt-0.5"
+                  />
                   <div>
-                    <p class="font-medium">Productos profesionales</p>
-                    <p class="text-gray-600 dark:text-gray-400">Marcas de alta calidad</p>
+                    <p class="font-medium">
+                      Productos profesionales
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-400">
+                      Marcas de alta calidad
+                    </p>
                   </div>
                 </div>
               </div>
@@ -320,9 +409,16 @@ useSeoMeta({
         :initial="{ opacity: 0, y: 30 }"
         :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 400 } }"
       >
-        <h2 class="text-2xl font-bold mb-6">Otros servicios</h2>
+        <h2 class="text-2xl font-bold mb-6">
+          Otros servicios
+        </h2>
         <div class="flex gap-4 justify-center">
-          <UButton to="/servicios" size="lg" color="neutral" variant="outline">
+          <UButton
+            to="/servicios"
+            size="lg"
+            color="neutral"
+            variant="outline"
+          >
             <template #leading>
               <UIcon name="i-lucide-arrow-left" />
             </template>

@@ -73,19 +73,22 @@ const galleryImages = [
         <div class="prose dark:prose-invert max-w-none">
           <div class="flex items-start gap-4">
             <div class="p-4 bg-primary/10 rounded-xl">
-              <UIcon name="i-lucide-heart" class="w-8 h-8 text-primary" />
+              <UIcon
+                name="i-lucide-heart"
+                class="w-8 h-8 text-primary"
+              />
             </div>
             <div class="flex-1">
               <h2 class="text-2xl md:text-3xl font-bold mb-4 mt-0">
                 Tratamientos capilares profesionales
               </h2>
               <p class="text-lg text-gray-600 dark:text-gray-300 mb-4">
-                En Mimus trabajamos con las mejores marcas del mercado para ofrecer tratamientos 
-                capilares de alta gama que reparan, nutren y transforman tu cabello. Utilizamos <strong>Fibre Clinix</strong> de Schwarzkopf 
+                En Mimus trabajamos con las mejores marcas del mercado para ofrecer tratamientos
+                capilares de alta gama que reparan, nutren y transforman tu cabello. Utilizamos <strong>Fibre Clinix</strong> de Schwarzkopf
                 y <strong>Authentic Beauty Concept</strong> para garantizar resultados profesionales y duraderos.
               </p>
               <p class="text-gray-600 dark:text-gray-300 mb-4">
-                Cada tratamiento está personalizado según las necesidades específicas de tu cabello, ya sea que 
+                Cada tratamiento está personalizado según las necesidades específicas de tu cabello, ya sea que
                 necesites hidratación profunda, reparación intensiva, control del frizz o revitalización del color.
               </p>
             </div>
@@ -94,11 +97,14 @@ const galleryImages = [
           <div class="grid md:grid-cols-2 gap-6 mt-8">
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-sparkles" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-sparkles"
+                  class="w-5 h-5 text-primary"
+                />
                 Fibre Clinix
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
-                Sistema de tratamiento profesional de Schwarzkopf con Triple Bonding & C21 Technology. 
+                Sistema de tratamiento profesional de Schwarzkopf con Triple Bonding & C21 Technology.
                 Reconstruye los puentes internos del cabello para una reparación profunda y duradera.
               </p>
               <ul class="text-xs text-gray-600 dark:text-gray-400 space-y-1">
@@ -111,11 +117,14 @@ const galleryImages = [
 
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-leaf" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-leaf"
+                  class="w-5 h-5 text-primary"
+                />
                 Authentic Beauty Concept
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
-                Línea profesional con ingredientes naturales y fórmulas veganas. Tratamientos conscientes 
+                Línea profesional con ingredientes naturales y fórmulas veganas. Tratamientos conscientes
                 que cuidan tu cabello y el medio ambiente sin comprometer la eficacia.
               </p>
               <ul class="text-xs text-gray-600 dark:text-gray-400 space-y-1">
@@ -128,7 +137,10 @@ const galleryImages = [
 
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-shield-check" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-shield-check"
+                  class="w-5 h-5 text-primary"
+                />
                 Botox Capilar
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -138,7 +150,10 @@ const galleryImages = [
 
             <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <UIcon name="i-lucide-shield-check" class="w-5 h-5 text-primary" />
+                <UIcon
+                  name="i-lucide-shield-check"
+                  class="w-5 h-5 text-primary"
+                />
                 Keratina
               </h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
@@ -196,13 +211,22 @@ const galleryImages = [
             Visítanos y te asesoraremos sobre el mejor tratamiento para tu tipo de cabello.
           </p>
           <div class="flex flex-wrap gap-3 justify-center">
-            <UButton to="/contacto" size="lg" color="primary">
+            <UButton
+              to="/contacto"
+              size="lg"
+              color="primary"
+            >
               <template #leading>
                 <UIcon name="i-lucide-calendar" />
               </template>
               Reservar cita
             </UButton>
-            <UButton href="tel:604812695" size="lg" color="neutral" variant="outline">
+            <UButton
+              href="tel:604812695"
+              size="lg"
+              color="neutral"
+              variant="outline"
+            >
               <template #leading>
                 <UIcon name="i-lucide-phone" />
               </template>

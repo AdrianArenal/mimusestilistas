@@ -121,75 +121,149 @@ const productColumns = [
 <template>
   <UPage>
     <UContainer class="py-12">
-      <UPageHeader v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-        :title="page.title" :description="page.description">
+      <UPageHeader
+        v-motion
+        :initial="{ opacity: 0, y: 20 }"
+        :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
+        :title="page.title"
+        :description="page.description"
+      >
         <template #links>
           <div class="flex flex-wrap gap-3">
-            <UButton label="Ver servicios" to="/servicios" color="neutral" variant="outline" size="lg" />
-            <UButton label="Reserva tu cita" to="/contacto" color="primary" size="lg" />
+            <UButton
+              label="Ver servicios"
+              to="/servicios"
+              color="neutral"
+              variant="outline"
+              size="lg"
+            />
+            <UButton
+              label="Reserva tu cita"
+              to="/contacto"
+              color="primary"
+              size="lg"
+            />
           </div>
         </template>
       </UPageHeader>
 
       <div class="space-y-12 mt-12">
         <!-- Tabla de Contenidos -->
-        <UCard v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 100 } }">
+        <UCard
+          v-motion
+          :initial="{ opacity: 0, y: 20 }"
+          :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 100 } }"
+        >
           <div class="space-y-4">
             <h2 class="text-2xl font-bold">
               Nuestros Productos
             </h2>
             <ul class="space-y-2">
               <li>
-                <NuxtLink to="#glow" class="text-primary hover:underline flex items-center gap-2">
-                  <UIcon name="i-lucide-chevron-right" class="size-4" />
+                <NuxtLink
+                  to="#glow"
+                  class="text-primary hover:underline flex items-center gap-2"
+                >
+                  <UIcon
+                    name="i-lucide-chevron-right"
+                    class="size-4"
+                  />
                   Glow
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="#amplify" class="text-primary hover:underline flex items-center gap-2">
-                  <UIcon name="i-lucide-chevron-right" class="size-4" />
+                <NuxtLink
+                  to="#amplify"
+                  class="text-primary hover:underline flex items-center gap-2"
+                >
+                  <UIcon
+                    name="i-lucide-chevron-right"
+                    class="size-4"
+                  />
                   Amplify
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="#hydrate" class="text-primary hover:underline flex items-center gap-2">
-                  <UIcon name="i-lucide-chevron-right" class="size-4" />
+                <NuxtLink
+                  to="#hydrate"
+                  class="text-primary hover:underline flex items-center gap-2"
+                >
+                  <UIcon
+                    name="i-lucide-chevron-right"
+                    class="size-4"
+                  />
                   Hydrate
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="#replenish" class="text-primary hover:underline flex items-center gap-2">
-                  <UIcon name="i-lucide-chevron-right" class="size-4" />
+                <NuxtLink
+                  to="#replenish"
+                  class="text-primary hover:underline flex items-center gap-2"
+                >
+                  <UIcon
+                    name="i-lucide-chevron-right"
+                    class="size-4"
+                  />
                   Replenish
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="#all-hair-scalp" class="text-primary hover:underline flex items-center gap-2">
-                  <UIcon name="i-lucide-chevron-right" class="size-4" />
+                <NuxtLink
+                  to="#all-hair-scalp"
+                  class="text-primary hover:underline flex items-center gap-2"
+                >
+                  <UIcon
+                    name="i-lucide-chevron-right"
+                    class="size-4"
+                  />
                   All Hair & Scalp Types
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="#styling" class="text-primary hover:underline flex items-center gap-2">
-                  <UIcon name="i-lucide-chevron-right" class="size-4" />
+                <NuxtLink
+                  to="#styling"
+                  class="text-primary hover:underline flex items-center gap-2"
+                >
+                  <UIcon
+                    name="i-lucide-chevron-right"
+                    class="size-4"
+                  />
                   Styling
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="#beyond-hair" class="text-primary hover:underline flex items-center gap-2">
-                  <UIcon name="i-lucide-chevron-right" class="size-4" />
+                <NuxtLink
+                  to="#beyond-hair"
+                  class="text-primary hover:underline flex items-center gap-2"
+                >
+                  <UIcon
+                    name="i-lucide-chevron-right"
+                    class="size-4"
+                  />
                   Beyond Hair
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="#minis" class="text-primary hover:underline flex items-center gap-2">
-                  <UIcon name="i-lucide-chevron-right" class="size-4" />
+                <NuxtLink
+                  to="#minis"
+                  class="text-primary hover:underline flex items-center gap-2"
+                >
+                  <UIcon
+                    name="i-lucide-chevron-right"
+                    class="size-4"
+                  />
                   Minis
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="#velas-memento" class="text-primary hover:underline flex items-center gap-2">
-                  <UIcon name="i-lucide-chevron-right" class="size-4" />
+                <NuxtLink
+                  to="#velas-memento"
+                  class="text-primary hover:underline flex items-center gap-2"
+                >
+                  <UIcon
+                    name="i-lucide-chevron-right"
+                    class="size-4"
+                  />
                   Velas Memento
                 </NuxtLink>
               </li>
@@ -198,7 +272,11 @@ const productColumns = [
         </UCard>
 
         <!-- Schwarzkopf Section -->
-        <UCard v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 200 } }">
+        <UCard
+          v-motion
+          :initial="{ opacity: 0, y: 20 }"
+          :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 200 } }"
+        >
           <div class="grid md:grid-cols-2 gap-8 items-center">
             <div class="space-y-6">
               <div class="flex items-center gap-3 md:gap-4">
@@ -216,39 +294,64 @@ const productColumns = [
 
               <div class="space-y-4">
                 <div class="flex items-start gap-3">
-                  <UIcon name="i-lucide-sparkles" class="size-5 text-primary shrink-0 mt-0.5" />
+                  <UIcon
+                    name="i-lucide-sparkles"
+                    class="size-5 text-primary shrink-0 mt-0.5"
+                  />
                   <div>
-                    <h3 class="font-semibold mb-1">Calidad superior</h3>
-                    <p class="text-sm text-muted">Los productos de Schwarzkopf son conocidos por su eficacia y
+                    <h3 class="font-semibold mb-1">
+                      Calidad superior
+                    </h3>
+                    <p class="text-sm text-muted">
+                      Los productos de Schwarzkopf son conocidos por su eficacia y
                       durabilidad,
-                      proporcionando colores vibrantes y de larga duración.</p>
+                      proporcionando colores vibrantes y de larga duración.
+                    </p>
                   </div>
                 </div>
 
                 <div class="flex items-start gap-3">
-                  <UIcon name="i-lucide-lightbulb" class="size-5 text-primary shrink-0 mt-0.5" />
+                  <UIcon
+                    name="i-lucide-lightbulb"
+                    class="size-5 text-primary shrink-0 mt-0.5"
+                  />
                   <div>
-                    <h3 class="font-semibold mb-1">Innovación constante</h3>
-                    <p class="text-sm text-muted">Schwarzkopf se mantiene a la vanguardia de la tecnología capilar,
-                      desarrollando fórmulas que cuidan y protegen el cabello mientras lo colorean.</p>
+                    <h3 class="font-semibold mb-1">
+                      Innovación constante
+                    </h3>
+                    <p class="text-sm text-muted">
+                      Schwarzkopf se mantiene a la vanguardia de la tecnología capilar,
+                      desarrollando fórmulas que cuidan y protegen el cabello mientras lo colorean.
+                    </p>
                   </div>
                 </div>
 
                 <div class="flex items-start gap-3">
-                  <UIcon name="i-lucide-palette" class="size-5 text-primary shrink-0 mt-0.5" />
+                  <UIcon
+                    name="i-lucide-palette"
+                    class="size-5 text-primary shrink-0 mt-0.5"
+                  />
                   <div>
-                    <h3 class="font-semibold mb-1">Amplia variedad</h3>
-                    <p class="text-sm text-muted">Desde tonos naturales hasta colores más específicos y modernos
+                    <h3 class="font-semibold mb-1">
+                      Amplia variedad
+                    </h3>
+                    <p class="text-sm text-muted">
+                      Desde tonos naturales hasta colores más específicos y modernos
                       podríamos
                       decir que Schwarzkopf ofrece una amplia gama de opciones para satisfacer todos los gustos y
-                      necesidades.</p>
+                      necesidades.
+                    </p>
                   </div>
                 </div>
               </div>
 
               <p class="text-lg pt-4">
                 <strong>Ven a Mimus Peluquería y descubre la diferencia que hace trabajar con una marca líder como
-                  <ULink to="https://shop.schwarzkopf-professional.es/es/?utm_source=mimus&utm_medium=cpc&utm_campaign=SKP_ES_eShop_ES-FMCG-SKP-Search-BR-ALL_always-on-2025&utm_term=g_e_schwarzkopf&utm_content=schwarzkopf-pure-brand&gad_source=1&gad_campaignid=13623422308&gbraid=0AAAAAB3CrcZEcIfpv2ztQP_abtB6730xG&gclid=CjwKCAiA3fnJBhAgEiwAyqmY5SM6H_vHLiDHUsgXHVh_Gw20r0wwfV6vg9l-ZrJyygPFl3jONuNVSBoC0eQQAvD_BwE" target="_blank" class="text-primary hover:underline">Schwarzkopf</ULink>.</strong>
+                  <ULink
+                    to="https://shop.schwarzkopf-professional.es/es/?utm_source=mimus&utm_medium=cpc&utm_campaign=SKP_ES_eShop_ES-FMCG-SKP-Search-BR-ALL_always-on-2025&utm_term=g_e_schwarzkopf&utm_content=schwarzkopf-pure-brand&gad_source=1&gad_campaignid=13623422308&gbraid=0AAAAAB3CrcZEcIfpv2ztQP_abtB6730xG&gclid=CjwKCAiA3fnJBhAgEiwAyqmY5SM6H_vHLiDHUsgXHVh_Gw20r0wwfV6vg9l-ZrJyygPFl3jONuNVSBoC0eQQAvD_BwE"
+                    target="_blank"
+                    class="text-primary hover:underline"
+                  >Schwarzkopf</ULink>.</strong>
               </p>
             </div>
 
@@ -256,27 +359,33 @@ const productColumns = [
               <div class="perspective-midrange w-[150px] h-[150px] md:w-[200px] md:h-[200px]">
                 <div class="w-full h-full relative transform-3d rotating-cube-animation">
                   <div
-                    class="absolute w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-linear-to-br from-zinc-900 to-black dark:from-white dark:to-gray-100 border-2 border-zinc-800 dark:border-gray-300 flex items-center justify-center shadow-[0_0_20px_rgba(0,0,0,0.3)] dark:shadow-[0_0_20px_rgba(255,255,255,0.2)] transform-[rotateY(0deg)_translateZ(75px)] md:transform-[rotateY(0deg)_translateZ(100px)] backface-visible">
+                    class="absolute w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-linear-to-br from-zinc-900 to-black dark:from-white dark:to-gray-100 border-2 border-zinc-800 dark:border-gray-300 flex items-center justify-center shadow-[0_0_20px_rgba(0,0,0,0.3)] dark:shadow-[0_0_20px_rgba(255,255,255,0.2)] transform-[rotateY(0deg)_translateZ(75px)] md:transform-[rotateY(0deg)_translateZ(100px)] backface-visible"
+                  >
                     <SchwarzskopfSvg class="w-full h-full p-6 md:p-8 text-white dark:text-black" />
                   </div>
                   <div
-                    class="absolute w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-linear-to-br from-zinc-900 to-black dark:from-white dark:to-gray-100 border-2 border-zinc-800 dark:border-gray-300 flex items-center justify-center shadow-[0_0_20px_rgba(0,0,0,0.3)] dark:shadow-[0_0_20px_rgba(255,255,255,0.2)] transform-[rotateY(180deg)_translateZ(75px)] md:transform-[rotateY(180deg)_translateZ(100px)] backface-visible">
+                    class="absolute w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-linear-to-br from-zinc-900 to-black dark:from-white dark:to-gray-100 border-2 border-zinc-800 dark:border-gray-300 flex items-center justify-center shadow-[0_0_20px_rgba(0,0,0,0.3)] dark:shadow-[0_0_20px_rgba(255,255,255,0.2)] transform-[rotateY(180deg)_translateZ(75px)] md:transform-[rotateY(180deg)_translateZ(100px)] backface-visible"
+                  >
                     <SchwarzskopfSvg class="w-full h-full p-6 md:p-8 text-white dark:text-black" />
                   </div>
                   <div
-                    class="absolute w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-linear-to-br from-zinc-900 to-black dark:from-white dark:to-gray-100 border-2 border-zinc-800 dark:border-gray-300 flex items-center justify-center shadow-[0_0_20px_rgba(0,0,0,0.3)] dark:shadow-[0_0_20px_rgba(255,255,255,0.2)] transform-[rotateY(90deg)_translateZ(75px)] md:transform-[rotateY(90deg)_translateZ(100px)] backface-visible">
+                    class="absolute w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-linear-to-br from-zinc-900 to-black dark:from-white dark:to-gray-100 border-2 border-zinc-800 dark:border-gray-300 flex items-center justify-center shadow-[0_0_20px_rgba(0,0,0,0.3)] dark:shadow-[0_0_20px_rgba(255,255,255,0.2)] transform-[rotateY(90deg)_translateZ(75px)] md:transform-[rotateY(90deg)_translateZ(100px)] backface-visible"
+                  >
                     <SchwarzskopfSvg class="w-full h-full p-6 md:p-8 text-white dark:text-black" />
                   </div>
                   <div
-                    class="absolute w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-linear-to-br from-zinc-900 to-black dark:from-white dark:to-gray-100 border-2 border-zinc-800 dark:border-gray-300 flex items-center justify-center shadow-[0_0_20px_rgba(0,0,0,0.3)] dark:shadow-[0_0_20px_rgba(255,255,255,0.2)] transform-[rotateY(-90deg)_translateZ(75px)] md:transform-[rotateY(-90deg)_translateZ(100px)] backface-visible">
+                    class="absolute w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-linear-to-br from-zinc-900 to-black dark:from-white dark:to-gray-100 border-2 border-zinc-800 dark:border-gray-300 flex items-center justify-center shadow-[0_0_20px_rgba(0,0,0,0.3)] dark:shadow-[0_0_20px_rgba(255,255,255,0.2)] transform-[rotateY(-90deg)_translateZ(75px)] md:transform-[rotateY(-90deg)_translateZ(100px)] backface-visible"
+                  >
                     <SchwarzskopfSvg class="w-full h-full p-6 md:p-8 text-white dark:text-black" />
                   </div>
                   <div
-                    class="absolute w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-linear-to-br from-zinc-900 to-black dark:from-white dark:to-gray-100 border-2 border-zinc-800 dark:border-gray-300 flex items-center justify-center shadow-[0_0_20px_rgba(0,0,0,0.3)] dark:shadow-[0_0_20px_rgba(255,255,255,0.2)] transform-[rotateX(90deg)_translateZ(75px)] md:transform-[rotateX(90deg)_translateZ(100px)] backface-visible">
+                    class="absolute w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-linear-to-br from-zinc-900 to-black dark:from-white dark:to-gray-100 border-2 border-zinc-800 dark:border-gray-300 flex items-center justify-center shadow-[0_0_20px_rgba(0,0,0,0.3)] dark:shadow-[0_0_20px_rgba(255,255,255,0.2)] transform-[rotateX(90deg)_translateZ(75px)] md:transform-[rotateX(90deg)_translateZ(100px)] backface-visible"
+                  >
                     <SchwarzskopfSvg class="w-full h-full p-6 md:p-8 text-white dark:text-black" />
                   </div>
                   <div
-                    class="absolute w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-linear-to-br from-zinc-900 to-black dark:from-white dark:to-gray-100 border-2 border-zinc-800 dark:border-gray-300 flex items-center justify-center shadow-[0_0_20px_rgba(0,0,0,0.3)] dark:shadow-[0_0_20px_rgba(255,255,255,0.2)] transform-[rotateX(-90deg)_translateZ(75px)] md:transform-[rotateX(-90deg)_translateZ(100px)] backface-visible">
+                    class="absolute w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-linear-to-br from-zinc-900 to-black dark:from-white dark:to-gray-100 border-2 border-zinc-800 dark:border-gray-300 flex items-center justify-center shadow-[0_0_20px_rgba(0,0,0,0.3)] dark:shadow-[0_0_20px_rgba(255,255,255,0.2)] transform-[rotateX(-90deg)_translateZ(75px)] md:transform-[rotateX(-90deg)_translateZ(100px)] backface-visible"
+                  >
                     <SchwarzskopfSvg class="w-full h-full p-6 md:p-8 text-white dark:text-black" />
                   </div>
                 </div>
@@ -286,7 +395,11 @@ const productColumns = [
         </UCard>
 
         <!-- Authentic Beauty Concept -->
-        <UCard v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 300 } }">
+        <UCard
+          v-motion
+          :initial="{ opacity: 0, y: 20 }"
+          :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 300 } }"
+        >
           <div class="grid md:grid-cols-2 gap-8 items-center">
             <div class="space-y-6">
               <div>
@@ -294,7 +407,11 @@ const productColumns = [
                   Authentic Beauty Concept
                 </h2>
                 <p class="text-lg text-muted leading-relaxed">
-                  <ULink to="https://www.authenticbeautyconcept.es/" target="_blank" class="text-primary hover:underline">Authentic Beauty Concept</ULink> es la gama vegana de Schwarzkopf dedicada a la pureza y sostenibilidad.
+                  <ULink
+                    to="https://www.authenticbeautyconcept.es/"
+                    target="_blank"
+                    class="text-primary hover:underline"
+                  >Authentic Beauty Concept</ULink> es la gama vegana de Schwarzkopf dedicada a la pureza y sostenibilidad.
                 </p>
               </div>
 
@@ -304,7 +421,10 @@ const productColumns = [
                 </h3>
                 <div class="space-y-4">
                   <div class="flex items-start gap-3">
-                    <UIcon name="i-lucide-leaf" class="size-5 text-primary shrink-0 mt-0.5" />
+                    <UIcon
+                      name="i-lucide-leaf"
+                      class="size-5 text-primary shrink-0 mt-0.5"
+                    />
                     <div>
                       <p class="font-semibold mb-1">
                         Fórmulas Veganas con ingredientes Naturales
@@ -320,7 +440,10 @@ const productColumns = [
                   </div>
 
                   <div class="flex items-start gap-3">
-                    <UIcon name="i-lucide-recycle" class="size-5 text-primary shrink-0 mt-0.5" />
+                    <UIcon
+                      name="i-lucide-recycle"
+                      class="size-5 text-primary shrink-0 mt-0.5"
+                    />
                     <div>
                       <p class="font-semibold mb-1">
                         Sostenibilidad
@@ -333,7 +456,10 @@ const productColumns = [
                   </div>
 
                   <div class="flex items-start gap-3">
-                    <UIcon name="i-lucide-sparkles" class="size-5 text-primary shrink-0 mt-0.5" />
+                    <UIcon
+                      name="i-lucide-sparkles"
+                      class="size-5 text-primary shrink-0 mt-0.5"
+                    />
                     <div>
                       <p class="font-semibold mb-1">
                         Eficacia y Belleza
@@ -350,14 +476,23 @@ const productColumns = [
             </div>
 
             <div class="order-first md:order-last">
-              <img src="/images/26.webp" alt="Authentic Beauty Concept"
-                class="w-full h-auto rounded-lg object-cover aspect-square">
+              <img
+                src="/images/26.webp"
+                alt="Authentic Beauty Concept"
+                class="w-full h-auto rounded-lg object-cover aspect-square"
+              >
             </div>
           </div>
         </UCard>
 
         <!-- Glow -->
-        <div id="glow" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 400 } }">
+        <div
+          id="glow"
+          v-motion
+          class="space-y-4 scroll-mt-24"
+          :initial="{ opacity: 0, y: 20 }"
+          :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 400 } }"
+        >
           <div>
             <h2 class="text-2xl font-bold mb-2">
               Glow - Para cabello coloreado
@@ -367,15 +502,25 @@ const productColumns = [
             </p>
           </div>
           <UCard>
-            <UTable :data="glowProducts" :columns="productColumns" :ui="{
-              th: 'py-1.5 px-2',
-              td: 'py-1.5 px-2'
-            }" />
+            <UTable
+              :data="glowProducts"
+              :columns="productColumns"
+              :ui="{
+                th: 'py-1.5 px-2',
+                td: 'py-1.5 px-2'
+              }"
+            />
           </UCard>
         </div>
 
         <!-- Amplify -->
-        <div id="amplify" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 500 } }">
+        <div
+          id="amplify"
+          v-motion
+          class="space-y-4 scroll-mt-24"
+          :initial="{ opacity: 0, y: 20 }"
+          :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 500 } }"
+        >
           <div>
             <h2 class="text-2xl font-bold mb-2">
               Amplify
@@ -385,15 +530,25 @@ const productColumns = [
             </p>
           </div>
           <UCard>
-            <UTable :data="amplifyProducts" :columns="productColumns" :ui="{
-              th: 'py-1.5 px-2',
-              td: 'py-1.5 px-2'
-            }" />
+            <UTable
+              :data="amplifyProducts"
+              :columns="productColumns"
+              :ui="{
+                th: 'py-1.5 px-2',
+                td: 'py-1.5 px-2'
+              }"
+            />
           </UCard>
         </div>
 
         <!-- Hydrate -->
-        <div id="hydrate" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 550 } }">
+        <div
+          id="hydrate"
+          v-motion
+          class="space-y-4 scroll-mt-24"
+          :initial="{ opacity: 0, y: 20 }"
+          :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 550 } }"
+        >
           <div>
             <h2 class="text-2xl font-bold mb-2">
               Hydrate
@@ -403,15 +558,25 @@ const productColumns = [
             </p>
           </div>
           <UCard>
-            <UTable :data="hydrateProducts" :columns="productColumns" :ui="{
-              th: 'py-1.5 px-2',
-              td: 'py-1.5 px-2'
-            }" />
+            <UTable
+              :data="hydrateProducts"
+              :columns="productColumns"
+              :ui="{
+                th: 'py-1.5 px-2',
+                td: 'py-1.5 px-2'
+              }"
+            />
           </UCard>
         </div>
 
         <!-- Replenish -->
-        <div id="replenish" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 600 } }">
+        <div
+          id="replenish"
+          v-motion
+          class="space-y-4 scroll-mt-24"
+          :initial="{ opacity: 0, y: 20 }"
+          :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 600 } }"
+        >
           <div>
             <h2 class="text-2xl font-bold mb-2">
               Replenish
@@ -421,15 +586,25 @@ const productColumns = [
             </p>
           </div>
           <UCard>
-            <UTable :data="replenishProducts" :columns="productColumns" :ui="{
-              th: 'py-1.5 px-2',
-              td: 'py-1.5 px-2'
-            }" />
+            <UTable
+              :data="replenishProducts"
+              :columns="productColumns"
+              :ui="{
+                th: 'py-1.5 px-2',
+                td: 'py-1.5 px-2'
+              }"
+            />
           </UCard>
         </div>
 
         <!-- All Hair & Scalp Types -->
-        <div id="all-hair-scalp" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 650 } }">
+        <div
+          id="all-hair-scalp"
+          v-motion
+          class="space-y-4 scroll-mt-24"
+          :initial="{ opacity: 0, y: 20 }"
+          :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 650 } }"
+        >
           <div>
             <h2 class="text-2xl font-bold mb-2">
               All Hair & Scalp Types
@@ -439,15 +614,25 @@ const productColumns = [
             </p>
           </div>
           <UCard>
-            <UTable :data="allHairScalpProducts" :columns="productColumns" :ui="{
-              th: 'py-1.5 px-2',
-              td: 'py-1.5 px-2'
-            }" />
+            <UTable
+              :data="allHairScalpProducts"
+              :columns="productColumns"
+              :ui="{
+                th: 'py-1.5 px-2',
+                td: 'py-1.5 px-2'
+              }"
+            />
           </UCard>
         </div>
 
         <!-- Styling -->
-        <div id="styling" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 700 } }">
+        <div
+          id="styling"
+          v-motion
+          class="space-y-4 scroll-mt-24"
+          :initial="{ opacity: 0, y: 20 }"
+          :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 700 } }"
+        >
           <div>
             <h2 class="text-2xl font-bold mb-2">
               Styling
@@ -457,15 +642,25 @@ const productColumns = [
             </p>
           </div>
           <UCard>
-            <UTable :data="stylingProducts" :columns="productColumns" :ui="{
-              th: 'py-1.5 px-2',
-              td: 'py-1.5 px-2'
-            }" />
+            <UTable
+              :data="stylingProducts"
+              :columns="productColumns"
+              :ui="{
+                th: 'py-1.5 px-2',
+                td: 'py-1.5 px-2'
+              }"
+            />
           </UCard>
         </div>
 
         <!-- Beyond Hair -->
-        <div id="beyond-hair" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 750 } }">
+        <div
+          id="beyond-hair"
+          v-motion
+          class="space-y-4 scroll-mt-24"
+          :initial="{ opacity: 0, y: 20 }"
+          :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 750 } }"
+        >
           <div>
             <h2 class="text-2xl font-bold mb-2">
               Beyond Hair
@@ -475,15 +670,25 @@ const productColumns = [
             </p>
           </div>
           <UCard>
-            <UTable :data="beyondHairProducts" :columns="productColumns" :ui="{
-              th: 'py-1.5 px-2',
-              td: 'py-1.5 px-2'
-            }" />
+            <UTable
+              :data="beyondHairProducts"
+              :columns="productColumns"
+              :ui="{
+                th: 'py-1.5 px-2',
+                td: 'py-1.5 px-2'
+              }"
+            />
           </UCard>
         </div>
 
         <!-- Minis -->
-        <div id="minis" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 800 } }">
+        <div
+          id="minis"
+          v-motion
+          class="space-y-4 scroll-mt-24"
+          :initial="{ opacity: 0, y: 20 }"
+          :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 800 } }"
+        >
           <div>
             <h2 class="text-2xl font-bold mb-2">
               Minis
@@ -493,15 +698,25 @@ const productColumns = [
             </p>
           </div>
           <UCard>
-            <UTable :data="minisProducts" :columns="productColumns" :ui="{
-              th: 'py-1.5 px-2',
-              td: 'py-1.5 px-2'
-            }" />
+            <UTable
+              :data="minisProducts"
+              :columns="productColumns"
+              :ui="{
+                th: 'py-1.5 px-2',
+                td: 'py-1.5 px-2'
+              }"
+            />
           </UCard>
         </div>
 
         <!-- Velas Memento -->
-        <div id="velas-memento" class="space-y-4 scroll-mt-24" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 850 } }">
+        <div
+          id="velas-memento"
+          v-motion
+          class="space-y-4 scroll-mt-24"
+          :initial="{ opacity: 0, y: 20 }"
+          :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 850 } }"
+        >
           <div>
             <h2 class="text-2xl font-bold mb-2">
               Velas Memento
@@ -511,10 +726,14 @@ const productColumns = [
             </p>
           </div>
           <UCard>
-            <UTable :data="velasMementoProducts" :columns="productColumns" :ui="{
-              th: 'py-1.5 px-2',
-              td: 'py-1.5 px-2'
-            }" />
+            <UTable
+              :data="velasMementoProducts"
+              :columns="productColumns"
+              :ui="{
+                th: 'py-1.5 px-2',
+                td: 'py-1.5 px-2'
+              }"
+            />
           </UCard>
         </div>
       </div>
