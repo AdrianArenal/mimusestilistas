@@ -76,7 +76,7 @@ const galleryImages = [
                 que necesitan ajustar sus matices.
               </p>
               <p class="text-gray-600 dark:text-gray-300 mb-4">
-                En Mimu's Estilistas trabajamos con matizadores profesionales de alta calidad que no solo corrigen el tono, 
+                En Mimus trabajamos con matizadores profesionales de alta calidad que no solo corrigen el tono, 
                 sino que también aportan brillo, suavidad y cuidado a tu cabello. Ya sea que busques eliminar tonos naranjas, 
                 amarillos o potenciar los fríos, tenemos la solución perfecta para ti.
               </p>

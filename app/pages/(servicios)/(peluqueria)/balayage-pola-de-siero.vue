@@ -76,7 +76,7 @@ const galleryImages = [
                 natural y suave, mientras que los highlights añaden toques de luz más intensos en zonas clave.
               </p>
               <p class="text-gray-600 dark:text-gray-300 mb-4">
-                En Mimu's Estilistas personalizamos cada trabajo según tu tono base, la forma de tu rostro y el 
+                En Mimus personalizamos cada trabajo según tu tono base, la forma de tu rostro y el 
                 efecto que deseas conseguir. El resultado es un cabello con mucho movimiento, dimensión y un acabado 
                 profesional que se mantiene hermoso durante meses gracias a su crecimiento natural.
               </p>

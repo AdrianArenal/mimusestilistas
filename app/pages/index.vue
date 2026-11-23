@@ -37,7 +37,7 @@ useSeoMeta({
           playsinline
           preload="metadata"
           loading="lazy"
-          aria-label="Video de presentación de Mimu's Estilistas"
+          aria-label="Video de presentación de Mimus"
         >
           <source 
             src="https://pub-820a050bd8b941bdb6f8494e6c3603c2.r2.dev/98a2-bbda-4b4d-aa7a-8eaede9f6ed8.webm" 

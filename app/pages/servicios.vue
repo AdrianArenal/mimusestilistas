@@ -15,14 +15,6 @@ const services = [
     url: '/peluqueria-en-pola-de-siero'
   },
   {
-    title: 'Estética',
-    description: 'Maquillaje profesional para eventos especiales',
-    icon: 'i-lucide-sparkles',
-    image: '/images/7.webp',
-    featured: true,
-    url: '/estetica-en-pola-de-siero'
-  },
-  {
     title: 'Bodas y Eventos',
     description: 'Peinados para novias, peinados y maquillaje para invitadas',
     icon: 'i-lucide-heart',

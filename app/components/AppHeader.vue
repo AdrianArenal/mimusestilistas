@@ -14,7 +14,7 @@ const isOpen = ref(false)
   <div class="fixed top-2 sm:top-4 mx-auto left-1/2 transform -translate-x-1/2 z-10 w-[calc(100%-1rem)] sm:w-auto">
     <!-- Mobile Menu (Drawer) -->
     <div class="lg:hidden bg-muted/80 backdrop-blur-sm rounded-full px-4 py-2 border border-muted/50 shadow-lg shadow-neutral-950/5 flex items-center justify-between">
-      <NuxtLink to="/" aria-label="Ir a inicio - Mimu's Estilistas">
+      <NuxtLink to="/" aria-label="Ir a inicio - Mimus">
         <LogoSvg class="h-7 w-auto text-foreground" />
       </NuxtLink>
       <div class="flex items-center gap-2">
@@ -41,7 +41,7 @@ const isOpen = ref(false)
     >
       <template #body>
         <div class="flex justify-center py-6 border-b border-muted/20">
-          <NuxtLink to="/" aria-label="Ir a inicio - Mimu's Estilistas" @click="isOpen = false">
+          <NuxtLink to="/" aria-label="Ir a inicio - Mimus" @click="isOpen = false">
             <ImagetypeSvg class="h-9 w-auto text-foreground" />
           </NuxtLink>
         </div>
@@ -63,7 +63,7 @@ const isOpen = ref(false)
 
     <!-- Desktop Menu -->
     <div class="hidden lg:flex items-center gap-4 bg-muted/80 backdrop-blur-sm rounded-full px-4 border border-muted/50 shadow-lg shadow-neutral-950/5">
-      <NuxtLink to="/" aria-label="Ir a inicio - Mimu's Estilistas">
+      <NuxtLink to="/" aria-label="Ir a inicio - Mimus">
         <LogoSvg class="h-8 w-auto text-foreground" />
       </NuxtLink>
       <UNavigationMenu
