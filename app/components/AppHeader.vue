@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
-import LogoSvg from '~/assets/svg/logo.svg?component'
-import ImagetypeSvg from '~/assets/svg/imagotype.svg?component'
 
 defineProps<{
   links: NavigationMenuItem[]
@@ -15,10 +13,9 @@ const isOpen = ref(false)
     <!-- Mobile Menu (Drawer) -->
     <div class="lg:hidden bg-muted/80 backdrop-blur-sm rounded-full px-4 py-2 border border-muted/50 shadow-lg shadow-neutral-950/5 flex items-center justify-between">
       <NuxtLink to="/" aria-label="Ir a inicio - Mimus">
-        <LogoSvg class="h-7 w-auto text-foreground" />
+        <img src="/isotipo-mimus.svg" alt="Logo Mimus" class="h-7 w-auto" />
       </NuxtLink>
       <div class="flex items-center gap-2">
-        <ColorModeButton />
         <UButton
           icon="i-lucide-menu"
           color="neutral"
@@ -42,7 +39,7 @@ const isOpen = ref(false)
       <template #body>
         <div class="flex justify-center py-6 border-b border-muted/20">
           <NuxtLink to="/" aria-label="Ir a inicio - Mimus" @click="isOpen = false">
-            <ImagetypeSvg class="h-9 w-auto text-foreground" />
+            <img src="/logo-mimus.svg" alt="Logo Mimus" class="h-16 w-auto" />
           </NuxtLink>
         </div>
         <nav class="flex flex-col">
@@ -64,7 +61,7 @@ const isOpen = ref(false)
     <!-- Desktop Menu -->
     <div class="hidden lg:flex items-center gap-4 bg-muted/80 backdrop-blur-sm rounded-full px-4 border border-muted/50 shadow-lg shadow-neutral-950/5">
       <NuxtLink to="/" aria-label="Ir a inicio - Mimus">
-        <LogoSvg class="h-8 w-auto text-foreground" />
+        <img src="/isotipo-mimus.svg" alt="Logo Mimus" class="h-8 w-auto" />
       </NuxtLink>
       <UNavigationMenu
         :items="links"
@@ -76,9 +73,6 @@ const isOpen = ref(false)
           linkLeadingIcon: 'hidden'
         }"
       >
-        <template #list-trailing>
-          <ColorModeButton />
-        </template>
       </UNavigationMenu>
     </div>
   </div>
