@@ -54,6 +54,12 @@ export default defineNuxtConfig({
     }
   },
 
+  colorMode: {
+    preference: 'light',
+    fallback: 'light',
+    classSuffix: ''
+  },
+
   compatibilityDate: '2024-11-01',
 
   router: {
