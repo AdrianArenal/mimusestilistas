@@ -48,6 +48,11 @@ export default defineNuxtConfig({
     defaultLocale: 'es'
   },
 
+  ui: {
+    theme: {
+    }
+  },
+
   colorMode: {
     preference: 'light',
     fallback: 'light',
