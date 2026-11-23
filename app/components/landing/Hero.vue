@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import type { IndexCollectionItem } from '@nuxt/content'
-import LogoSvg from '~/assets/svg/logo.svg?component'
-import ImagotypeSvg from '~/assets/svg/imagotype.svg?component'
 
 const { footer, global } = useAppConfig()
 
@@ -151,7 +149,7 @@ onUnmounted(() => {
         }"
         class="mb-2"
       >
-        <ImagotypeSvg class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto text-foreground" />
+        <img src="/logo-mimus.svg" alt="Logo Mimus" class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto" />
       </div>
     </template>
 
