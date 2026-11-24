@@ -24,19 +24,14 @@ export default defineAppConfig({
     credits: `Mimus • © ${new Date().getFullYear()} • Pola de Siero, Asturias`,
     colorMode: false,
     links: [{
-      'icon': 'i-lucide-facebook',
-      'to': 'https://www.facebook.com/p/mimus-61553670413042/?locale=es_ES',
-      'target': '_blank',
-      'aria-label': 'Mimu\'s Estilistas en Facebook'
-    }, {
       'icon': 'i-lucide-instagram',
-      'to': 'https://www.instagram.com/mimus_estilistas/',
+      'to': 'https://www.instagram.com/mimus.beauty/',
       'target': '_blank',
-      'aria-label': 'Mimu\'s Estilistas en Instagram'
+      'aria-label': 'Mimus en Instagram'
     }, {
       'icon': 'i-lucide-phone',
       'to': 'tel:604812695',
-      'aria-label': 'Llamar a Mimu\'s Estilistas'
+      'aria-label': 'Llamar a Mimus'
     }]
   }
 })
