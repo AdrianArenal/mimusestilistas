@@ -67,6 +67,7 @@ useSeoMeta({
             { src: '/images/novia-3.webp', alt: 'Preparación de maquillaje Mimus' },
             { src: '/images/novia-4.webp', alt: 'Maquillaje de ojos Mimus' },
             { src: '/images/novia-5.webp', alt: 'Brochas profesionales Mimus' },
+            { src: '/images/novia-6.webp', alt: 'Maquillaje de labios Mimus' },
           ]"
           :key="i"
           class="aspect-3/4 overflow-hidden rounded-xl shadow-lg"
