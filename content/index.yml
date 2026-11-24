@@ -31,20 +31,20 @@ hero:
     - src: /hero/random-9.avif
       alt: Equipo profesional
 about:
-  title: "Nuestra Filosofía"
+  title: "Mimus"
   description: |
-    En Mimus llevamos más de 20 años cuidando la imagen de nuestros clientes en Pola de Siero. 
+    En Mimus llevamos más de 3 años cuidando la imagen de nuestros clientes en Pola de Siero. 
     
     Nuestro compromiso es ofrecerte un servicio profesional y personalizado, donde cada visita se convierte en una experiencia única. Trabajamos con las mejores marcas y técnicas del sector para garantizar resultados excepcionales que realcen tu belleza natural.
 faq:
-  title: Preguntas Frecuentes
+  title: Información
   description: Respuestas a las dudas más comunes sobre nuestros servicios.
   categories:
     - title: Servicios y Citas
       questions:
         - label: ¿Qué servicios ofrecéis?
           content: |
-            Ofrecemos una amplia gama de servicios profesionales: corte de pelo para mujer, hombre y niños, coloración (tintes, mechas, balayage), tratamientos capilares intensivos, permanentes, alisados, peinados y recogidos para eventos especiales, y maquillaje profesional. Todos nuestros servicios se personalizan según tus necesidades.
+            Nuestros servicios profesionales son: peluquería para mujeres y maquillaje profesional.
         - label: ¿Necesito pedir cita previa?
           content: |
             Recomendamos pedir cita previa para asegurarte de que podemos atenderte en el horario que prefieras. Puedes llamarnos al 604 81 26 95. También aceptamos clientes sin cita, aunque podrías tener que esperar.
