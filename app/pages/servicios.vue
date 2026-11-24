@@ -10,15 +10,15 @@ const services = [
     title: 'Peluquería',
     description: 'Servicios completos: peinados, color, mechas, corte y tratamientos capilares',
     icon: 'i-lucide-scissors',
-    image: '/images/2.webp',
+    image: '/hero/random-1.avif',
     featured: true,
     url: '/peluqueria-en-pola-de-siero'
   },
   {
-    title: 'Bodas y Eventos',
+    title: 'Bodas',
     description: 'Peinados para novias, peinados y maquillaje para invitadas',
     icon: 'i-lucide-heart',
-    image: '/images/25.webp',
+    image: '/images/novia-1.webp',
     featured: true,
     url: '/novia-en-pola-de-siero'
   }
@@ -138,7 +138,7 @@ useSeoMeta({
           </h2>
           <p class="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
             Reserva tu cita ahora y deja que nuestro equipo de profesionales cuide de ti.
-            Más de 20 años de experiencia respaldan nuestro trabajo.
+            Nuestro equipo cuida de ti con profesionalidad y cariño.
           </p>
           <div class="flex flex-wrap gap-3 justify-center">
             <UButton

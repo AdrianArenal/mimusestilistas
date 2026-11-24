@@ -2,8 +2,8 @@
 useSeoMeta({
   title: 'Nuestro Equipo',
   ogTitle: 'Nuestro Equipo',
-  description: 'Conoce a nuestro equipo de profesionales en Mimu\'s Estilistas. Más de 20 años de experiencia en peluquería y estética en Pola de Siero.',
-  ogDescription: 'Conoce a nuestro equipo de profesionales en Mimu\'s Estilistas. Más de 20 años de experiencia en peluquería y estética en Pola de Siero.'
+  description: 'Conoce a nuestro equipo de profesionales en Mimu\'s Estilistas. Especialistas en peluquería y maquillaje en Pola de Siero.',
+  ogDescription: 'Conoce a nuestro equipo de profesionales en Mimu\'s Estilistas. Especialistas en peluquería y maquillaje en Pola de Siero.'
 })
 
 const team = [
@@ -14,6 +14,14 @@ const team = [
       { name: 'Peluquería', to: '/peluqueria-en-pola-de-siero' },
       { name: 'Bodas y Eventos', to: '/novia-en-pola-de-siero' },
       { name: 'Color', to: '/color-pelo-pola-de-siero' }
+    ]
+  },
+  {
+    name: 'Adriana González Fernández',
+    image: '/images/adriana.webp',
+    specialties: [
+      { name: 'Maquillaje', to: '/novia-en-pola-de-siero' },
+      { name: 'Bodas y Eventos', to: '/novia-en-pola-de-siero' }
     ]
   }
 ]
@@ -135,7 +143,7 @@ const team = [
             </h2>
             <p class="text-gray-600 dark:text-gray-300 mb-6">
               Nuestro equipo está formado continuamente para ofrecerte los mejores servicios
-              y las técnicas más actuales. Más de 20 años cuidando de la imagen de nuestros clientes.
+              y las técnicas más actuales.
             </p>
             <div class="flex flex-wrap gap-3 justify-center">
               <UButton
