@@ -13,23 +13,15 @@ hero:
       color: "neutral"
   images:
     - src: /hero/random-1.avif
-      alt: Corte de pelo profesional
+      alt: Productos Authentic Beauty Concept
     - src: /hero/random-2.avif
-      alt: Coloración y tintes
+      alt: Recepción del salón Mimus
     - src: /hero/random-3.avif
-      alt: Tratamientos capilares
+      alt: Puesto de trabajo en Mimus
     - src: /hero/random-4.avif
-      alt: Peinados y recogidos
+      alt: Zona de lavado en Mimus
     - src: /hero/random-5.avif
-      alt: Estilismo profesional
-    - src: /hero/random-6.avif
-      alt: Ambiente acogedor
-    - src: /hero/random-7.avif
-      alt: Productos profesionales
-    - src: /hero/random-8.avif
-      alt: Atención personalizada
-    - src: /hero/random-9.avif
-      alt: Equipo profesional
+      alt: Sala de tratamientos Mimus
 about:
   title: "Mimus"
   description: |
