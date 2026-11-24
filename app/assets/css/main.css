@@ -7,18 +7,18 @@
   --font-sans: 'Public Sans', sans-serif;
   --font-serif: 'Instrument Serif', serif;
 
-  /* Paleta primaria Mimus — base #8B6914 */
-  --color-yellow-50:  #FBF6E8;
-  --color-yellow-100: #F8EDD2;
-  --color-yellow-200: #F2DCA5;
-  --color-yellow-300: #EAC770;
-  --color-yellow-400: #E2B23A;
-  --color-yellow-500: #C4941C;
-  --color-yellow-600: #8B6914;
-  --color-yellow-700: #7C5E11;
-  --color-yellow-800: #624A0E;
-  --color-yellow-900: #47350A;
-  --color-yellow-950: #312507
+  /* Paleta primaria Mimus — marrón clarito */
+  --color-yellow-50:  #FBF6EE;
+  --color-yellow-100: #F5EAD8;
+  --color-yellow-200: #EDD5B2;
+  --color-yellow-300: #E0BA88;
+  --color-yellow-400: #C4906A;
+  --color-yellow-500: #A87050;
+  --color-yellow-600: #8B5A3C;
+  --color-yellow-700: #6E4530;
+  --color-yellow-800: #533424;
+  --color-yellow-900: #3A2419;
+  --color-yellow-950: #261710
 
 }
 
@@ -33,6 +33,15 @@
 
 body {
   background-color: #f5f0e8;
+}
+
+/* Suavizar fondos oscuros del sistema NuxtUI */
+.bg-inverted {
+  background-color: #5a3e2b !important;
+}
+[class*="bg-gray-900"],
+[class*="bg-neutral-900"] {
+  background-color: #3a2419 !important;
 }
 
 .dark {
@@ -56,8 +65,8 @@ body {
     90deg,
     transparent 0%,
     transparent 40%,
-    #E2B23A 50%,
-    #C4941C 55%,
+    #C4906A 50%,
+    #A87050 55%,
     transparent 60%,
     transparent 100%
   );
@@ -76,8 +85,8 @@ body {
     90deg,
     transparent 0%,
     transparent 40%,
-    #E2B23A 50%,
-    #C4941C 55%,
+    #C4906A 50%,
+    #A87050 55%,
     transparent 60%,
     transparent 100%
   );
