@@ -18,7 +18,7 @@ const services = [
     title: 'Bodas',
     description: 'Peinados para novias, peinados y maquillaje para invitadas',
     icon: 'i-lucide-heart',
-    image: '/images/novia-1.webp',
+    image: '/images/novia-5.webp',
     featured: true,
     url: '/novia-en-pola-de-siero'
   }

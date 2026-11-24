@@ -54,7 +54,7 @@ const ui = {
             <MDC
               :value="_item.content"
               unwrap="p"
-              class="px-4"
+              class="px-4 text-gray-700"
             />
           </template>
         </UAccordion>
